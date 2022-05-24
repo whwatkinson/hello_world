@@ -8,7 +8,7 @@
 **node** - v12.22.9\
 **python** -  v3.10.4\
 **rust** - v1.60.0\
-**zsh** - v5.8.1\
+**zsh** - v5.8.1
 
 ### Then to run
 ./hello_worlds.sh
