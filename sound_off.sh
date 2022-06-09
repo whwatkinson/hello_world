@@ -1,35 +1,35 @@
 #!/usr/bin/env zsh
 
 echo "c:"
-./c/a.out
+.projects/c/a.out
 echo "\n"
 
 echo "cpp:"
-./cpp/a.out
+.projects/cpp/a.out
 echo "\n"
 
 echo "golang:"
-./golang/main
+.projects/golang/main
 echo "\n"
 
 
 echo "rust:"
-./rust/main
+.projects/rust/main
 echo "\n"
 
 echo "node:"
 unset NODE_OPTIONS
-node javascript/index.js
+node projects/javascript/index.js
 echo "\n"
 
 echo "python:"
-python3 python/hello_world.py
+python3 projects/hello_world.py
 echo "\n"
 
 echo  "zsh"
-./zsh/hello_world.sh
+.projects/zsh/hello_world.sh
 echo "\n"
 
 echo  "bash"
-./bash/hello_world.sh
+.projects/bash/hello_world.sh
 echo "\n"
