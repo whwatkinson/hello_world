@@ -1,35 +1,47 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
-echo "c:"
-.projects/c/a.out
-echo "\n"
-
-echo "cpp:"
-.projects/cpp/a.out
-echo "\n"
-
-echo "golang:"
-.projects/golang/main
-echo "\n"
+echo "bash"
+./projects/bash/hello_world.sh
+printf "\n"
 
 
-echo "rust:"
-.projects/rust/main
-echo "\n"
+echo "c"
+./projects/c/a.out
+printf "\n"
 
-echo "node:"
+
+echo "cpp"
+./projects/cpp/a.out
+printf "\n"
+
+
+echo "golang"
+./projects/golang/main
+printf "\n"
+
+
+echo "javascript"
 unset NODE_OPTIONS
 node projects/javascript/index.js
-echo "\n"
+printf "\n"
 
-echo "python:"
-python3 projects/hello_world.py
-echo "\n"
 
-echo  "zsh"
-.projects/zsh/hello_world.sh
-echo "\n"
+echo "python"
+python3 projects/python/hello_world.py
+printf "\n"
 
-echo  "bash"
-.projects/bash/hello_world.sh
-echo "\n"
+
+echo "rust"
+./projects/rust/main
+printf "\n"
+
+
+echo "typescript"
+#unset NODE_OPTIONS
+node projects/typescript/index.js
+printf "\n"
+
+
+echo "zsh"
+./projects/zsh/hello_world.sh
+printf "\n"
