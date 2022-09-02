@@ -38,7 +38,7 @@ printf "\n"
 
 echo "typescript"
 #unset NODE_OPTIONS
-node projects/typescript/index.js
+node projects/typescript/index.ts
 printf "\n"
 
 
