@@ -1,7 +1,6 @@
 FROM python:3.10-alpine
 WORKDIR /hellow_world
 
-COPY projects .
-COPY sound_oof_wip.sh .
-
-CMD ["sh", "sound_off_wip.sh"]
+COPY projects projects
+COPY sound_off.sh .
+CMD ["sh", "sound_off.sh"]
