@@ -16,12 +16,10 @@ RUN apt-get update \
 	&& npm install -g npm@latest
 
 
-
 WORKDIR /hello_world
 
 COPY projects projects
 COPY compile.sh .
-CMD ["sh", "compile.sh"]
-
 COPY sound_off.sh .
-CMD ["sh", "sound_off.sh"]
+
+CMD ["./sound_off.sh"]

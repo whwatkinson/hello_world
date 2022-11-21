@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+./compile.sh
+
 echo "c"
 ./projects/c/a.out
 printf "\n"
-
 
 echo "cpp"
 ./projects/cpp/a.out
