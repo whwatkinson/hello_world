@@ -132,3 +132,11 @@ dmypy.json
 python/venv
 .idea/
 .DS_Store
+
+
+# Compiled
+projects/c/a.out
+projects/cpp/a.out
+projects/golang/main
+projects/rust/main
+projects/typescript/src/index.js
