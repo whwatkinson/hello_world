@@ -1,5 +1,13 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
+echo "c"
+./projects/c/a.out
+printf "\n"
+
+
+echo "cpp"
+./projects/cpp/a.out
+printf "\n"
 
 echo "golang"
 ./projects/golang/main

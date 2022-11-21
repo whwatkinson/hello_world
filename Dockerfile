@@ -20,5 +20,8 @@ RUN apt-get update \
 WORKDIR /hello_world
 
 COPY projects projects
+COPY compile.sh .
+CMD ["sh", "compile.sh"]
+
 COPY sound_off.sh .
 CMD ["sh", "sound_off.sh"]
