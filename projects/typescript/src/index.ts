@@ -6,6 +6,4 @@ function myMain() {
    hello_world()
 }
 
-if (require.main === module) {
-    myMain();
-}
+myMain();

@@ -1,47 +1,37 @@
 #!/usr/bin/env bash
 
-echo "bash"
-./projects/bash/hello_world.sh
-printf "\n"
+./compile.sh
+printf "\n\n\n\n\n\n\n"
+
+echo "*********"
+echo "SOUND OFF"
+echo "*********"
+echo " "
 
 
-echo "c"
-./projects/c/a.out
-printf "\n"
+echo "Bash says $(bash projects/bash/hello_world.sh -1)"
+echo " "
 
+echo "C says $(./projects/c/a.out -1)"
+echo " "
 
-echo "cpp"
-./projects/cpp/a.out
-printf "\n"
+echo "C++ says $(./projects/cpp/a.out -1)"
+echo " "
 
+echo "Golang says $(./projects/golang/main -1)"
+echo " "
 
-echo "golang"
-./projects/golang/main
-printf "\n"
+echo "JavaScript says $(node projects/javascript/index.js -1)"
+echo " "
 
+echo "Python says $(python3 projects/python/hello_world.py -1)"
+echo " "
 
-echo "javascript"
-unset NODE_OPTIONS
-node projects/javascript/index.js
-printf "\n"
+echo "Rust says $(./projects/rust/main -1)"
+echo " "
 
+echo "TypeScript says $(node projects/typescript/src/index.js -1)"
+echo " "
 
-echo "python"
-python3 projects/python/hello_world.py
-printf "\n"
-
-
-echo "rust"
-./projects/rust/main
-printf "\n"
-
-
-echo "typescript"
-#unset NODE_OPTIONS
-node projects/typescript/index.js
-printf "\n"
-
-
-echo "zsh"
-./projects/zsh/hello_world.sh
-printf "\n"
+echo "Zsh says $(zsh projects/zsh/hello_world.sh -1)"
+echo " "
