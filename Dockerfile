@@ -1,6 +1,6 @@
 FROM golang:1.17-bullseye
 
-# Install dependencies
+# Install Python, Node, TypeScript
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		build-essential \
@@ -13,11 +13,18 @@ RUN apt-get update \
 		nodejs \
 		npm \
 		unzip \
-	&& npm install -g npm@latest
+	&& npm install -g npm@latest \
+    && npm install typescript -g
+
+# Install Rust
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+# Install TypeScript
 
 
+# Copy project files
 WORKDIR /hello_world
-
 COPY projects projects
 COPY compile.sh .
 COPY sound_off.sh .
