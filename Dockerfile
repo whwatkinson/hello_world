@@ -1,32 +1,20 @@
 FROM golang:1.17-bullseye
 
 # Install Python, Node, TypeScript
-RUN apt-get update \
-	&& apt-get install -y --no-install-recommends \
-		build-essential \
-		cmake \
-		ca-certificates \
-		git \
-		python3 \
-		python3-dev \
-		python3-pip \
-		nodejs \
-		npm \
-		unzip \
-	&& npm install -g npm@latest \
-    && npm install typescript -g
-
-ENV PATH="/root/.cargo/bin:${PATH}"
+RUN apt-get update
 
 # Install Python
+RUN apt-get install -y --no-install-recommends python3
 
 # Install Node
+RUN apt-get install -y --no-install-recommends nodejs npm && npm install -g npm@latest
 
 # Install TypeScript
-
+RUN npm install typescript -g
 
 # Install Rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 # Install zsh
 RUN apt-get install zsh -y

@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
 ./compile.sh
-printf "\n\n\n\n\n\n\n"
 
 echo "*********"
 echo "SOUND OFF"
 echo "*********"
 echo " "
-
 
 echo "Bash says $(bash projects/bash/hello_world.sh -1)"
 echo " "
