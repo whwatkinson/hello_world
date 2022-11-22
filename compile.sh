@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+echo "*********"
+echo "COMPILING"
+echo "*********"
+echo " "
+
 echo "Compiling c"
 cd projects/c/ || exit
 cc main.c
@@ -19,6 +24,3 @@ rustc main.rs
 echo "Compiling typescript"
 cd ../typescript/src || exit
 tsc index.ts
-
-
-

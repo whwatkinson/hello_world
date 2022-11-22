@@ -3,42 +3,35 @@
 ./compile.sh
 printf "\n\n\n\n\n\n\n"
 
+echo "*********"
+echo "SOUND OFF"
+echo "*********"
+echo " "
 
-#echo "bash" > "${VAR}"
-echo 'bash projects/bash/hello_world.sh' | "${VAR}"
-echo "bash says: ${VAR}"
-printf "\n"
 
-echo "c"
-./projects/c/a.out  > "${VAR}"
-printf "\n"
+echo "Bash says $(bash projects/bash/hello_world.sh -1)"
+echo " "
 
-echo "c++"
-./projects/cpp/a.out
-printf "\n"
+echo "C says $(./projects/c/a.out -1)"
+echo " "
 
-echo "golang"
-./projects/golang/main
-printf "\n"
+echo "C++ says $(./projects/cpp/a.out -1)"
+echo " "
 
-echo "javascript"
-unset NODE_OPTIONS
-node projects/javascript/index.js
-printf "\n"
+echo "Golang says $(./projects/golang/main -1)"
+echo " "
 
-echo "python"
-python3 projects/python/hello_world.py
-printf "\n"
+echo "JavaScript says $(node projects/javascript/index.js -1)"
+echo " "
 
-echo "rust"
-./projects/rust/main
-printf "\n"
+echo "Python says $(python3 projects/python/hello_world.py -1)"
+echo " "
 
-echo "typescript"
-#unset NODE_OPTIONS
-node projects/typescript/src/index.js
-printf "\n"
+echo "Rust says $(./projects/rust/main -1)"
+echo " "
 
-echo "zsh"
-zsh projects/zsh/hello_world.sh
-printf "\n"
+echo "TypeScript says $(node projects/typescript/src/index.js -1)"
+echo " "
+
+echo "Zsh says $(zsh projects/zsh/hello_world.sh -1)"
+echo " "
