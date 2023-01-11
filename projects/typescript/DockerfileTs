@@ -1,0 +1,10 @@
+FROM node:19.4.0
+
+RUN  npm install -g npm@latest \
+    && npm install typescript -g
+
+COPY src/index.ts .
+
+RUN tsc index.ts
+
+CMD ["node", "index.js"]

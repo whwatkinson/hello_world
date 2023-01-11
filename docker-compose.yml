@@ -6,6 +6,12 @@ secrets:
     external: true
 
 services:
+  bash:
+    container_name: hello_world_bash
+    build:
+      context: projects/bash
+      dockerfile: DockerfileBash
+
   c:
     container_name: hello_world_c
     build:
@@ -24,8 +30,8 @@ services:
       context: projects/golang
       dockerfile: DockerfileGolang
 
-  js:
-    container_name: hello_world_js
+  javascript:
+    container_name: hello_world_javascript
     build:
       context: projects/javascript
       dockerfile: DockerfileJs
@@ -41,3 +47,15 @@ services:
     build:
       context: projects/rust
       dockerfile: DockerfileRust
+
+  typescript:
+    container_name: hello_world_typescript
+    build:
+      context: projects/typescript
+      dockerfile: DockerfileTs
+
+  zsh:
+    container_name: hello_world_zsh
+    build:
+      context: projects/zsh
+      dockerfile: DockerfileZsh
