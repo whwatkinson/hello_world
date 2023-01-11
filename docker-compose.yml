@@ -1,9 +1,16 @@
+# As noted in the Docker best practices "each container should have only one concern
+
 version: "3.9"
 secrets:
   aws_creds:
     external: true
 
 services:
+  c:
+    container_name: hello_world_c
+    build:
+      context: projects/c
+      dockerfile: DockerfileC
 
   js:
     container_name: hello_world_js
