@@ -24,16 +24,20 @@ services:
       context: projects/golang
       dockerfile: DockerfileGolang
 
-
   js:
     container_name: hello_world_js
     build:
       context: projects/javascript
       dockerfile: DockerfileJs
 
-
   python:
     container_name: hello_world_python
     build:
       context: projects/python
       dockerfile: DockerfilePython
+
+  rust:
+    container_name: hello_world_rust
+    build:
+      context: projects/rust
+      dockerfile: DockerfileRust
