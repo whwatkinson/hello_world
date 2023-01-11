@@ -18,6 +18,13 @@ services:
       context: projects/cpp
       dockerfile: DockerfileCpp
 
+  golang:
+    container_name: hello_world_golang
+    build:
+      context: projects/golang
+      dockerfile: DockerfileGolang
+
+
   js:
     container_name: hello_world_js
     build:
