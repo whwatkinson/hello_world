@@ -12,6 +12,12 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+  cpp:
+    container_name: hello_world_cpp
+    build:
+      context: projects/cpp
+      dockerfile: DockerfileCpp
+
   js:
     container_name: hello_world_js
     build:
