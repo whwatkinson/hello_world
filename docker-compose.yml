@@ -1,0 +1,19 @@
+version: "3.9"
+secrets:
+  aws_creds:
+    external: true
+
+services:
+
+  js:
+    container_name: hello_world_js
+    build:
+      context: projects/javascript
+      dockerfile: DockerfileJs
+
+
+  python:
+    container_name: hello_world_python
+    build:
+      context: projects/python
+      dockerfile: DockerfilePython
