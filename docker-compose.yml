@@ -36,6 +36,12 @@ services:
       context: projects/javascript
       dockerfile: DockerfileJs
 
+  perl:
+    container_name: hello_world_perl
+    build:
+      context: projects/perl
+      dockerfile: DockerfilePerl
+
   python:
     container_name: hello_world_python
     build:
