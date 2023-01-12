@@ -30,12 +30,17 @@ services:
       context: projects/golang
       dockerfile: DockerfileGolang
 
+  haskell:
+    container_name: hello_world_haskell
+    build:
+      context: projects/haskell
+      dockerfile: DockerfileHaskell
+
   java:
     container_name: hello_world_java
     build:
       context: projects/java
       dockerfile: DockerfileJava
-
 
   javascript:
     container_name: hello_world_javascript
