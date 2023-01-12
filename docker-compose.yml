@@ -78,6 +78,12 @@ services:
       context: projects/rust
       dockerfile: DockerfileRust
 
+  swift:
+    container_name: hello_world_swift
+    build:
+      context: projects/swift
+      dockerfile: DockerfileSwift
+
   typescript:
     container_name: hello_world_typescript
     build:

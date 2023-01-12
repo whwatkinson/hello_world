@@ -1,0 +1,5 @@
+FROM swift:5.7.2
+
+COPY main.swift .
+
+CMD ["swift", "main.swift"]
