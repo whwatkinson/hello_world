@@ -55,6 +55,12 @@ services:
       context: projects/python
       dockerfile: DockerfilePython
 
+  ruby:
+    container_name: hello_world_ruby
+    build:
+      context: projects/ruby
+      dockerfile: DockerfileRuby
+
   rust:
     container_name: hello_world_rust
     build:
