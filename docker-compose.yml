@@ -48,6 +48,12 @@ services:
       context: projects/javascript
       dockerfile: DockerfileJs
 
+  julia:
+    container_name: hello_world_julia
+    build:
+      context: projects/julia
+      dockerfile: DockerfileJulia
+
   perl:
     container_name: hello_world_perl
     build:

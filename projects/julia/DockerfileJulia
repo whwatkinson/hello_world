@@ -1,0 +1,5 @@
+FROM julia:1.8.0
+
+COPY hello_world.jl .
+
+CMD ["julia", "hello_world.jl"]
