@@ -5,10 +5,11 @@
 
 ### Requirements
 - **docker** == 20.10.21
+- **docker-compose** == 1.29.2
 
 ###  To be greeted
 ```
-./build_and_run.sh
+docker-compose up --build
 ```
 
 ![image info](./hello_world.png)
