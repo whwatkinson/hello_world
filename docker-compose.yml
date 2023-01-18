@@ -24,11 +24,11 @@ services:
       context: projects/cpp
       dockerfile: DockerfileCpp
 
-#  erlang:
-#    container_name: hello_world_erlang
-#    build:
-#      context: projects/erlang
-#      dockerfile: DockerfileErlang
+  erlang:
+    container_name: hello_world_erlang
+    build:
+      context: projects/erlang
+      dockerfile: DockerfileErlang
 
   fortran:
     container_name: hello_world_fortran

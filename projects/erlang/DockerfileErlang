@@ -2,5 +2,6 @@ FROM erlang:25.2.0.0
 
 COPY hello_world.erl .
 
-CMD ["tail", "-f", "/dev/null"]
-#CMD ["erl", "-s", "hello_world"]
+RUN erlc hello_world.erl
+
+CMD ["erl", "-noshell", "-s", "hello_world", "start", "-s", "init", "stop"]
