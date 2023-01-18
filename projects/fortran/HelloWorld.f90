@@ -1,3 +1,3 @@
 program helloworld
-  print *, 'Hello, World!'
+  print "(A13)", 'Hello, World!'
 end program helloworld
