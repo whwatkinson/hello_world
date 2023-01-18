@@ -1,0 +1,7 @@
+FROM golang:1.17-bullseye
+
+RUN apt-get update && apt-get install zsh -y
+
+COPY hello_world.sh .
+
+CMD ["zsh", "hello_world.sh"]

@@ -1,0 +1,8 @@
+FROM rust:1-bullseye
+
+COPY main.rs .
+
+RUN rustc main.rs
+
+CMD ["./main"]
+

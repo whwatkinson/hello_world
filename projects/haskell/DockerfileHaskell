@@ -1,0 +1,7 @@
+FROM haskell:8
+
+COPY hello_world.hs .
+
+RUN ghc hello_world.hs
+
+CMD ["./hello_world"]

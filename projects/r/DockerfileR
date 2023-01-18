@@ -1,0 +1,5 @@
+FROM r-base:4.2.0
+
+COPY hello_world.r .
+
+CMD ["Rscript", "hello_world.r"]

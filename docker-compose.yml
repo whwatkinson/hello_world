@@ -1,0 +1,115 @@
+# As noted in the Docker best practices "each container should have only one concern
+
+version: "3.9"
+secrets:
+  aws_creds:
+    external: true
+
+services:
+  bash:
+    container_name: hello_world_bash
+    build:
+      context: projects/bash
+      dockerfile: DockerfileBash
+
+  c:
+    container_name: hello_world_c
+    build:
+      context: projects/c
+      dockerfile: DockerfileC
+
+  cpp:
+    container_name: hello_world_cpp
+    build:
+      context: projects/cpp
+      dockerfile: DockerfileCpp
+
+  erlang:
+    container_name: hello_world_erlang
+    build:
+      context: projects/erlang
+      dockerfile: DockerfileErlang
+
+  fortran:
+    container_name: hello_world_fortran
+    build:
+      context: projects/fortran
+      dockerfile: DockerfileFortran
+
+  golang:
+    container_name: hello_world_golang
+    build:
+      context: projects/golang
+      dockerfile: DockerfileGolang
+
+  haskell:
+    container_name: hello_world_haskell
+    build:
+      context: projects/haskell
+      dockerfile: DockerfileHaskell
+
+  java:
+    container_name: hello_world_java
+    build:
+      context: projects/java
+      dockerfile: DockerfileJava
+
+  javascript:
+    container_name: hello_world_javascript
+    build:
+      context: projects/javascript
+      dockerfile: DockerfileJs
+
+  julia:
+    container_name: hello_world_julia
+    build:
+      context: projects/julia
+      dockerfile: DockerfileJulia
+
+  perl:
+    container_name: hello_world_perl
+    build:
+      context: projects/perl
+      dockerfile: DockerfilePerl
+
+  python:
+    container_name: hello_world_python
+    build:
+      context: projects/python
+      dockerfile: DockerfilePython
+
+  r:
+    container_name: hello_world_r
+    build:
+      context: projects/r
+      dockerfile: DockerfileR
+
+  ruby:
+    container_name: hello_world_ruby
+    build:
+      context: projects/ruby
+      dockerfile: DockerfileRuby
+
+  rust:
+    container_name: hello_world_rust
+    build:
+      context: projects/rust
+      dockerfile: DockerfileRust
+
+  swift:
+    container_name: hello_world_swift
+    build:
+      context: projects/swift
+      dockerfile: DockerfileSwift
+
+  typescript:
+    container_name: hello_world_typescript
+    build:
+      context: projects/typescript
+      dockerfile: DockerfileTs
+
+  zsh:
+    container_name: hello_world_zsh
+    build:
+      context: projects/zsh
+      dockerfile: DockerfileZsh

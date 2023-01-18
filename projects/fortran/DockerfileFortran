@@ -1,0 +1,9 @@
+FROM golang:1.17-bullseye
+
+RUN apt-get update && apt-get install gfortran -y
+
+COPY HelloWorld.f90 .
+
+RUN gfortran HelloWorld.f90 -o helloworld
+
+CMD ["./helloworld"]

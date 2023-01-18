@@ -1,0 +1,7 @@
+FROM golang:1.17-bullseye
+
+COPY main.c .
+
+RUN cc main.c
+
+CMD ["./a.out"]
