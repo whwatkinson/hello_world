@@ -30,6 +30,12 @@ services:
 #      context: projects/erlang
 #      dockerfile: DockerfileErlang
 
+  fortran:
+    container_name: hello_world_fortran
+    build:
+      context: projects/fortran
+      dockerfile: DockerfileFortran
+
   golang:
     container_name: hello_world_golang
     build:
