@@ -96,6 +96,12 @@ services:
       context: projects/rust
       dockerfile: DockerfileRust
 
+  sh:
+    container_name: hello_world_sh
+    build:
+      context: projects/sh
+      dockerfile: DockerfileSh
+
   swift:
     container_name: hello_world_swift
     build:
