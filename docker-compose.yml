@@ -66,6 +66,12 @@ services:
       context: projects/julia
       dockerfile: DockerfileJulia
 
+  kotlin:
+    container_name: hello_world_kotlin
+    build:
+      context: projects/kotlin
+      dockerfile: DockerfileKotlin
+
   perl:
     container_name: hello_world_perl
     build:
