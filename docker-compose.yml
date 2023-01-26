@@ -66,11 +66,29 @@ services:
       context: projects/julia
       dockerfile: DockerfileJulia
 
+  kotlin:
+    container_name: hello_world_kotlin
+    build:
+      context: projects/kotlin
+      dockerfile: DockerfileKotlin
+
   perl:
     container_name: hello_world_perl
     build:
       context: projects/perl
       dockerfile: DockerfilePerl
+
+  php:
+    container_name: hello_world_php
+    build:
+      context: projects/php
+      dockerfile: DockerfilePhp
+
+  powershell:
+    container_name: hello_world_powershell
+    build:
+      context: projects/powershell
+      dockerfile: DockerfilePowershell
 
   python:
     container_name: hello_world_python
@@ -95,6 +113,12 @@ services:
     build:
       context: projects/rust
       dockerfile: DockerfileRust
+
+  sh:
+    container_name: hello_world_sh
+    build:
+      context: projects/sh
+      dockerfile: DockerfileSh
 
   swift:
     container_name: hello_world_swift
