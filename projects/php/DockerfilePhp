@@ -2,4 +2,5 @@ FROM php:8.2.1
 
 COPY hello_world.php .
 
+CMD ["tail", "-f", "/dev/null"]
 

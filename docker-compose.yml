@@ -78,6 +78,12 @@ services:
       context: projects/perl
       dockerfile: DockerfilePerl
 
+  powershell:
+    container_name: hello_world_powershell
+    build:
+      context: projects/powershell
+      dockerfile: DockerfilePowershell
+
   python:
     container_name: hello_world_python
     build:
