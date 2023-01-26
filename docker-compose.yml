@@ -78,6 +78,12 @@ services:
       context: projects/perl
       dockerfile: DockerfilePerl
 
+  php:
+    container_name: hello_world_php
+    build:
+      context: projects/php
+      dockerfile: DockerfilePhp
+
   powershell:
     container_name: hello_world_powershell
     build:
