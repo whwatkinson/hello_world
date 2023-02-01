@@ -1,0 +1,5 @@
+FROM eiffel/eiffel:21.11
+
+COPY hello_world.e .
+
+CMD ["tail", "-f", "/dev/null"]

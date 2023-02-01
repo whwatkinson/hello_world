@@ -24,6 +24,12 @@ services:
       context: projects/cpp
       dockerfile: DockerfileCpp
 
+  eiffel:
+    container_name: hello_world_eiffel
+    build:
+      context: projects/eiffel
+      dockerfile: DockerfileEiffel
+
   erlang:
     container_name: hello_world_erlang
     build:
