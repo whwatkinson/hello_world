@@ -24,11 +24,11 @@ services:
       context: projects/cpp
       dockerfile: DockerfileCpp
 
-  eiffel:
-    container_name: hello_world_eiffel
-    build:
-      context: projects/eiffel
-      dockerfile: DockerfileEiffel
+#  eiffel:
+#    container_name: hello_world_eiffel
+#    build:
+#      context: projects/eiffel
+#      dockerfile: DockerfileEiffel
 
   erlang:
     container_name: hello_world_erlang
@@ -77,6 +77,12 @@ services:
     build:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
+
+#  matlab:
+#    container_name: hello_world_matlab
+#    build:
+#      context: projects/matlab
+#      dockerfile: DockerfileMatlab
 
   perl:
     container_name: hello_world_perl

@@ -1,10 +1,8 @@
-class
-    HELLO_WORLD
-create
-    make
+class HELLO_WORLD create
+	make
 feature
-    make
-        do
-            print ("Hello, World!%N")
-        end
+	make
+		do
+			print("Hello, World!")
+		end
 end

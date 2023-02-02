@@ -1,4 +1,4 @@
-FROM eiffel/eiffel:21.11
+FROM eiffel/eiffel:19.05
 
 COPY hello_world.e .
 
