@@ -18,6 +18,12 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+#  c#:
+#    container_name: hello_world_c#
+#    build:
+#      context: projects/c#
+#      dockerfile: DockerfileCsharp
+
   cpp:
     container_name: hello_world_cpp
     build:
