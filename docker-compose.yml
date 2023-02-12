@@ -30,18 +30,29 @@ services:
       context: projects/cobol
       dockerfile: DockerfileCobol
 
-
   cpp:
     container_name: hello_world_cpp
     build:
       context: projects/cpp
       dockerfile: DockerfileCpp
 
+  crystal:
+    container_name: hello_world_crystal
+    build:
+      context: projects/crystal
+      dockerfile: DockerfileCrystal
+
 #  eiffel:
 #    container_name: hello_world_eiffel
 #    build:
 #      context: projects/eiffel
 #      dockerfile: DockerfileEiffel
+
+#  elm:
+#    container_name: hellow_world_elm
+#    build:
+#      context: projects/elm
+#      dockerfile: DockerfileElm
 
   erlang:
     container_name: hello_world_erlang
