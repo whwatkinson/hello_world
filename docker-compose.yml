@@ -120,11 +120,11 @@ services:
       context: projects/php
       dockerfile: DockerfilePhp
 
-  powershell:
-    container_name: hello_world_powershell
-    build:
-      context: projects/powershell
-      dockerfile: DockerfilePowershell
+#  powershell:
+#    container_name: hello_world_powershell
+#    build:
+#      context: projects/powershell
+#      dockerfile: DockerfilePowershell
 
   python:
     container_name: hello_world_python
@@ -137,6 +137,12 @@ services:
     build:
       context: projects/r
       dockerfile: DockerfileR
+
+  raku:
+    container_name: hello_world_raku
+    build:
+      context: projects/raku
+      dockerfile: DockerfileRaku
 
   ruby:
     container_name: hello_world_ruby
