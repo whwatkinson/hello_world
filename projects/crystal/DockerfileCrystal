@@ -2,4 +2,4 @@ FROM crystallang/crystal:1.7
 
 COPY hello_world.cr .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["bin/crystal", "hello_world.cr"]
