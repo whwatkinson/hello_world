@@ -24,6 +24,13 @@ services:
 #      context: projects/c#
 #      dockerfile: DockerfileCsharp
 
+  cobol:
+    container_name: hello_world_cobol
+    build:
+      context: projects/cobol
+      dockerfile: DockerfileCobol
+
+
   cpp:
     container_name: hello_world_cpp
     build:

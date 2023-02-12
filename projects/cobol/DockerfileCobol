@@ -1,0 +1,10 @@
+FROM ubuntu:rolling
+
+RUN apt-get update
+RUN apt-get install gnucobol4 -y
+
+COPY hello_world.cbl .
+
+RUN cobc -x hello_world.cbl
+
+CMD ["./hello_world"]
