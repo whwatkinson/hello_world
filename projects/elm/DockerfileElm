@@ -1,5 +1,9 @@
-FROM codesimple/elm:0.19
+FROM node:19.4.0
 
+RUN npm install -g elm && \
+    npm install -g run-elm
+
+RUN mkdir dir
 COPY hello_world.elm .
 
-
+CMD ["tail", "-f", "/dev/null"]
