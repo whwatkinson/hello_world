@@ -1,0 +1,7 @@
+FROM golang:1.17-bullseye
+
+RUN apt-get update -y && apt-get install -y algol68g
+
+COPY hello_world.algo60 .
+
+CMD ["a68g", "hello_world.algo60"]

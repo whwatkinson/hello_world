@@ -6,6 +6,13 @@ secrets:
     external: true
 
 services:
+
+  algol:
+    container_name: hello_world_algol
+    build:
+      context: projects/algol
+      dockerfile: DockerfileAlgol
+
   bash:
     container_name: hello_world_bash
     build:
