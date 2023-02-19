@@ -1,0 +1,9 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && apt-get install -y gforth
+
+COPY hello_world.fs .
+
+#CMD ["gforth", "hello_world.fs"]
+
+CMD ["tail", "-f", "/dev/null"]
