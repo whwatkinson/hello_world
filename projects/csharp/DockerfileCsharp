@@ -1,0 +1,16 @@
+FROM ubuntu:22.04
+
+RUN apt-get update && \
+    apt-get install -y dotnet-sdk-6.0 && \
+    apt-get install -y aspnetcore-runtime-6.0 && \
+    apt-get install -y dotnet-runtime-6.0
+
+RUN dotnet new console -o MyApp
+
+COPY hello_world.cs MyApp/
+
+RUN rm MyApp/Program.cs
+
+RUN dotnet build MyApp/
+
+CMD ["./MyApp/bin/Debug/net6.0/MyApp"]

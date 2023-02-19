@@ -1,9 +1,6 @@
 # As noted in the Docker best practices "each container should have only one concern
 
 version: "3.9"
-secrets:
-  aws_creds:
-    external: true
 
 services:
 
@@ -25,12 +22,6 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
-#  c#:
-#    container_name: hello_world_c#
-#    build:
-#      context: projects/c#
-#      dockerfile: DockerfileCsharp
-
   cobol:
     container_name: hello_world_cobol
     build:
@@ -48,6 +39,12 @@ services:
     build:
       context: projects/crystal
       dockerfile: DockerfileCrystal
+
+  csharp:
+    container_name: hello_world_csharp
+    build:
+      context: projects/csharp
+      dockerfile: DockerfileCsharp
 
 #  eiffel:
 #    container_name: hello_world_eiffel

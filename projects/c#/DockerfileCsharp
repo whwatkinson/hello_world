@@ -1,5 +1,0 @@
-FROM microsoft/dotnet:latest
-
-COPY hello_world.cs .
-
-CMD ["tail", "-f", "/dev/null"]
