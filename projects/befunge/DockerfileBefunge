@@ -1,0 +1,5 @@
+FROM esolang/befunge98:latest
+
+COPY hello_world.be .
+
+CMD ["./cfunge", "hello_world.be"]

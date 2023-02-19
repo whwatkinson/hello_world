@@ -16,6 +16,12 @@ services:
       context: projects/bash
       dockerfile: DockerfileBash
 
+  befunge:
+    container_name: hello_world_befunge
+    build:
+      context: projects/befunge
+      dockerfile: DockerfileBefunge
+
   c:
     container_name: hello_world_c
     build:
