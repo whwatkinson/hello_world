@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && apt-get ucblogo
+
+COPY hello_world.lg .
+
+CMD ["tail", "-f", "/dev/null"]
