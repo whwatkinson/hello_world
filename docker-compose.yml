@@ -109,6 +109,12 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
+  lisp:
+    container_name: hello_world_lisp
+    build:
+      context: projects/lisp
+      dockerfile: DockerfileLisp
+
 #  matlab:
 #    container_name: hello_world_matlab
 #    build:
