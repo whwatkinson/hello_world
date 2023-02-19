@@ -184,6 +184,12 @@ services:
       context: projects/rust
       dockerfile: DockerfileRust
 
+  scala:
+    container_name: hello_world_scala
+    build:
+      context: projects/scala
+      dockerfile: DockerfileScala
+
   sh:
     container_name: hello_world_sh
     build:
