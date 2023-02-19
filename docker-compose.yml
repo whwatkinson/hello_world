@@ -124,11 +124,11 @@ services:
       context: projects/lisp
       dockerfile: DockerfileLisp
 
-  logo:
-    container_name: hello_world_logo
-    build:
-      context: projects/logo
-      dockerfile: DockerfileLogo
+#  logo:
+#    container_name: hello_world_logo
+#    build:
+#      context: projects/logo
+#      dockerfile: DockerfileLogo
 
 #  matlab:
 #    container_name: hello_world_matlab
