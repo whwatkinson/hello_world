@@ -1,7 +1,9 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:rolling
+
+RUN apt-get update -y && apt-get install -y g++
 
 COPY main.cpp .
 
-RUN cc main.cpp
+RUN g++ main.cpp
 
 CMD ["./a.out"]

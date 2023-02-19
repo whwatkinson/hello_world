@@ -1,4 +1,4 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:rolling
 
 RUN apt-get update && apt-get install gfortran -y
 

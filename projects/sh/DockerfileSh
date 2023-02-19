@@ -1,4 +1,4 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:rolling
 
 COPY hello_world.sh .
 

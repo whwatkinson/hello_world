@@ -1,7 +1,9 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:rolling
+
+RUN apt-get update -y && apt-get install -y gcc
 
 COPY main.c .
 
-RUN cc main.c
+RUN gcc main.c
 
 CMD ["./a.out"]
