@@ -1,3 +1,1 @@
-"!dlroW ,olleH"> , v
-               | : <
-               @
+52*"!dlroW ,olleH">:#,_@
