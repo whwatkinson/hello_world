@@ -161,11 +161,11 @@ services:
       context: projects/php
       dockerfile: DockerfilePhp
 
-#  powershell:
-#    container_name: hello_world_powershell
-#    build:
-#      context: projects/powershell
-#      dockerfile: DockerfilePowershell
+  powershell:
+    container_name: hello_world_powershell
+    build:
+      context: projects/powershell
+      dockerfile: DockerfilePowershell
 
   python:
     container_name: hello_world_python
