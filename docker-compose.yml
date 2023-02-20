@@ -167,11 +167,17 @@ services:
       context: projects/powershell
       dockerfile: DockerfilePowershell
 
-  python:
-    container_name: hello_world_python
+  python2:
+    container_name: hello_world_python2
     build:
-      context: projects/python
-      dockerfile: DockerfilePython
+      context: projects/python2
+      dockerfile: DockerfilePython2
+
+  python3:
+    container_name: hello_world_python3
+    build:
+      context: projects/python3
+      dockerfile: DockerfilePython3
 
   r:
     container_name: hello_world_r
