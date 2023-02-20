@@ -5,11 +5,11 @@ version: "3.9"
 
 services:
 
-  algol:
-    container_name: hello_world_algol
+  algol68:
+    container_name: hello_world_algol68
     build:
-      context: projects/algol
-      dockerfile: DockerfileAlgol
+      context: projects/algol68
+      dockerfile: DockerfileAlgol68
 
   bash:
     container_name: hello_world_bash
@@ -209,11 +209,11 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
-  sh:
-    container_name: hello_world_sh
+  shell:
+    container_name: hello_world_shell
     build:
-      context: projects/sh
-      dockerfile: DockerfileSh
+      context: projects/shell
+      dockerfile: DockerfileShell
 
   swift:
     container_name: hello_world_swift
