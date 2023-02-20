@@ -5,11 +5,23 @@ version: "3.9"
 
 services:
 
+#  abc:
+#    container_name: hello_world_abc
+#    build:
+#      context: projects/abc
+#      dockerfile: DockerfileAbc
+
   algol68:
     container_name: hello_world_algol68
     build:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
+
+#  b:
+#    container_name: hello_world_b
+#    build:
+#      context: projects/b
+#      dockerfile: DockerfileB
 
   bash:
     container_name: hello_world_bash
