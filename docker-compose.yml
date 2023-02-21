@@ -125,6 +125,12 @@ services:
       context: projects/haskell
       dockerfile: DockerfileHaskell
 
+  jade:
+    container_name: hello_world_jade
+    build:
+      context: projects/jade
+      dockerfile: DockerfileJade
+
   java:
     container_name: hello_world_java
     build:
