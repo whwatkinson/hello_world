@@ -53,6 +53,12 @@ services:
 #      context: projects/carbon
 #      dockerfile: DockerfileCarbon
 
+#  ceylon:
+#    container_name: hello_world_ceylon
+#    build:
+#      context: projects/ceylon
+#      dockerfile: DockerfileCeylon
+
   cobol:
     container_name: hello_world_cobol
     build:
