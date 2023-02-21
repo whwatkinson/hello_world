@@ -29,6 +29,12 @@ services:
       context: projects/bash
       dockerfile: DockerfileBash
 
+  basic:
+    container_name: hello_world_basic
+    build:
+      context: projects/basic
+      dockerfile: DockerfileBasic
+
   befunge:
     container_name: hello_world_befunge
     build:
