@@ -173,6 +173,12 @@ services:
 #      context: projects/matlab
 #      dockerfile: DockerfileMatlab
 
+  ocaml:
+    container_name: hello_world_ocaml
+    build:
+      context: projects/ocaml
+      dockerfile: DockerfileOcaml
+
   pascal:
     container_name: hello_world_pascal
     build:
