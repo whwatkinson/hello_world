@@ -1,8 +1,10 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && apt-get install -y gforth
+RUN apt-get update -y && apt-get install -y git make
 
-COPY hello_world.fs .
+RUN git clone https://github.com/philburk/pforth.git
+
+COPY hello_world.fth .
 
 #CMD ["gforth", "hello_world.fs"]
 
