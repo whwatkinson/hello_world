@@ -35,6 +35,12 @@ services:
       context: projects/basic
       dockerfile: DockerfileBasic
 
+  beanshell:
+    container_name: hello_world_beanshell
+    build:
+      context: projects/beanshell
+      dockerfile: DockerfileBeanshell
+
   befunge:
     container_name: hello_world_befunge
     build:
