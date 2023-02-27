@@ -95,6 +95,12 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
+  cypher:
+    container_name: hello_world_cypher
+    build:
+      context: projects/cypher
+      dockerfile: DockerfileCypher
+
   dart:
     container_name: hello_world_dart
     build:
