@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y gnupg software-properties-common
+
+COPY hello_world.tf .
+
+
+#CMD ["bsh", "hello_world.bsh"]
+
+CMD ["tail", "-f", "/dev/null"]

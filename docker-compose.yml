@@ -269,6 +269,12 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
+  terraform:
+    container_name: hello_world_terraform
+    build:
+      context: projects/terraform
+      dockerfile: DockerfileTerraform
+
   typescript:
     container_name: hello_world_typescript
     build:
