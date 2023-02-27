@@ -1,0 +1,5 @@
+FROM postgres:bullseye
+
+RUN apt-get update -y
+
+CMD ["tail", "-f", "/dev/null"]
