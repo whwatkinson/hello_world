@@ -1,3 +1,3 @@
 output "msg" {
-  value = "Hello World"
+  value = "Hello, World!"
 }

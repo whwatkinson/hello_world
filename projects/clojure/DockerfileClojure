@@ -1,0 +1,18 @@
+#FROM ubuntu:22.04
+FROM openjdk:11
+
+RUN apt-get update -y &&  \
+    apt-get install -y software-properties-common wget apt-transport-https
+
+RUN mkdir -p /etc/apt/keyrings
+RUN wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
+RUN echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+RUN apt-get install -y temurin-17-jdk
+
+
+COPY hello_world.clj .
+
+
+#CMD ["bsh", "hello_world.bsh"]
+
+CMD ["tail", "-f", "/dev/null"]
