@@ -335,6 +335,12 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  y:
+    container_name: hello_world_y
+    build:
+      context: projects/y
+      dockerfile: DockerfileY
+
   zsh:
     container_name: hello_world_zsh
     build:
