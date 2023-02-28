@@ -245,6 +245,12 @@ services:
       context: projects/powershell
       dockerfile: DockerfilePowershell
 
+#  prolog:
+#    container_name: hello_world_prolog
+#    build:
+#      context: projects/prolog
+#      dockerfile: DockerfileProlog
+
   python2:
     container_name: hello_world_python2
     build:

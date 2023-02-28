@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y prolog
+
+COPY hello_world.pro .
+
+CMD ["tail", "-f", "/dev/null"]
