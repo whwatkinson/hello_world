@@ -223,9 +223,21 @@ services:
 
 #  postgres:
 #    container_name: hello_world_postgres
-#    build:
-#      context: projects/postgres
-#      dockerfile: DockerfilePostgres
+#    image: postgres:bullseye
+#    user: postgres
+#    environment:
+#      POSTGRES_DB: postgress
+#      POSTGRES_USER: postgress
+#      POSTGRES_PASSWORD: postgress
+#    command:
+#      [
+#        "echo",
+#        "\"SELECT 'Hello, World!' AS hello_message;\"",
+#        "|",
+#        "psql",
+#        "postgresql://postgres:postgress@localhost:5432/postgres",
+#      ]
+
 
   powershell:
     container_name: hello_world_powershell

@@ -1,11 +1,16 @@
 FROM postgres:bullseye
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y postgresql-client
 
-ENV POSTGRES_DB="hello_world"
+ENV POSTGRES_DB="postgres"
 ENV POSTGRES_USER="postgres"
 ENV POSTGRES_PASSWORD="wiggle"
 
-#RUN echo "SELECT 'Hello, World!' AS hello_message;" | psql postgresql://postgres:wiggle@localhost:5432/hello_world
+EXPOSE 5432
 
+#RUN echo "SELECT 'Hello, World\!' AS hello_message;" | psql postgresql://postgres:wiggle@localhost:5432/postgres
+
+
+#psql -h localhost -p 5432 -U postgres -d postgres
 CMD ["tail", "-f", "/dev/null"]
