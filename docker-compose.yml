@@ -113,6 +113,12 @@ services:
       context: projects/dart
       dockerfile: DockerfileDart
 
+  delphi:
+    container_name: hello_World_delphi
+    build:
+      context: projects/delphi
+      dockerfile: DockerfileDelphi
+
 #  dogescript:
 #    container_name: hello_world_dogescript
 #    build:
