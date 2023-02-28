@@ -5,6 +5,6 @@ module helloworld
 	import printf from "ylib.d"
 
 	main()
-		printf("Hello World\n")
+		printf("Hello, World!\n")
 	end
 end
