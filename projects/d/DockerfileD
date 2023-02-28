@@ -1,8 +1,15 @@
+#  https://dlang.org/install.html
+#https://dlang.org/dmd-osx.html#switches
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install zsh -y
+RUN apt-get update && \
+    apt-get install -y curl xz-utils
 
-COPY hello_world.d .
+#RUN mkdir -p /dlang && wget https://dlang.org/install.sh -O /dlang/install.sh
+RUN curl -fsS https://dlang.org/install.sh | bash -s dmd
+#RUN source ~/dlang/dmd-2.102.1/activate
+
+COPY main.d .
 
 CMD ["tail", "-f", "/dev/null"]
 
