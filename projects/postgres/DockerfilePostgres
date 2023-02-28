@@ -2,4 +2,10 @@ FROM postgres:bullseye
 
 RUN apt-get update -y
 
+ENV POSTGRES_DB="hello_world"
+ENV POSTGRES_USER="postgres"
+ENV POSTGRES_PASSWORD="wiggle"
+
+#RUN echo "SELECT 'Hello, World!' AS hello_message;" | psql postgresql://postgres:wiggle@localhost:5432/hello_world
+
 CMD ["tail", "-f", "/dev/null"]
