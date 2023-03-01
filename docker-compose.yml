@@ -55,11 +55,11 @@ services:
       context: projects/befunge
       dockerfile: DockerfileBefunge
 
-  bird:
-    container_name: hello_world_bird
-    build:
-      context: projects/bird
-      dockerfile: DockerfileBird
+#  bird:
+#    container_name: hello_world_bird
+#    build:
+#      context: projects/bird
+#      dockerfile: DockerfileBird
 
   c:
     container_name: hello_world_c
@@ -90,6 +90,12 @@ services:
     build:
       context: projects/cobol
       dockerfile: DockerfileCobol
+
+#  coffeescript:
+#    container_name: hello_world_coffeescript
+#    build:
+#      context: projects/coffeescript
+#      dockerfile: DockerfileCoffeescript
 
   cpp:
     container_name: hello_world_cpp
