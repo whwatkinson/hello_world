@@ -91,11 +91,11 @@ services:
       context: projects/cobol
       dockerfile: DockerfileCobol
 
-#  coffeescript:
-#    container_name: hello_world_coffeescript
-#    build:
-#      context: projects/coffeescript
-#      dockerfile: DockerfileCoffeescript
+  coffeescript:
+    container_name: hello_world_coffeescript
+    build:
+      context: projects/coffeescript
+      dockerfile: DockerfileCoffeescript
 
   cpp:
     container_name: hello_world_cpp
