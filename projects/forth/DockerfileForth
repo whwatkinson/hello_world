@@ -1,8 +1,11 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
 
-RUN apt-get update -y && apt-get install -y git make
+# https://stackoverflow.com/questions/33458202/forth-interpreted-or-compiled
 
-RUN git clone https://github.com/philburk/pforth.git
+FROM ubuntu:20.04
+
+
+RUN apt update -y && apt-get install -y gforth
 
 COPY hello_world.fth .
 
