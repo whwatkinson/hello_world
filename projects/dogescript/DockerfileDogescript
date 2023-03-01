@@ -1,13 +1,10 @@
-#  https://www.npmjs.com/package/dogescript
-
 FROM node:19.4.0
 
 RUN npm install -g npm@latest \
     && npm install dogescript -g
 
-COPY src/index.ts .
+COPY hello_world.djs .
 
-RUN tsc index.ts
+RUN dogescript hello_world.djs > hello_world.js
 
-CMD ["tail", "-f", "/dev/null"]
-#CMD ["node", "index.js"]
+CMD ["node", "hello_world.js"]
