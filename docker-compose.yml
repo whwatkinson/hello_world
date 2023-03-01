@@ -115,11 +115,11 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
-  cypher:
-    container_name: hello_world_cypher
-    build:
-      context: projects/cypher
-      dockerfile: DockerfileCypher
+#  cypher:
+#    container_name: hello_world_cypher
+#    build:
+#      context: projects/cypher
+#      dockerfile: DockerfileCypher
 
 #  d:
 #    container_name: hello_world_d
@@ -133,11 +133,11 @@ services:
       context: projects/dart
       dockerfile: DockerfileDart
 
-  delphi:
-    container_name: hello_World_delphi
-    build:
-      context: projects/delphi
-      dockerfile: DockerfileDelphi
+#  delphi:
+#    container_name: hello_World_delphi
+#    build:
+#      context: projects/delphi
+#      dockerfile: DockerfileDelphi
 
   dogescript:
     container_name: hello_world_dogescript
@@ -162,6 +162,12 @@ services:
     build:
       context: projects/erlang
       dockerfile: DockerfileErlang
+
+#  fennel:
+#    container_name: hello_world_fennel
+#    build:
+#      context: projects/fennel
+#      dockerfile: DockerfileFennel
 
 #  forth:
 #    container_name: hello_world_forth
