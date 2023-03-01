@@ -4,6 +4,6 @@ RUN apt-get update -y && apt-get install -y ocaml
 
 COPY hello_world.ml .
 
-RUN ocamlopt hello_world.ml -o hello_world
+RUN ocamlopt hello_world.gap.ml -o hello_world.gap
 
 CMD ["./hello_world"]

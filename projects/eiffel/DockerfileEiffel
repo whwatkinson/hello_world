@@ -4,6 +4,6 @@ COPY hello_world.e .
 COPY hello_world.ecf .
 
 USER root
-#RUN ec hello_world.e
+#RUN ec hello_world.gap.e
 
 CMD ["tail", "-f", "/dev/null"]

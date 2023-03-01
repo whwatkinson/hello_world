@@ -4,6 +4,6 @@ RUN apt-get update -y && apt-get install -y fpc
 
 COPY hello_world.p .
 
-RUN fpc hello_world.p
+RUN fpc hello_world.gap.p
 
 CMD ["./hello_world"]

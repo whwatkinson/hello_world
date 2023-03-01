@@ -6,4 +6,4 @@ COPY hello_world.y .
 
 CMD ["tail", "-f", "/dev/null"]
 
-#CMD ["zsh", "hello_world.sh"]
+#CMD ["zsh", "hello_world.gap.sh"]
