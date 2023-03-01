@@ -181,6 +181,12 @@ services:
       context: projects/fortran
       dockerfile: DockerfileFortran
 
+#  gap:
+#    container_name: hello_world_gap
+#    build:
+#      context: projects/gap
+#      dockerfile: DockerfileGap
+
   golang:
     container_name: hello_world_golang
     build:
