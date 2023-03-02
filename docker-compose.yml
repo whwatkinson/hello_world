@@ -385,6 +385,12 @@ services:
       context: projects/raku
       dockerfile: DockerfileRaku
 
+#  red:
+#    container_name: hello_world_red
+#    build:
+#      context: projects/red
+#      dockerfile: DockerfileRed
+
   ruby:
     container_name: hello_world_ruby
     build:
