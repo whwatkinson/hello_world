@@ -295,6 +295,12 @@ services:
 #      context: projects/modula
 #      dockerfile: DockerfileModula
 
+#  nial:
+#    container_name: hello_world_nial
+#    build:
+#      context: projects/nial
+#      dockerfile: DockerfileNial
+
   ocaml:
     container_name: hello_world_ocaml
     build:
