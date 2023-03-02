@@ -415,6 +415,12 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+#  self:
+#    container_name: hello_world_self
+#    build:
+#      context: projects/self
+#      dockerfile: DockerfileSelf
+
   shell:
     container_name: hello_world_shell
     build:
