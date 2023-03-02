@@ -163,6 +163,12 @@ services:
 #      context: projects/eiffel
 #      dockerfile: DockerfileEiffel
 
+#  elixir:
+#    container_name: hello_world_elixir
+#    build:
+#      context: projects/elixir
+#      dockerfile: DockerfileElixir
+
 #  elm:
 #    container_name: hellow_world_elm
 #    build:
