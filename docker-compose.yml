@@ -253,6 +253,12 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
+#  lfe:
+#    container_name: hello_world_lfe
+#    build:
+#      context: projects/lfe
+#      dockerfile: DockerfileLfe
+
   lisp:
     container_name: hello_world_lisp
     build:
