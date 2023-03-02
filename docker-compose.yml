@@ -265,6 +265,12 @@ services:
       context: projects/ocaml
       dockerfile: DockerfileOcaml
 
+#  oxygene:
+#    container_name: hello_world_oxygene
+#    build:
+#      context: projects/oxygene
+#      dockerfile: DockerfileOxygene
+
 #  parasail:
 #    container_name: hello_world_parasail
 #    build:
