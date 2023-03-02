@@ -25,6 +25,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  applescript:
+    container_name: hello_world_applescript
+    build:
+      context: projects/applescript
+      dockerfile: DockerfileApplescript
+
 #  b:
 #    container_name: hello_world_b
 #    build:
