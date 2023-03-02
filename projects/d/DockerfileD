@@ -13,4 +13,4 @@ COPY main.d .
 
 CMD ["tail", "-f", "/dev/null"]
 
-#CMD ["zsh", "hello_world.gap.sh"]
+#CMD ["zsh", "hello_world.sh"]

@@ -5,5 +5,4 @@ RUN apt-get update -y && \
 
 COPY hello_world.bsh .
 
-
 CMD ["bsh", "hello_world.bsh"]

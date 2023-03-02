@@ -13,6 +13,6 @@ RUN apt-get install -y temurin-17-jdk
 COPY hello_world.clj .
 
 
-#CMD ["bsh", "hello_world.gap.bsh"]
+#CMD ["bsh", "hello_world.bsh"]
 
 CMD ["tail", "-f", "/dev/null"]

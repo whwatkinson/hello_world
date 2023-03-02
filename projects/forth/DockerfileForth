@@ -8,6 +8,6 @@ RUN apt update -y && apt-get install -y gforth
 
 COPY hello_world.fth .
 
-#CMD ["gforth", "hello_world.gap.fs"]
+#CMD ["gforth", "hello_world.fs"]
 
 CMD ["tail", "-f", "/dev/null"]
