@@ -4,6 +4,4 @@ RUN apt-get update -y
 
 COPY hello_world .
 
-
-
 CMD ["tail", "-f", "/dev/null"]
