@@ -199,6 +199,12 @@ services:
       context: projects/haskell
       dockerfile: DockerfileHaskell
 
+#  idris:
+#    container_name: hello_world_idris
+#    build:
+#      context: projects/idris
+#      dockerfile: DockerfileIdris
+
 #  jade:
 #    container_name: hello_world_jade
 #    build:
