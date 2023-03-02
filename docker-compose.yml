@@ -385,6 +385,12 @@ services:
       context: projects/raku
       dockerfile: DockerfileRaku
 
+#  rebol:
+#    container_name: hello_world_rebol
+#    build:
+#      context: projects/rebol
+#      dockerfile: DockerfileRebol
+
 #  red:
 #    container_name: hello_world_red
 #    build:
