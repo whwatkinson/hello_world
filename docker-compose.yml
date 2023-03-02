@@ -253,6 +253,12 @@ services:
 #      context: projects/matlab
 #      dockerfile: DockerfileMatlab
 
+#  modula:
+#    container_name: hello_world_modla
+#    build:
+#      context: projects/modula
+#      dockerfile: DockerfileModula
+
   ocaml:
     container_name: hello_world_ocaml
     build:
