@@ -259,6 +259,12 @@ services:
       context: projects/ocaml
       dockerfile: DockerfileOcaml
 
+#  parasail:
+#    container_name: hello_world_parasail
+#    build:
+#      context: projects/parasail
+#      dockerfile: DockerfileParasail
+
   pascal:
     container_name: hello_world_pascal
     build:
@@ -379,11 +385,11 @@ services:
 #      context: projects/y
 #      dockerfile: DockerfileY
 
-  zig:
-    container_name: hello_world_zig
-    build:
-      context: projects/zig
-      dockerfile: DockerfileZig
+#  zig:
+#    container_name: hello_world_zig
+#    build:
+#      context: projects/zig
+#      dockerfile: DockerfileZig
 
   zsh:
     container_name: hello_world_zsh
