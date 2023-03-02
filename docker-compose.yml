@@ -373,6 +373,12 @@ services:
       context: projects/shell
       dockerfile: DockerfileShell
 
+#  smalltalk:
+#    container_name: hello_world_smalltalk
+#    build:
+#      context: projects/smalltalk
+#      dockerfile: DockerfileSmalltalk
+
   swift:
     container_name: hello_world_swift
     build:
