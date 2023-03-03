@@ -1,0 +1,15 @@
+#https://dev.to/blag/5-old-programming-languages-you-should-know-about-3ofe
+
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y wget m4 make
+
+
+RUN wget ftp://ftp.ultimate.com/snobol/snobol4-1.5.tar.gz
+RUN tar –zxvf snobol4-1.5.tar.gz && cd snobol4-1.5
+RUN make install
+
+COPY hello_world .
+
+CMD ["tail", "-f", "/dev/null"]
