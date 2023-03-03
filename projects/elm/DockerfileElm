@@ -4,7 +4,8 @@
 
 FROM node:19.4.0
 
-RUN npm install -g elm && npm install -g elm-run
+RUN npm install -g elm && \
+    npm install -g elm-run
 
 
 COPY Main.elm .

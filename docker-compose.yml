@@ -25,11 +25,11 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
-  apl:
-    container_name: hello_world_apl
-    build:
-      context: projects/apl
-      dockerfile: DockerfileApl
+#  apl:
+#    container_name: hello_world_apl
+#    build:
+#      context: projects/apl
+#      dockerfile: DockerfileApl
 
 #  applescript:
 #    container_name: hello_world_applescript
@@ -211,11 +211,11 @@ services:
       context: projects/fortran
       dockerfile: DockerfileFortran
 
-#  gap:
-#    container_name: hello_world_gap
-#    build:
-#      context: projects/gap
-#      dockerfile: DockerfileGap
+  gap:
+    container_name: hello_world_gap
+    build:
+      context: projects/gap
+      dockerfile: DockerfileGap
 
   golang:
     container_name: hello_world_golang
@@ -409,11 +409,11 @@ services:
 #      context: projects/rebol
 #      dockerfile: DockerfileRebol
 
-#  red:
-#    container_name: hello_world_red
-#    build:
-#      context: projects/red
-#      dockerfile: DockerfileRed
+  red:
+    container_name: hello_world_red
+    build:
+      context: projects/red
+      dockerfile: DockerfileRed
 
   ruby:
     container_name: hello_world_ruby

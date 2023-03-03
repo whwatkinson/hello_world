@@ -1,2 +1,5 @@
-Red [Title: "Simple hello world script"]
-print "Hello World!"
+ Red [
+     Title: "Simple hello world script"
+ ]
+
+ print "Hello, World!"

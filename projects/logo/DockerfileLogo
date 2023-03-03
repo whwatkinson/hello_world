@@ -1,6 +1,7 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && apt-get install -y kturtle
+RUN apt-get update -y && \
+    apt-get install -y kturtle
 
 COPY hello_world.lg .
 

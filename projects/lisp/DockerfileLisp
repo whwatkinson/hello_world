@@ -1,6 +1,7 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && apt-get install -y sbcl
+RUN apt-get update -y && \
+    apt-get install -y sbcl
 
 COPY hello_world.lisp .
 

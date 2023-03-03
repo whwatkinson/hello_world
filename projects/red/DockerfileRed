@@ -1,7 +1,12 @@
-FROM ubuntu:22.04
+# https://github.com/red/red
+#FROM ubuntu:22.04
 
-RUN apt-get update -y
+FROM kskarthik/redlang:0.6.4
+
+ENV PATH="/usr/local/bin":${PATH}
 
 COPY hello_world.red .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN /usr/local/bin/red -c hello_world.red
+
+ENTRYPOINT ["./hello_world"]

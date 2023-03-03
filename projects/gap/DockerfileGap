@@ -5,6 +5,4 @@ RUN apt-get update -y && \
 
 COPY hello_world.gap .
 
-#CMD ["tail", "-f", "/dev/null"]
 CMD ["gap", "-q", "hello_world.gap"]
-# Not exiting
