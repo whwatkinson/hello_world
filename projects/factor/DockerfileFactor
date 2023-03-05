@@ -2,6 +2,9 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
+COPY factor-linux-x86-64-0.98.tar.gz .
+RUN tar -zvxf factor-linux-x86-64-0.98.tar.gz
+
 COPY hello_world.factor .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["./factor/factor", "hello_world.factor"]

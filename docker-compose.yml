@@ -187,11 +187,11 @@ services:
       context: projects/erlang
       dockerfile: DockerfileErlang
 
-#  factor:
-#    container_name: hello_world_factor
-#    build:
-#      context: projects/factor
-#      dockerfile: DockerfileFactor
+  factor:
+    container_name: hello_world_factor
+    build:
+      context: projects/factor
+      dockerfile: DockerfileFactor
 
   fennel:
     container_name: hello_world_fennel
