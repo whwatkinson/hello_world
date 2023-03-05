@@ -2,6 +2,10 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
+COPY opendylan-2022.1-x86_64-linux.tar.bz2 .
+
+RUN
+
 COPY hello_world.dl .
 
 CMD ["tail", "-f", "/dev/null"]
