@@ -157,11 +157,11 @@ services:
       context: projects/dogescript
       dockerfile: DockerfileDogescript
 
-#  dylan:
-#    container_name: hello_world_dylan
-#    build:
-#      context: projects/dylan
-#      dockerfile: DockerfileDylan
+  dylan:
+    container_name: hello_world_dylan
+    build:
+      context: projects/dylan
+      dockerfile: DockerfileDylan
 
 #  eiffel:
 #    container_name: hello_world_eiffel
