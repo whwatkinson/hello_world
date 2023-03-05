@@ -451,11 +451,11 @@ services:
 #      context: projects/smalltalk
 #      dockerfile: DockerfileSmalltalk
 
-#  snobol:
-#    container_name: hello_world_snobol
-#    build:
-#      context: projects/snobol
-#      dockerfile: DockerfileSnobol
+  snobol:
+    container_name: hello_world_snobol
+    build:
+      context: projects/snobol
+      dockerfile: DockerfileSnobol
 
   swift:
     container_name: hello_world_swift
