@@ -193,11 +193,11 @@ services:
 #      context: projects/factor
 #      dockerfile: DockerfileFactor
 
-#  fennel:
-#    container_name: hello_world_fennel
-#    build:
-#      context: projects/fennel
-#      dockerfile: DockerfileFennel
+  fennel:
+    container_name: hello_world_fennel
+    build:
+      context: projects/fennel
+      dockerfile: DockerfileFennel
 
 #  forth:
 #    container_name: hello_world_forth
