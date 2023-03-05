@@ -1,5 +1,3 @@
-# https://fennel-lang.org/setup
-
 FROM ubuntu:22.04
 
 RUN apt-get update -y
