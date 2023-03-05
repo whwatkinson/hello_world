@@ -445,11 +445,11 @@ services:
       context: projects/shell
       dockerfile: DockerfileShell
 
-#  smalltalk:
-#    container_name: hello_world_smalltalk
-#    build:
-#      context: projects/smalltalk
-#      dockerfile: DockerfileSmalltalk
+  smalltalk:
+    container_name: hello_world_smalltalk
+    build:
+      context: projects/smalltalk
+      dockerfile: DockerfileSmalltalk
 
   snobol:
     container_name: hello_world_snobol
