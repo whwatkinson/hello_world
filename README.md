@@ -39,6 +39,7 @@
 - Python 3
 - R
 - Raku
+- Rebol
 - Red
 - Ruby
 - Scala

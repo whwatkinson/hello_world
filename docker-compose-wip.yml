@@ -191,11 +191,7 @@ services:
       context: projects/racket
       dockerfile: DockerfileRacket
 
-  rebol:
-    container_name: hello_world_rebol
-    build:
-      context: projects/rebol
-      dockerfile: DockerfileRebol
+
 
   self:
     container_name: hello_world_self
