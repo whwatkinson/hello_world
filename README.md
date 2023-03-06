@@ -30,6 +30,7 @@
 - Julia
 - Kotlin
 - Lisp
+- Lua
 - Nial
 - Ocaml
 - Pascal

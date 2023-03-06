@@ -127,11 +127,7 @@ services:
       context: projects/logo
       dockerfile: DockerfileLogo
 
-  lua:
-    container_name: hello_world_lua
-    build:
-      context: projects/lua
-      dockerfile: DockerfileLua
+
 
   matlab:
     container_name: hello_world_matlab

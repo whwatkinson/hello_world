@@ -163,6 +163,12 @@ services:
       context: projects/lisp
       dockerfile: DockerfileLisp
 
+  lua:
+    container_name: hello_world_lua
+    build:
+      context: projects/lua
+      dockerfile: DockerfileLua
+
   nial:
     container_name: hello_world_nial
     build:

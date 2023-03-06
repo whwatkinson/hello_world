@@ -1,11 +1,14 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install make -y
+    apt-get install make curl gcc -y
 
+RUN curl -R -O http://www.lua.org/ftp/lua-5.4.4.tar.gz
 RUN tar zxf lua-5.4.4.tar.gz
 RUN cd lua-5.4.4 && make all test
 
 COPY hello_world.lua .
 
-CMD ["tail", "-f", "/dev/null"]
+ENV PATH=/lua-5.4.4/src:$PATH
+
+CMD ["lua", "hello_world.lua"]
