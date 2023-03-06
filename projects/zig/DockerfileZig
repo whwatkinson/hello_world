@@ -7,10 +7,10 @@ COPY zig-linux-x86_64-0.10.1.tar.xz .
 
 RUN tar -xJf zig-linux-x86_64-0.10.1.tar.xz
 
-ENV PATH=/zig-linux-x86_64-0.10.1/zig:$PATH
+ENV PATH=/zig-linux-x86_64-0.10.1:$PATH
 
 COPY hello_world.zig .
 
-RUN ./zig-linux-x86_64-0.10.1/zig build-exe hello_world.zig
+RUN zig build-exe hello_world.zig
 
 CMD ["./hello_world"]
