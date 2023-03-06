@@ -1,6 +1,10 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install make -y
+
+RUN tar zxf lua-5.4.4.tar.gz
+RUN cd lua-5.4.4 && make all test
 
 COPY hello_world.lua .
 
