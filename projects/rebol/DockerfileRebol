@@ -7,4 +7,6 @@ RUN tar vxf rebol-core-278-4-10.tar.gz
 
 COPY hello_world.r .
 
-CMD ["rebol-core/rebol", "-q", "hello_world.r"]
+ENV PATH=/rebol-core:$PATH
+
+CMD ["rebol", "-q", "hello_world.r"]
