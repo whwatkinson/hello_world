@@ -145,11 +145,7 @@ services:
       context: projects/modula
       dockerfile: DockerfileModula
 
-  nial:
-    container_name: hello_world_nial
-    build:
-      context: projects/nial
-      dockerfile: DockerfileNial
+
 
   oxygene:
     container_name: hello_world_oxygene
