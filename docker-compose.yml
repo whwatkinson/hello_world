@@ -7,41 +7,11 @@ version: "3.9"
 
 services:
 
-#  abc:
-#    container_name: hello_world_abc
-#    build:
-#      context: projects/abc
-#      dockerfile: DockerfileAbc
-
-#  ada:
-#    container_name: hello_world_ada
-#    build:
-#      context: projects/ada
-#      dockerfile: DockerfileAda
-
   algol68:
     container_name: hello_world_algol68
     build:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
-
-#  apl:
-#    container_name: hello_world_apl
-#    build:
-#      context: projects/apl
-#      dockerfile: DockerfileApl
-
-#  applescript:
-#    container_name: hello_world_applescript
-#    build:
-#      context: projects/applescript
-#      dockerfile: DockerfileApplescript
-
-#  b:
-#    container_name: hello_world_b
-#    build:
-#      context: projects/b
-#      dockerfile: DockerfileB
 
   bash:
     container_name: hello_world_bash
@@ -67,35 +37,11 @@ services:
       context: projects/befunge
       dockerfile: DockerfileBefunge
 
-#  bird:
-#    container_name: hello_world_bird
-#    build:
-#      context: projects/bird
-#      dockerfile: DockerfileBird
-
   c:
     container_name: hello_world_c
     build:
       context: projects/c
       dockerfile: DockerfileC
-
-#  carbon:
-#    container_name: hello_world_carbon
-#    build:
-#      context: projects/carbon
-#      dockerfile: DockerfileCarbon
-
-#  ceylon:
-#    container_name: hello_world_ceylon
-#    build:
-#      context: projects/ceylon
-#      dockerfile: DockerfileCeylon
-
-#  clojure:
-#    container_name: hello_world_clojure
-#    build:
-#      context: projects/clojure
-#      dockerfile: DockerfileClojure
 
   cobol:
     container_name: hello_world_cobol
@@ -127,29 +73,11 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
-#  cypher:
-#    container_name: hello_world_cypher
-#    build:
-#      context: projects/cypher
-#      dockerfile: DockerfileCypher
-
-#  d:
-#    container_name: hello_world_d
-#    build:
-#      context: projects/d
-#      dockerfile: DockerfileD
-
   dart:
     container_name: hello_world_dart
     build:
       context: projects/dart
       dockerfile: DockerfileDart
-
-#  delphi:
-#    container_name: hello_World_delphi
-#    build:
-#      context: projects/delphi
-#      dockerfile: DockerfileDelphi
 
   dogescript:
     container_name: hello_world_dogescript
@@ -162,24 +90,6 @@ services:
     build:
       context: projects/dylan
       dockerfile: DockerfileDylan
-
-#  eiffel:
-#    container_name: hello_world_eiffel
-#    build:
-#      context: projects/eiffel
-#      dockerfile: DockerfileEiffel
-
-#  elixir:
-#    container_name: hello_world_elixir
-#    build:
-#      context: projects/elixir
-#      dockerfile: DockerfileElixir
-
-#  elm:
-#    container_name: hellow_world_elm
-#    build:
-#      context: projects/elm
-#      dockerfile: DockerfileElm
 
   erlang:
     container_name: hello_world_erlang
@@ -198,12 +108,6 @@ services:
     build:
       context: projects/fennel
       dockerfile: DockerfileFennel
-
-#  forth:
-#    container_name: hello_world_forth
-#    build:
-#      context: projects/forth
-#      dockerfile: DockerfileForth
 
   fortran:
     container_name: hello_world_fortran
@@ -229,18 +133,6 @@ services:
       context: projects/haskell
       dockerfile: DockerfileHaskell
 
-#  idris:
-#    container_name: hello_world_idris
-#    build:
-#      context: projects/idris
-#      dockerfile: DockerfileIdris
-
-#  jade:
-#    container_name: hello_world_jade
-#    build:
-#      context: projects/jade
-#      dockerfile: DockerfileJade
-
   java:
     container_name: hello_world_java
     build:
@@ -265,47 +157,12 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
-#  lfe:
-#    container_name: hello_world_lfe
-#    build:
-#      context: projects/lfe
-#      dockerfile: DockerfileLfe
-
   lisp:
     container_name: hello_world_lisp
     build:
       context: projects/lisp
       dockerfile: DockerfileLisp
 
-#  logo:
-#    container_name: hello_world_logo
-#    build:
-#      context: projects/logo
-#      dockerfile: DockerfileLogo
-
-#  lua:
-#    container_name: hello_world_lua
-#    build:
-#      context: projects/lua
-#      dockerfile: DockerfileLua
-
-#  matlab:
-#    container_name: hello_world_matlab
-#    build:
-#      context: projects/matlab
-#      dockerfile: DockerfileMatlab
-
-#  modula:
-#    container_name: hello_world_modla
-#    build:
-#      context: projects/modula
-#      dockerfile: DockerfileModula
-
-#  nial:
-#    container_name: hello_world_nial
-#    build:
-#      context: projects/nial
-#      dockerfile: DockerfileNial
 
   ocaml:
     container_name: hello_world_ocaml
@@ -313,17 +170,6 @@ services:
       context: projects/ocaml
       dockerfile: DockerfileOcaml
 
-#  oxygene:
-#    container_name: hello_world_oxygene
-#    build:
-#      context: projects/oxygene
-#      dockerfile: DockerfileOxygene
-
-#  parasail:
-#    container_name: hello_world_parasail
-#    build:
-#      context: projects/parasail
-#      dockerfile: DockerfileParasail
 
   pascal:
     container_name: hello_world_pascal
@@ -343,35 +189,11 @@ services:
       context: projects/php
       dockerfile: DockerfilePhp
 
-#  postgres:
-#    container_name: hello_world_postgres
-#    image: postgres:bullseye
-#    user: postgres
-#    environment:
-#      POSTGRES_DB: postgress
-#      POSTGRES_USER: postgress
-#      POSTGRES_PASSWORD: postgress
-#    command:
-#      [
-#        "echo",
-#        "\"SELECT 'Hello, World!' AS hello_message;\"",
-#        "|",
-#        "psql",
-#        "postgresql://postgres:postgress@localhost:5432/postgres",
-#      ]
-
-
   powershell:
     container_name: hello_world_powershell
     build:
       context: projects/powershell
       dockerfile: DockerfilePowershell
-
-#  prolog:
-#    container_name: hello_world_prolog
-#    build:
-#      context: projects/prolog
-#      dockerfile: DockerfileProlog
 
   python2:
     container_name: hello_world_python2
@@ -391,23 +213,11 @@ services:
       context: projects/r
       dockerfile: DockerfileR
 
-#  racket:
-#    container_name: hello_world_racket
-#    build:
-#      context: projects/racket
-#      dockerfile: DockerfileRacket
-
   raku:
     container_name: hello_world_raku
     build:
       context: projects/raku
       dockerfile: DockerfileRaku
-
-#  rebol:
-#    container_name: hello_world_rebol
-#    build:
-#      context: projects/rebol
-#      dockerfile: DockerfileRebol
 
   red:
     container_name: hello_world_red
@@ -433,12 +243,6 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
-#  self:
-#    container_name: hello_world_self
-#    build:
-#      context: projects/self
-#      dockerfile: DockerfileSelf
-
   shell:
     container_name: hello_world_shell
     build:
@@ -463,29 +267,11 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
-#  terraform:
-#    container_name: hello_world_terraform
-#    build:
-#      context: projects/terraform
-#      dockerfile: DockerfileTerraform
-
   typescript:
     container_name: hello_world_typescript
     build:
       context: projects/typescript
       dockerfile: DockerfileTs
-
-#  y:
-#    container_name: hello_world_y
-#    build:
-#      context: projects/y
-#      dockerfile: DockerfileY
-
-#  zig:
-#    container_name: hello_world_zig
-#    build:
-#      context: projects/zig
-#      dockerfile: DockerfileZig
 
   zsh:
     container_name: hello_world_zsh
