@@ -1,0 +1,17 @@
+# https://jaketrent.com/post/run-elm-in-terminal/
+# https://guide.elm-lang.org/
+
+
+FROM node:19.4.0
+
+RUN npm install -g elm && \
+    npm install -g elm-run
+
+
+COPY Main.elm .
+
+RUN echo "Y" | elm init
+
+#RUN elm make src/Main.elm --optimize --output=elm.js
+
+CMD ["tail", "-f", "/dev/null"]

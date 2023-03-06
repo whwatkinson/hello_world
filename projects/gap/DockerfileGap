@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y gap
+
+COPY hello_world.gap .
+
+CMD ["gap", "-q", "hello_world.gap"]

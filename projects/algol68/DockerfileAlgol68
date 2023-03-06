@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y algol68g
+
+COPY hello_world.algol68 .
+
+CMD ["a68g", "hello_world.algol68"]

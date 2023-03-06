@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y git curl gnupg clang
+
+RUN git clone https://github.com/carbon-language/carbon-lang
+
+RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel.gpg
+RUN mv bazel.gpg /etc/apt/trusted.gpg.d/
+RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list
+
+RUN apt-get update -y && apt-get install -y bazel
+RUN apt-get update -y && apt-get full-upgrade -y
+
+COPY hello_world.carbon .
+
+CMD ["tail", "-f", "/dev/null"]

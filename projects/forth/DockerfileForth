@@ -1,0 +1,14 @@
+#FROM ubuntu:22.04
+
+# https://stackoverflow.com/questions/33458202/forth-interpreted-or-compiled
+
+FROM ubuntu:20.04
+
+RUN apt update -y && \
+    apt-get install -y gforth
+
+COPY hello_world.fth .
+
+#CMD ["gforth", "hello_world.fs"]
+
+CMD ["tail", "-f", "/dev/null"]

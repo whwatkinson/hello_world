@@ -1,0 +1,5 @@
+FROM mathworks/matlab:r2020b
+
+COPY hello_world.m .
+
+CMD ["tail", "-f", "/dev/null"]

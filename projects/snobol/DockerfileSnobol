@@ -1,0 +1,13 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y m4 make gcc
+
+COPY snobol4-2.3.1.tar.gz .
+
+RUN tar -zxvf snobol4-2.3.1.tar.gz && cd snobol4-2.3.1
+RUN cd snobol4-2.3.1 && make install
+
+COPY hello_world.sno .
+
+CMD ["snobol4-2.3.1/snobol4", "hello_world.sno"]

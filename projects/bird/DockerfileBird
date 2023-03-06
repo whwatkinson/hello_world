@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y bird-bgp
+
+COPY hello_world.bird .
+
+CMD ["tail", "-f", "/dev/null"]

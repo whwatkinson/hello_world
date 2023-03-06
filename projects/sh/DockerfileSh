@@ -1,5 +1,0 @@
-FROM golang:1.17-bullseye
-
-COPY hello_world.sh .
-
-CMD ["sh", "hello_world.sh"]

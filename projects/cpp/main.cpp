@@ -1,11 +1,8 @@
-#include <stdio.h>
-
-void hello_world()
-{
-	printf("Hello, World!\n");
-}
+#include <iostream>
+using namespace std;
 
 int main()
 {
-	hello_world();
+    cout << "Hello, World!\n";
+    return 0;
 }

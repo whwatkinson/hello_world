@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y scala
+
+COPY HelloWorld.scala .
+
+RUN scalac HelloWorld.scala
+
+CMD ["scala", "HelloWorld"]
