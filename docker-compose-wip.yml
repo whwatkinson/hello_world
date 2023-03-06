@@ -1,0 +1,223 @@
+# As noted in the Docker best practices "each container should have only one concern
+# CMD ["tail", "-f", "/dev/null"]
+# https://learnxinyminutes.com/
+
+
+version: "3.9"
+
+services:
+
+  abc:
+    container_name: hello_world_abc
+    build:
+      context: projects/abc
+      dockerfile: DockerfileAbc
+
+  ada:
+    container_name: hello_world_ada
+    build:
+      context: projects/ada
+      dockerfile: DockerfileAda
+
+  apl:
+    container_name: hello_world_apl
+    build:
+      context: projects/apl
+      dockerfile: DockerfileApl
+
+  applescript:
+    container_name: hello_world_applescript
+    build:
+      context: projects/applescript
+      dockerfile: DockerfileApplescript
+
+  b:
+    container_name: hello_world_b
+    build:
+      context: projects/b
+      dockerfile: DockerfileB
+
+  bird:
+    container_name: hello_world_bird
+    build:
+      context: projects/bird
+      dockerfile: DockerfileBird
+
+
+  carbon:
+    container_name: hello_world_carbon
+    build:
+      context: projects/carbon
+      dockerfile: DockerfileCarbon
+
+  ceylon:
+    container_name: hello_world_ceylon
+    build:
+      context: projects/ceylon
+      dockerfile: DockerfileCeylon
+
+  clojure:
+    container_name: hello_world_clojure
+    build:
+      context: projects/clojure
+      dockerfile: DockerfileClojure
+
+  cypher:
+    container_name: hello_world_cypher
+    build:
+      context: projects/cypher
+      dockerfile: DockerfileCypher
+
+  d:
+    container_name: hello_world_d
+    build:
+      context: projects/d
+      dockerfile: DockerfileD
+
+  delphi:
+    container_name: hello_World_delphi
+    build:
+      context: projects/delphi
+      dockerfile: DockerfileDelphi
+
+  eiffel:
+    container_name: hello_world_eiffel
+    build:
+      context: projects/eiffel
+      dockerfile: DockerfileEiffel
+
+  elixir:
+    container_name: hello_world_elixir
+    build:
+      context: projects/elixir
+      dockerfile: DockerfileElixir
+
+  elm:
+    container_name: hellow_world_elm
+    build:
+      context: projects/elm
+      dockerfile: DockerfileElm
+
+  forth:
+    container_name: hello_world_forth
+    build:
+      context: projects/forth
+      dockerfile: DockerfileForth
+
+  idris:
+    container_name: hello_world_idris
+    build:
+      context: projects/idris
+      dockerfile: DockerfileIdris
+
+  jade:
+    container_name: hello_world_jade
+    build:
+      context: projects/jade
+      dockerfile: DockerfileJade
+
+  lfe:
+    container_name: hello_world_lfe
+    build:
+      context: projects/lfe
+      dockerfile: DockerfileLfe
+
+  logo:
+    container_name: hello_world_logo
+    build:
+      context: projects/logo
+      dockerfile: DockerfileLogo
+
+  lua:
+    container_name: hello_world_lua
+    build:
+      context: projects/lua
+      dockerfile: DockerfileLua
+
+  matlab:
+    container_name: hello_world_matlab
+    build:
+      context: projects/matlab
+      dockerfile: DockerfileMatlab
+
+  modula:
+    container_name: hello_world_modla
+    build:
+      context: projects/modula
+      dockerfile: DockerfileModula
+
+  nial:
+    container_name: hello_world_nial
+    build:
+      context: projects/nial
+      dockerfile: DockerfileNial
+
+  oxygene:
+    container_name: hello_world_oxygene
+    build:
+      context: projects/oxygene
+      dockerfile: DockerfileOxygene
+
+  parasail:
+    container_name: hello_world_parasail
+    build:
+      context: projects/parasail
+      dockerfile: DockerfileParasail
+
+  postgres:
+    container_name: hello_world_postgres
+    image: postgres:bullseye
+    user: postgres
+    environment:
+      POSTGRES_DB: postgress
+      POSTGRES_USER: postgress
+      POSTGRES_PASSWORD: postgress
+    command:
+      [
+        "echo",
+        "\"SELECT 'Hello, World!' AS hello_message;\"",
+        "|",
+        "psql",
+        "postgresql://postgres:postgress@localhost:5432/postgres",
+      ]
+
+  prolog:
+    container_name: hello_world_prolog
+    build:
+      context: projects/prolog
+      dockerfile: DockerfileProlog
+  racket:
+    container_name: hello_world_racket
+    build:
+      context: projects/racket
+      dockerfile: DockerfileRacket
+
+  rebol:
+    container_name: hello_world_rebol
+    build:
+      context: projects/rebol
+      dockerfile: DockerfileRebol
+
+  self:
+    container_name: hello_world_self
+    build:
+      context: projects/self
+      dockerfile: DockerfileSelf
+
+  terraform:
+    container_name: hello_world_terraform
+    build:
+      context: projects/terraform
+      dockerfile: DockerfileTerraform
+
+  y:
+    container_name: hello_world_y
+    build:
+      context: projects/y
+      dockerfile: DockerfileY
+
+  zig:
+    container_name: hello_world_zig
+    build:
+      context: projects/zig
+      dockerfile: DockerfileZig
