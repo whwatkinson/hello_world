@@ -5,3 +5,5 @@ RUN apt-get update -y
 COPY hello_world.self .
 
 CMD ["tail", "-f", "/dev/null"]
+
+#https://selflanguage.org/
