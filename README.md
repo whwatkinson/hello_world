@@ -19,6 +19,7 @@
 - DogeScript
 - Dylan
 - Erlang
+- Elixir
 - Factor
 - Fennel
 - Fortran

@@ -97,6 +97,12 @@ services:
       context: projects/erlang
       dockerfile: DockerfileErlang
 
+  elixir:
+    container_name: hello_world_elixir
+    build:
+      context: projects/elixir
+      dockerfile: DockerfileElixir
+
   factor:
     container_name: hello_world_factor
     build:
