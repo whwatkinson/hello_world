@@ -185,12 +185,6 @@ services:
     build:
       context: projects/prolog
       dockerfile: DockerfileProlog
-  racket:
-    container_name: hello_world_racket
-    build:
-      context: projects/racket
-      dockerfile: DockerfileRacket
-
 
 
   self:

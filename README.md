@@ -38,6 +38,7 @@
 - Python 2
 - Python 3
 - R
+- Racket
 - Raku
 - Rebol
 - Red

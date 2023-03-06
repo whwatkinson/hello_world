@@ -213,6 +213,12 @@ services:
       context: projects/r
       dockerfile: DockerfileR
 
+  racket:
+    container_name: hello_world_racket
+    build:
+      context: projects/racket
+      dockerfile: DockerfileRacket
+
   raku:
     container_name: hello_world_raku
     build:
