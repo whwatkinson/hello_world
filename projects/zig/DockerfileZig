@@ -1,15 +1,16 @@
-#https://ziglang.org/learn/getting-started/
-
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install xz-utils make snap
+    apt-get install xz-utils make
 
-COPY zig-0.10.1.tar.xz .
+COPY zig-linux-x86_64-0.10.1.tar.xz .
 
-RUN tar xf zig-0.10.1.tar.xz
+RUN tar -xJf zig-linux-x86_64-0.10.1.tar.xz
 
+ENV PATH=/zig-linux-x86_64-0.10.1/zig:$PATH
 
 COPY hello_world.zig .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN ./zig-linux-x86_64-0.10.1/zig build-exe hello_world.zig
+
+CMD ["./hello_world"]

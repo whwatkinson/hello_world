@@ -197,8 +197,4 @@ services:
       context: projects/y
       dockerfile: DockerfileY
 
-  zig:
-    container_name: hello_world_zig
-    build:
-      context: projects/zig
-      dockerfile: DockerfileZig
+

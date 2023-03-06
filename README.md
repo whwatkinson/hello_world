@@ -51,6 +51,7 @@
 - Snobol
 - Swift
 - TypeScript
+- Zig
 - Zsh
 
 ### Requirements

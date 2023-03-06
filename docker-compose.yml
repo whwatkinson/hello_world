@@ -295,8 +295,16 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  zig:
+    container_name: hello_world_zig
+    build:
+      context: projects/zig
+      dockerfile: DockerfileZig
+
   zsh:
     container_name: hello_world_zsh
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
+
+
