@@ -265,11 +265,6 @@ services:
       context: projects/terraform
       dockerfile: DockerfileTerraform
 
-  vala:
-    container_name: hello_world_vala
-    build:
-      context: projects/vala
-      dockerfile: DockerfileVala
 
   y:
     container_name: hello_world_y

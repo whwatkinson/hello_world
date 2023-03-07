@@ -53,6 +53,7 @@
 - Snobol
 - Swift
 - TypeScript
+- Vala
 - Zig
 - Zsh
 

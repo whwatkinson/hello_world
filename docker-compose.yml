@@ -307,6 +307,12 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  vala:
+    container_name: hello_world_vala
+    build:
+      context: projects/vala
+      dockerfile: DockerfileVala
+
   zig:
     container_name: hello_world_zig
     build:
