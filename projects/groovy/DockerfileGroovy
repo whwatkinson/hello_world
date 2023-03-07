@@ -1,5 +1,4 @@
 FROM openjdk:8
-
 RUN apt-get update -y
 
 COPY groovy.tar.gz .

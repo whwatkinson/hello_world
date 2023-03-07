@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
+RUN apt-get update -y
 
-RUN apt-get update -y && \
-    apt-get install make gcc  -y
+RUN apt-get install make gcc  -y
 
 COPY gprolog-1.5.0.tar.gz .
 

@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-
 RUN apt-get update -y
 
 COPY factor-linux-x86-64-0.98.tar.gz .

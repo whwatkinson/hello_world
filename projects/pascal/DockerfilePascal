@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
+RUN apt-get update -y
 
-RUN apt-get update -y && \
-    apt-get install -y fpc
+RUN apt-get install -y fpc
 
 COPY hello_world.p .
 

@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
+RUN apt-get update -y
 
-RUN apt-get update -y && \
-    apt-get install -y ruby-full
+RUN apt-get install -y ruby-full
 
 COPY hello_world.rb .
 
