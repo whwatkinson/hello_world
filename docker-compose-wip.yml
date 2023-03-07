@@ -37,6 +37,12 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  boo:
+    container_name: hello_world_boo
+    build:
+      context: projects/boo
+      dockerfile: DockerfileBoo
+
   bird:
     container_name: hello_world_bird
     build:
@@ -73,6 +79,12 @@ services:
       context: projects/d
       dockerfile: DockerfileD
 
+  e:
+    container_name: hello_world_e
+    build:
+      context: projects/e
+      dockerfile: DockerfileE
+
   delphi:
     container_name: hello_World_delphi
     build:
@@ -85,8 +97,6 @@ services:
       context: projects/eiffel
       dockerfile: DockerfileEiffel
 
-
-
   elm:
     container_name: hellow_world_elm
     build:
@@ -98,6 +108,12 @@ services:
     build:
       context: projects/forth
       dockerfile: DockerfileForth
+
+  genie:
+    container_name: hellow_world_genie
+    build:
+      context: projects/genie
+      dockerfile: DockerfileGenie
 
   idris:
     container_name: hello_world_idris
@@ -136,6 +152,24 @@ services:
     build:
       context: projects/modula
       dockerfile: DockerfileModula
+
+  nim:
+    container_name: hello_world_nim
+    build:
+      context: projects/nim
+      dockerfile: DockerfileNim
+
+  oberon:
+    container_name: hello_world_oberon
+    build:
+      context: projects/oberon
+      dockerfile: DockerfileOberon
+
+  oberon2:
+    container_name: hello_world_oberon2
+    build:
+      context: projects/oberon2
+      dockerfile: DockerfileOberon2
 
   oxygene:
     container_name: hello_world_oxygene
@@ -178,6 +212,11 @@ services:
       context: projects/ragel
       dockerfile: DockerfileRagel
 
+  ring:
+    container_name: hello_world_ring
+    build:
+      context: projects/ring
+      dockerfile: DockerfileRing
 
   self:
     container_name: hello_world_self
@@ -190,6 +229,12 @@ services:
     build:
       context: projects/terraform
       dockerfile: DockerfileTerraform
+
+  vala:
+    container_name: hello_world_vala
+    build:
+      context: projects/vala
+      dockerfile: DockerfileVala
 
   y:
     container_name: hello_world_y
