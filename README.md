@@ -35,6 +35,7 @@
 - Lisp
 - Lua
 - Nial
+- Nim
 - Ocaml
 - Pascal
 - Perl
