@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    agt-get install gcc -y
+
+COPY hello_world.rl .
+
+CMD ["tail", "-f", "/dev/null"]

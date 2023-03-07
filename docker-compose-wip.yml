@@ -137,8 +137,6 @@ services:
       context: projects/modula
       dockerfile: DockerfileModula
 
-
-
   oxygene:
     container_name: hello_world_oxygene
     build:
@@ -174,6 +172,12 @@ services:
       context: projects/prolog
       dockerfile: DockerfileProlog
 
+  ragel:
+    container_name: hello_world_ragel
+    build:
+      context: projects/ragel
+      dockerfile: DockerfileRagel
+
 
   self:
     container_name: hello_world_self
@@ -192,5 +196,3 @@ services:
     build:
       context: projects/y
       dockerfile: DockerfileY
-
-
