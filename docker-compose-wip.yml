@@ -37,6 +37,12 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  bcpl:
+    container_name: hello_world_bcpl
+    build:
+      context: projects/bcpl
+      dockerfile: DockerfileBcpl
+
   boo:
     container_name: hello_world_boo
     build:
@@ -66,6 +72,18 @@ services:
     build:
       context: projects/clojure
       dockerfile: DockerfileClojure
+
+  clu:
+    container_name: hello_world_clu
+    build:
+      context: projects/clu
+      dockerfile: DockerfileClu
+
+  cobra:
+    container_name: hello_world_cobra
+    build:
+      context: projects/cobra
+      dockerfile: DockerfileCobra
 
   cypher:
     container_name: hello_world_cypher
@@ -115,6 +133,12 @@ services:
       context: projects/genie
       dockerfile: DockerfileGenie
 
+  groovy:
+    container_name: hellow_world_groovy
+    build:
+      context: projects/groovy
+      dockerfile: DockerfileGroovy
+
   idris:
     container_name: hello_world_idris
     build:
@@ -139,8 +163,6 @@ services:
       context: projects/logo
       dockerfile: DockerfileLogo
 
-
-
   matlab:
     container_name: hello_world_matlab
     build:
@@ -159,6 +181,18 @@ services:
       context: projects/nim
       dockerfile: DockerfileNim
 
+  nu:
+    container_name: hello_world_nu
+    build:
+      context: projects/nu
+      dockerfile: DockerfileNu
+
+  occam:
+    container_name: hello_world_occam
+    build:
+      context: projects/occam
+      dockerfile: DockerfileOccam
+
   oberon:
     container_name: hello_world_oberon
     build:
@@ -170,6 +204,12 @@ services:
     build:
       context: projects/oberon2
       dockerfile: DockerfileOberon2
+
+  objectivec:
+    container_name: hello_world_objectivec
+    build:
+      context: projects/objectivec
+      dockerfile: DockerfileObjectivec
 
   oxygene:
     container_name: hello_world_oxygene
