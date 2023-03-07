@@ -193,6 +193,12 @@ services:
       context: projects/nial
       dockerfile: DockerfileNial
 
+  nim:
+    container_name: hello_world_nim
+    build:
+      context: projects/nim
+      dockerfile: DockerfileNim
+
   ocaml:
     container_name: hello_world_ocaml
     build:

@@ -1,7 +1,16 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install xz-utils make gcc -y
+
+COPY nim-1.6.10-linux_x64.tar.xz .
+
+RUN tar -xJf nim-1.6.10-linux_x64.tar.xz
+
+ENV PATH=/nim-1.6.10/bin:$PATH
 
 COPY hello_world.nim .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN nim compile hello_world.nim
+
+CMD ["./hello_world"]
