@@ -1,8 +1,8 @@
+# http://www.parasail-lang.org/
 FROM ubuntu:22.04
+
 RUN apt-get update -y
 
 COPY hello_world.psl .
 
 CMD ["tail", "-f", "/dev/null"]
-
-# http://www.parasail-lang.org/

@@ -1,4 +1,5 @@
 FROM ubuntu:22.04
+
 RUN apt-get update -y
 
 COPY fennel-1.3.0-x86_64 .

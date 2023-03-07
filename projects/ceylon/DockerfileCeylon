@@ -1,7 +1,9 @@
-FROM ubuntu:22.04
-RUN apt-get update -y
+#https://github.com/eclipse/ceylon/tree/master/dist
 
-RUN apt-get install -y git
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y git
 
 RUN git clone https://github.com/eclipse/ceylon.git
 
@@ -9,4 +11,3 @@ COPY hello_world.ceylon .
 
 
 CMD ["tail", "-f", "/dev/null"]
-#https://github.com/eclipse/ceylon/tree/master/dist

@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
-RUN apt-get update -y
 
-RUN apt-get install -y gforth
+RUN apt update -y && \
+    apt-get install -y gforth
 
 COPY hello_world.fth .
 

@@ -1,7 +1,7 @@
 FROM openjdk:8
-RUN apt-get update -y
 
-RUN apt-get install -y software-properties-common wget apt-transport-https
+RUN apt-get update -y &&  \
+    apt-get install -y software-properties-common wget apt-transport-https
 
 RUN mkdir -p /etc/apt/keyrings
 RUN wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc

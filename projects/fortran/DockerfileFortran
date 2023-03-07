@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
-RUN apt-get update -y
 
-RUN apt-get install gfortran -y
+RUN apt-get update && \
+    apt-get install gfortran -y
 
 COPY HelloWorld.f90 .
 
