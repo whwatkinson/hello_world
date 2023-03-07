@@ -24,6 +24,7 @@
 - Fennel
 - Fortran
 - Gap
+- Genie
 - Golang
 - Groovy
 - Haskell

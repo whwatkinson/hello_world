@@ -1,6 +1,11 @@
 FROM ubuntu:22.04
 RUN apt-get update -y
 
+RUN apt-get install valac -y
+
 COPY hello_world.gs .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN valac hello_world.gs
+
+CMD ["./hello_world"]
+#CMD ["tail", "-f", "/dev/null"]

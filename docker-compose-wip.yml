@@ -127,13 +127,6 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
-  genie:
-    container_name: hellow_world_genie
-    build:
-      context: projects/genie
-      dockerfile: DockerfileGenie
-
-
   idris:
     container_name: hello_world_idris
     build:

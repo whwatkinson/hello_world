@@ -127,6 +127,12 @@ services:
       context: projects/gap
       dockerfile: DockerfileGap
 
+  genie:
+    container_name: hellow_world_genie
+    build:
+      context: projects/genie
+      dockerfile: DockerfileGenie
+
   golang:
     container_name: hello_world_golang
     build:
