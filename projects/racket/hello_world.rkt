@@ -1,2 +1,2 @@
-#lang racket
-"Hello, World!"
+#lang racket/base
+(display "Hello, World!\n")

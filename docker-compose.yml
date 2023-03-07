@@ -97,6 +97,12 @@ services:
       context: projects/erlang
       dockerfile: DockerfileErlang
 
+  elixir:
+    container_name: hello_world_elixir
+    build:
+      context: projects/elixir
+      dockerfile: DockerfileElixir
+
   factor:
     container_name: hello_world_factor
     build:
@@ -121,11 +127,23 @@ services:
       context: projects/gap
       dockerfile: DockerfileGap
 
+  genie:
+    container_name: hellow_world_genie
+    build:
+      context: projects/genie
+      dockerfile: DockerfileGenie
+
   golang:
     container_name: hello_world_golang
     build:
       context: projects/golang
       dockerfile: DockerfileGolang
+
+  groovy:
+    container_name: hellow_world_groovy
+    build:
+      context: projects/groovy
+      dockerfile: DockerfileGroovy
 
   haskell:
     container_name: hello_world_haskell
@@ -163,13 +181,23 @@ services:
       context: projects/lisp
       dockerfile: DockerfileLisp
 
+  lua:
+    container_name: hello_world_lua
+    build:
+      context: projects/lua
+      dockerfile: DockerfileLua
+
+  nial:
+    container_name: hello_world_nial
+    build:
+      context: projects/nial
+      dockerfile: DockerfileNial
 
   ocaml:
     container_name: hello_world_ocaml
     build:
       context: projects/ocaml
       dockerfile: DockerfileOcaml
-
 
   pascal:
     container_name: hello_world_pascal
@@ -213,11 +241,23 @@ services:
       context: projects/r
       dockerfile: DockerfileR
 
+  racket:
+    container_name: hello_world_racket
+    build:
+      context: projects/racket
+      dockerfile: DockerfileRacket
+
   raku:
     container_name: hello_world_raku
     build:
       context: projects/raku
       dockerfile: DockerfileRaku
+
+  rebol:
+    container_name: hello_world_rebol
+    build:
+      context: projects/rebol
+      dockerfile: DockerfileRebol
 
   red:
     container_name: hello_world_red
@@ -273,8 +313,22 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  vala:
+    container_name: hello_world_vala
+    build:
+      context: projects/vala
+      dockerfile: DockerfileVala
+
+  zig:
+    container_name: hello_world_zig
+    build:
+      context: projects/zig
+      dockerfile: DockerfileZig
+
   zsh:
     container_name: hello_world_zsh
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
+
+

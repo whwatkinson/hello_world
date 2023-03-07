@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+#RUN echo 8 | apt-get install mono-complete  -y
+
+COPY Cobra-0.9.4.tar.gz .
+RUN tar -zvxf Cobra-0.9.4.tar.gz
+#RUN Cobra-0.9.4/
+
+
+COPY hello_world.cobra .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+#http://cobra-language.com/trac/cobra/wiki/InstallingDownload

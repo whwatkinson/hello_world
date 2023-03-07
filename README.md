@@ -19,17 +19,22 @@
 - DogeScript
 - Dylan
 - Erlang
+- Elixir
 - Factor
 - Fennel
 - Fortran
 - Gap
+- Genie
 - Golang
+- Groovy
 - Haskell
 - Java
 - JavaScript
 - Julia
 - Kotlin
 - Lisp
+- Lua
+- Nial
 - Ocaml
 - Pascal
 - Perl
@@ -38,7 +43,9 @@
 - Python 2
 - Python 3
 - R
+- Racket
 - Raku
+- Rebol
 - Red
 - Ruby
 - Scala
@@ -47,6 +54,8 @@
 - Snobol
 - Swift
 - TypeScript
+- Vala
+- Zig
 - Zsh
 
 ### Requirements

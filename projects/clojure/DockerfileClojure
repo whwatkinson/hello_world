@@ -1,5 +1,4 @@
-#FROM ubuntu:22.04
-FROM openjdk:11
+FROM openjdk:8
 
 RUN apt-get update -y &&  \
     apt-get install -y software-properties-common wget apt-transport-https
@@ -16,3 +15,6 @@ COPY hello_world.clj .
 #CMD ["bsh", "hello_world.bsh"]
 
 CMD ["tail", "-f", "/dev/null"]
+
+
+#  https://clojure.org/guides/install_clojure

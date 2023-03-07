@@ -1,0 +1,15 @@
+FROM openjdk:8
+
+RUN apt-get update -y
+
+COPY groovy.tar.gz .
+
+RUN tar vxf groovy.tar.gz
+
+ENV PATH=/apache-groovy-binary-2.4.21/groovy-2.4.21/bin/:$PATH
+
+COPY hello_world.groovy .
+
+CMD ["groovy", "hello_world.groovy"]
+
+#CMD ["tail", "-f", "/dev/null"]

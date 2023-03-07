@@ -37,6 +37,18 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  bcpl:
+    container_name: hello_world_bcpl
+    build:
+      context: projects/bcpl
+      dockerfile: DockerfileBcpl
+
+  boo:
+    container_name: hello_world_boo
+    build:
+      context: projects/boo
+      dockerfile: DockerfileBoo
+
   bird:
     container_name: hello_world_bird
     build:
@@ -61,6 +73,18 @@ services:
       context: projects/clojure
       dockerfile: DockerfileClojure
 
+  clu:
+    container_name: hello_world_clu
+    build:
+      context: projects/clu
+      dockerfile: DockerfileClu
+
+  cobra:
+    container_name: hello_world_cobra
+    build:
+      context: projects/cobra
+      dockerfile: DockerfileCobra
+
   cypher:
     container_name: hello_world_cypher
     build:
@@ -73,6 +97,12 @@ services:
       context: projects/d
       dockerfile: DockerfileD
 
+  e:
+    container_name: hello_world_e
+    build:
+      context: projects/e
+      dockerfile: DockerfileE
+
   delphi:
     container_name: hello_World_delphi
     build:
@@ -84,12 +114,6 @@ services:
     build:
       context: projects/eiffel
       dockerfile: DockerfileEiffel
-
-  elixir:
-    container_name: hello_world_elixir
-    build:
-      context: projects/elixir
-      dockerfile: DockerfileElixir
 
   elm:
     container_name: hellow_world_elm
@@ -127,12 +151,6 @@ services:
       context: projects/logo
       dockerfile: DockerfileLogo
 
-  lua:
-    container_name: hello_world_lua
-    build:
-      context: projects/lua
-      dockerfile: DockerfileLua
-
   matlab:
     container_name: hello_world_matlab
     build:
@@ -145,11 +163,41 @@ services:
       context: projects/modula
       dockerfile: DockerfileModula
 
-  nial:
-    container_name: hello_world_nial
+  nim:
+    container_name: hello_world_nim
     build:
-      context: projects/nial
-      dockerfile: DockerfileNial
+      context: projects/nim
+      dockerfile: DockerfileNim
+
+  nu:
+    container_name: hello_world_nu
+    build:
+      context: projects/nu
+      dockerfile: DockerfileNu
+
+  occam:
+    container_name: hello_world_occam
+    build:
+      context: projects/occam
+      dockerfile: DockerfileOccam
+
+  oberon:
+    container_name: hello_world_oberon
+    build:
+      context: projects/oberon
+      dockerfile: DockerfileOberon
+
+  oberon2:
+    container_name: hello_world_oberon2
+    build:
+      context: projects/oberon2
+      dockerfile: DockerfileOberon2
+
+  objectivec:
+    container_name: hello_world_objectivec
+    build:
+      context: projects/objectivec
+      dockerfile: DockerfileObjectivec
 
   oxygene:
     container_name: hello_world_oxygene
@@ -185,17 +233,18 @@ services:
     build:
       context: projects/prolog
       dockerfile: DockerfileProlog
-  racket:
-    container_name: hello_world_racket
-    build:
-      context: projects/racket
-      dockerfile: DockerfileRacket
 
-  rebol:
-    container_name: hello_world_rebol
+  ragel:
+    container_name: hello_world_ragel
     build:
-      context: projects/rebol
-      dockerfile: DockerfileRebol
+      context: projects/ragel
+      dockerfile: DockerfileRagel
+
+  ring:
+    container_name: hello_world_ring
+    build:
+      context: projects/ring
+      dockerfile: DockerfileRing
 
   self:
     container_name: hello_world_self
@@ -209,14 +258,9 @@ services:
       context: projects/terraform
       dockerfile: DockerfileTerraform
 
+
   y:
     container_name: hello_world_y
     build:
       context: projects/y
       dockerfile: DockerfileY
-
-  zig:
-    container_name: hello_world_zig
-    build:
-      context: projects/zig
-      dockerfile: DockerfileZig

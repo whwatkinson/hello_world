@@ -1,7 +1,12 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt install software-properties-common -y
+
+RUN add-apt-repository ppa:plt/racket -y && \
+    apt-get install racket -y
 
 COPY hello_world.rkt .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["racket", "hello_world.rkt"]

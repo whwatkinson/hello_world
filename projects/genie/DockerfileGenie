@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install valac -y
+
+COPY hello_world.gs .
+
+RUN valac hello_world.gs
+
+CMD ["./hello_world"]

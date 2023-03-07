@@ -2,6 +2,11 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
-COPY hello_world.reb .
+COPY rebol-core-278-4-10.tar.gz .
+RUN tar vxf rebol-core-278-4-10.tar.gz
 
-CMD ["tail", "-f", "/dev/null"]
+COPY hello_world.r .
+
+ENV PATH=/rebol-core:$PATH
+
+CMD ["rebol", "-q", "hello_world.r"]

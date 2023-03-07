@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+COPY nial64 .
+RUN chmod +x nial64
 
 COPY hello_world.ndf .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["./nial64", "-defs", "hello_world.ndf"]
