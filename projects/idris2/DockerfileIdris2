@@ -1,15 +1,11 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y xz-utils make gcc
-#
-#RUN cabal update
-#RUN cabal install idris
+    apt-get install -y xz-utils make gcc libgmp3-dev
 
 COPY idris2-0.6.0.tgz .
 
 RUN tar zxvf idris2-0.6.0.tgz
-
 
 
 COPY hello_world.idr .

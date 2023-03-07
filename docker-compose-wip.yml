@@ -91,8 +91,6 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-
-
   e:
     container_name: hello_world_e
     build:
@@ -123,11 +121,11 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
-  idris:
-    container_name: hello_world_idris
+  Idris2:
+    container_name: hello_world_idris2
     build:
-      context: projects/idris
-      dockerfile: DockerfileIdris
+      context: projects/idris2
+      dockerfile: DockerfileIdris2
 
   jade:
     container_name: hello_world_jade
