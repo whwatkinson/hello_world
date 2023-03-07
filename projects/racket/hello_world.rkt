@@ -1,2 +1,2 @@
 #lang racket/base
-(print "Hello, World!")
+(display "Hello, World!\n")
