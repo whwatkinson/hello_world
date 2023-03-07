@@ -25,6 +25,7 @@
 - Fortran
 - Gap
 - Golang
+- Groovy
 - Haskell
 - Java
 - JavaScript

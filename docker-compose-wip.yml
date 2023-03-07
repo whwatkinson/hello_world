@@ -133,11 +133,6 @@ services:
       context: projects/genie
       dockerfile: DockerfileGenie
 
-  groovy:
-    container_name: hellow_world_groovy
-    build:
-      context: projects/groovy
-      dockerfile: DockerfileGroovy
 
   idris:
     container_name: hello_world_idris
