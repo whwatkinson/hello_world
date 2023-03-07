@@ -91,11 +91,7 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-  d:
-    container_name: hello_world_d
-    build:
-      context: projects/d
-      dockerfile: DockerfileD
+
 
   e:
     container_name: hello_world_e

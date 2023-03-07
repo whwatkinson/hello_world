@@ -15,6 +15,7 @@
 - C++
 - Crystal
 - C#
+- D
 - Dart
 - DogeScript
 - Dylan

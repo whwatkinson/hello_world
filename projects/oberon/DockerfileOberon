@@ -1,6 +1,15 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y git gcc libc-dev liballegro5-dev
+
+COPY FreeOberon_1.1.0-alpha.7.tar.gz .
+
+RUN tar vxf FreeOberon_1.1.0-alpha.7.tar.gz
+
+RUN alias fo='cd ~/FreeOberon;./FreeOberon'
+
+ENV PATH=/FreeOberon:$PATH
 
 COPY hello_world.o .
 

@@ -73,6 +73,12 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
+  d:
+    container_name: hello_world_d
+    build:
+      context: projects/d
+      dockerfile: DockerfileD
+
   dart:
     container_name: hello_world_dart
     build:
