@@ -73,6 +73,12 @@ services:
       context: projects/crystal
       dockerfile: DockerfileCrystal
 
+  csh:
+    container_name: hello_world_csh
+    build:
+      context: projects/csh
+      dockerfile: DockerfileCsh
+
   csharp:
     container_name: hello_world_csharp
     build:

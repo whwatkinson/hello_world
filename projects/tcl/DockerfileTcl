@@ -5,7 +5,9 @@ RUN apt-get update -y && \
 
 COPY hello_world.tcl .
 
-CMD ["tclsh8.6", "hello_world.tcl"]
+RUN chmod +x hello_world.tcl
+
+CMD ["tclsh", "hello_world.tcl"]
 
 #CMD ["tail", "-f", "/dev/null"]
 

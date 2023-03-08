@@ -132,12 +132,6 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-  csh:
-    container_name: hello_world_csh
-    build:
-      context: projects/csh
-      dockerfile: DockerfileCsh
-
   e:
     container_name: hello_world_e
     build:
