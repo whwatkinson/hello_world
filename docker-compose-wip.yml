@@ -31,6 +31,12 @@ services:
       context: projects/apl
       dockerfile: DockerfileApl
 
+  agda:
+    container_name: hello_world_agda
+    build:
+      context: projects/agda
+      dockerfile: DockerfileAgda
+
   applescript:
     container_name: hello_world_applescript
     build:
@@ -96,6 +102,12 @@ services:
       context: projects/ceylon
       dockerfile: DockerfileCeylon
 
+  clean:
+    container_name: hello_world_clean
+    build:
+      context: projects/clean
+      dockerfile: DockerfileClean
+
   clojure:
     container_name: hello_world_clojure
     build:
@@ -120,11 +132,23 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
+  csh:
+    container_name: hello_world_csh
+    build:
+      context: projects/csh
+      dockerfile: DockerfileCsh
+
   e:
     container_name: hello_world_e
     build:
       context: projects/e
       dockerfile: DockerfileE
+
+  escher:
+    container_name: hello_world_escher
+    build:
+      context: projects/escher
+      dockerfile: DockerfileEscher
 
   emerald:
     container_name: hello_world_emerald
@@ -150,6 +174,12 @@ services:
       context: projects/elm
       dockerfile: DockerfileElm
 
+  fsharp:
+    container_name: hellow_world_fsharp
+    build:
+      context: projects/fsharp
+      dockerfile: DockerfileFSharp
+
   forth:
     container_name: hello_world_forth
     build:
@@ -161,6 +191,12 @@ services:
     build:
       context: projects/haxe
       dockerfile: DockerfileHaxe
+
+  hack:
+    container_name: hello_world_hack
+    build:
+      context: projects/hack
+      dockerfile: DockerfileHack
 
   hop:
     container_name: hello_world_hop
@@ -210,11 +246,24 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
+  livescript:
+    container_name: hello_world_livescript
+    build:
+      context: projects/livescript
+      dockerfile: DockerfileLivescript
+
   matlab:
     container_name: hello_world_matlab
     build:
       context: projects/matlab
       dockerfile: DockerfileMatlab
+
+  mercury:
+    container_name: hello_world_mercury
+    build:
+      context: projects/mercury
+      dockerfile: DockerfileMercury
+
 
   modula:
     container_name: hello_world_modla
@@ -239,6 +288,12 @@ services:
     build:
       context: projects/nemerle
       dockerfile: DockerfileNemerle
+
+  omega:
+    container_name: hello_world_omega
+    build:
+      context: projects/omega
+      dockerfile: DockerfileOmega
 
   occam:
     container_name: hello_world_occam
@@ -288,6 +343,12 @@ services:
       context: projects/parasail
       dockerfile: DockerfileParasail
 
+  purescript:
+    container_name: hello_world_purescript
+    build:
+      context: projects/purescript
+      dockerfile: DockerfilePurescript
+
   postgres:
     container_name: hello_world_postgres
     image: postgres:bullseye
@@ -334,6 +395,18 @@ services:
     build:
       context: projects/self
       dockerfile: DockerfileSelf
+
+  seed7:
+    container_name: hello_world_seed7
+    build:
+      context: projects/seed7
+      dockerfile: DockerfileSeed7
+
+  spark:
+    container_name: hello_world_spark
+    build:
+      context: projects/spark
+      dockerfile: DockerfileSpark
 
   sml:
     container_name: hello_world_sml
