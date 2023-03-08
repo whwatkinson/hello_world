@@ -144,6 +144,12 @@ services:
       context: projects/e
       dockerfile: DockerfileE
 
+  euclid:
+    container_name: hello_world_euclid
+    build:
+      context: projects/euclid
+      dockerfile: DockerfileEuclid
+
   escher:
     container_name: hello_world_escher
     build:
@@ -186,6 +192,13 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
+  goaldi:
+    container_name: hello_world_goaldi
+    build:
+      context: projects/goaldi
+      dockerfile: DockerfileGoaldi
+
+
   haxe:
     container_name: hello_world_haxe
     build:
@@ -215,6 +228,12 @@ services:
     build:
       context: projects/io
       dockerfile: DockerfileIo
+
+  icon:
+    container_name: hello_world_icon
+    build:
+      context: projects/icon
+      dockerfile: DockerfileIcon
 
   jade:
     container_name: hello_world_jade
@@ -264,12 +283,24 @@ services:
       context: projects/mercury
       dockerfile: DockerfileMercury
 
+  mesa:
+    container_name: hello_world_mesa
+    build:
+      context: projects/mesa
+      dockerfile: DockerfileMesa
 
   modula:
-    container_name: hello_world_modla
+    container_name: hello_world_modula
     build:
       context: projects/modula
       dockerfile: DockerfileModula
+
+  modula3:
+    container_name: hello_world_modula3
+    build:
+      context: projects/modula3
+      dockerfile: DockerfileModula3
+
 
   newspeak:
     container_name: hello_world_newspeak
@@ -349,6 +380,12 @@ services:
       context: projects/purescript
       dockerfile: DockerfilePurescript
 
+  postscript:
+    container_name: hello_world_postscript
+    build:
+      context: projects/postscript
+      dockerfile: DockerfilePostscript
+
   postgres:
     container_name: hello_world_postgres
     image: postgres:bullseye
@@ -419,6 +456,12 @@ services:
     build:
       context: projects/terraform
       dockerfile: DockerfileTerraform
+
+  turing:
+    container_name: hello_world_turing
+    build:
+      context: projects/turing
+      dockerfile: DockerfileTuring
 
   y:
     container_name: hello_world_y
