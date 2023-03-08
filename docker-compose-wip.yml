@@ -103,8 +103,6 @@ services:
       context: projects/ceylon
       dockerfile: DockerfileCeylon
 
-
-
   clojure:
     container_name: hello_world_clojure
     build:

@@ -1,7 +1,14 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y &&\
+    apt-get install -y make gcc xz-utils build-essential
+
+COPY emerald-1.06alpha.tar.gz .
+
+RUN tar -zvxf emerald-1.06alpha.tar.gz
 
 COPY hello_world.m .
 
 CMD ["tail", "-f", "/dev/null"]
+
+#  https://www.emeraldprogramminglanguage.org/
