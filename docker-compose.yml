@@ -331,11 +331,11 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
-#  tcl:
-#    container_name: hello_world_tcl
-#    build:
-#      context: projects/tcl
-#      dockerfile: DockerfileTcl
+  #  tcl:
+  #    container_name: hello_world_tcl
+  #    build:
+  #      context: projects/tcl
+  #      dockerfile: DockerfileTcl
 
   typescript:
     container_name: hello_world_typescript

@@ -114,11 +114,11 @@ services:
       context: projects/clojure
       dockerfile: DockerfileClojure
 
-#  clu:
-#    container_name: hello_world_clu
-#    build:
-#      context: projects/clu
-#      dockerfile: DockerfileClu
+  #  clu:
+  #    container_name: hello_world_clu
+  #    build:
+  #      context: projects/clu
+  #      dockerfile: DockerfileClu
 
   cobra:
     container_name: hello_world_cobra
