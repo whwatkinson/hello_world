@@ -1,0 +1,12 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install tcl -y
+
+COPY hello_world.tcl .
+
+CMD ["tclsh8.6", "hello_world.tcl"]
+
+#CMD ["tail", "-f", "/dev/null"]
+
+#  https://www.tcl.tk/man/tcl8.6/UserCmd/tclsh.html
