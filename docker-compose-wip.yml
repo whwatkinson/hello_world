@@ -61,11 +61,11 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
-  beta:
-    container_name: hello_world_beta
-    build:
-      context: projects/beta
-      dockerfile: DockerfileBeta
+#  beta:
+#    container_name: hello_world_beta
+#    build:
+#      context: projects/beta
+#      dockerfile: DockerfileBeta
 
   bcpl:
     container_name: hello_world_bcpl
@@ -90,6 +90,7 @@ services:
     build:
       context: projects/cyclone
       dockerfile: DockerfileCyclone
+
   carbon:
     container_name: hello_world_carbon
     build:
@@ -102,11 +103,7 @@ services:
       context: projects/ceylon
       dockerfile: DockerfileCeylon
 
-  clean:
-    container_name: hello_world_clean
-    build:
-      context: projects/clean
-      dockerfile: DockerfileClean
+
 
   clojure:
     container_name: hello_world_clojure

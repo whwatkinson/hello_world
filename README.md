@@ -11,6 +11,7 @@
 - Beanshell
 - Befunge
 - C
+- Clean
 - Cobol
 - CoffeeScript
 - C++

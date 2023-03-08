@@ -1,7 +1,11 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install agda -y
+
 
 COPY hello_world.agda .
 
 CMD ["tail", "-f", "/dev/null"]
+
+#  https://agda.readthedocs.io/en/v2.6.0.1/getting-started/installation.html#installation-of-the-development-version

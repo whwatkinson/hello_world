@@ -49,6 +49,12 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+  clean:
+    container_name: hello_world_clean
+    build:
+      context: projects/clean
+      dockerfile: DockerfileClean
+
   cobol:
     container_name: hello_world_cobol
     build:
