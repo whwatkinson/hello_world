@@ -19,6 +19,12 @@ services:
       context: projects/ada
       dockerfile: DockerfileAda
 
+  alef:
+    container_name: hello_world_alef
+    build:
+      context: projects/alef
+      dockerfile: DockerfileAlef
+
   apl:
     container_name: hello_world_apl
     build:
@@ -156,6 +162,12 @@ services:
       context: projects/haxe
       dockerfile: DockerfileHaxe
 
+  hop:
+    container_name: hello_world_hop
+    build:
+      context: projects/hop
+      dockerfile: DockerfileHop
+
   Idris2:
     container_name: hello_world_idris2
     build:
@@ -173,6 +185,12 @@ services:
     build:
       context: projects/jade
       dockerfile: DockerfileJade
+
+  limbo:
+    container_name: hello_world_limbo
+    build:
+      context: projects/limbo
+      dockerfile: DockerfileLimbo
 
   lfe:
     container_name: hello_world_lfe
@@ -304,6 +322,12 @@ services:
     build:
       context: projects/ring
       dockerfile: DockerfileRing
+
+  cheme:
+    container_name: hello_world_cheme
+    build:
+      context: projects/cheme
+      dockerfile: DockerfileScheme
 
   self:
     container_name: hello_world_self
