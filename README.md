@@ -34,6 +34,7 @@
 - JavaScript
 - Julia
 - Kotlin
+- Ksh
 - Lisp
 - Lua
 - Nial

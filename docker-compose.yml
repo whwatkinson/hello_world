@@ -187,6 +187,12 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
+  korn:
+    container_name: hello_world_ksh
+    build:
+      context: projects/ksh
+      dockerfile: DockerfileKsh
+
   lisp:
     container_name: hello_world_lisp
     build:
