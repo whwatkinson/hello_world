@@ -13,6 +13,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  awk:
+    container_name: hello_world_awk
+    build:
+      context: projects/awk
+      dockerfile: DockerfileAwk
+
   bash:
     container_name: hello_world_bash
     build:

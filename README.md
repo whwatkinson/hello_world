@@ -5,6 +5,7 @@
 ![image info](./hello_world.png)
 
 - Algol68
+- Awk
 - Bash
 - Basic
 - Beanshell
