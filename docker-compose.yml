@@ -175,6 +175,12 @@ services:
       context: projects/haskell
       dockerfile: DockerfileHaskell
 
+  haxe:
+    container_name: hello_world_haxe
+    build:
+      context: projects/haxe
+      dockerfile: DockerfileHaxe
+
   java:
     container_name: hello_world_java
     build:

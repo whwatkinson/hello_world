@@ -32,6 +32,7 @@
 - Golang
 - Groovy
 - Haskell
+- Haxe
 - Java
 - JavaScript
 - Julia

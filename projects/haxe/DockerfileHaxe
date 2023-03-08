@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install haxe -y
 
-COPY hello_world.hx .
+COPY HelloWorld.hx .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["haxe", "-main", "HelloWorld", "--interp"]
