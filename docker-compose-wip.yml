@@ -187,13 +187,6 @@ services:
       context: projects/goaldi
       dockerfile: DockerfileGoaldi
 
-
-  haxe:
-    container_name: hello_world_haxe
-    build:
-      context: projects/haxe
-      dockerfile: DockerfileHaxe
-
   hack:
     container_name: hello_world_hack
     build:
