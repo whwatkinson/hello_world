@@ -17,6 +17,6 @@ RUN nitrile build
 
 CMD ["./app"]
 
-
+# todo remove extra info after hello world
 # https://clean-and-itasks.gitlab.io/nitrile/intro/getting-started/
 # https://clean-and-itasks.gitlab.io/nitrile/nitrile-yml/reference/#build
