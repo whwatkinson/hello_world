@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+COPY hello_world.opa .
+
+#opa hello_web.opa
+
+CMD ["tail", "-f", "/dev/null"]
+
+#https://en.wikipedia.org/wiki/Opa_(programming_language)#Examples
