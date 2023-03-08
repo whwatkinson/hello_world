@@ -15,6 +15,7 @@
 - CoffeeScript
 - C++
 - Crystal
+- Csh
 - C#
 - D
 - Dart
