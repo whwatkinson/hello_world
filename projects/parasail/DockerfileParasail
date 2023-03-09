@@ -1,7 +1,8 @@
 # http://www.parasail-lang.org/
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
 
-RUN apt-get update -y
+FROM ngoko/parasail
+
 
 COPY hello_world.psl .
 

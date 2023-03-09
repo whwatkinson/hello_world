@@ -145,8 +145,6 @@ services:
       context: projects/escher
       dockerfile: DockerfileEscher
 
-
-
   delphi:
     container_name: hello_World_delphi
     build:
