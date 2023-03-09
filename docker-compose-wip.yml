@@ -145,11 +145,7 @@ services:
       context: projects/escher
       dockerfile: DockerfileEscher
 
-  emerald:
-    container_name: hello_world_emerald
-    build:
-      context: projects/emerald
-      dockerfile: DockerfileEmerald
+
 
   delphi:
     container_name: hello_World_delphi

@@ -133,6 +133,12 @@ services:
       context: projects/elixir
       dockerfile: DockerfileElixir
 
+  emerald:
+    container_name: hello_world_emerald
+    build:
+      context: projects/emerald
+      dockerfile: DockerfileEmerald
+
   factor:
     container_name: hello_world_factor
     build:
