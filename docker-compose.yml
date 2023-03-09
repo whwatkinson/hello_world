@@ -145,6 +145,12 @@ services:
       context: projects/fortran
       dockerfile: DockerfileFortran
 
+  fsharp:
+    container_name: hellow_world_fsharp
+    build:
+      context: projects/fsharp
+      dockerfile: DockerfileFSharp
+
   gap:
     container_name: hello_world_gap
     build:

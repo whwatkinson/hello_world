@@ -73,6 +73,12 @@ services:
       context: projects/bcpl
       dockerfile: DockerfileBcpl
 
+  blitzmax:
+    container_name: hello_world_blitzmax
+    build:
+      context: projects/blitzmax
+      dockerfile: DockerfileBlitzMax
+
   boo:
     container_name: hello_world_boo
     build:
@@ -169,11 +175,7 @@ services:
       context: projects/elm
       dockerfile: DockerfileElm
 
-  fsharp:
-    container_name: hellow_world_fsharp
-    build:
-      context: projects/fsharp
-      dockerfile: DockerfileFSharp
+
 
   forth:
     container_name: hello_world_forth

@@ -1,7 +1,19 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y &&\
+    apt-get install curl -y
 
-COPY hello_world.fs .
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --version latest
 
-CMD ["tail", "-f", "/dev/null"]
+ENV PATH=root/.dotnet:$PATH
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+
+COPY hello_world.fsx .
+
+RUN dotnet fsi hello_world.fsx -q &
+
+CMD ["root/.dotnet/dotnet", "fsi", "hello_world.fsx"]
+
+# todo remove extra printing
+
+#  https://fsharp.org/use/linux/

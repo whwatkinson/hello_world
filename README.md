@@ -27,6 +27,7 @@
 - Factor
 - Fennel
 - Fortran
+- F#
 - Gap
 - Genie
 - Golang
