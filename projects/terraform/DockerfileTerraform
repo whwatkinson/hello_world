@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && \
+RUN apt-get update -y &&\
     apt-get install -y gnupg software-properties-common curl
 
 RUN curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg

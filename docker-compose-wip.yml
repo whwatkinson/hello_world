@@ -403,10 +403,10 @@ services:
       context: projects/ring
       dockerfile: DockerfileRing
 
-  cheme:
-    container_name: hello_world_cheme
+  scheme:
+    container_name: hello_world_scheme
     build:
-      context: projects/cheme
+      context: projects/scheme
       dockerfile: DockerfileScheme
 
   self:

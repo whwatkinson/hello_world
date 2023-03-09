@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && \
+RUN apt-get update -y &&\
     apt-get install -y bzip2 gcc
 
 COPY opendylan-2022.1-x86_64-linux.tar.bz2 .
