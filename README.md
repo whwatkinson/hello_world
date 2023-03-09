@@ -42,6 +42,7 @@
 - Kotlin
 - Ksh
 - Lisp
+- Livescript
 - Lua
 - Nial
 - Nim

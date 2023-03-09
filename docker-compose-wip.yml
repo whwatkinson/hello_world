@@ -235,11 +235,6 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
-  livescript:
-    container_name: hello_world_livescript
-    build:
-      context: projects/livescript
-      dockerfile: DockerfileLivescript
 
   matlab:
     container_name: hello_world_matlab
@@ -270,7 +265,6 @@ services:
     build:
       context: projects/modula3
       dockerfile: DockerfileModula3
-
 
   newspeak:
     container_name: hello_world_newspeak

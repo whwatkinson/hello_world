@@ -1,9 +1,11 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+#
+#RUN apt-get update -y && \
+#    apt-get install agda-stdlib -y && \
+#    apt-get install agda -y
+#
 
-RUN apt-get update -y && \
-    apt-get install agda-stdlib -y && \
-    apt-get install agda -y
-
+FROM jlimperg/agda-stdlib:2.6.0.1_1.1
 
 COPY hello_world.agda .
 

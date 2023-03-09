@@ -235,6 +235,12 @@ services:
       context: projects/lisp
       dockerfile: DockerfileLisp
 
+  livescript:
+    container_name: hello_world_livescript
+    build:
+      context: projects/livescript
+      dockerfile: DockerfileLivescript
+
   lua:
     container_name: hello_world_lua
     build:

@@ -1,7 +1,10 @@
-FROM ubuntu:22.04
+FROM node:19.4.0
 
-RUN apt-get update -y
+RUN npm install -g npm@latest \
+    && npm install livescript -g
 
 COPY hello_world.ls .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN lsc -c hello_world.ls
+
+CMD ["node", "hello_world.js"]
