@@ -1,6 +1,21 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install software-properties-common pkg-config git -y && \
+    add-apt-repository ppa:avsm/ppa -y && \
+    add-apt-repository ppa:chris-lea/node.js -y && \
+    apt-get dist-upgrade -y
+
+
+RUN apt-get install ocaml camlp4 camlp4-extra opam nodejs make openjdk-8-jre m4 zlib1g-dev unzip git ocaml-findlib -y
+
+RUN opam init -y
+RUN eval `opam config env`
+RUN opam install ulex camlzip ocamlgraph camlzip -y
+RUN git clone https://github.com/MLstate/opalang
+RUN apt-get install ocamlbuild ocaml-ulex libzip-ocaml-dev libocamlgraph-ocaml-dev -y
+#RUN cd opalang && ./configure -ocamlfind `which ocamlfind`
+
 
 COPY hello_world.opa .
 
