@@ -55,6 +55,12 @@ services:
       context: projects/clean
       dockerfile: DockerfileClean
 
+  clojure:
+    container_name: hello_world_clojure
+    build:
+      context: projects/clojure
+      dockerfile: DockerfileClojure
+
   cobol:
     container_name: hello_world_cobol
     build:
