@@ -2,6 +2,13 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
+COPY mira-2038-i686-Linux.tgz .
+
+RUN tar zxvf mira-2038-i686-Linux.tgz
+
 COPY hello_world.m .
 
 CMD ["tail", "-f", "/dev/null"]
+
+
+# https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/linux/32_1.html

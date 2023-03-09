@@ -23,4 +23,5 @@ COPY hello_world.opa .
 
 CMD ["tail", "-f", "/dev/null"]
 
-#https://en.wikipedia.org/wiki/Opa_(programming_language)#Examples
+#  https://en.wikipedia.org/wiki/Opa_(programming_language)#Examples
+#  https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/linux/instructions.html
