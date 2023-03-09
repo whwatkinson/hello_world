@@ -34,6 +34,7 @@
 - Groovy
 - Haskell
 - Haxe
+- Idris2
 - Java
 - JavaScript
 - Julia

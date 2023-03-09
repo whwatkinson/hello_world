@@ -1,16 +1,7 @@
-FROM ubuntu:22.04
-
-RUN apt-get update -y && \
-    apt-get install -y xz-utils make gcc libgmp3-dev
-
-COPY idris2-0.6.0.tgz .
-
-RUN tar zxvf idris2-0.6.0.tgz
-
+FROM snazzybucket/idris2:v0.6.0-173-g79116320d
 
 COPY hello_world.idr .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN idris2 hello_world.idr -o hello_world
 
-#CMD ["idris", "hello_world.idr", "-o", "hello_world"]
-#idris hello.idr -o hello
+CMD ["./build/exec/hello_world"]

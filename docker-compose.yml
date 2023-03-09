@@ -187,6 +187,12 @@ services:
       context: projects/haxe
       dockerfile: DockerfileHaxe
 
+  Idris2:
+    container_name: hello_world_idris2
+    build:
+      context: projects/idris2
+      dockerfile: DockerfileIdris2
+
   java:
     container_name: hello_world_java
     build:

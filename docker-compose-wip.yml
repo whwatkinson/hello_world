@@ -199,11 +199,7 @@ services:
       context: projects/hop
       dockerfile: DockerfileHop
 
-  Idris2:
-    container_name: hello_world_idris2
-    build:
-      context: projects/idris2
-      dockerfile: DockerfileIdris2
+
 
   io:
     container_name: hello_world_io
