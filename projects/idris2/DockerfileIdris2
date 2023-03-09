@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y && \
+RUN apt-get update -y &&\
     apt-get install -y xz-utils make gcc libgmp3-dev
 
 COPY idris2-0.6.0.tgz .

@@ -175,8 +175,6 @@ services:
       context: projects/elm
       dockerfile: DockerfileElm
 
-
-
   forth:
     container_name: hello_world_forth
     build:
