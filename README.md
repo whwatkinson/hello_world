@@ -12,6 +12,7 @@
 - Befunge
 - C
 - Clean
+- Clojure
 - Cobol
 - CoffeeScript
 - C++
