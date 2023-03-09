@@ -271,6 +271,12 @@ services:
       context: projects/powershell
       dockerfile: DockerfilePowershell
 
+  purescript:
+    container_name: hello_world_purescript
+    build:
+      context: projects/purescript
+      dockerfile: DockerfilePurescript
+
   python2:
     container_name: hello_world_python2
     build:

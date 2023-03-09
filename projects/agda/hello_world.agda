@@ -1,4 +1,5 @@
-module hello_world where
-open import IO
+data Greeting : Set where
+  hello : Greeting
 
-main = run (putStrLn "Hello World")
+greet : Greeting
+greet = hello

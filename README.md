@@ -48,6 +48,7 @@
 - Perl
 - Php
 - Powershell
+- Purescript
 - Python 2
 - Python 3
 - R

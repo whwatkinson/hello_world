@@ -356,12 +356,6 @@ services:
       context: projects/parasail
       dockerfile: DockerfileParasail
 
-  purescript:
-    container_name: hello_world_purescript
-    build:
-      context: projects/purescript
-      dockerfile: DockerfilePurescript
-
   postscript:
     container_name: hello_world_postscript
     build:

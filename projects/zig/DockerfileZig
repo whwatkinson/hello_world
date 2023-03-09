@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y &&\
+RUN apt-get update -y && \
     apt-get install xz-utils make
 
 COPY zig-linux-x86_64-0.10.1.tar.xz .

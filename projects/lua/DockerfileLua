@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y &&\
+RUN apt-get update -y && \
     apt-get install make curl gcc -y
 
 RUN curl -R -O http://www.lua.org/ftp/lua-5.4.4.tar.gz
