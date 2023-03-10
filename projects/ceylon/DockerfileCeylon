@@ -10,7 +10,8 @@ FROM ceylon/ceylon:latest-redhat
 
 COPY hello_world.ceylon .
 
-#ENV PATH=/lua-5.4.4/src:$PATH
+RUN ceylon compile-js
+
 
 CMD ["tail", "-f", "/dev/null"]
 

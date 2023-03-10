@@ -21,6 +21,7 @@
 - Csh
 - C#
 - D
+- Dafny
 - Dart
 - DogeScript
 - Dylan

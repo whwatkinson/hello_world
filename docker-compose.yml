@@ -109,6 +109,12 @@ services:
       context: projects/d
       dockerfile: DockerfileD
 
+  dafny:
+    container_name: hello_world_dafny
+    build:
+      context: projects/dafny
+      dockerfile: DockerfileDafny
+
   dart:
     container_name: hello_world_dart
     build:
