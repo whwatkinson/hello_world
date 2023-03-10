@@ -55,6 +55,12 @@ services:
       context: projects/clean
       dockerfile: DockerfileClean
 
+  chapel:
+    container_name: hello_world_chapel
+    build:
+      context: projects/chapel
+      dockerfile: DockerfileChapel
+
   clojure:
     container_name: hello_world_clojure
     build:

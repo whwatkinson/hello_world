@@ -403,12 +403,17 @@ services:
       context: projects/sather
       dockerfile: DockerfileSather
 
-
   sml:
     container_name: hello_world_sml
     build:
       context: projects/sml
       dockerfile: DockerfileSml
+
+  tea:
+    container_name: hello_world_tea
+    build:
+      context: projects/tea
+      dockerfile: DockerfileTea
 
   terraform:
     container_name: hello_world_terraform
