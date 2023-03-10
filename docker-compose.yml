@@ -307,6 +307,12 @@ services:
       context: projects/powershell
       dockerfile: DockerfilePowershell
 
+  prolog:
+    container_name: hello_world_prolog
+    build:
+      context: projects/prolog
+      dockerfile: DockerfileProlog
+
   purescript:
     container_name: hello_world_purescript
     build:

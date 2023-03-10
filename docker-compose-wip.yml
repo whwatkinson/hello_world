@@ -357,11 +357,7 @@ services:
         "postgresql://postgres:postgress@localhost:5432/postgres",
       ]
 
-  prolog:
-    container_name: hello_world_prolog
-    build:
-      context: projects/prolog
-      dockerfile: DockerfileProlog
+
 
   ragel:
     container_name: hello_world_ragel

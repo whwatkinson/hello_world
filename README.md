@@ -53,6 +53,7 @@
 - Perl
 - Php
 - Powershell
+- Prolog
 - Purescript
 - Python 2
 - Python 3
