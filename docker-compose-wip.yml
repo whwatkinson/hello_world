@@ -127,8 +127,6 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-
-
   e:
     container_name: hello_world_e
     build:
@@ -356,8 +354,6 @@ services:
         "psql",
         "postgresql://postgres:postgress@localhost:5432/postgres",
       ]
-
-
 
   ragel:
     container_name: hello_world_ragel
