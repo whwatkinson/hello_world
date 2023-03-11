@@ -340,20 +340,18 @@ services:
 
   postgres:
     container_name: hello_world_postgres
-    image: postgres:bullseye
-    user: postgres
+#    image: postgres:bullseye
+#    user: postgres
     environment:
       POSTGRES_DB: postgress
       POSTGRES_USER: postgress
       POSTGRES_PASSWORD: postgress
+    build:
+      context: projects/postgres
+      dockerfile: DockerfilePostgres
     command:
-      [
-        "echo",
-        "\"SELECT 'Hello, World!' AS hello_message;\"",
-        "|",
-        "psql",
-        "postgresql://postgres:postgress@localhost:5432/postgres",
-      ]
+      -
+
 
   ragel:
     container_name: hello_world_ragel
