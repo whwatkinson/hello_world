@@ -406,11 +406,11 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
-  #  tcl:
-  #    container_name: hello_world_tcl
-  #    build:
-  #      context: projects/tcl
-  #      dockerfile: DockerfileTcl
+  tcl:
+    container_name: hello_world_tcl
+    build:
+      context: projects/tcl
+      dockerfile: DockerfileTcl
 
   terraform:
     container_name: hello_world_terraform
