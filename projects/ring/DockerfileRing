@@ -1,7 +1,11 @@
-FROM ubuntu:22.04
-
-RUN apt-get update -y
+FROM esolang/ring
 
 COPY hello_world.ring .
 
-CMD ["tail", "-f", "/dev/null"]
+
+# TODO This works but not in the spirit of the challenge
+#CMD ["ring", "hello_world.ring"]
+RUN ring hello_world.ring >> output.txt
+CMD ["cat", "output.txt"]
+
+#CMD ["tail", "-f", "/dev/null"]

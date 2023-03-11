@@ -63,6 +63,7 @@
 - Raku
 - Rebol
 - Red
+- Ring
 - Ruby
 - Scala
 - Shell

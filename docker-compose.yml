@@ -364,6 +364,12 @@ services:
       context: projects/red
       dockerfile: DockerfileRed
 
+  ring:
+    container_name: hello_world_ring
+    build:
+      context: projects/ring
+      dockerfile: DockerfileRing
+
   ruby:
     container_name: hello_world_ruby
     build:

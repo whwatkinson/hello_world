@@ -352,12 +352,6 @@ services:
       context: projects/ragel
       dockerfile: DockerfileRagel
 
-  ring:
-    container_name: hello_world_ring
-    build:
-      context: projects/ring
-      dockerfile: DockerfileRing
-
   scheme:
     container_name: hello_world_scheme
     build:
