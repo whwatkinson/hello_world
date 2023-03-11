@@ -1,0 +1,7 @@
+FROM esolang/seed
+
+COPY hello_world.seed .
+ENV BUILDKIT_PROGRESS=plain
+CMD ["seed", "hello_world.seed"]
+
+#CMD ["tail", "-f", "/dev/null"]
