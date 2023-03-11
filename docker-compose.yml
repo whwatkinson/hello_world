@@ -211,7 +211,7 @@ services:
       context: projects/haxe
       dockerfile: DockerfileHaxe
 
-  Idris2:
+  idris2:
     container_name: hello_world_idris2
     build:
       context: projects/idris2
@@ -408,6 +408,12 @@ services:
   #    build:
   #      context: projects/tcl
   #      dockerfile: DockerfileTcl
+
+  terraform:
+    container_name: hello_world_terraform
+    build:
+      context: projects/terraform
+      dockerfile: DockerfileTerraform
 
   typescript:
     container_name: hello_world_typescript

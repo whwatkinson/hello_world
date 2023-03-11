@@ -409,12 +409,6 @@ services:
       context: projects/tea
       dockerfile: DockerfileTea
 
-  terraform:
-    container_name: hello_world_terraform
-    build:
-      context: projects/terraform
-      dockerfile: DockerfileTerraform
-
   turing:
     container_name: hello_world_turing
     build:

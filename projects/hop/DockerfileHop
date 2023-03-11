@@ -2,6 +2,8 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
-COPY hello_world .
+RUN echo 'deb [trusted=yes] http://hop.inria.fr/linux/Ubuntu focal hop' | tee /etc/apt/sources.list.d/hop
+
+COPY hello_world.js .
 
 CMD ["tail", "-f", "/dev/null"]
