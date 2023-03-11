@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y make gcc numactl build-essential
+
+COPY seed7_05_20230305.tgz .
+
+RUN tar zxvf seed7_05_20230305.tgz
+
+COPY hello_world.sd7 .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+#  https://seed7.sourceforge.net/scrshots/s7c.htm
+
+#  https://www.friendlyskies.net/notebook/installing-and-using-the-seed7-programming-language-in-ubuntu

@@ -1,0 +1,19 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install curl -y
+
+RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --version latest
+
+ENV PATH=root/.dotnet:$PATH
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+
+COPY hello_world.fsx .
+
+RUN dotnet fsi hello_world.fsx -q &
+
+CMD ["root/.dotnet/dotnet", "fsi", "hello_world.fsx"]
+
+# TODO make this output one line
+
+#  https://fsharp.org/use/linux/

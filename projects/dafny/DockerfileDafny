@@ -1,0 +1,5 @@
+FROM marcelmoosbrugger/dafny3.3
+
+COPY hello_world.dfy .
+
+CMD ["dafny", "/compile:3", "hello_world.dfy"]

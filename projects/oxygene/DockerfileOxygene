@@ -1,6 +1,8 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+#
+#RUN apt-get update -y
 
-RUN apt-get update -y
+FROM oxygeneiv/get-started:part2
 
 COPY hello_world.pas .
 

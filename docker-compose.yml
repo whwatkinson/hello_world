@@ -13,6 +13,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  awk:
+    container_name: hello_world_awk
+    build:
+      context: projects/awk
+      dockerfile: DockerfileAwk
+
   bash:
     container_name: hello_world_bash
     build:
@@ -43,6 +49,24 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+  clean:
+    container_name: hello_world_clean
+    build:
+      context: projects/clean
+      dockerfile: DockerfileClean
+
+  chapel:
+    container_name: hello_world_chapel
+    build:
+      context: projects/chapel
+      dockerfile: DockerfileChapel
+
+  clojure:
+    container_name: hello_world_clojure
+    build:
+      context: projects/clojure
+      dockerfile: DockerfileClojure
+
   cobol:
     container_name: hello_world_cobol
     build:
@@ -67,11 +91,29 @@ services:
       context: projects/crystal
       dockerfile: DockerfileCrystal
 
+  csh:
+    container_name: hello_world_csh
+    build:
+      context: projects/csh
+      dockerfile: DockerfileCsh
+
   csharp:
     container_name: hello_world_csharp
     build:
       context: projects/csharp
       dockerfile: DockerfileCsharp
+
+  d:
+    container_name: hello_world_d
+    build:
+      context: projects/d
+      dockerfile: DockerfileD
+
+  dafny:
+    container_name: hello_world_dafny
+    build:
+      context: projects/dafny
+      dockerfile: DockerfileDafny
 
   dart:
     container_name: hello_world_dart
@@ -103,6 +145,12 @@ services:
       context: projects/elixir
       dockerfile: DockerfileElixir
 
+  emerald:
+    container_name: hello_world_emerald
+    build:
+      context: projects/emerald
+      dockerfile: DockerfileEmerald
+
   factor:
     container_name: hello_world_factor
     build:
@@ -120,6 +168,12 @@ services:
     build:
       context: projects/fortran
       dockerfile: DockerfileFortran
+
+  fsharp:
+    container_name: hellow_world_fsharp
+    build:
+      context: projects/fsharp
+      dockerfile: DockerfileFSharp
 
   gap:
     container_name: hello_world_gap
@@ -151,6 +205,18 @@ services:
       context: projects/haskell
       dockerfile: DockerfileHaskell
 
+  haxe:
+    container_name: hello_world_haxe
+    build:
+      context: projects/haxe
+      dockerfile: DockerfileHaxe
+
+  idris2:
+    container_name: hello_world_idris2
+    build:
+      context: projects/idris2
+      dockerfile: DockerfileIdris2
+
   java:
     container_name: hello_world_java
     build:
@@ -175,11 +241,23 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
+  korn:
+    container_name: hello_world_ksh
+    build:
+      context: projects/ksh
+      dockerfile: DockerfileKsh
+
   lisp:
     container_name: hello_world_lisp
     build:
       context: projects/lisp
       dockerfile: DockerfileLisp
+
+  livescript:
+    container_name: hello_world_livescript
+    build:
+      context: projects/livescript
+      dockerfile: DockerfileLivescript
 
   lua:
     container_name: hello_world_lua
@@ -192,6 +270,12 @@ services:
     build:
       context: projects/nial
       dockerfile: DockerfileNial
+
+  nim:
+    container_name: hello_world_nim
+    build:
+      context: projects/nim
+      dockerfile: DockerfileNim
 
   ocaml:
     container_name: hello_world_ocaml
@@ -222,6 +306,18 @@ services:
     build:
       context: projects/powershell
       dockerfile: DockerfilePowershell
+
+  prolog:
+    container_name: hello_world_prolog
+    build:
+      context: projects/prolog
+      dockerfile: DockerfileProlog
+
+  purescript:
+    container_name: hello_world_purescript
+    build:
+      context: projects/purescript
+      dockerfile: DockerfilePurescript
 
   python2:
     container_name: hello_world_python2
@@ -307,6 +403,18 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
+  #  tcl:
+  #    container_name: hello_world_tcl
+  #    build:
+  #      context: projects/tcl
+  #      dockerfile: DockerfileTcl
+
+  terraform:
+    container_name: hello_world_terraform
+    build:
+      context: projects/terraform
+      dockerfile: DockerfileTerraform
+
   typescript:
     container_name: hello_world_typescript
     build:
@@ -330,5 +438,3 @@ services:
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
-
-

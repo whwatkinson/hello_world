@@ -19,11 +19,23 @@ services:
       context: projects/ada
       dockerfile: DockerfileAda
 
+  alef:
+    container_name: hello_world_alef
+    build:
+      context: projects/alef
+      dockerfile: DockerfileAlef
+
   apl:
     container_name: hello_world_apl
     build:
       context: projects/apl
       dockerfile: DockerfileApl
+
+  agda:
+    container_name: hello_world_agda
+    build:
+      context: projects/agda
+      dockerfile: DockerfileAgda
 
   applescript:
     container_name: hello_world_applescript
@@ -31,17 +43,41 @@ services:
       context: projects/applescript
       dockerfile: DockerfileApplescript
 
+  assemblyscript:
+    container_name: hello_world_assemblyscript
+    build:
+      context: projects/assemblyscript
+      dockerfile: DockerfileAssemblyscript
+
+  actionscript:
+    container_name: hello_world_actionscript
+    build:
+      context: projects/actionscript
+      dockerfile: DockerfileActionScript
+
   b:
     container_name: hello_world_b
     build:
       context: projects/b
       dockerfile: DockerfileB
 
+#  beta:
+#    container_name: hello_world_beta
+#    build:
+#      context: projects/beta
+#      dockerfile: DockerfileBeta
+
   bcpl:
     container_name: hello_world_bcpl
     build:
       context: projects/bcpl
       dockerfile: DockerfileBcpl
+
+  blitzmax:
+    container_name: hello_world_blitzmax
+    build:
+      context: projects/blitzmax
+      dockerfile: DockerfileBlitzMax
 
   boo:
     container_name: hello_world_boo
@@ -55,6 +91,12 @@ services:
       context: projects/bird
       dockerfile: DockerfileBird
 
+  cyclone:
+    container_name: hello_world_cyclone
+    build:
+      context: projects/cyclone
+      dockerfile: DockerfileCyclone
+
   carbon:
     container_name: hello_world_carbon
     build:
@@ -67,17 +109,11 @@ services:
       context: projects/ceylon
       dockerfile: DockerfileCeylon
 
-  clojure:
-    container_name: hello_world_clojure
-    build:
-      context: projects/clojure
-      dockerfile: DockerfileClojure
-
-  clu:
-    container_name: hello_world_clu
-    build:
-      context: projects/clu
-      dockerfile: DockerfileClu
+  #  clu:
+  #    container_name: hello_world_clu
+  #    build:
+  #      context: projects/clu
+  #      dockerfile: DockerfileClu
 
   cobra:
     container_name: hello_world_cobra
@@ -91,17 +127,23 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-  d:
-    container_name: hello_world_d
-    build:
-      context: projects/d
-      dockerfile: DockerfileD
-
   e:
     container_name: hello_world_e
     build:
       context: projects/e
       dockerfile: DockerfileE
+
+  euclid:
+    container_name: hello_world_euclid
+    build:
+      context: projects/euclid
+      dockerfile: DockerfileEuclid
+
+  escher:
+    container_name: hello_world_escher
+    build:
+      context: projects/escher
+      dockerfile: DockerfileEscher
 
   delphi:
     container_name: hello_World_delphi
@@ -127,17 +169,47 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
-  idris:
-    container_name: hello_world_idris
+  goaldi:
+    container_name: hello_world_goaldi
     build:
-      context: projects/idris
-      dockerfile: DockerfileIdris
+      context: projects/goaldi
+      dockerfile: DockerfileGoaldi
+
+  hack:
+    container_name: hello_world_hack
+    build:
+      context: projects/hack
+      dockerfile: DockerfileHack
+
+  hop:
+    container_name: hello_world_hop
+    build:
+      context: projects/hop
+      dockerfile: DockerfileHop
+
+  io:
+    container_name: hello_world_io
+    build:
+      context: projects/io
+      dockerfile: DockerfileIo
+
+  icon:
+    container_name: hello_world_icon
+    build:
+      context: projects/icon
+      dockerfile: DockerfileIcon
 
   jade:
     container_name: hello_world_jade
     build:
       context: projects/jade
       dockerfile: DockerfileJade
+
+  limbo:
+    container_name: hello_world_limbo
+    build:
+      context: projects/limbo
+      dockerfile: DockerfileLimbo
 
   lfe:
     container_name: hello_world_lfe
@@ -151,29 +223,66 @@ services:
       context: projects/logo
       dockerfile: DockerfileLogo
 
+  lasso:
+    container_name: hello_world_lasso
+    build:
+      context: projects/lasso
+      dockerfile: DockerfileLasso
+
+
   matlab:
     container_name: hello_world_matlab
     build:
       context: projects/matlab
       dockerfile: DockerfileMatlab
 
+  mercury:
+    container_name: hello_world_mercury
+    build:
+      context: projects/mercury
+      dockerfile: DockerfileMercury
+
+  mesa:
+    container_name: hello_world_mesa
+    build:
+      context: projects/mesa
+      dockerfile: DockerfileMesa
+
   modula:
-    container_name: hello_world_modla
+    container_name: hello_world_modula
     build:
       context: projects/modula
       dockerfile: DockerfileModula
 
-  nim:
-    container_name: hello_world_nim
+  modula3:
+    container_name: hello_world_modula3
     build:
-      context: projects/nim
-      dockerfile: DockerfileNim
+      context: projects/modula3
+      dockerfile: DockerfileModula3
+
+  newspeak:
+    container_name: hello_world_newspeak
+    build:
+      context: projects/newspeak
+      dockerfile: DockerfileNewspeak
 
   nu:
     container_name: hello_world_nu
     build:
       context: projects/nu
       dockerfile: DockerfileNu
+
+  nemerle:
+    container_name: hello_world_nemerle
+    build:
+      context: projects/nemerle
+      dockerfile: DockerfileNemerle
+
+  omega:
+    container_name: hello_world_omega
+    build:
+      context: projects/omega
+      dockerfile: DockerfileOmega
 
   occam:
     container_name: hello_world_occam
@@ -205,11 +314,29 @@ services:
       context: projects/oxygene
       dockerfile: DockerfileOxygene
 
+  miranda:
+    container_name: hello_world_miranda
+    build:
+      context: projects/miranda
+      dockerfile: DockerfileMiranda
+
+  opa:
+    container_name: hello_world_opa
+    build:
+      context: projects/opa
+      dockerfile: DockerfileOpa
+
   parasail:
     container_name: hello_world_parasail
     build:
       context: projects/parasail
       dockerfile: DockerfileParasail
+
+  postscript:
+    container_name: hello_world_postscript
+    build:
+      context: projects/postscript
+      dockerfile: DockerfilePostscript
 
   postgres:
     container_name: hello_world_postgres
@@ -228,12 +355,6 @@ services:
         "postgresql://postgres:postgress@localhost:5432/postgres",
       ]
 
-  prolog:
-    container_name: hello_world_prolog
-    build:
-      context: projects/prolog
-      dockerfile: DockerfileProlog
-
   ragel:
     container_name: hello_world_ragel
     build:
@@ -246,18 +367,53 @@ services:
       context: projects/ring
       dockerfile: DockerfileRing
 
+  scheme:
+    container_name: hello_world_scheme
+    build:
+      context: projects/scheme
+      dockerfile: DockerfileScheme
+
   self:
     container_name: hello_world_self
     build:
       context: projects/self
       dockerfile: DockerfileSelf
 
-  terraform:
-    container_name: hello_world_terraform
+  seed7:
+    container_name: hello_world_seed7
     build:
-      context: projects/terraform
-      dockerfile: DockerfileTerraform
+      context: projects/seed7
+      dockerfile: DockerfileSeed7
 
+  spark:
+    container_name: hello_world_spark
+    build:
+      context: projects/spark
+      dockerfile: DockerfileSpark
+
+  sather:
+    container_name: hello_world_sather
+    build:
+      context: projects/sather
+      dockerfile: DockerfileSather
+
+  sml:
+    container_name: hello_world_sml
+    build:
+      context: projects/sml
+      dockerfile: DockerfileSml
+
+  tea:
+    container_name: hello_world_tea
+    build:
+      context: projects/tea
+      dockerfile: DockerfileTea
+
+  turing:
+    container_name: hello_world_turing
+    build:
+      context: projects/turing
+      dockerfile: DockerfileTuring
 
   y:
     container_name: hello_world_y

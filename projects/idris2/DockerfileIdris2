@@ -1,0 +1,7 @@
+FROM snazzybucket/idris2:v0.6.0-173-g79116320d
+
+COPY hello_world.idr .
+
+RUN idris2 hello_world.idr -o hello_world
+
+CMD ["./build/exec/hello_world"]

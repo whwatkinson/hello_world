@@ -1,0 +1,15 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install xz-utils make gcc flex bison -y
+
+COPY mercury-srcdist-22.01.5.tar.xz .
+RUN tar -xJf mercury-srcdist-22.01.5.tar.xz
+
+RUN cd mercury-srcdist-22.01.5.tar.xz && make install
+
+COPY hello_world.m .
+
+CMD ["tail", "-f", "/dev/null"]
+
+#https://github.com/Mercury-Language/mercury-srcdist

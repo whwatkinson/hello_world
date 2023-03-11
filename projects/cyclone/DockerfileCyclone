@@ -1,0 +1,15 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install gcc make -y
+
+COPY cyclone-1.0.tar.gz .
+
+RUN tar -zvxf cyclone-1.0.tar.gz
+
+
+COPY hello_world.cyc .
+
+CMD ["tail", "-f", "/dev/null"]
+
+#  https://cyclone.thelanguage.org/wiki/Installing%20Cyclone/

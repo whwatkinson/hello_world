@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install ksh -y
+
+COPY hello_world.ksh .
+
+CMD ["ksh", "hello_world.ksh"]

@@ -1,13 +1,18 @@
-#https://github.com/eclipse/ceylon/tree/master/dist
+#FROM ubuntu:22.04
+#
+#
+#RUN apt-get update -y && \
+#    apt-get install git curl -y
+#
+##RUN git clone https://github.com/eclipse/ceylon.git
 
-FROM ubuntu:22.04
-
-RUN apt-get update -y && \
-    apt-get install -y git
-
-RUN git clone https://github.com/eclipse/ceylon.git
+FROM ceylon/ceylon:latest-redhat
 
 COPY hello_world.ceylon .
 
+RUN ceylon compile-js
+
 
 CMD ["tail", "-f", "/dev/null"]
+
+#https://github.com/eclipse/ceylon/tree/master/dist

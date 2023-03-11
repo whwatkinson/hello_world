@@ -1,0 +1,10 @@
+FROM node:19.4.0
+
+RUN npm install -g npm@latest \
+    && npm install livescript -g
+
+COPY hello_world.ls .
+
+RUN lsc -c hello_world.ls
+
+CMD ["node", "hello_world.js"]

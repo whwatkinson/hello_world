@@ -1,0 +1,13 @@
+#FROM ubuntu:22.04
+#
+#RUN apt-get update -y
+
+# LOOK AT THE DOCKERFILE
+FROM splessons/nemerle:1.2
+
+COPY hello_world.n .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+# https://github.com/rsdn/nemerle/wiki/The-basics-%28tutorial%29#user-content-Simple_Examples

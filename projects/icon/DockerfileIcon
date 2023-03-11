@@ -1,0 +1,15 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+COPY icon-9.5.22e.tar.gz .
+
+RUN tar -zxvf icon-9.5.22e.tar.gz
+
+COPY hello_world.icn .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+#  https://www2.cs.arizona.edu/icon/v95u.htm
+#  https://github.com/gtownsend/icon

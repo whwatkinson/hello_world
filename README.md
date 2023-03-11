@@ -5,16 +5,23 @@
 ![image info](./hello_world.png)
 
 - Algol68
+- Awk
 - Bash
 - Basic
 - Beanshell
 - Befunge
 - C
+- Clean
+- Chapel
+- Clojure
 - Cobol
 - CoffeeScript
 - C++
 - Crystal
+- Csh
 - C#
+- D
+- Dafny
 - Dart
 - DogeScript
 - Dylan
@@ -23,23 +30,31 @@
 - Factor
 - Fennel
 - Fortran
+- F#
 - Gap
 - Genie
 - Golang
 - Groovy
 - Haskell
+- Haxe
+- Idris2
 - Java
 - JavaScript
 - Julia
 - Kotlin
+- Ksh
 - Lisp
+- Livescript
 - Lua
 - Nial
+- Nim
 - Ocaml
 - Pascal
 - Perl
 - Php
 - Powershell
+- Prolog
+- Purescript
 - Python 2
 - Python 3
 - R
