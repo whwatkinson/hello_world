@@ -1,7 +1,4 @@
 # As noted in the Docker best practices "each container should have only one concern
-# CMD ["tail", "-f", "/dev/null"]
-# https://learnxinyminutes.com/
-
 
 version: "3.9"
 
@@ -264,6 +261,12 @@ services:
     build:
       context: projects/lua
       dockerfile: DockerfileLua
+
+  mercury:
+    container_name: hello_world_mercury
+    build:
+      context: projects/mercury
+      dockerfile: DockerfileMercury
 
   nial:
     container_name: hello_world_nial

@@ -46,6 +46,7 @@
 - Lisp
 - Livescript
 - Lua
+- Mercury
 - Nial
 - Nim
 - Ocaml

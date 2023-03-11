@@ -1,5 +1,5 @@
 # As noted in the Docker best practices "each container should have only one concern
-# CMD ["tail", "-f", "/dev/null"]
+# ENTRYPOINT ["tail", "-f", "/dev/null"]
 # https://learnxinyminutes.com/
 
 
@@ -229,18 +229,11 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
-
   matlab:
     container_name: hello_world_matlab
     build:
       context: projects/matlab
       dockerfile: DockerfileMatlab
-
-  mercury:
-    container_name: hello_world_mercury
-    build:
-      context: projects/mercury
-      dockerfile: DockerfileMercury
 
   mesa:
     container_name: hello_world_mesa
