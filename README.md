@@ -69,6 +69,8 @@
 - Smalltalk
 - Snobol
 - Swift
+- Tcl
+- Terraform
 - TypeScript
 - Vala
 - Zig
