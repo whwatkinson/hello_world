@@ -2,6 +2,9 @@ FROM esolang/ring
 
 COPY hello_world.ring .
 
+RUN mv script scriptOld
+COPY script .
+
 # TODO This works but not in the spirit of the challenge
 RUN ring hello_world.ring >> output.txt
 CMD ["cat", "output.txt"]
