@@ -1,7 +1,11 @@
-#FROM ubuntu:22.04
-#RUN apt-get update -y
+FROM ubuntu:22.04
 
-FROM esolang/apl:latest
+RUN apt-get update -y && \
+    apt-get install make gcc -y
+
+COPY apl-1.8.tar.gz .
+
+RUN tar -zvxf apl-1.8.tar.gz
 
 COPY hello_world.apl .
 

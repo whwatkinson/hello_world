@@ -238,6 +238,12 @@ services:
       context: projects/javascript
       dockerfile: DockerfileJs
 
+  jq:
+    container_name: hello_world_jq
+    build:
+      context: projects/jq
+      dockerfile: DockerfileJq
+
   julia:
     container_name: hello_world_julia
     build:

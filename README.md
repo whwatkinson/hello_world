@@ -42,6 +42,7 @@
 - Idris2
 - Java
 - JavaScript
+- JQ
 - Julia
 - Kotlin
 - Ksh
