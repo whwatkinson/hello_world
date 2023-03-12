@@ -127,6 +127,12 @@ services:
       context: projects/e
       dockerfile: DockerfileE
 
+  evil:
+    container_name: hello_world_evil
+    build:
+      context: projects/evil
+      dockerfile: DockerfileEvil
+
   euclid:
     container_name: hello_world_euclid
     build:
@@ -399,6 +405,12 @@ services:
     build:
       context: projects/turing
       dockerfile: DockerfileTuring
+
+  Typhon:
+    container_name: hello_world_typhon
+    build:
+      context: projects/typhon
+      dockerfile: DockerfileTyphon
 
   y:
     container_name: hello_world_y

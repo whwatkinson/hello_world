@@ -1,0 +1,5 @@
+FROM esolang/evil
+
+COPY hello_world.evil .
+
+CMD ["tail", "-f", "/dev/null"]
