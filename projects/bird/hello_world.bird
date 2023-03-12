@@ -1,5 +1,5 @@
 use Console
 
 define Main
-    Console.Println "Hello, world!"
+    Console.Println "Hello, World!"
 end

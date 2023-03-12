@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y jq
+
+COPY hello_world.sh .
+
+RUN chmod +x hello_world.sh
+
+CMD ["./hello_world.sh"]

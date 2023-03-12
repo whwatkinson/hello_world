@@ -1,0 +1,7 @@
+FROM javiergelatti/simula
+
+COPY hello_world.sim .
+
+RUN cim hello_world.sim
+
+CMD ["./hello_world"]

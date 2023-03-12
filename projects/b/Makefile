@@ -8,7 +8,7 @@ libs:
 	./abc -c brt.s lib.b
 
 install: b abc
-	cp abc $(HOME)/bin
+	cp abc root/bin
 
 %.o: %.s
 	as --32 $^ -o $@

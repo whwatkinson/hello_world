@@ -1,18 +1,17 @@
-#FROM ubuntu:22.04
-#
-#
-#RUN apt-get update -y && \
-#    apt-get install git curl -y
-#
-##RUN git clone https://github.com/eclipse/ceylon.git
-
 FROM ceylon/ceylon:latest-redhat
 
-COPY hello_world.ceylon .
+#COPY hello_world.ceylon .
 
-RUN ceylon compile-js
+# TODO dont do this, cant seem to supply args to ceylon new ?
+RUN mkdir source
+RUN mkdir source/hello
 
+COPY module.ceylon source/hello
+COPY package.ceylon source/hello
+COPY run.ceylon source/hello
 
-CMD ["tail", "-f", "/dev/null"]
+RUN ceylon compile hello
+
+CMD ["ceylon", "run", "hello"]
 
 #https://github.com/eclipse/ceylon/tree/master/dist

@@ -1,17 +1,11 @@
 # As noted in the Docker best practices "each container should have only one concern
-# CMD ["tail", "-f", "/dev/null"]
+# ENTRYPOINT ["tail", "-f", "/dev/null"]
 # https://learnxinyminutes.com/
 
 
 version: "3.9"
 
 services:
-
-  abc:
-    container_name: hello_world_abc
-    build:
-      context: projects/abc
-      dockerfile: DockerfileAbc
 
   ada:
     container_name: hello_world_ada
@@ -103,12 +97,6 @@ services:
       context: projects/carbon
       dockerfile: DockerfileCarbon
 
-  ceylon:
-    container_name: hello_world_ceylon
-    build:
-      context: projects/ceylon
-      dockerfile: DockerfileCeylon
-
   #  clu:
   #    container_name: hello_world_clu
   #    build:
@@ -132,6 +120,12 @@ services:
     build:
       context: projects/e
       dockerfile: DockerfileE
+
+  evil:
+    container_name: hello_world_evil
+    build:
+      context: projects/evil
+      dockerfile: DockerfileEvil
 
   euclid:
     container_name: hello_world_euclid
@@ -229,18 +223,11 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
-
   matlab:
     container_name: hello_world_matlab
     build:
       context: projects/matlab
       dockerfile: DockerfileMatlab
-
-  mercury:
-    container_name: hello_world_mercury
-    build:
-      context: projects/mercury
-      dockerfile: DockerfileMercury
 
   mesa:
     container_name: hello_world_mesa
@@ -340,32 +327,23 @@ services:
 
   postgres:
     container_name: hello_world_postgres
-    image: postgres:bullseye
-    user: postgres
+#    image: postgres:bullseye
+#    user: postgres
     environment:
       POSTGRES_DB: postgress
       POSTGRES_USER: postgress
       POSTGRES_PASSWORD: postgress
+    build:
+      context: projects/postgres
+      dockerfile: DockerfilePostgres
     command:
-      [
-        "echo",
-        "\"SELECT 'Hello, World!' AS hello_message;\"",
-        "|",
-        "psql",
-        "postgresql://postgres:postgress@localhost:5432/postgres",
-      ]
+      -
 
   ragel:
     container_name: hello_world_ragel
     build:
       context: projects/ragel
       dockerfile: DockerfileRagel
-
-  ring:
-    container_name: hello_world_ring
-    build:
-      context: projects/ring
-      dockerfile: DockerfileRing
 
   scheme:
     container_name: hello_world_scheme
@@ -414,6 +392,12 @@ services:
     build:
       context: projects/turing
       dockerfile: DockerfileTuring
+
+  Typhon:
+    container_name: hello_world_typhon
+    build:
+      context: projects/typhon
+      dockerfile: DockerfileTyphon
 
   y:
     container_name: hello_world_y

@@ -11,6 +11,6 @@ COPY main.b .
 RUN mv Makefile MakefileOrg
 COPY Makefile .
 
-RUN make install libs
+#RUN make install libs
 
 CMD ["tail", "-f", "/dev/null"]

@@ -4,6 +4,7 @@
 
 ![image info](./hello_world.png)
 
+- ABC
 - Algol68
 - Awk
 - Bash
@@ -11,6 +12,7 @@
 - Beanshell
 - Befunge
 - C
+- Ceylon
 - Clean
 - Chapel
 - Clojure
@@ -40,12 +42,14 @@
 - Idris2
 - Java
 - JavaScript
+- JQ
 - Julia
 - Kotlin
 - Ksh
 - Lisp
-- Livescript
+- LiveScript
 - Lua
+- Mercury
 - Nial
 - Nim
 - Ocaml
@@ -62,12 +66,17 @@
 - Raku
 - Rebol
 - Red
+- Ring
 - Ruby
 - Scala
+- Seed
 - Shell
+- Simula
 - Smalltalk
 - Snobol
 - Swift
+- Tcl
+- Terraform
 - TypeScript
 - Vala
 - Zig

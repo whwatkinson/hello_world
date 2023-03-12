@@ -1,11 +1,14 @@
 # As noted in the Docker best practices "each container should have only one concern
-# CMD ["tail", "-f", "/dev/null"]
-# https://learnxinyminutes.com/
-
 
 version: "3.9"
 
 services:
+
+  abc:
+    container_name: hello_world_abc
+    build:
+      context: projects/abc
+      dockerfile: DockerfileAbc
 
   algol68:
     container_name: hello_world_algol68
@@ -48,6 +51,12 @@ services:
     build:
       context: projects/c
       dockerfile: DockerfileC
+
+  ceylon:
+    container_name: hello_world_ceylon
+    build:
+      context: projects/ceylon
+      dockerfile: DockerfileCeylon
 
   clean:
     container_name: hello_world_clean
@@ -229,6 +238,12 @@ services:
       context: projects/javascript
       dockerfile: DockerfileJs
 
+  jq:
+    container_name: hello_world_jq
+    build:
+      context: projects/jq
+      dockerfile: DockerfileJq
+
   julia:
     container_name: hello_world_julia
     build:
@@ -264,6 +279,12 @@ services:
     build:
       context: projects/lua
       dockerfile: DockerfileLua
+
+  mercury:
+    container_name: hello_world_mercury
+    build:
+      context: projects/mercury
+      dockerfile: DockerfileMercury
 
   nial:
     container_name: hello_world_nial
@@ -361,6 +382,12 @@ services:
       context: projects/red
       dockerfile: DockerfileRed
 
+  ring:
+    container_name: hello_world_ring
+    build:
+      context: projects/ring
+      dockerfile: DockerfileRing
+
   ruby:
     container_name: hello_world_ruby
     build:
@@ -379,11 +406,23 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+  seed:
+    container_name: hello_world_seed
+    build:
+      context: projects/seed
+      dockerfile: DockerfileSeed
+
   shell:
     container_name: hello_world_shell
     build:
       context: projects/shell
       dockerfile: DockerfileShell
+
+  simula:
+    container_name: hello_world_simula
+    build:
+      context: projects/simula
+      dockerfile: DockerfileSimula
 
   smalltalk:
     container_name: hello_world_smalltalk
@@ -403,11 +442,11 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
-  #  tcl:
-  #    container_name: hello_world_tcl
-  #    build:
-  #      context: projects/tcl
-  #      dockerfile: DockerfileTcl
+  tcl:
+    container_name: hello_world_tcl
+    build:
+      context: projects/tcl
+      dockerfile: DockerfileTcl
 
   terraform:
     container_name: hello_world_terraform
