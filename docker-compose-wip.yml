@@ -7,12 +7,6 @@ version: "3.9"
 
 services:
 
-  abc:
-    container_name: hello_world_abc
-    build:
-      context: projects/abc
-      dockerfile: DockerfileAbc
-
   ada:
     container_name: hello_world_ada
     build:
