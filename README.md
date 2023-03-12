@@ -11,6 +11,7 @@
 - Beanshell
 - Befunge
 - C
+- Ceylon
 - Clean
 - Chapel
 - Clojure

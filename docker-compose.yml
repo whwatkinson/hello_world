@@ -46,6 +46,12 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+  ceylon:
+    container_name: hello_world_ceylon
+    build:
+      context: projects/ceylon
+      dockerfile: DockerfileCeylon
+
   clean:
     container_name: hello_world_clean
     build:

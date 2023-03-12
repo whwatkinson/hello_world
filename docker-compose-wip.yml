@@ -103,12 +103,6 @@ services:
       context: projects/carbon
       dockerfile: DockerfileCarbon
 
-  ceylon:
-    container_name: hello_world_ceylon
-    build:
-      context: projects/ceylon
-      dockerfile: DockerfileCeylon
-
   #  clu:
   #    container_name: hello_world_clu
   #    build:
