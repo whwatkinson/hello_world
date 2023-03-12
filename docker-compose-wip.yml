@@ -363,12 +363,6 @@ services:
       context: projects/seed7
       dockerfile: DockerfileSeed7
 
-  seed:
-    container_name: hello_world_seed
-    build:
-      context: projects/seed
-      dockerfile: DockerfileSeed
-
   spark:
     container_name: hello_world_spark
     build:

@@ -400,6 +400,12 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+  seed:
+    container_name: hello_world_seed
+    build:
+      context: projects/seed
+      dockerfile: DockerfileSeed
+
   shell:
     container_name: hello_world_shell
     build:

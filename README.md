@@ -46,7 +46,7 @@
 - Kotlin
 - Ksh
 - Lisp
-- Livescript
+- LiveScript
 - Lua
 - Mercury
 - Nial
@@ -68,6 +68,7 @@
 - Ring
 - Ruby
 - Scala
+- Seed
 - Shell
 - Simula
 - Smalltalk
