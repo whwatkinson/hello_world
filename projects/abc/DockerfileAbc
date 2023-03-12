@@ -1,11 +1,12 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+#
+#RUN apt-get update -y && \
+#    apt-get install -y git make
+#
+#RUN git clone https://github.com/aap/abc.git
 
-RUN apt-get update -y && \
-    apt-get install -y git make
-
-RUN git clone https://github.com/aap/abc.git
+FROM esolang/abc:latest
 
 COPY main.abc .
-
 
 CMD ["tail", "-f", "/dev/null"]

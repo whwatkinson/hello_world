@@ -1,6 +1,7 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+#RUN apt-get update -y
 
-RUN apt-get update -y
+FROM esolang/apl:latest
 
 COPY hello_world.apl .
 
