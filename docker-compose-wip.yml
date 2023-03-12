@@ -339,7 +339,6 @@ services:
     command:
       -
 
-
   ragel:
     container_name: hello_world_ragel
     build:

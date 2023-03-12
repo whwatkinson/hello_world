@@ -406,6 +406,12 @@ services:
       context: projects/shell
       dockerfile: DockerfileShell
 
+  simula:
+    container_name: hello_world_simula
+    build:
+      context: projects/simula
+      dockerfile: DockerfileSimula
+
   smalltalk:
     container_name: hello_world_smalltalk
     build:

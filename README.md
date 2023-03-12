@@ -69,6 +69,7 @@
 - Ruby
 - Scala
 - Shell
+- Simula
 - Smalltalk
 - Snobol
 - Swift
