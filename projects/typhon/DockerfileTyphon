@@ -5,3 +5,5 @@ COPY hello_world.typhon .
 CMD ["typhon", "hello_world.typhon"]
 
 #CMD ["tail", "-f", "/dev/null"]
+
+# https://github.com/TyphonLang/Typhon
