@@ -2,6 +2,9 @@
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
 # https://learnxinyminutes.com/
 
+# for make
+#https://github.com/uniconproject/unicon
+
 
 version: "3.9"
 
@@ -392,6 +395,8 @@ services:
     build:
       context: projects/typhon
       dockerfile: DockerfileTyphon
+
+
 
   y:
     container_name: hello_world_y

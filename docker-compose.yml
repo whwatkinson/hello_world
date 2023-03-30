@@ -460,6 +460,12 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  unicon:
+    container_name: hello_world_unicon
+    build:
+      context: projects/unicon
+      dockerfile: DockerfileUnicon
+
   vala:
     container_name: hello_world_vala
     build:

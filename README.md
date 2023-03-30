@@ -78,6 +78,7 @@
 - Tcl
 - Terraform
 - TypeScript
+- Unicon
 - Vala
 - Zig
 - Zsh

@@ -1,0 +1,19 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt install -y build-essential git
+
+RUN git clone https://github.com/uniconproject/unicon.git
+
+RUN cd unicon && ./configure
+RUN cd unicon && make
+
+ENV PATH=/unicon/bin:$PATH
+
+COPY hello_world.icn .
+
+RUN unicon hello_world.icn
+
+CMD ["./hello_world"]
+
+#CMD ["tail", "-f", "/dev/null"]
