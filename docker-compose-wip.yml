@@ -396,6 +396,7 @@ services:
       context: projects/typhon
       dockerfile: DockerfileTyphon
 
+  wyvern
 
 
   y:
