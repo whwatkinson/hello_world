@@ -396,8 +396,11 @@ services:
       context: projects/typhon
       dockerfile: DockerfileTyphon
 
-  wyvern
-
+  wyvern:
+    container_name: hello_world_wyvern
+    build:
+      context: projects/wyvern
+      dockerfile: DockerfileWyvern
 
   y:
     container_name: hello_world_y
