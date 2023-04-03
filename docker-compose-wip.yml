@@ -16,6 +16,12 @@ services:
       context: projects/ada
       dockerfile: DockerfileAda
 
+  arc:
+    container_name: hello_world_arc
+    build:
+      context: projects/arc
+      dockerfile: DockerfileArc
+
   alef:
     container_name: hello_world_alef
     build:
