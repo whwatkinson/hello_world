@@ -196,6 +196,12 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
+  fantom:
+    container_name: hello_world_fantom
+    build:
+      context: projects/fantom
+      dockerfile: DockerfileFantom
+
   goaldi:
     container_name: hello_world_goaldi
     build:

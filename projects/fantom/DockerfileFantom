@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+COPY hello_world.fan .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+#  https://www.fantom.org/doc/docTools/Setup
