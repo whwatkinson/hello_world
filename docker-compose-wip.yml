@@ -58,6 +58,12 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  bosque:
+    container_name: hello_world_bosque
+    build:
+      context: projects/bosque
+      dockerfile: DockerfileBosque
+
   ballerina:
     container_name: hello_world_ballerina
     build:
