@@ -58,6 +58,12 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  ballerina:
+    container_name: hello_world_ballerina
+    build:
+      context: projects/ballerina
+      dockerfile: DockerfileBallerina
+
 #  beta:
 #    container_name: hello_world_beta
 #    build:

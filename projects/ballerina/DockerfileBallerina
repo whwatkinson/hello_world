@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+COPY hello_world.bal .
+
+CMD ["tail", "-f", "/dev/null"]
+
+
+# https://medium.com/@shan1024/installing-ballerina-the-hard-way-aff571882ebc
