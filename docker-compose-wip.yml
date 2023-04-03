@@ -112,6 +112,12 @@ services:
       context: projects/cyclone
       dockerfile: DockerfileCyclone
 
+  claire4:
+    container_name: hello_world_claire4
+    build:
+      context: projects/claire4
+      dockerfile: DockerfileClaire4
+
   carbon:
     container_name: hello_world_carbon
     build:
