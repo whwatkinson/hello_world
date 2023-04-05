@@ -1,6 +1,15 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y software-properties-common
+
+RUN add-apt-repository -y ppa:plt/racket && \
+    apt-get update -y && \
+    apt-get install -y racket
+
+COPY arc3.2.tar .
+
+RUN tar xf arc3.2.tar
 
 COPY hello_world.arc .
 

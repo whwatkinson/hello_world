@@ -70,8 +70,6 @@ services:
       context: projects/bosque
       dockerfile: DockerfileBosque
 
-
-
 #  beta:
 #    container_name: hello_world_beta
 #    build:
