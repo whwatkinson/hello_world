@@ -22,6 +22,12 @@ services:
       context: projects/awk
       dockerfile: DockerfileAwk
 
+  ballerina:
+    container_name: hello_world_ballerina
+    build:
+      context: projects/ballerina
+      dockerfile: DockerfileBallerina
+
   bash:
     container_name: hello_world_bash
     build:

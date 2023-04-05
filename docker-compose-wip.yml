@@ -3,7 +3,7 @@
 # https://learnxinyminutes.com/
 
 # for make
-#https://github.com/uniconproject/unicon
+#  https://github.com/uniconproject/unicon
 
 
 version: "3.9"
@@ -70,11 +70,7 @@ services:
       context: projects/bosque
       dockerfile: DockerfileBosque
 
-  ballerina:
-    container_name: hello_world_ballerina
-    build:
-      context: projects/ballerina
-      dockerfile: DockerfileBallerina
+
 
 #  beta:
 #    container_name: hello_world_beta

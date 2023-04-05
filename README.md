@@ -7,6 +7,7 @@
 - ABC
 - Algol68
 - Awk
+- Ballerina
 - Bash
 - Basic
 - Beanshell
