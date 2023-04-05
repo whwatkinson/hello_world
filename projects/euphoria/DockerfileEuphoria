@@ -2,8 +2,19 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
-COPY hello_world.e .
+COPY euphor31.tar .
+
+RUN tar -xvz -f euphor31.tar
+RUN rm euphor31.tar
+
+ENV PATH=/euphoria/bin:$PATH
+
+ENV EUDIR=/euphoria/
+
+COPY hello_world.ex .
 
 CMD ["tail", "-f", "/dev/null"]
 
 # https://openeuphoria.org/wiki/view/DownloadEuphoria.wc
+
+# http://www.rapideuphoria.com/refman_1.htm#3
