@@ -6,10 +6,8 @@ COPY Goaldi-Linux-v11.tgz .
 RUN tar zxvf Goaldi-Linux-v11.tgz
 RUN rm Goaldi-Linux-v11.tgz
 
-ENV PATH=/Goaldi-Linux-v11/:$PATH
+ENV PATH=/go/Goaldi-Linux-v11:$PATH
 
 COPY hello_world.gd .
 
-#RUN ./Goaldi-Linux-v11/goaldi -c hello_world.gd
-
-CMD ["./Goaldi-Linux-v11/goaldi", "hello_world.gd"]
+CMD ["goaldi", "hello_world.gd"]

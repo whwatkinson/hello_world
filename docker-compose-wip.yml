@@ -190,8 +190,6 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
-
-
   hack:
     container_name: hello_world_hack
     build:
