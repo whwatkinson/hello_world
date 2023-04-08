@@ -31,6 +31,7 @@
 - Erlang
 - Elixir
 - Factor
+- Fantom
 - Fennel
 - Fortran
 - F#

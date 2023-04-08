@@ -172,6 +172,12 @@ services:
       context: projects/factor
       dockerfile: DockerfileFactor
 
+  fantom:
+    container_name: hello_world_fantom
+    build:
+      context: projects/fantom
+      dockerfile: DockerfileFantom
+
   fennel:
     container_name: hello_world_fennel
     build:
