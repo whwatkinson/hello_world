@@ -7,7 +7,7 @@ FROM oldmankris/alpine-pforth
 
 COPY hello_world.fth .
 
-#CMD ["pforth", "hello_world.fth"]
+#CMD ["pforth", "hello_world.gd.fth"]
 
 CMD ["tail", "-f", "/dev/null"]
 

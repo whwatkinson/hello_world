@@ -27,6 +27,6 @@ CMD ["tail", "-f", "/dev/null"]
 #
 #CMD ["icyc"]
 #
-##COPY hello_world.cyc .
+##COPY hello_world.gd.cyc .
 ##
 ##CMD ["tail", "-f", "/dev/null"]

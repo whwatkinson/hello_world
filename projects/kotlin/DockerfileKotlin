@@ -2,6 +2,6 @@ FROM zenika/kotlin:1.4.20
 
 COPY hello_world.kt .
 
-RUN kotlinc hello_world.kt -include-runtime -d hello_world.jar
+RUN kotlinc hello_world.gd.kt -include-runtime -d hello_world.gd.jar
 
 CMD ["/bin/java", "-jar", "hello_world.jar"]

@@ -38,6 +38,7 @@
 - Gap
 - Genie
 - Golang
+- Goaldi
 - Groovy
 - Haskell
 - Haxe

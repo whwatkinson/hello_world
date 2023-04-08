@@ -190,11 +190,7 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
-  goaldi:
-    container_name: hello_world_goaldi
-    build:
-      context: projects/goaldi
-      dockerfile: DockerfileGoaldi
+
 
   hack:
     container_name: hello_world_hack
