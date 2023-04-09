@@ -28,8 +28,9 @@
 - Dart
 - DogeScript
 - Dylan
-- Erlang
 - Elixir
+- Erlang
+- Euphoria
 - Factor
 - Fantom
 - Fennel

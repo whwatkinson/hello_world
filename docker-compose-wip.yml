@@ -142,12 +142,6 @@ services:
       context: projects/e
       dockerfile: DockerfileE
 
-  euphoria:
-    container_name: hello_world_euphoria
-    build:
-      context: projects/euphoria
-      dockerfile: DockerfileEuphoria
-
   evil:
     container_name: hello_world_evil
     build:

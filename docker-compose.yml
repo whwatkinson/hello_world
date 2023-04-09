@@ -166,6 +166,12 @@ services:
       context: projects/emerald
       dockerfile: DockerfileEmerald
 
+  euphoria:
+    container_name: hello_world_euphoria
+    build:
+      context: projects/euphoria
+      dockerfile: DockerfileEuphoria
+
   factor:
     container_name: hello_world_factor
     build:
