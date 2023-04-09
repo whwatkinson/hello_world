@@ -8,13 +8,11 @@ RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" |
 RUN apt-get update -y && \
     apt-get install mono-devel -y
 
-COPY Cobra-0.9.6.tar.gz .
-RUN tar -zvxf Cobra-0.9.6.tar.gz
-
+COPY Cobra-0.9.4.tar.gz .
+RUN tar -zvxf Cobra-0.9.4.tar.gz
+RUN rm Cobra-0.9.4.tar.gz
 
 COPY hello_world.cobra .
 
 CMD ["tail", "-f", "/dev/null"]
-
-
 #http://cobra-language.com/trac/cobra/wiki/InstallingDownload
