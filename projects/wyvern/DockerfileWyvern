@@ -1,6 +1,11 @@
-FROM ubuntu:22.04
+FROM openjdk:8
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y curl unzip
+
+RUN curl -X GET https://wyvernlang.github.io/files/WyvernDemo20180325.zip -o WyvernDemo20180325.zip
+RUN unzip WyvernDemo20180325.zip
+RUN rm WyvernDemo20180325.zip
 
 COPY hello_world.wyv .
 
