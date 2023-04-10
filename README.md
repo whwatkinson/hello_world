@@ -84,6 +84,7 @@
 - TypeScript
 - Unicon
 - Vala
+- Wyvern
 - Zig
 - Zsh
 

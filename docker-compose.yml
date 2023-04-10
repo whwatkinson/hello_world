@@ -496,6 +496,12 @@ services:
       context: projects/vala
       dockerfile: DockerfileVala
 
+  wyvern:
+    container_name: hello_world_wyvern
+    build:
+      context: projects/wyvern
+      dockerfile: DockerfileWyvern
+
   zig:
     container_name: hello_world_zig
     build:
