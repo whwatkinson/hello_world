@@ -1,12 +1,11 @@
-FROM openjdk:8
-
-RUN apt-get update -y && \
-    apt-get install -y curl unzip
+FROM openjdk:9
 
 RUN curl -X GET https://wyvernlang.github.io/files/WyvernDemo20180325.zip -o WyvernDemo20180325.zip
 RUN unzip WyvernDemo20180325.zip
 RUN rm WyvernDemo20180325.zip
 
+ENV PATH=WyvernDemo20180325/bin:$PATH
+
 COPY hello_world.wyv .
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["wyvern", "hello_world.wyv"]
