@@ -267,6 +267,12 @@ services:
       context: projects/modula3
       dockerfile: DockerfileModula3
 
+  mypy:
+    container_name: hello_world_mypy
+    build:
+      context: projects/mypy
+      dockerfile: DockerfileMypy
+
   newspeak:
     container_name: hello_world_newspeak
     build:
