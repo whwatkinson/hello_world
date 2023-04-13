@@ -1,7 +1,14 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y python3 pip
+RUN pip install cython
 
+WORKDIR hello_world/
 COPY hello_world.pyx .
+COPY setup.py .
+COPY main.py .
 
-CMD ["tail", "-f", "/dev/null"]
+RUN python3 setup.py build_ext --inplace
+
+CMD ["python3", "main.py"]

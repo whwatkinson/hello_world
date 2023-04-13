@@ -136,11 +136,6 @@ services:
       context: projects/cypher
       dockerfile: DockerfileCypher
 
-  cython:
-    container_name: hello_world_cython
-    build:
-      context: projects/cython
-      dockerfile: DockerfileCython
   e:
     container_name: hello_world_e
     build:

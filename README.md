@@ -23,6 +23,7 @@
 - Crystal
 - Csh
 - C#
+- Cython
 - D
 - Dafny
 - Dart

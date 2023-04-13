@@ -118,6 +118,12 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
+  cython:
+    container_name: hello_world_cython
+    build:
+      context: projects/cython
+      dockerfile: DockerfileCython
+
   d:
     container_name: hello_world_d
     build:
