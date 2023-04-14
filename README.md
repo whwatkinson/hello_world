@@ -7,6 +7,7 @@
 - ABC
 - Algol68
 - Awk
+- Ballerina
 - Bash
 - Basic
 - Beanshell
@@ -22,20 +23,24 @@
 - Crystal
 - Csh
 - C#
+- Cython
 - D
 - Dafny
 - Dart
 - DogeScript
 - Dylan
-- Erlang
 - Elixir
+- Erlang
+- Euphoria
 - Factor
+- Fantom
 - Fennel
 - Fortran
 - F#
 - Gap
 - Genie
 - Golang
+- Goaldi
 - Groovy
 - Haskell
 - Haxe
@@ -78,7 +83,9 @@
 - Tcl
 - Terraform
 - TypeScript
+- Unicon
 - Vala
+- Wyvern
 - Zig
 - Zsh
 

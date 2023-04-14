@@ -25,3 +25,4 @@ CMD ["tail", "-f", "/dev/null"]
 
 #  https://en.wikipedia.org/wiki/Opa_(programming_language)#Examples
 #  https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/linux/instructions.html
+#  https://github.com/MLstate/opalang/wiki/Building-Opahttps://github.com/MLstate/opalang/wiki/Building-Opa

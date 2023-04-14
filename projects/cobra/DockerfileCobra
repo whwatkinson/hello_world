@@ -2,16 +2,17 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
-#RUN echo 8 | apt-get install mono-complete  -y
+RUN apt install gnupg ca-certificates -y
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | tee /etc/apt/sources.list.d/mono-official-stable.list
+RUN apt-get update -y && \
+    apt-get install mono-devel -y
 
 COPY Cobra-0.9.4.tar.gz .
 RUN tar -zvxf Cobra-0.9.4.tar.gz
-#RUN Cobra-0.9.4/
-
+RUN rm Cobra-0.9.4.tar.gz
 
 COPY hello_world.cobra .
 
 CMD ["tail", "-f", "/dev/null"]
-
-
 #http://cobra-language.com/trac/cobra/wiki/InstallingDownload

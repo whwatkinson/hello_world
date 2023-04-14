@@ -5,6 +5,6 @@ RUN npm install -g npm@latest \
 
 COPY hello_world.djs .
 
-RUN dogescript hello_world.djs > hello_world.js
+RUN dogescript hello_world.gd.djs > hello_world.gd.js
 
 CMD ["node", "hello_world.js"]

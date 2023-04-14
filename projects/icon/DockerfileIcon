@@ -2,10 +2,12 @@ FROM ubuntu:22.04
 
 RUN apt-get update -y
 
-COPY icon-9.5.22e.tar.gz .
+COPY linux-x86-v951.tgz .
 
-RUN tar -zxvf icon-9.5.22e.tar.gz
+RUN tar xf linux-x86-v951.tgz
+RUN rm linux-x86-v951.tgz
 
+ENV PATH=/icon-v951/bin:$PATH
 COPY hello_world.icn .
 
 CMD ["tail", "-f", "/dev/null"]

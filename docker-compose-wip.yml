@@ -2,6 +2,9 @@
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
 # https://learnxinyminutes.com/
 
+# for make
+#  https://github.com/uniconproject/unicon
+
 
 version: "3.9"
 
@@ -12,6 +15,12 @@ services:
     build:
       context: projects/ada
       dockerfile: DockerfileAda
+
+  arc:
+    container_name: hello_world_arc
+    build:
+      context: projects/arc
+      dockerfile: DockerfileArc
 
   alef:
     container_name: hello_world_alef
@@ -55,6 +64,12 @@ services:
       context: projects/b
       dockerfile: DockerfileB
 
+  bosque:
+    container_name: hello_world_bosque
+    build:
+      context: projects/bosque
+      dockerfile: DockerfileBosque
+
 #  beta:
 #    container_name: hello_world_beta
 #    build:
@@ -90,6 +105,12 @@ services:
     build:
       context: projects/cyclone
       dockerfile: DockerfileCyclone
+
+  claire4:
+    container_name: hello_world_claire4
+    build:
+      context: projects/claire4
+      dockerfile: DockerfileClaire4
 
   carbon:
     container_name: hello_world_carbon
@@ -162,12 +183,6 @@ services:
     build:
       context: projects/forth
       dockerfile: DockerfileForth
-
-  goaldi:
-    container_name: hello_world_goaldi
-    build:
-      context: projects/goaldi
-      dockerfile: DockerfileGoaldi
 
   hack:
     container_name: hello_world_hack
@@ -246,6 +261,12 @@ services:
     build:
       context: projects/modula3
       dockerfile: DockerfileModula3
+
+  mypy:
+    container_name: hello_world_mypy
+    build:
+      context: projects/mypy
+      dockerfile: DockerfileMypy
 
   newspeak:
     container_name: hello_world_newspeak
@@ -338,12 +359,6 @@ services:
       dockerfile: DockerfilePostgres
     command:
       -
-
-  ragel:
-    container_name: hello_world_ragel
-    build:
-      context: projects/ragel
-      dockerfile: DockerfileRagel
 
   scheme:
     container_name: hello_world_scheme

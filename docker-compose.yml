@@ -22,6 +22,12 @@ services:
       context: projects/awk
       dockerfile: DockerfileAwk
 
+  ballerina:
+    container_name: hello_world_ballerina
+    build:
+      context: projects/ballerina
+      dockerfile: DockerfileBallerina
+
   bash:
     container_name: hello_world_bash
     build:
@@ -112,6 +118,12 @@ services:
       context: projects/csharp
       dockerfile: DockerfileCsharp
 
+  cython:
+    container_name: hello_world_cython
+    build:
+      context: projects/cython
+      dockerfile: DockerfileCython
+
   d:
     container_name: hello_world_d
     build:
@@ -160,11 +172,23 @@ services:
       context: projects/emerald
       dockerfile: DockerfileEmerald
 
+  euphoria:
+    container_name: hello_world_euphoria
+    build:
+      context: projects/euphoria
+      dockerfile: DockerfileEuphoria
+
   factor:
     container_name: hello_world_factor
     build:
       context: projects/factor
       dockerfile: DockerfileFactor
+
+  fantom:
+    container_name: hello_world_fantom
+    build:
+      context: projects/fantom
+      dockerfile: DockerfileFantom
 
   fennel:
     container_name: hello_world_fennel
@@ -201,6 +225,12 @@ services:
     build:
       context: projects/golang
       dockerfile: DockerfileGolang
+
+  goaldi:
+    container_name: hello_world_goaldi
+    build:
+      context: projects/goaldi
+      dockerfile: DockerfileGoaldi
 
   groovy:
     container_name: hellow_world_groovy
@@ -460,11 +490,23 @@ services:
       context: projects/typescript
       dockerfile: DockerfileTs
 
+  unicon:
+    container_name: hello_world_unicon
+    build:
+      context: projects/unicon
+      dockerfile: DockerfileUnicon
+
   vala:
     container_name: hello_world_vala
     build:
       context: projects/vala
       dockerfile: DockerfileVala
+
+  wyvern:
+    container_name: hello_world_wyvern
+    build:
+      context: projects/wyvern
+      dockerfile: DockerfileWyvern
 
   zig:
     container_name: hello_world_zig

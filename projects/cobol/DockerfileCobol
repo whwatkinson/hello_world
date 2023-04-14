@@ -5,6 +5,6 @@ RUN apt-get update &&  \
 
 COPY hello_world.cbl .
 
-RUN cobc -x hello_world.cbl
+RUN cobc -x hello_world.gd.cbl
 
 CMD ["./hello_world"]

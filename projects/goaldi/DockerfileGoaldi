@@ -1,10 +1,13 @@
-FROM ubuntu:22.04
+FROM golang:1.17-bullseye
 
 RUN apt-get update -y
 
-COPY hello_world .
+COPY Goaldi-Linux-v11.tgz .
+RUN tar zxvf Goaldi-Linux-v11.tgz
+RUN rm Goaldi-Linux-v11.tgz
 
-CMD ["tail", "-f", "/dev/null"]
+ENV PATH=/go/Goaldi-Linux-v11:$PATH
 
+COPY hello_world.gd .
 
-# https://github.com/proebsting/goaldi
+CMD ["goaldi", "hello_world.gd"]
