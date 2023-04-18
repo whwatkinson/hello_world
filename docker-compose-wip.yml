@@ -52,6 +52,12 @@ services:
       context: projects/assemblyscript
       dockerfile: DockerfileAssemblyscript
 
+  assemblyx86:
+    container_name: hello_world_assemblyx86
+    build:
+      context: projects/assemblyx86
+      dockerfile: DockerfileAssemblyx86
+
   actionscript:
     container_name: hello_world_actionscript
     build:
