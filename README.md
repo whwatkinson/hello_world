@@ -6,6 +6,7 @@
 
 - ABC
 - Algol68
+- AssemblyX86
 - Awk
 - Ballerina
 - Bash
