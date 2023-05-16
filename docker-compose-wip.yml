@@ -186,6 +186,12 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
+  freebasic:
+    container_name: hello_world_freebasic
+    build:
+      context: projects/freebasic
+      dockerfile: DockerfikeFreebasic
+
   hack:
     container_name: hello_world_hack
     build:
