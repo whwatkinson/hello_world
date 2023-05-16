@@ -190,7 +190,7 @@ services:
     container_name: hello_world_freebasic
     build:
       context: projects/freebasic
-      dockerfile: DockerfikeFreebasic
+      dockerfile: projects/freebasic/DockerfileFreebasic
 
   hack:
     container_name: hello_world_hack
