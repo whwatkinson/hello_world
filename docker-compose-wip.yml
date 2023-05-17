@@ -392,6 +392,12 @@ services:
       context: projects/self
       dockerfile: DockerfileSelf
 
+  solidity:
+    container_name: hello_world_solidity
+    build:
+      context: projects/solidity
+      dockerfile: DockerfileSolidity
+
   seed7:
     container_name: hello_world_seed7
     build:
