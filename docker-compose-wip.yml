@@ -434,11 +434,17 @@ services:
       context: projects/turing
       dockerfile: DockerfileTuring
 
-  Typhon:
+  typhon:
     container_name: hello_world_typhon
     build:
       context: projects/typhon
       dockerfile: DockerfileTyphon
+
+  verilog:
+    container_name: hello_world_verilog
+    build:
+      context: projects/verilog
+      dockerfile: DockerfileVerilog
 
   y:
     container_name: hello_world_y
