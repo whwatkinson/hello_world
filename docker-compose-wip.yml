@@ -252,6 +252,12 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
+  less:
+    container_name: hello_world_less
+    build:
+      context: projects/less
+      dockerfile: DockerfileLess
+
   matlab:
     container_name: hello_world_matlab
     build:
