@@ -120,6 +120,12 @@ services:
       context: projects/carbon
       dockerfile: DockerfileCarbon
 
+  coq:
+    container_name: hello_world_coq
+    build:
+      context: projects/coq
+      dockerfile: DockerfileCoq
+
   #  clu:
   #    container_name: hello_world_clu
   #    build:
