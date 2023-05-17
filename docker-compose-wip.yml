@@ -446,6 +446,12 @@ services:
       context: projects/verilog
       dockerfile: DockerfileVerilog
 
+  vhdl:
+    container_name: hello_world_vhdl
+    build:
+      context: projects/vhdl
+      dockerfile: DockerfileVhdl
+
   y:
     container_name: hello_world_y
     build:
