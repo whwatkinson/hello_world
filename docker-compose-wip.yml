@@ -288,6 +288,12 @@ services:
       context: projects/nu
       dockerfile: DockerfileNu
 
+  nix:
+    container_name: hello_world_nix
+    build:
+      context: projects/nix
+      dockerfile: DockerfileNix
+
   nemerle:
     container_name: hello_world_nemerle
     build:
