@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 COPY hello_world.p .
 
-RUN fpc hello_world.gd.p
+RUN fpc hello_world.v.gd.p
 
 CMD ["./hello_world"]

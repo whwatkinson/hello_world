@@ -11,6 +11,6 @@ ENV PATH=/zig-linux-x86_64-0.10.1:$PATH
 
 COPY hello_world.zig .
 
-RUN zig build-exe hello_world.gd.zig
+RUN zig build-exe hello_world.v.gd.zig
 
 CMD ["./hello_world"]

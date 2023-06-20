@@ -8,4 +8,4 @@ COPY hello_world.lg .
 CMD ["tail", "-f", "/dev/null"]
 
 
-#CMD ["kturtle", "hello_world.gd.lg"]
+#CMD ["kturtle", "hello_world.v.gd.lg"]

@@ -5,8 +5,8 @@ RUN apt-get update -y
 COPY hello_world .
 
 
-#RUN fbc hello_world.bas
-#CMD ["./hello_world"]
+#RUN fbc hello_world.v.bas
+#CMD ["./hello_world.v"]
 
 
 CMD ["tail", "-f", "/dev/null"]

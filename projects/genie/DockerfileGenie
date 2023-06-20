@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 COPY hello_world.gs .
 
-RUN valac hello_world.gd.gs
+RUN valac hello_world.v.gd.gs
 
 CMD ["./hello_world"]
