@@ -1,0 +1,14 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt install -y libc6-dev-i386
+
+COPY hello_world.s .
+
+RUN gcc -o hello_world -static -nostdlib hello_world.s
+
+CMD ["./hello_world"]
+
+
+# https://www.youtube.com/watch?v=jPDiaZS-2ok&ab_channel=LowLevelLearning
+# https://www.youtube.com/shorts/8kzuhMYM--Y

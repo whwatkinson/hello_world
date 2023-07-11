@@ -16,6 +16,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  assemblyx86:
+    container_name: hello_world_assemblyx86
+    build:
+      context: projects/assemblyx86
+      dockerfile: DockerfileAssemblyx86
+
   awk:
     container_name: hello_world_awk
     build:
@@ -267,6 +273,12 @@ services:
     build:
       context: projects/javascript
       dockerfile: DockerfileJs
+
+  javascript_is_weird:
+    container_name: hello_world_javascript_is_weird
+    build:
+      context: projects/javascript_is_weird
+      dockerfile: DockerfileJsIsWeird
 
   jq:
     container_name: hello_world_jq

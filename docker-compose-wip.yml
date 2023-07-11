@@ -118,6 +118,12 @@ services:
       context: projects/carbon
       dockerfile: DockerfileCarbon
 
+  coq:
+    container_name: hello_world_coq
+    build:
+      context: projects/coq
+      dockerfile: DockerfileCoq
+
   #  clu:
   #    container_name: hello_world_clu
   #    build:
@@ -184,6 +190,12 @@ services:
       context: projects/forth
       dockerfile: DockerfileForth
 
+  freebasic:
+    container_name: hello_world_freebasic
+    build:
+      context: projects/freebasic
+      dockerfile: projects/freebasic/DockerfileFreebasic
+
   hack:
     container_name: hello_world_hack
     build:
@@ -238,6 +250,12 @@ services:
       context: projects/lasso
       dockerfile: DockerfileLasso
 
+  less:
+    container_name: hello_world_less
+    build:
+      context: projects/less
+      dockerfile: DockerfileLess
+
   matlab:
     container_name: hello_world_matlab
     build:
@@ -279,6 +297,12 @@ services:
     build:
       context: projects/nu
       dockerfile: DockerfileNu
+
+  nix:
+    container_name: hello_world_nix
+    build:
+      context: projects/nix
+      dockerfile: DockerfileNix
 
   nemerle:
     container_name: hello_world_nemerle
@@ -372,6 +396,12 @@ services:
       context: projects/self
       dockerfile: DockerfileSelf
 
+  solidity:
+    container_name: hello_world_solidity
+    build:
+      context: projects/solidity
+      dockerfile: DockerfileSolidity
+
   seed7:
     container_name: hello_world_seed7
     build:
@@ -408,11 +438,23 @@ services:
       context: projects/turing
       dockerfile: DockerfileTuring
 
-  Typhon:
+  typhon:
     container_name: hello_world_typhon
     build:
       context: projects/typhon
       dockerfile: DockerfileTyphon
+
+  verilog:
+    container_name: hello_world_verilog
+    build:
+      context: projects/verilog
+      dockerfile: DockerfileVerilog
+
+  vhdl:
+    container_name: hello_world_vhdl
+    build:
+      context: projects/vhdl
+      dockerfile: DockerfileVhdl
 
   y:
     container_name: hello_world_y
