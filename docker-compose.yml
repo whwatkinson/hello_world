@@ -274,6 +274,12 @@ services:
       context: projects/javascript
       dockerfile: DockerfileJs
 
+  javascript_is_weird:
+    container_name: hello_world_javascript_is_weird
+    build:
+      context: projects/javascript_is_weird
+      dockerfile: DockerfileJsIsWeird
+
   jq:
     container_name: hello_world_jq
     build:
