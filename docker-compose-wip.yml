@@ -52,8 +52,6 @@ services:
       context: projects/assemblyscript
       dockerfile: DockerfileAssemblyscript
 
-
-
   actionscript:
     container_name: hello_world_actionscript
     build:
