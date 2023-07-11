@@ -4,7 +4,7 @@ USER root
 
 COPY hello_world.m .
 
-RUN ec hello_world.gd.m
+RUN ec hello_world.v.gd.m
 
 CMD ["emx", "hello_world.x"]
 

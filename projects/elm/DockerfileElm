@@ -8,6 +8,8 @@
 #
 #RUN echo "Y" | elm init
 
+# COMPILES TO JS!
+
 FROM semenovp/tiny-elm:latest
 
 #RUN elm make src/Main.elm --optimize --output=elm.js

@@ -456,6 +456,12 @@ services:
       context: projects/vhdl
       dockerfile: DockerfileVhdl
 
+  v:
+    container_name: hello_world_v
+    build:
+      context: projects/v
+      dockerfile: DockerfileV
+
   y:
     container_name: hello_world_y
     build:

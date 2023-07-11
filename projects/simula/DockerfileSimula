@@ -2,6 +2,6 @@ FROM javiergelatti/simula
 
 COPY hello_world.sim .
 
-RUN cim hello_world.gd.sim
+RUN cim hello_world.v.gd.sim
 
 CMD ["./hello_world"]

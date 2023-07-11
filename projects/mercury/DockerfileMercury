@@ -2,6 +2,6 @@ FROM sebgod/mercury
 
 COPY hello_world.m .
 
-RUN mmc hello_world.gd.m
+RUN mmc hello_world.v.gd.m
 
 ENTRYPOINT ["./hello_world"]
