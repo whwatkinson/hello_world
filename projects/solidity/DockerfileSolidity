@@ -1,7 +1,0 @@
-FROM ubuntu:22.04
-
-RUN apt-get update -y
-
-COPY hello_world.sol .
-
-CMD ["tail", "-f", "/dev/null"]

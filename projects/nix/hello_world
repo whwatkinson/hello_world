@@ -1,5 +1,0 @@
-let
-  a = abort "will never happen";
-  b = "hello";
-  c = "world";
-in b + c
