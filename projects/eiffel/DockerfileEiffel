@@ -1,9 +1,0 @@
-FROM eiffel/eiffel:19.05
-
-COPY hello_world.e .
-COPY hello_world.ecf .
-
-USER root
-#RUN ec hello_world.v.gd.e
-
-CMD ["tail", "-f", "/dev/null"]

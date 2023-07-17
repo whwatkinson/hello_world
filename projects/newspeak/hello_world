@@ -1,3 +1,0 @@
-HelloBraveNewWorld usingPlatform: platform = (
- platform Transcript open show: 'Hello, World!'.
-)

@@ -1,9 +1,0 @@
-# http://www.parasail-lang.org/
-#FROM ubuntu:22.04
-
-FROM ngoko/parasail
-
-
-COPY hello_world.psl .
-
-CMD ["tail", "-f", "/dev/null"]
