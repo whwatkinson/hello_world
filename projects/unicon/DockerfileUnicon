@@ -12,6 +12,6 @@ ENV PATH=/unicon/bin:$PATH
 
 COPY hello_world.icn .
 
-RUN unicon hello_world.v.icn
+RUN unicon hello_world.bcl.nu.v.icn
 
 CMD ["./hello_world"]

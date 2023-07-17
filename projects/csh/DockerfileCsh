@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 COPY hello_world.csh .
 
-RUN chmod +x hello_world.v.gd.csh
+RUN chmod +x hello_world.bcl.nu.v.gd.csh
 
 CMD ["csh", "hello_world.csh"]

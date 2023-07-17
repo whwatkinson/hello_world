@@ -11,6 +11,7 @@
 - Ballerina
 - Bash
 - Basic
+- BCPL
 - Beanshell
 - Befunge
 - C
@@ -48,6 +49,7 @@
 - Idris2
 - Java
 - JavaScript
+- JavaScript (Wierd)
 - JQ
 - Julia
 - Kotlin

@@ -11,6 +11,6 @@ ENV PATH=/nim-1.6.10/bin:$PATH
 
 COPY hello_world.nim .
 
-RUN nim compile hello_world.v.gd.nim
+RUN nim compile hello_world.bcl.nu.v.gd.nim
 
 CMD ["./hello_world"]

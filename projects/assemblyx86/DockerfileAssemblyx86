@@ -5,7 +5,7 @@ RUN apt-get update -y && \
 
 COPY hello_world.s .
 
-RUN gcc -o hello_world.v -static -nostdlib hello_world.v.s
+RUN gcc -o hello_world.bcl.nu.v -static -nostdlib hello_world.bcl.nu.v.s
 
 CMD ["./hello_world"]
 

@@ -7,6 +7,6 @@ ENV PATH="/usr/local/bin":${PATH}
 
 COPY hello_world.red .
 
-RUN /usr/local/bin/red -c hello_world.v.gd.red
+RUN /usr/local/bin/red -c hello_world.bcl.nu.v.gd.red
 
 ENTRYPOINT ["./hello_world"]
