@@ -1,19 +1,14 @@
 ada
 arc
 alef
-apl
 agda
-applescript
 assemblyscript
-actionscript
 b
-bosque
 blitzmax
 boo
 bird
 cyclone
 claire4
-carbon
 coq
 clu
 cobra
@@ -41,6 +36,7 @@ matlab
 mesa
 modula
 modula3
+mono https://linuxize.com/post/how-to-install-mono-on-ubuntu-20-04/
 mypy
 newspeak
 nu
@@ -71,3 +67,11 @@ verilog
 vhdl
 v
 y
+
+
+
+
+apl
+applescript
+actionscript
+bosque

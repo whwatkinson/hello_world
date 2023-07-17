@@ -70,6 +70,12 @@ services:
       context: projects/c
       dockerfile: DockerfileC
 
+  carbon:
+    container_name: hello_world_carbon
+    build:
+      context: projects/carbon
+      dockerfile: DockerfileCarbon
+
   ceylon:
     container_name: hello_world_ceylon
     build:

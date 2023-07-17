@@ -15,6 +15,7 @@
 - Beanshell
 - Befunge
 - C
+- Carbon
 - Ceylon
 - Clean
 - Chapel
