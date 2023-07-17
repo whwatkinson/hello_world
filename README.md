@@ -11,6 +11,7 @@
 - Ballerina
 - Bash
 - Basic
+- BCPL
 - Beanshell
 - Befunge
 - C

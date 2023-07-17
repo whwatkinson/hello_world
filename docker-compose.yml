@@ -46,6 +46,12 @@ services:
       context: projects/basic
       dockerfile: DockerfileBasic
 
+  bcpl:
+    container_name: hello_world_bcpl
+    build:
+      context: projects/bcpl
+      dockerfile: DockerfileBcpl
+
   beanshell:
     container_name: hello_world_beanshell
     build:

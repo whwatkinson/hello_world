@@ -8,7 +8,6 @@ assemblyscript
 actionscript
 b
 bosque
-bcpl
 blitzmax
 boo
 bird
