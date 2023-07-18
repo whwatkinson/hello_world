@@ -26,17 +26,12 @@ jade
 lfe
 logo
 lasso
-less
 matlab
 mesa
 modula
 modula3
-mono https://linuxize.com/post/how-to-install-mono-on-ubuntu-20-04/
-mypy
 newspeak
 nu
-nix
-nemerle
 omega
 occam
 oberon
@@ -55,7 +50,6 @@ seed7
 spark
 sather
 sml
-tea
 turing
 typhon
 verilog
@@ -72,7 +66,8 @@ applescript
 actionscript
 alef
 bosque
-
 cyclone
 hop
+less
 limbo
+nemerle

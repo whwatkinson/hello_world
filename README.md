@@ -85,6 +85,7 @@
 - Snobol
 - Swift
 - Tcl
+- Tea
 - Terraform
 - TypeScript
 - Unicon

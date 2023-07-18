@@ -1,0 +1,18 @@
+#FROM ubuntu:22.04
+FROM openjdk:8
+
+RUN apt-get update -y && \
+    apt-get install -y maven unzip
+
+COPY tea-master.zip .
+RUN unzip tea-master.zip
+RUN rm tea-master.zip
+
+RUN cd tea-master/modules && mvn -DskipTests=false
+ENV PATH=$PATH:/tea-master/bin
+
+COPY hello_world.tea .
+
+CMD ["tsh", "hello_world.tea"]
+
+#ENTRYPOINT ["tail", "-f", "/dev/null"]

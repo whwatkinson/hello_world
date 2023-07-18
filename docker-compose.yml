@@ -508,6 +508,12 @@ services:
       context: projects/tcl
       dockerfile: DockerfileTcl
 
+  tea:
+    container_name: hello_world_tea
+    build:
+      context: projects/tea
+      dockerfile: DockerfileTea
+
   terraform:
     container_name: hello_world_terraform
     build:
