@@ -89,6 +89,7 @@
 - TypeScript
 - Unicon
 - Vala
+- VHDL
 - Wyvern
 - Zig
 - Zsh

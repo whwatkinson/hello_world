@@ -6,7 +6,7 @@ blitzmax
 boo
 bird
 claire4
-coq
+
 clu
 cobra
 cypher
@@ -59,11 +59,12 @@ tea
 turing
 typhon
 verilog
-vhdl
 v
 y
 
 
+# another go
+cog
 
 # skip
 apl
@@ -71,6 +72,7 @@ applescript
 actionscript
 alef
 bosque
+
 cyclone
 hop
 limbo
