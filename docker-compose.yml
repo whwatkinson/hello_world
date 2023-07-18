@@ -10,6 +10,12 @@ services:
       context: projects/abc
       dockerfile: DockerfileAbc
 
+  ada:
+    container_name: hello_world_ada
+    build:
+      context: projects/ada
+      dockerfile: DockerfileAda
+
   algol68:
     container_name: hello_world_algol68
     build:

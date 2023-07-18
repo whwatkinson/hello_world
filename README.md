@@ -5,6 +5,7 @@
 ![image info](./hello_world.png)
 
 - ABC
+- Ada
 - Algol68
 - AssemblyX86
 - Awk

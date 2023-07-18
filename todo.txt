@@ -1,13 +1,10 @@
-ada
 arc
-alef
 agda
 assemblyscript
 b
 blitzmax
 boo
 bird
-cyclone
 claire4
 coq
 clu
@@ -23,11 +20,9 @@ elm
 forth
 freebasic
 hack
-hop
 io
 icon
 jade
-limbo
 lfe
 logo
 lasso
@@ -70,8 +65,12 @@ y
 
 
 
-
+# skip
 apl
 applescript
 actionscript
+alef
 bosque
+cyclone
+hop
+limbo

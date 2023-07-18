@@ -1,0 +1,13 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y gcc-3.4
+
+COPY cyclone-0.9.tar.gz .
+RUN tar vxf cyclone-0.9.tar.gz
+
+WORKDIR cyclone-0.9
+
+COPY hello_world.cyc .
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
