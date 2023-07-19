@@ -91,6 +91,7 @@
 - TypeScript
 - Unicon
 - Vala
+- Verilog
 - VHDL
 - Wyvern
 - Zig

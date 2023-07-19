@@ -1,0 +1,18 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y git autoconf gperf make build-essential flex bison
+
+RUN git clone https://github.com/steveicarus/iverilog.git
+
+RUN cd iverilog && sh autoconf.sh
+RUN cd iverilog && ./configure
+RUN cd iverilog && make install
+
+COPY hello_world.v .
+
+RUN iverilog hello_world.v
+
+CMD ["./a.out"]
+
+#ENTRYPOINT ["tail", "-f", "/dev/null"]

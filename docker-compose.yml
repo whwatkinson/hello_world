@@ -544,6 +544,12 @@ services:
       context: projects/vala
       dockerfile: DockerfileVala
 
+  verilog:
+    container_name: hello_world_verilog
+    build:
+      context: projects/verilog
+      dockerfile: DockerfileVerilog
+
   vhdl:
     container_name: hello_world_vhdl
     build:

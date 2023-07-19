@@ -50,7 +50,6 @@ sather
 sml
 turing
 typhon
-verilog
 v
 y
 
