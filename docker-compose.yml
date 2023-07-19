@@ -346,6 +346,12 @@ services:
       context: projects/mercury
       dockerfile: DockerfileMercury
 
+  miranda:
+    container_name: hello_world_miranda
+    build:
+      context: projects/miranda
+      dockerfile: DockerfileMiranda
+
   nial:
     container_name: hello_world_nial
     build:

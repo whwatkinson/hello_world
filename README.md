@@ -59,6 +59,7 @@
 - LiveScript
 - Lua
 - Mercury
+- Miranda
 - Nial
 - Nim
 - Ocaml

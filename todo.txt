@@ -40,7 +40,6 @@ objectivec
 oxygene
 miranda
 opa
-parasail
 postscript
 postgres
 scheme
@@ -58,6 +57,7 @@ y
 
 # another go
 cog
+parasail
 
 # skip
 apl
