@@ -38,7 +38,6 @@ oberon
 oberon2
 objectivec
 oxygene
-miranda
 opa
 postscript
 postgres
