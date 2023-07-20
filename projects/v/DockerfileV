@@ -1,0 +1,16 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y git make build-essential
+
+RUN git clone https://github.com/vlang/v
+
+RUN cd v && make
+
+ENV PATH=$PATH:/v
+
+COPY hello_world.v .
+
+RUN v hello_world.v
+
+CMD ["./hello_world"]

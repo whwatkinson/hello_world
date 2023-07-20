@@ -7,7 +7,6 @@ boo
 bird
 claire4
 
-clu
 cobra
 cypher
 e
@@ -15,8 +14,6 @@ evil
 euclid
 esher
 delphi
-eiffel
-elm
 forth
 freebasic
 hack
@@ -37,8 +34,6 @@ occam
 oberon
 oberon2
 objectivec
-oxygene
-opa
 postscript
 postgres
 scheme
@@ -50,21 +45,25 @@ sather
 sml
 turing
 typhon
-v
-y
 
 # another go
+clu
 cog
+elm
+eiffel
 parasail
+opa
+y
 
 # skip
 apl
-applescript
 actionscript
 alef
+applescript
 bosque
 cyclone
 hop
 less
 limbo
 nemerle
+oxygene

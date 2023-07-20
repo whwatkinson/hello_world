@@ -538,6 +538,12 @@ services:
       context: projects/unicon
       dockerfile: DockerfileUnicon
 
+  v:
+    container_name: hello_world_v
+    build:
+      context: projects/v
+      dockerfile: DockerfileV
+
   vala:
     container_name: hello_world_vala
     build:

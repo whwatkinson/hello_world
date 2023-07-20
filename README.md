@@ -90,6 +90,7 @@
 - Terraform
 - TypeScript
 - Unicon
+- V
 - Vala
 - Verilog
 - VHDL
