@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 COPY hello_world.ml .
 
-RUN ocamlopt hello_world..ml -o hello_world.v.gd
+RUN ocamlopt hello_world..ml -o hello_world
 
 CMD ["./hello_world"]

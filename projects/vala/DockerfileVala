@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 COPY hello_world.vala .
 
-RUN valac hello_world.v.gd.vala
+RUN valac hello_world.vala
 
 CMD ["./hello_world"]

@@ -8,5 +8,5 @@ RUN mv script scriptOld
 COPY script .
 
 # TODO This works but not in the spirit of the challenge
-RUN seed hello_world.v.gd.seed >> output.txt
+RUN seed hello_world..seed >> output.txt
 CMD ["cat", "output.txt"]

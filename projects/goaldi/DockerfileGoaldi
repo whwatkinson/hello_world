@@ -8,6 +8,6 @@ RUN rm Goaldi-Linux-v11.tgz
 
 ENV PATH=/go/Goaldi-Linux-v11:$PATH
 
-COPY hello_world.gd .
+COPY hello_world .
 
-CMD ["goaldi", "hello_world.gd"]
+CMD ["goaldi", "hello_world"]
