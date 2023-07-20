@@ -10,6 +10,12 @@ services:
       context: projects/abc
       dockerfile: DockerfileAbc
 
+  ada:
+    container_name: hello_world_ada
+    build:
+      context: projects/ada
+      dockerfile: DockerfileAda
+
   algol68:
     container_name: hello_world_algol68
     build:
@@ -46,6 +52,12 @@ services:
       context: projects/basic
       dockerfile: DockerfileBasic
 
+  bcpl:
+    container_name: hello_world_bcpl
+    build:
+      context: projects/bcpl
+      dockerfile: DockerfileBcpl
+
   beanshell:
     container_name: hello_world_beanshell
     build:
@@ -63,6 +75,12 @@ services:
     build:
       context: projects/c
       dockerfile: DockerfileC
+
+  carbon:
+    container_name: hello_world_carbon
+    build:
+      context: projects/carbon
+      dockerfile: DockerfileCarbon
 
   ceylon:
     container_name: hello_world_ceylon
@@ -208,6 +226,12 @@ services:
       context: projects/fortran
       dockerfile: DockerfileFortran
 
+  freebasic:
+    container_name: hello_world_freebasic
+    build:
+      context: projects/freebasic
+      dockerfile: DockerfileFreebasic
+
   fsharp:
     container_name: hellow_world_fsharp
     build:
@@ -327,6 +351,12 @@ services:
     build:
       context: projects/mercury
       dockerfile: DockerfileMercury
+
+  miranda:
+    container_name: hello_world_miranda
+    build:
+      context: projects/miranda
+      dockerfile: DockerfileMiranda
 
   nial:
     container_name: hello_world_nial
@@ -490,6 +520,12 @@ services:
       context: projects/tcl
       dockerfile: DockerfileTcl
 
+  tea:
+    container_name: hello_world_tea
+    build:
+      context: projects/tea
+      dockerfile: DockerfileTea
+
   terraform:
     container_name: hello_world_terraform
     build:
@@ -508,11 +544,29 @@ services:
       context: projects/unicon
       dockerfile: DockerfileUnicon
 
+  v:
+    container_name: hello_world_v
+    build:
+      context: projects/v
+      dockerfile: DockerfileV
+
   vala:
     container_name: hello_world_vala
     build:
       context: projects/vala
       dockerfile: DockerfileVala
+
+  verilog:
+    container_name: hello_world_verilog
+    build:
+      context: projects/verilog
+      dockerfile: DockerfileVerilog
+
+  vhdl:
+    container_name: hello_world_vhdl
+    build:
+      context: projects/vhdl
+      dockerfile: DockerfileVhdl
 
   wyvern:
     container_name: hello_world_wyvern

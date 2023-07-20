@@ -1,0 +1,10 @@
+FROM mariobarbareschi/vhdl_ci:sfblc
+
+COPY hello_world.vhdl .
+
+RUN ghdl -a hello_world.vhdl
+RUN ghdl -e hello_world
+
+CMD ["ghdl", "-r", "hello_world"]
+
+#ENTRYPOINT ["tail", "-f", "/dev/null"]

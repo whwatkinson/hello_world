@@ -6,5 +6,3 @@ RUN apt-get update -y && \
 COPY hello_world.st .
 
 CMD ["gst", "hello_world.st"]
-
-#CMD ["tail", "-f", "/dev/null"]

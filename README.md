@@ -2,18 +2,23 @@
 
 ## Welcome
 
+[Inspired by this picture I saw on r/programmerhumor.](https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)
+
 ![image info](./hello_world.png)
 
 - ABC
+- Ada
 - Algol68
 - AssemblyX86
 - Awk
 - Ballerina
 - Bash
 - Basic
+- BCPL
 - Beanshell
 - Befunge
 - C
+- Carbon
 - Ceylon
 - Clean
 - Chapel
@@ -37,6 +42,7 @@
 - Fantom
 - Fennel
 - Fortran
+- Freebasic
 - F#
 - Gap
 - Genie
@@ -56,6 +62,7 @@
 - LiveScript
 - Lua
 - Mercury
+- Miranda
 - Nial
 - Nim
 - Ocaml
@@ -82,10 +89,14 @@
 - Snobol
 - Swift
 - Tcl
+- Tea
 - Terraform
 - TypeScript
 - Unicon
+- V
 - Vala
+- Verilog
+- VHDL
 - Wyvern
 - Zig
 - Zsh
@@ -93,8 +104,10 @@
 ### Requirements
 - **docker**
 - **docker-compose**
+- **git lfs**
 
 ###  To be greeted:
 ```
+git lfs checkout
 docker-compose up --build
 ```
