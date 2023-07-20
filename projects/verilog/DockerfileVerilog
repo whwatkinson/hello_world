@@ -14,5 +14,3 @@ COPY hello_world.v .
 RUN iverilog hello_world.v
 
 CMD ["./a.out"]
-
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
