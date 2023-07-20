@@ -2,6 +2,8 @@
 
 ## Welcome
 
+[Inspired by this picture I saw on r/programmerhumor.](https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)
+
 ![image info](./hello_world.png)
 
 - ABC
@@ -102,9 +104,10 @@
 ### Requirements
 - **docker**
 - **docker-compose**
-- git lfs
+- **git lfs**
 
 ###  To be greeted:
 ```
+git lfs checkout
 docker-compose up --build
 ```
