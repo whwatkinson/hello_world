@@ -102,6 +102,7 @@
 ### Requirements
 - **docker**
 - **docker-compose**
+- git lfs
 
 ###  To be greeted:
 ```
