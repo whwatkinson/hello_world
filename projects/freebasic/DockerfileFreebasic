@@ -1,0 +1,27 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y xz-utils \
+    gcc libncurses5-dev \
+    libffi-dev \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxext-dev \
+    libxrender-dev \
+    libxrandr-dev \
+    libxpm-dev \
+    libtinfo5 \
+    libgpm-dev
+
+COPY FreeBASIC-1.10.0-ubuntu-22.04-x86_64.tar.xz .
+RUN tar -xf FreeBASIC-1.10.0-ubuntu-22.04-x86_64.tar.xz
+RUN rm FreeBASIC-1.10.0-ubuntu-22.04-x86_64.tar.xz
+
+RUN cd FreeBASIC-1.10.0-ubuntu-22.04-x86_64 && ./install.sh -i ../usr/local
+
+COPY hello_world.bas .
+COPY run.sh .
+
+RUN fbc hello_world.bas
+
+CMD ["./run.sh"]

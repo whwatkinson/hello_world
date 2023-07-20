@@ -14,7 +14,6 @@ euclid
 esher
 delphi
 forth
-freebasic
 hack
 io
 icon
@@ -23,7 +22,6 @@ lfe
 logo
 lasso
 matlab
-mesa
 modula
 modula3
 newspeak
@@ -64,5 +62,6 @@ cyclone
 hop
 less
 limbo
+mesa
 nemerle
 oxygene

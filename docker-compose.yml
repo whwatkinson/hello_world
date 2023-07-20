@@ -226,6 +226,12 @@ services:
       context: projects/fortran
       dockerfile: DockerfileFortran
 
+  freebasic:
+    container_name: hello_world_freebasic
+    build:
+      context: projects/freebasic
+      dockerfile: DockerfileFreebasic
+
   fsharp:
     container_name: hellow_world_fsharp
     build:

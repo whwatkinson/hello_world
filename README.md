@@ -40,6 +40,7 @@
 - Fantom
 - Fennel
 - Fortran
+- Freebasic
 - F#
 - Gap
 - Genie
