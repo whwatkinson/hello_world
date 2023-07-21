@@ -370,6 +370,12 @@ services:
       context: projects/nim
       dockerfile: DockerfileNim
 
+  objectivec:
+    container_name: hello_world_objectivec
+    build:
+      context: projects/objectivec
+      dockerfile: DockerfileObjectivec
+
   ocaml:
     container_name: hello_world_ocaml
     build:

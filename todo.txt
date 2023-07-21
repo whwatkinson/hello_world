@@ -17,7 +17,6 @@ forth
 hack
 io
 icon
-jade
 lfe
 logo
 lasso
@@ -30,7 +29,6 @@ omega
 occam
 oberon
 oberon2
-objectivec
 postscript
 postgres
 scheme
@@ -60,6 +58,7 @@ applescript
 bosque
 cyclone
 hop
+jade
 less
 limbo
 mesa

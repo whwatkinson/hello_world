@@ -65,6 +65,7 @@
 - Miranda
 - Nial
 - Nim
+- Objectivec
 - Ocaml
 - Pascal
 - Perl
