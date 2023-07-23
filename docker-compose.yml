@@ -220,6 +220,12 @@ services:
       context: projects/fennel
       dockerfile: DockerfileFennel
 
+  forth:
+    container_name: hello_world_forth
+    build:
+      context: projects/forth
+      dockerfile: DockerfileForth
+
   fortran:
     container_name: hello_world_fortran
     build:

@@ -13,7 +13,6 @@ evil
 euclid
 esher
 delphi
-forth
 hack
 io
 icon

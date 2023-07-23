@@ -41,6 +41,7 @@
 - Factor
 - Fantom
 - Fennel
+- Forth
 - Fortran
 - Freebasic
 - F#
