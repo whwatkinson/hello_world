@@ -9,11 +9,8 @@ ENV PATH=root/.dotnet:$PATH
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 COPY hello_world.fsx .
+COPY run.sh .
 
 RUN dotnet fsi hello_world.fsx -q &
 
-CMD ["root/.dotnet/dotnet", "fsi", "hello_world.fsx"]
-
-# TODO make this output one line
-
-#  https://fsharp.org/use/linux/
+CMD ["./run.sh"]
