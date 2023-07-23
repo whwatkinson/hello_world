@@ -6,7 +6,4 @@ RUN apt-get update -y && \
 COPY hello_world.fth .
 COPY run.sh .
 
-# TODO fix this..
 CMD ["./run.sh"]
-
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
