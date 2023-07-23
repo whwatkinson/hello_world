@@ -1,12 +1,10 @@
 FROM openjdk:8
 
 RUN apt-get update -y && \
-    apt-get install -y curl unzip
+    apt-get install -y unzip
 
 COPY fantom-1.0.78.zip .
 RUN unzip fantom-1.0.78.zip
-# todo curl this
-#RUN curl -X GET https://github.com/fantom-lang/fantom/releases/download/v1.0.78/fantom-1.0.78.zip -o fantom-1.0.78.zip
 RUN rm fantom-1.0.78.zip
 
 RUN chmod +x fantom-1.0.78/bin/fan
