@@ -10,7 +10,7 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 COPY hello_world.fsx .
 
-RUN dotnet fsi hello_world.v.gd.fsx -q &
+RUN dotnet fsi hello_world.fsx -q &
 
 CMD ["root/.dotnet/dotnet", "fsi", "hello_world.fsx"]
 

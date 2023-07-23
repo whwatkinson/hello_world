@@ -1,0 +1,12 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y gforth
+
+COPY hello_world.fth .
+COPY run.sh .
+
+# TODO fix this..
+CMD ["./run.sh"]
+
+#ENTRYPOINT ["tail", "-f", "/dev/null"]

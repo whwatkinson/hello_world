@@ -10,4 +10,4 @@ ENV PATH=/go/Goaldi-Linux-v11:$PATH
 
 COPY hello_world.gd .
 
-CMD ["goaldi", "hello_world.gd"]
+CMD ["goaldi", "hello_world"]

@@ -6,11 +6,11 @@ RUN apt-get update -y && \
 RUN curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg
 RUN install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/
 RUN apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-RUN apt install terraform
+RUN apt install -y terraform
 
 COPY hello_world.tf .
+COPY run.sh .
 
 RUN terraform init
 
-CMD ["terraform", "apply", "-auto-approve"]
-# TODO make this output one line
+CMD ["./run.sh"]

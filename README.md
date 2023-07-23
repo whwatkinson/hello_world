@@ -41,6 +41,7 @@
 - Factor
 - Fantom
 - Fennel
+- Forth
 - Fortran
 - Freebasic
 - F#
@@ -65,6 +66,7 @@
 - Miranda
 - Nial
 - Nim
+- Objectivec
 - Ocaml
 - Pascal
 - Perl
@@ -104,10 +106,12 @@
 ### Requirements
 - **docker**
 - **docker-compose**
+- **git**
 - **git lfs**
 
 ###  To be greeted:
 ```
+git clone https://github.com/whwatkinson/hello_world.git
 git lfs checkout
 docker-compose up --build
 ```

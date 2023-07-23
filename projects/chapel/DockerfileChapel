@@ -2,6 +2,6 @@ FROM chapel/chapel:1.29.0
 
 COPY hello_world.chpl .
 
-RUN chpl -o hello_world.v.gd hello_world.v.gd.chpl
+RUN chpl -o hello_world hello_world.chpl
 
 CMD ["./hello_world"]
