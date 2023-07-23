@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo "" | ring hello_world.ring > output.txt
+./app & > output.txt
 
-cat output.txt
+tail -1 output.txt
+
+./app | tail -1
