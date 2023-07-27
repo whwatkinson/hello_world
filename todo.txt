@@ -4,7 +4,6 @@ assemblyscript
 b
 blitzmax
 boo
-bird
 claire4
 cobra
 cypher
@@ -31,7 +30,6 @@ oberon2
 postscript
 postgres
 scheme
-self
 solidity
 seed7
 spark
@@ -47,6 +45,7 @@ elm
 eiffel
 parasail
 opa
+self
 y
 
 # skip
@@ -54,6 +53,7 @@ apl
 actionscript
 alef
 applescript
+bird
 bosque
 cyclone
 hop
