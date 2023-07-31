@@ -1,6 +1,6 @@
 arc
 agda
-assemblyscript
+
 b
 blitzmax
 boo
@@ -13,7 +13,7 @@ euclid
 esher
 delphi
 hack
-io
+
 icon
 lfe
 logo
@@ -25,12 +25,9 @@ newspeak
 nu
 omega
 occam
-oberon
-oberon2
 postscript
 postgres
 scheme
-solidity
 seed7
 spark
 sather
@@ -39,12 +36,15 @@ turing
 typhon
 
 # another go
+assemblyscript
 clu
 cog
 elm
 eiffel
-parasail
+io
+oberon
 opa
+parasail
 self
 y
 

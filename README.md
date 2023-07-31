@@ -89,6 +89,7 @@
 - Simula
 - Smalltalk
 - Snobol
+- Solidity
 - Swift
 - Tcl
 - Tea

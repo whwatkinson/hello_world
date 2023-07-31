@@ -520,6 +520,12 @@ services:
       context: projects/snobol
       dockerfile: DockerfileSnobol
 
+  solidity:
+    container_name: hello_world_solidity
+    build:
+      context: projects/solidity
+      dockerfile: DockerfileSolidity
+
   swift:
     container_name: hello_world_swift
     build:
