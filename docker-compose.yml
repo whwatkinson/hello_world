@@ -490,6 +490,12 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+  sed:
+    container_name: hello_world_sed
+    build:
+      context: projects/sed
+      dockerfile: DockerfileSed
+
   seed:
     container_name: hello_world_seed
     build:

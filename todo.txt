@@ -1,6 +1,5 @@
 arc
 agda
-
 b
 blitzmax
 boo
@@ -13,7 +12,6 @@ euclid
 esher
 delphi
 hack
-
 icon
 lfe
 logo
