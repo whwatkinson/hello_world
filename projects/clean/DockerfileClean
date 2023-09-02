@@ -3,19 +3,21 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y curl jq gcc libz3-4 make
 
-
 RUN curl https://clean-lang.org/install.sh | /bin/sh
 
 ENV PATH=root/.nitrile/bin:$PATH
 
 COPY app.icl .
 COPY nitrile.yml .
+COPY run.sh .
 
 RUN nitrile update
 RUN nitrile fetch
 RUN nitrile build
 
-CMD ["./app"]
+CMD ["./run.sh"]
+
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
 
 # todo remove extra info after hello world
 # https://clean-and-itasks.gitlab.io/nitrile/intro/getting-started/

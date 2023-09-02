@@ -4,7 +4,6 @@ RUN apt-get update -y && \
     apt-get install tcl -y
 
 COPY hello_world.tcl .
+COPY run.sh .
 
-# TODO This works but not in the spirit of the challenge
-RUN tclsh hello_world.tcl >> output.txt
-CMD ["cat", "output.txt"]
+CMD ["./run.sh"]

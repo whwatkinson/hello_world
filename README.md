@@ -84,11 +84,13 @@
 - Ring
 - Ruby
 - Scala
+- Sed
 - Seed
 - Shell
 - Simula
 - Smalltalk
 - Snobol
+- Solidity
 - Swift
 - Tcl
 - Tea

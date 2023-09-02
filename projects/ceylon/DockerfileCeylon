@@ -1,8 +1,5 @@
 FROM ceylon/ceylon:latest-redhat
 
-#COPY hello_world.ceylon .
-
-# TODO dont do this, cant seem to supply args to ceylon new ?
 RUN mkdir source
 RUN mkdir source/hello
 

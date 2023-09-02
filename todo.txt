@@ -1,10 +1,8 @@
 arc
 agda
-assemblyscript
 b
 blitzmax
 boo
-bird
 claire4
 cobra
 cypher
@@ -14,7 +12,6 @@ euclid
 esher
 delphi
 hack
-io
 icon
 lfe
 logo
@@ -26,13 +23,9 @@ newspeak
 nu
 omega
 occam
-oberon
-oberon2
 postscript
 postgres
 scheme
-self
-solidity
 seed7
 spark
 sather
@@ -41,12 +34,16 @@ turing
 typhon
 
 # another go
+assemblyscript
 clu
 cog
 elm
 eiffel
-parasail
+io
+oberon
 opa
+parasail
+self
 y
 
 # skip
@@ -54,6 +51,7 @@ apl
 actionscript
 alef
 applescript
+bird
 bosque
 cyclone
 hop

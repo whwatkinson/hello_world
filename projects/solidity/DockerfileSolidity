@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y gcc cmake git libboost-all-dev g++ jq
+
+RUN git clone https://github.com/ethereum/solidity.git
+
+RUN cd solidity && mkdir build
+RUN cd solidity/build && cmake .. && make
+ENV PATH=solidity/build/solc:$PATH
+
+COPY hello_world.sol .
+COPY run.sh .
+
+RUN solc -o . --bin --ast-compact-json --asm hello_world.sol
+
+CMD ["./run.sh"]

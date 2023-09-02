@@ -490,6 +490,12 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+  sed:
+    container_name: hello_world_sed
+    build:
+      context: projects/sed
+      dockerfile: DockerfileSed
+
   seed:
     container_name: hello_world_seed
     build:
@@ -519,6 +525,12 @@ services:
     build:
       context: projects/snobol
       dockerfile: DockerfileSnobol
+
+  solidity:
+    container_name: hello_world_solidity
+    build:
+      context: projects/solidity
+      dockerfile: DockerfileSolidity
 
   swift:
     container_name: hello_world_swift
