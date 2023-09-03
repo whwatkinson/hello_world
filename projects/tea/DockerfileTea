@@ -13,5 +13,3 @@ ENV PATH=$PATH:/tea-master/bin
 COPY hello_world.tea .
 
 CMD ["tsh", "hello_world.tea"]
-
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
