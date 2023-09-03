@@ -4,8 +4,6 @@ RUN curl -X GET https://wyvernlang.github.io/files/WyvernDemo20180325.zip -o Wyv
 RUN unzip WyvernDemo20180325.zip
 RUN rm WyvernDemo20180325.zip
 
-ENV PATH=WyvernDemo20180325/bin:$PATH
-
 COPY hello_world.wyv .
 
-CMD ["wyvern", "hello_world.wyv"]
+CMD ["WyvernDemo20180325/bin/wyvern", "hello_world.wyv"]
