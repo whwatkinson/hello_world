@@ -15,10 +15,3 @@ RUN touch Ballerina.toml
 RUN bal build
 
 CMD ["bal", "run", "target/bin/greeter.jar"]
-
-#CMD ["tail", "-f", "/dev/null"]
-
-
-# https://ballerina.io/learn/get-started-with-ballerina/
-
-# https://github.com/ballerina-platform/ballerina-distribution/blob/master/docs/build-ballerina-from-source.md
