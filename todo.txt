@@ -3,6 +3,7 @@ agda
 b
 blitzmax
 boo
+bosque
 claire4
 cobra
 cypher
@@ -17,6 +18,7 @@ lfe
 logo
 lasso
 matlab
+mesa
 modula
 modula3
 newspeak
@@ -52,12 +54,10 @@ actionscript
 alef
 applescript
 bird
-bosque
 cyclone
 hop
 jade
 less
 limbo
-mesa
 nemerle
 oxygene
