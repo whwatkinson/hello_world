@@ -1,0 +1,24 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y linux-libc-dev libxft2 g++-multilib gcc-multilib libxpm-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev
+
+COPY blitzmax-151.tar.gz .
+RUN tar xvf blitzmax-151.tar.gz
+RUN rm blitzmax-151.tar.gz
+
+RUN cd blitzmax-151/_src/linux_x86 && chmod +x *.bat
+RUN cd blitzmax-151/_src/linux_x86 && ./install.bat
+
+ENV PATH=/blitzmax-151/bin:$PATH
+
+
+COPY ybc-0.5-linux.tar.gz .
+
+RUN tar xvf ybc-0.5-linux.tar.gz
+RUN rm ybc-0.5-linux.tar.gz
+
+
+COPY hello_world.b .
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
