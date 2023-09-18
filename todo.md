@@ -42,7 +42,6 @@
 - seed7
 - spark
 - sather
-- sml
 - tex
 - turing
 - typhon

@@ -89,6 +89,7 @@
 - Shell
 - Simula
 - Smalltalk
+- Sml
 - Snobol
 - Solidity
 - Swift
