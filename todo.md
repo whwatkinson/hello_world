@@ -1,0 +1,79 @@
+## TODO
+- arc
+- abap
+- autoit
+- arduino
+- agda
+- b
+- blitzmax
+- boo
+- bosque
+- claire4
+- cobra
+- coldfusion
+- cuda
+- cypher
+- delphi
+- e
+- evil
+- euclid
+- esher
+- foxpro
+- hack
+- icon
+- jsx
+- lfe
+- logo
+- lasso
+- matlab
+- mathematica
+- mesa
+- modula
+- modula3
+- newspeak
+- nu
+- objectivej
+- omega
+- occam
+- octave
+- postscript
+- postgres
+- scheme
+- seed7
+- spark
+- sather
+- sml
+- tex
+- turing
+- typhon
+
+
+
+## another go
+- assemblyscript
+- clu
+- cog
+- elm
+- eiffel
+- io
+- oberon
+- opa
+- parasail
+- self
+- y
+
+
+
+## skip
+- apl
+- actionscript
+- alef
+- applescript
+- bird
+- cyclone
+- hop
+- jade
+- less
+- limbo
+- nemerle
+- oxygene
