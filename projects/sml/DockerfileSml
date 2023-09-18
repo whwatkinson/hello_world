@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get -y install smlnj
+
+COPY run.sh .
+RUN chmod +x run.sh
+
+COPY hello_world.sml .
+
+CMD ["./run.sh"]
