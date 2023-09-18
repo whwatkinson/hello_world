@@ -1,0 +1,9 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y
+
+COPY hello-world.agda .
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+
+# https://agda.readthedocs.io/en/latest/getting-started/installation.html
