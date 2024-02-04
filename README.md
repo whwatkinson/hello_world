@@ -9,6 +9,7 @@
 - ABC
 - Ada
 - Algol68
+- Arc
 - AssemblyX86
 - Awk
 - Ballerina
