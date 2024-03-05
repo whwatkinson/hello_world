@@ -1,42 +1,41 @@
 # Hello World
-
 ## Welcome
-
 [Inspired by this picture I saw on r/programmerhumor.](https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)
-
 ![image info](./hello_world.png)
 
-- ABC
+- Abc
 - Ada
+- Agda
 - Algol68
 - Arc
-- AssemblyX86
+- Assemblyx86
 - Awk
 - Ballerina
 - Bash
 - Basic
-- BCPL
+- Bcpl
 - Beanshell
 - Befunge
 - C
 - Carbon
 - Ceylon
-- Clean
 - Chapel
+- Clean
 - Clojure
 - Cobol
-- CoffeeScript
-- C++
+- Coffeescript
+- Cpp
 - Crystal
 - Csh
-- C#
+- Csharp
 - Cython
 - D
 - Dafny
 - Dart
-- DogeScript
+- Dogescript
 - Dylan
 - Elixir
+- Emerald
 - Erlang
 - Euphoria
 - Factor
@@ -45,23 +44,24 @@
 - Forth
 - Fortran
 - Freebasic
-- F#
+- Fsharp
 - Gap
 - Genie
-- Golang
 - Goaldi
+- Golang
 - Groovy
 - Haskell
 - Haxe
 - Idris2
 - Java
-- JavaScript
-- JQ
+- Javascript
+- Javascript_is_weird
+- Jq
 - Julia
 - Kotlin
 - Ksh
 - Lisp
-- LiveScript
+- Livescript
 - Lua
 - Mercury
 - Miranda
@@ -75,8 +75,8 @@
 - Powershell
 - Prolog
 - Purescript
-- Python 2
-- Python 3
+- Python2
+- Python3
 - R
 - Racket
 - Raku
@@ -84,6 +84,7 @@
 - Red
 - Ring
 - Ruby
+- Rust
 - Scala
 - Sed
 - Seed
@@ -96,12 +97,12 @@
 - Tcl
 - Tea
 - Terraform
-- TypeScript
+- Typescript
 - Unicon
 - V
 - Vala
 - Verilog
-- VHDL
+- Vhdl
 - Wyvern
 - Zig
 - Zsh
