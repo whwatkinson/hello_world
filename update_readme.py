@@ -32,6 +32,7 @@ def make_readme():
     )
 
     read_me = welcome + projects + requirements + build_me
+
     with open('README.md', 'w') as file:
         file.write(read_me)
 
