@@ -6,6 +6,7 @@ bosque
 claire4
 cobra
 cypher
+dreambird
 e
 evil
 euclid
@@ -22,17 +23,21 @@ modula
 modula3
 newspeak
 nu
+Objectivecpp
 omega
 occam
+pony
 postscript
 postgres
 scheme
 seed7
 spark
+spice
 sather
 sml
 turing
 typhon
+visual basic
 
 # another go
 assemblyscript
