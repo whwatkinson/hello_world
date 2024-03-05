@@ -10,6 +10,7 @@ def make_readme():
         "![image info](./hello_world.png)\n\n"
     )
 
+    # todo mapping of names
     projects = "".join(sorted([f"- {project.capitalize()}\n" for project in listdir('projects/') if project != 'new']))
 
     requirements = (
