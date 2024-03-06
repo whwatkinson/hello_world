@@ -41,27 +41,27 @@ visual basic
 
 # another go
 assemblyscript
-clu
-cog
-elm
-eiffel
-io
-oberon
-opa
-parasail
-self
-y
-
-# skip
 apl
 actionscript
 alef
 applescript
 bird
 cyclone
+clu
+cog
+elm
+eiffel
 hop
 jade
+io
 less
 limbo
-nemerle
+oberon
+opa
 oxygene
+nemerle
+parasail
+self
+y
+
+# skip
