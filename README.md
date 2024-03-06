@@ -1,50 +1,50 @@
-# Hello World
+# Hello World in 103 languages
 ## Welcome
 [Inspired by this picture I saw on r/programmerhumor.](https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)
 ![image info](./hello_world.png)
 
-- Abc
+- ABC
 - Ada
 - Agda
 - Algol68
 - Arc
 - Assemblyx86
 - Awk
+- BCPL
 - Ballerina
 - Bash
 - Basic
-- Bcpl
 - Beanshell
 - Befunge
 - C
+- C#
+- C++
 - Carbon
 - Ceylon
 - Chapel
 - Clean
 - Clojure
 - Cobol
-- Coffeescript
-- Cpp
+- CoffeeScript
 - Crystal
 - Csh
-- Csharp
 - Cython
 - D
 - Dafny
 - Dart
-- Dogescript
+- DogeScript
 - Dylan
 - Elixir
 - Emerald
 - Erlang
 - Euphoria
+- F#
 - Factor
 - Fantom
 - Fennel
 - Forth
 - Fortran
 - Freebasic
-- Fsharp
 - Gap
 - Genie
 - Goaldi
@@ -53,15 +53,15 @@
 - Haskell
 - Haxe
 - Idris2
+- JQ
 - Java
-- Javascript
+- JavaScript
 - Javascript_is_weird
-- Jq
 - Julia
 - Kotlin
 - Ksh
 - Lisp
-- Livescript
+- LiveScript
 - Lua
 - Mercury
 - Miranda
@@ -75,8 +75,8 @@
 - Powershell
 - Prolog
 - Purescript
-- Python2
-- Python3
+- Python 2
+- Python 3
 - R
 - Racket
 - Raku
@@ -97,12 +97,12 @@
 - Tcl
 - Tea
 - Terraform
-- Typescript
+- TypeScript
 - Unicon
 - V
+- VHDL
 - Vala
 - Verilog
-- Vhdl
 - Wyvern
 - Zig
 - Zsh

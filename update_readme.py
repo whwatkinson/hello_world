@@ -2,16 +2,41 @@ from os import listdir
 
 
 def make_readme():
+
+    name_map = {
+        "abc": "ABC",
+        "bcpl": "BCPL",
+        "coffeescript": "CoffeeScript",
+        "cpp": "C++",
+        "csharp": "C#",
+        "dogescript": "DogeScript",
+        "fsharp": "F#",
+        "javascript": "JavaScript",
+        "jq": "JQ",
+        "livescript": "LiveScript",
+        "python2": "Python 2",
+        "python3": "Python 3",
+        "typescript": "TypeScript",
+        "vhdl": "VHDL",
+    }
+
+    project_list = sorted(
+        [
+            f"- {project.capitalize() if project not in name_map else name_map[project]}\n"
+            for project in listdir("projects/")
+            if project != "new"
+        ]
+    )
+
     welcome = (
-        "# Hello World\n"
+        f"# Hello World in {len(project_list)} languages\n"
         "## Welcome\n"
         "[Inspired by this picture I saw on r/programmerhumor.]"
         "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n"
         "![image info](./hello_world.png)\n\n"
     )
 
-    # todo mapping of names
-    projects = "".join(sorted([f"- {project.capitalize()}\n" for project in listdir('projects/') if project != 'new']))
+    projects = "".join(project_list)
 
     requirements = (
         "\n"
@@ -34,9 +59,9 @@ def make_readme():
 
     read_me = welcome + projects + requirements + build_me
 
-    with open('README.md', 'w') as file:
+    with open("README.md", "w") as file:
         file.write(read_me)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     make_readme()
