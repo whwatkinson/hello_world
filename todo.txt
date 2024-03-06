@@ -1,13 +1,8 @@
-agda
-b
 blitzmax
 boo
 bosque
-claire4
-cobra
 cypher
 dreambird
-e
 evil
 euclid
 esher
@@ -64,4 +59,9 @@ parasail
 self
 y
 
-# skip
+# another go
+agda
+b
+claire
+cobra
+e
