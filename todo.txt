@@ -16,6 +16,7 @@ matlab
 mesa
 modula
 modula3
+mysql
 newspeak
 nu
 Objectivecpp
@@ -31,7 +32,7 @@ spice
 sather
 sml
 turing
-typhon
+
 visual basic
 
 # another go

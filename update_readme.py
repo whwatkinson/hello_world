@@ -1,7 +1,7 @@
 from os import listdir
 
 
-def make_readme():
+def make_readme() -> None:
 
     my_name_map = {
         "abc": "ABC",

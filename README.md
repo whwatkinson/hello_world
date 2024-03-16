@@ -1,4 +1,4 @@
-# Hello World in 103 languages
+# Hello World in 104 languages
 ## Welcome
 [Inspired by this picture I saw on r/programmerhumor.](https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)
 ![image info](./hello_world.png)
@@ -98,6 +98,7 @@
 - Tea
 - Terraform
 - TypeScript
+- Typhon
 - Unicon
 - V
 - VHDL
