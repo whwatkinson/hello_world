@@ -5,6 +5,7 @@ def make_readme():
 
     my_name_map = {
         "abc": "ABC",
+        "awk": "AWK",
         "bcpl": "BCPL",
         "coffeescript": "CoffeeScript",
         "cpp": "C++",
