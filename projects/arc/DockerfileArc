@@ -1,0 +1,19 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt install software-properties-common -y
+
+RUN add-apt-repository ppa:plt/racket -y && \
+    apt-get install racket -y
+
+COPY arc3.2.tar .
+RUN tar -xvf arc3.2.tar && \
+    rm arc3.2.tar
+
+WORKDIR arc3.2
+
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

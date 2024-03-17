@@ -1,4 +1,4 @@
-# Hello World
+# Hello World in 104 languages
 
 ## Welcome
 
@@ -7,28 +7,29 @@
 ![image info](./hello_world.png)
 
 - ABC
+- AWK
 - Ada
 - Algol68
-- AssemblyX86
-- Awk
+- Arc
+- Assemblyx86
+- BCPL
 - Ballerina
 - Bash
 - Basic
-- BCPL
 - Beanshell
 - Befunge
 - C
+- C#
+- C++
 - Carbon
 - Ceylon
-- Clean
 - Chapel
+- Clean
 - Clojure
 - Cobol
 - CoffeeScript
-- C++
 - Crystal
 - Csh
-- C#
 - Cython
 - D
 - Dafny
@@ -36,26 +37,28 @@
 - DogeScript
 - Dylan
 - Elixir
+- Emerald
 - Erlang
 - Euphoria
+- F#
 - Factor
 - Fantom
 - Fennel
 - Forth
 - Fortran
 - Freebasic
-- F#
 - Gap
 - Genie
-- Golang
 - Goaldi
+- Golang
 - Groovy
 - Haskell
 - Haxe
 - Idris2
+- JQ
 - Java
 - JavaScript
-- JQ
+- Javascript_is_weird
 - Julia
 - Kotlin
 - Ksh
@@ -83,7 +86,9 @@
 - Red
 - Ring
 - Ruby
+- Rust
 - Scala
+- Scheme
 - Sed
 - Seed
 - Shell
@@ -96,11 +101,12 @@
 - Tea
 - Terraform
 - TypeScript
+- Typhon
 - Unicon
 - V
+- VHDL
 - Vala
 - Verilog
-- VHDL
 - Wyvern
 - Zig
 - Zsh

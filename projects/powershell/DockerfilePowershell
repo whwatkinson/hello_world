@@ -1,3 +1,7 @@
 FROM mcr.microsoft.com/powershell:latest
 
-CMD ["echo", "Hello, World!"]
+COPY hello_world.ps1 .
+
+CMD ["pwsh", "hello_world.ps1"]
+
+# TODO https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.4

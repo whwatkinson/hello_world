@@ -1,0 +1,10 @@
+# TODO from scratch
+FROM schemers/chicken
+
+WORKDIR /app
+
+COPY hello_world.scm .
+
+RUN csc hello_world.scm
+
+CMD ["./hello_world"]
