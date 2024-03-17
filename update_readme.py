@@ -31,10 +31,10 @@ def make_readme() -> None:
 
     welcome = (
         "\n\n"
-        f"# Hello World in {len(project_list)} languages\n"
-        "## Welcome\n"
+        f"# Hello World in {len(project_list)} languages\n\n"
+        "## Welcome\n\n"
         "[Inspired by this picture I saw on r/programmerhumor.]"
-        "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)"
+        "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n\n"
         "![image info](./hello_world.png)\n\n"
     )
 
