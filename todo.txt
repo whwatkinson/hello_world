@@ -25,7 +25,6 @@ occam
 pony
 postscript
 postgres
-scheme
 seed7
 spark
 spice
