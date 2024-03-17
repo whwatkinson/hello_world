@@ -1,5 +1,3 @@
-
-
 # Hello World in 104 languages
 
 ## Welcome

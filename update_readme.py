@@ -30,7 +30,6 @@ def make_readme() -> None:
     )
 
     welcome = (
-        "\n\n"
         f"# Hello World in {len(project_list)} languages\n\n"
         "## Welcome\n\n"
         "[Inspired by this picture I saw on r/programmerhumor.]"
