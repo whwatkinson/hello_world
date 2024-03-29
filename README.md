@@ -71,9 +71,9 @@
 - Nim
 - Objectivec
 - Ocaml
+- PHP
 - Pascal
 - Perl
-- Php
 - Pony
 - Powershell
 - Prolog

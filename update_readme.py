@@ -1,5 +1,7 @@
 from os import listdir
 
+# TODO add this to GH actionsnon merge
+
 
 def make_readme() -> None:
 
@@ -15,6 +17,7 @@ def make_readme() -> None:
         "javascript": "JavaScript",
         "jq": "JQ",
         "livescript": "LiveScript",
+        "php": "PHP",
         "python2": "Python 2",
         "python3": "Python 3",
         "typescript": "TypeScript",
@@ -60,10 +63,10 @@ def make_readme() -> None:
         "```\n"
     )
 
-    read_me = welcome + projects + requirements + build_me
+    read_me_contents = welcome + projects + requirements + build_me
 
     with open("README.md", "w") as file:
-        file.write(read_me)
+        file.write(read_me_contents)
 
 
 if __name__ == "__main__":
