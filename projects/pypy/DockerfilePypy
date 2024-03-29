@@ -1,0 +1,5 @@
+FROM pypy:3.9-slim-bullseye
+
+COPY hello_world.py .
+
+CMD ["pypy3", "hello_world.py"]
