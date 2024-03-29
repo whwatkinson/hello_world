@@ -22,7 +22,6 @@ nu
 Objectivecpp
 omega
 occam
-pony
 postscript
 postgres
 seed7
