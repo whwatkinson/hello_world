@@ -1,4 +1,4 @@
-# Hello World in 104 languages
+# Hello World in 106 languages
 
 ## Welcome
 
@@ -74,9 +74,11 @@
 - Pascal
 - Perl
 - Php
+- Pony
 - Powershell
 - Prolog
 - Purescript
+- Pypy
 - Python 2
 - Python 3
 - R

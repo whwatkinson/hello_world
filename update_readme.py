@@ -3,7 +3,7 @@ from os import listdir
 
 def make_readme() -> None:
 
-    my_name_map = {
+    my_names_map = {
         "abc": "ABC",
         "awk": "AWK",
         "bcpl": "BCPL",
@@ -21,11 +21,13 @@ def make_readme() -> None:
         "vhdl": "VHDL",
     }
 
+    skips = {'new'}
+
     project_list = sorted(
         [
-            f"- {project.capitalize() if project not in my_name_map else my_name_map[project]}\n"
+            f"- {project.capitalize() if project not in my_names_map else my_names_map[project]}\n"
             for project in listdir("projects/")
-            if project != "new"
+            if project not in skips
         ]
     )
 
