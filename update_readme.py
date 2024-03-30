@@ -18,6 +18,7 @@ def make_readme() -> None:
         "jq": "JQ",
         "livescript": "LiveScript",
         "php": "PHP",
+        "purescript": "PureScript",
         "python2": "Python 2",
         "python3": "Python 3",
         "typescript": "TypeScript",
