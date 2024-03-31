@@ -1,7 +1,7 @@
 from io import StringIO
 from os import listdir
 
-from admin import my_names_map, skips, get_project_root
+from update_scrpits import my_names_map, skips, get_project_root
 
 # TODO add this to GH actions on merge
 

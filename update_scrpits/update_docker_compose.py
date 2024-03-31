@@ -1,6 +1,6 @@
 from io import StringIO
 from os import listdir
-from admin import skips, get_project_root
+from update_scrpits import skips, get_project_root
 
 
 def make_docker_compose():
