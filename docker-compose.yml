@@ -1,4 +1,4 @@
-# As noted in the Docker best practices "each container should have only one concern
+# As noted in the Docker best practices "each container should have only one concern"
 
 version: "3.9"
 
@@ -27,6 +27,12 @@ services:
     build:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
+
+  arc:
+    container_name: hello_world_arc
+    build:
+      context: projects/arc
+      dockerfile: DockerfileArc
 
   assemblyx86:
     container_name: hello_world_assemblyx86
@@ -94,17 +100,17 @@ services:
       context: projects/ceylon
       dockerfile: DockerfileCeylon
 
-  clean:
-    container_name: hello_world_clean
-    build:
-      context: projects/clean
-      dockerfile: DockerfileClean
-
   chapel:
     container_name: hello_world_chapel
     build:
       context: projects/chapel
       dockerfile: DockerfileChapel
+
+  clean:
+    container_name: hello_world_clean
+    build:
+      context: projects/clean
+      dockerfile: DockerfileClean
 
   clojure:
     container_name: hello_world_clojure
@@ -184,12 +190,6 @@ services:
       context: projects/dylan
       dockerfile: DockerfileDylan
 
-  erlang:
-    container_name: hello_world_erlang
-    build:
-      context: projects/erlang
-      dockerfile: DockerfileErlang
-
   elixir:
     container_name: hello_world_elixir
     build:
@@ -201,6 +201,12 @@ services:
     build:
       context: projects/emerald
       dockerfile: DockerfileEmerald
+
+  erlang:
+    container_name: hello_world_erlang
+    build:
+      context: projects/erlang
+      dockerfile: DockerfileErlang
 
   euphoria:
     container_name: hello_world_euphoria
@@ -245,10 +251,10 @@ services:
       dockerfile: DockerfileFreebasic
 
   fsharp:
-    container_name: hellow_world_fsharp
+    container_name: hello_world_fsharp
     build:
       context: projects/fsharp
-      dockerfile: DockerfileFSharp
+      dockerfile: DockerfileFsharp
 
   gap:
     container_name: hello_world_gap
@@ -257,16 +263,10 @@ services:
       dockerfile: DockerfileGap
 
   genie:
-    container_name: hellow_world_genie
+    container_name: hello_world_genie
     build:
       context: projects/genie
       dockerfile: DockerfileGenie
-
-  golang:
-    container_name: hello_world_golang
-    build:
-      context: projects/golang
-      dockerfile: DockerfileGolang
 
   goaldi:
     container_name: hello_world_goaldi
@@ -274,8 +274,14 @@ services:
       context: projects/goaldi
       dockerfile: DockerfileGoaldi
 
+  golang:
+    container_name: hello_world_golang
+    build:
+      context: projects/golang
+      dockerfile: DockerfileGolang
+
   groovy:
-    container_name: hellow_world_groovy
+    container_name: hello_world_groovy
     build:
       context: projects/groovy
       dockerfile: DockerfileGroovy
@@ -308,13 +314,13 @@ services:
     container_name: hello_world_javascript
     build:
       context: projects/javascript
-      dockerfile: DockerfileJs
+      dockerfile: DockerfileJavascript
 
   javascript_is_weird:
     container_name: hello_world_javascript_is_weird
     build:
       context: projects/javascript_is_weird
-      dockerfile: DockerfileJsIsWeird
+      dockerfile: DockerfileJavascript_is_weird
 
   jq:
     container_name: hello_world_jq
@@ -334,7 +340,7 @@ services:
       context: projects/kotlin
       dockerfile: DockerfileKotlin
 
-  korn:
+  ksh:
     container_name: hello_world_ksh
     build:
       context: projects/ksh
@@ -508,6 +514,12 @@ services:
       context: projects/scala
       dockerfile: DockerfileScala
 
+  scheme:
+    container_name: hello_world_scheme
+    build:
+      context: projects/scheme
+      dockerfile: DockerfileScheme
+
   sed:
     container_name: hello_world_sed
     build:
@@ -578,7 +590,13 @@ services:
     container_name: hello_world_typescript
     build:
       context: projects/typescript
-      dockerfile: DockerfileTs
+      dockerfile: DockerfileTypescript
+
+  typhon:
+    container_name: hello_world_typhon
+    build:
+      context: projects/typhon
+      dockerfile: DockerfileTyphon
 
   unicon:
     container_name: hello_world_unicon
@@ -627,3 +645,4 @@ services:
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
+
