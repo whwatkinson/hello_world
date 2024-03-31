@@ -598,6 +598,12 @@ services:
       context: projects/typhon
       dockerfile: DockerfileTyphon
 
+  uiua:
+    container_name: hello_world_uiua
+    build:
+      context: projects/uiua
+      dockerfile: DockerfileUiua
+
   unicon:
     container_name: hello_world_unicon
     build:

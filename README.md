@@ -1,4 +1,4 @@
-# Hello World in 107 languages
+# Hello World in 108 languages
 
 ## Welcome
 
@@ -105,6 +105,7 @@
 - Terraform
 - TypeScript
 - Typhon
+- Uiua
 - Unicon
 - V
 - VHDL

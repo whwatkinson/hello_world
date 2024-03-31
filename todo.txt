@@ -27,6 +27,7 @@ hack
 hop
 icon
 jade
+jelly
 io
 less
 limbo
@@ -66,3 +67,8 @@ y
 
 
 # skip
+
+
+# sources
+https://github.com/leachim6/hello-world?tab=readme-ov-file
+https://aplwiki.com/wiki/List_of_open-source_array_languages
