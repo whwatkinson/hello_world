@@ -478,6 +478,12 @@ services:
       context: projects/racket
       dockerfile: DockerfileRacket
 
+  rad:
+    container_name: hello_world_rad
+    build:
+      context: projects/rad
+      dockerfile: DockerfileRad
+
   raku:
     container_name: hello_world_raku
     build:

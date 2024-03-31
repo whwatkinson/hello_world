@@ -1,4 +1,4 @@
-# Hello World in 109 languages
+# Hello World in 110 languages
 
 ## Welcome
 
@@ -85,6 +85,7 @@
 - Python 3
 - R
 - Racket
+- Rad
 - Raku
 - Rebol
 - Red
