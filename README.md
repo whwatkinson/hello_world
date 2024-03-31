@@ -1,4 +1,4 @@
-# Hello World in 108 languages
+# Hello World in 109 languages
 
 ## Welcome
 
@@ -11,6 +11,7 @@
 - Ada
 - Agda
 - Algol68
+- Aplette
 - Arc
 - Assemblyx86
 - BCPL

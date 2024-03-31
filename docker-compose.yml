@@ -28,6 +28,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  aplette:
+    container_name: hello_world_aplette
+    build:
+      context: projects/aplette
+      dockerfile: DockerfileAplette
+
   arc:
     container_name: hello_world_arc
     build:
