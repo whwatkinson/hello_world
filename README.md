@@ -1,4 +1,4 @@
-# Hello World in 106 languages
+# Hello World in 107 languages
 
 ## Welcome
 
@@ -9,6 +9,7 @@
 - ABC
 - AWK
 - Ada
+- Agda
 - Algol68
 - Arc
 - Assemblyx86
@@ -77,7 +78,7 @@
 - Pony
 - Powershell
 - Prolog
-- Purescript
+- PureScript
 - Pypy
 - Python 2
 - Python 3
