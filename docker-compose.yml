@@ -16,6 +16,12 @@ services:
       context: projects/ada
       dockerfile: DockerfileAda
 
+  agda:
+    container_name: hello_world_agda
+    build:
+      context: projects/agda
+      dockerfile: DockerfileAgda
+
   algol68:
     container_name: hello_world_algol68
     build:
@@ -406,6 +412,12 @@ services:
       context: projects/php
       dockerfile: DockerfilePhp
 
+  pony:
+    container_name: hello_world_pony
+    build:
+      context: projects/pony
+      dockerfile: DockerfilePony
+
   powershell:
     container_name: hello_world_powershell
     build:
@@ -423,6 +435,12 @@ services:
     build:
       context: projects/purescript
       dockerfile: DockerfilePurescript
+
+  pypy:
+    container_name: hello_world_pypy
+    build:
+      context: projects/pypy
+      dockerfile: DockerfilePypy
 
   python2:
     container_name: hello_world_python2
