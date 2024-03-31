@@ -3,8 +3,6 @@ from os import listdir
 
 from update_scrpits import my_names_map, skips, get_project_root
 
-# TODO add this to GH actions on merge
-
 
 def make_readme() -> None:
 

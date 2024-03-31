@@ -1,0 +1,16 @@
+name: Update Readme and Docker compose
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      python projects/update_readme.py
+  docker-compose:
+    runs-on: ubuntu-latest
+    steps:
+      python projects/update_docker_compose.py
