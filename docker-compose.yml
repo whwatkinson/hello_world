@@ -304,6 +304,12 @@ services:
       context: projects/haxe
       dockerfile: DockerfileHaxe
 
+  i:
+    container_name: hello_world_i
+    build:
+      context: projects/i
+      dockerfile: DockerfileI
+
   idris2:
     container_name: hello_world_idris2
     build:
