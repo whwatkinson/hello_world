@@ -6,9 +6,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - Set pythonpath
-      - name: Set pythonpath
-        run: echo "PYTHONPATH=$PYTHONPATH" >> $GITHUB_ENV
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
