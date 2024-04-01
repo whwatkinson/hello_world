@@ -1,5 +1,5 @@
-name: Update Readme
-
+# adapted from https://github.com/leachim6/hello-world/blob/main/.github/workflows/update_readme.yml
+name: Run Update Scripts
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 2
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.12'
       - name: Update Readme
         run: python update_scripts/update_readme.py
       - name: Update Docker Compose
