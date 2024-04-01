@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: readme
         run: |
-          python update_scripts/update_readme.py
+          python update_readme.py
       - name: docker-compose
         run: |
-          python update_scripts/update_docker_compose.py
+          python update_docker_compose.py
