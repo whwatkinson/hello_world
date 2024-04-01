@@ -1,10 +1,7 @@
 # adapted from https://github.com/leachim6/hello-world/blob/main/.github/workflows/update_readme.yml
 name: Run Update Scripts
-on:
-  push:
-    branches:
-      - main
 
+on: [push]
 jobs:
   lint:
     runs-on: ubuntu-latest
