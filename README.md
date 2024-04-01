@@ -1,4 +1,4 @@
-# Hello World in 104 languages
+# Hello World in 112 languages
 
 ## Welcome
 
@@ -8,8 +8,11 @@
 
 - ABC
 - AWK
+- Aaaaaaa
 - Ada
+- Agda
 - Algol68
+- Aplette
 - Arc
 - Assemblyx86
 - BCPL
@@ -54,6 +57,7 @@
 - Groovy
 - Haskell
 - Haxe
+- I
 - Idris2
 - JQ
 - Java
@@ -71,16 +75,19 @@
 - Nim
 - Objectivec
 - Ocaml
+- PHP
 - Pascal
 - Perl
-- Php
+- Pony
 - Powershell
 - Prolog
-- Purescript
+- PureScript
+- Pypy
 - Python 2
 - Python 3
 - R
 - Racket
+- Rad
 - Raku
 - Rebol
 - Red
@@ -102,6 +109,7 @@
 - Terraform
 - TypeScript
 - Typhon
+- Uiua
 - Unicon
 - V
 - VHDL

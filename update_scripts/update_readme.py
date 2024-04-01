@@ -1,31 +1,18 @@
+from io import StringIO
 from os import listdir
+
+from update_scripts import my_names_map, skips, get_project_root
 
 
 def make_readme() -> None:
 
-    my_name_map = {
-        "abc": "ABC",
-        "awk": "AWK",
-        "bcpl": "BCPL",
-        "coffeescript": "CoffeeScript",
-        "cpp": "C++",
-        "csharp": "C#",
-        "dogescript": "DogeScript",
-        "fsharp": "F#",
-        "javascript": "JavaScript",
-        "jq": "JQ",
-        "livescript": "LiveScript",
-        "python2": "Python 2",
-        "python3": "Python 3",
-        "typescript": "TypeScript",
-        "vhdl": "VHDL",
-    }
+    readme_buffer = StringIO()
 
     project_list = sorted(
         [
-            f"- {project.capitalize() if project not in my_name_map else my_name_map[project]}\n"
-            for project in listdir("projects/")
-            if project != "new"
+            f"- {project.capitalize() if project not in my_names_map else my_names_map[project]}\n"
+            for project in listdir(f"{get_project_root()}/projects/")
+            if project not in skips
         ]
     )
 
@@ -36,8 +23,10 @@ def make_readme() -> None:
         "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n\n"
         "![image info](./hello_world.png)\n\n"
     )
+    readme_buffer.write(welcome)
 
     projects = "".join(project_list)
+    readme_buffer.write(projects)
 
     requirements = (
         "\n"
@@ -47,6 +36,7 @@ def make_readme() -> None:
         "- **git**\n"
         "- **git lfs**\n"
     )
+    readme_buffer.write(requirements)
 
     build_me = (
         "\n"
@@ -57,11 +47,10 @@ def make_readme() -> None:
         "docker-compose up --build\n"
         "```\n"
     )
+    readme_buffer.write(build_me)
 
-    read_me = welcome + projects + requirements + build_me
-
-    with open("README.md", "w") as file:
-        file.write(read_me)
+    with open(f"{get_project_root()}/README.md", "w") as file:
+        file.write(readme_buffer.getvalue())
 
 
 if __name__ == "__main__":

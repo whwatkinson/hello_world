@@ -1,0 +1,16 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y git make gcc
+
+RUN git clone https://github.com/mlochbaum/ILanguage.git
+RUN cd ILanguage && gcc *.c -o I
+
+ENV PATH=/ILanguage/:$PATH
+
+WORKDIR /project
+COPY hello_world.i .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

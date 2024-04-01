@@ -1,0 +1,41 @@
+# adapted from https://github.com/leachim6/hello-world/blob/main/.github/workflows/update_readme.yml
+name: Run Update Scripts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Update Readme
+        run: python update_scripts/update_readme.py
+      - name: Update Docker Compose
+        run: python update_scripts/update_docker_compose.py
+
+      - id: last-commit-message
+        run: echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
+      - id: get-author-name
+        run: echo "msg=$(git log -1 --pretty=%an)" >> $GITHUB_OUTPUT
+      - id: get-author-email
+        run: echo "msg=$(git log -1 --pretty=%aE)" >> $GITHUB_OUTPUT
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_user_name: ${{ steps.get-author-name.outputs.msg }}
+          commit_user_email: ${{ steps.get-author-email.outputs.msg }}
+          commit_author: ${{ steps.get-author-name.outputs.msg }} <${{ steps.get-author-email.outputs.msg }}>
+          commit_message: ${{ steps.last-commit-message.outputs.msg }}
+          commit_options: '--amend --no-edit'
+          push_options: '--force'
+          skip_fetch: true
