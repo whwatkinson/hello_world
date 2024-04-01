@@ -1,7 +1,7 @@
 from io import StringIO
 from os import listdir
 
-from update_scrpits import my_names_map, skips, get_project_root
+from update_scripts import my_names_map, skips, get_project_root
 
 
 def make_readme() -> None:

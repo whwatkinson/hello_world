@@ -2,7 +2,7 @@ from io import StringIO
 from os import listdir
 
 
-from update_scrpits import skips, get_project_root
+from update_scripts import skips, get_project_root
 
 
 def make_docker_compose():
