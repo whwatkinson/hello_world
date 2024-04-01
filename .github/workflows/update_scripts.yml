@@ -3,7 +3,7 @@ name: Run Update Scripts
 
 on: [push]
 jobs:
-  lint:
+  update_script:
     runs-on: ubuntu-latest
     steps:
       - name: Set PYTHONPATH
