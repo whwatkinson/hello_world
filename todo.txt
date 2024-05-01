@@ -25,7 +25,6 @@ eiffel
 evil
 euclid
 esher
-flix
 hack
 hop
 icon
