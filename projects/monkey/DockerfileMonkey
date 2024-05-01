@@ -1,0 +1,9 @@
+FROM golang:1.17-bullseye
+
+RUN git clone https://github.com/skx/monkey
+WORKDIR monkey/
+RUN go install
+
+COPY hello_world.mon .
+
+CMD ["monkey", "hello_world.mon"]
