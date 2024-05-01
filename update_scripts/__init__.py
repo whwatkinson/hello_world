@@ -15,6 +15,7 @@ my_names_map = {
     "dogescript": "DogeScript",
     "fsharp": "F#",
     "javascript": "JavaScript",
+    "javascript_is_weird": "javaScript is weird",
     "jq": "JQ",
     "livescript": "LiveScript",
     "php": "PHP",

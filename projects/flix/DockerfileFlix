@@ -1,0 +1,14 @@
+FROM openjdk:21-bullseye
+
+RUN apt-get update -y && \
+    apt-get install -y wget
+
+WORKDIR /flix
+RUN wget https://github.com/flix/flix/releases/download/v0.46.0/flix.jar
+
+COPY Main.flix .
+COPY run.sh .
+RUN chmod +x run.sh
+RUN ./run.sh
+
+CMD ["tail", "output.txt"]
