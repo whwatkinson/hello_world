@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  update_script:
+  update_scripts:
     runs-on: ubuntu-latest
     steps:
       - name: Set PYTHONPATH

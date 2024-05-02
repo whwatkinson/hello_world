@@ -1,4 +1,4 @@
-# Hello World in 111 languages
+# Hello World in 116 languages
 
 ## Welcome
 
@@ -36,6 +36,7 @@
 - D
 - Dafny
 - Dart
+- Deno
 - DogeScript
 - Dylan
 - Elixir
@@ -46,6 +47,7 @@
 - Factor
 - Fantom
 - Fennel
+- Flix
 - Forth
 - Fortran
 - Freebasic
@@ -61,7 +63,6 @@
 - JQ
 - Java
 - JavaScript
-- Javascript_is_weird
 - Julia
 - Kotlin
 - Ksh
@@ -70,6 +71,7 @@
 - Lua
 - Mercury
 - Miranda
+- Monkey
 - Nial
 - Nim
 - Objectivec
@@ -109,14 +111,17 @@
 - TypeScript
 - Typhon
 - Uiua
+- Umple
 - Unicon
 - V
 - VHDL
 - Vala
 - Verilog
+- Whitespace
 - Wyvern
 - Zig
 - Zsh
+- javaScript is weird
 
 ### Requirements
 - **docker**

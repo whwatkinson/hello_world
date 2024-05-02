@@ -184,6 +184,12 @@ services:
       context: projects/dart
       dockerfile: DockerfileDart
 
+  deno:
+    container_name: hello_world_deno
+    build:
+      context: projects/deno
+      dockerfile: DockerfileDeno
+
   dogescript:
     container_name: hello_world_dogescript
     build:
@@ -237,6 +243,12 @@ services:
     build:
       context: projects/fennel
       dockerfile: DockerfileFennel
+
+  flix:
+    container_name: hello_world_flix
+    build:
+      context: projects/flix
+      dockerfile: DockerfileFlix
 
   forth:
     container_name: hello_world_forth
@@ -387,6 +399,12 @@ services:
     build:
       context: projects/miranda
       dockerfile: DockerfileMiranda
+
+  monkey:
+    container_name: hello_world_monkey
+    build:
+      context: projects/monkey
+      dockerfile: DockerfileMonkey
 
   nial:
     container_name: hello_world_nial
@@ -622,6 +640,12 @@ services:
       context: projects/uiua
       dockerfile: DockerfileUiua
 
+  umple:
+    container_name: hello_world_umple
+    build:
+      context: projects/umple
+      dockerfile: DockerfileUmple
+
   unicon:
     container_name: hello_world_unicon
     build:
@@ -651,6 +675,12 @@ services:
     build:
       context: projects/vhdl
       dockerfile: DockerfileVhdl
+
+  whitespace:
+    container_name: hello_world_whitespace
+    build:
+      context: projects/whitespace
+      dockerfile: DockerfileWhitespace
 
   wyvern:
     container_name: hello_world_wyvern
