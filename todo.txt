@@ -1,12 +1,8 @@
 actionscript
-Aldor
 alef
-AmbientTalk
-Amiga E
 apl
 applescript
 assemblyscript
-AviSynth
 b
 bird
 blitzmax
@@ -23,14 +19,11 @@ dreambird
 e
 ec
 eiffel
-El-76
 ell
 elm
 esher
 euclid
 evil
-Fortress
-gdot
 hack
 harbour
 hop
@@ -46,7 +39,6 @@ logo
 matlab
 mesa
 MicroPython
-Mockito
 modula
 modula3
 mojo
@@ -61,7 +53,6 @@ omega
 opa
 oxygene
 parasail
-PCASTL
 postgres
 postscript
 q
@@ -69,29 +60,34 @@ QB64
 reason
 Refal
 sather
-Scilab
 self
 seed7
-SmallBASIC
 sml
 spark
 spice
 TeX
 turing
-Umple
 Unlambda
-ViRC
 visual basic
-XBLite
-XULJet
 y
 
 
 # another go
-
+Aldor
+AmbientTalk
+Amiga E
+AviSynth
+El-76
+Fortress
+Godot
+PCASTL
+Scilab
+SmallBASIC
 
 # skip
-
+XBLite
+XULJet
+ViRC
 
 # sources
 https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
