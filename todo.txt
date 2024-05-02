@@ -1,4 +1,8 @@
+Aldor
 assemblyscript
+AmbientTalk
+Amiga E
+AviSynth
 apl
 actionscript
 alef
@@ -14,6 +18,8 @@ cog
 claire
 cobra
 e
+El-76
+
 cypher
 delphi
 dreambird
@@ -25,7 +31,10 @@ eiffel
 evil
 euclid
 esher
+Fortress
+gdot
 hack
+harbour
 hop
 icon
 jade
@@ -38,8 +47,11 @@ logo
 lasso
 matlab
 mesa
+MicroPython
+Mockito
 modula
 modula3
+mojo
 mysql
 newspeak
 nemerle
@@ -51,17 +63,29 @@ oberon
 opa
 oxygene
 parasail
+PCASTL
 postscript
 postgres
+q
+QB64
 reason
+Refal
 self
 seed7
+Scilab
+SmallBASIC
 spark
 spice
 sather
 sml
+TeX
 turing
+Umple
+Unlambda
 visual basic
+ViRC
+XBLite
+XULJet
 y
 
 
@@ -72,5 +96,6 @@ y
 
 
 # sources
+https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 https://github.com/leachim6/hello-world?tab=readme-ov-file
 https://aplwiki.com/wiki/List_of_open-source_array_languages
