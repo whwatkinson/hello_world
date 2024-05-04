@@ -1,5 +1,6 @@
 actionscript
 alef
+aleph
 applescript
 assemblyscript
 b
@@ -17,9 +18,7 @@ delphi
 dreambird
 e
 ec
-eiffel
 ell
-elm
 esher
 euclid
 evil
@@ -84,6 +83,8 @@ Scilab
 SmallBASIC
 
 # skip
+eiffel
+elm
 XBLite
 XULJet
 ViRC
