@@ -1,6 +1,5 @@
 actionscript
 alef
-apl
 applescript
 assemblyscript
 b
