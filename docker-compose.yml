@@ -85,7 +85,7 @@ services:
   befunge:
     container_name: hello_world_befunge
     build:
-      context: projects/befunge
+      context: projects/befunge98
       dockerfile: DockerfileBefunge
 
   c:
