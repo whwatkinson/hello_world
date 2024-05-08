@@ -7,6 +7,7 @@ def get_project_root() -> Path:
 
 my_names_map = {
     "abc": "ABC",
+    "apl": "APL",
     "awk": "AWK",
     "bcpl": "BCPL",
     "coffeescript": "CoffeeScript",
