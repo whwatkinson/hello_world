@@ -1,0 +1,30 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y &&  \
+    apt-get install -y software-properties-common \
+    libgc-dev \
+    libssl-dev \
+	libpcre2-dev \
+    zlib1g-dev \
+    apache2-dev \
+    libmariadb-client-lgpl-dev-compat \
+    libsqlite3-dev \
+    libmbedtls-dev \
+    libgtk-3-dev \
+    cmake \
+    make \
+    git
+
+
+RUN git clone https://github.com/HaxeFoundation/neko.git
+
+RUN mkdir /neko/build
+
+RUN cd /neko/build && cmake .. && make && make install
+
+WORKDIR /project
+COPY hello_world.neko .
+
+RUN nekoc hello_world.neko
+
+CMD ["neko", "hello_world.n"]
