@@ -24,14 +24,14 @@ def make_docker_compose():
                 f"    container_name: hello_world_{project}\n"
                 "    build:\n"
                 f"      context: projects/{project}\n"
-                f"      dockerfile: Dockerfile{project.capitalize()}\n\n"
+                f"      dockerfile: Dockerfile{project.capitalize()}\n"
             )
             for project in listdir(f"{get_project_root()}/projects/")
             if project not in skips
         ]
     )
 
-    project_compose = "".join(project_compose_list)
+    project_compose = "\n".join(project_compose_list)
     docker_compose_buffer.write(project_compose)
 
     with open(f"{get_project_root()}/docker-compose.yml", "w") as file:

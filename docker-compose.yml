@@ -747,4 +747,3 @@ services:
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
-
