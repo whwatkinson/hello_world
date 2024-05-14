@@ -1,0 +1,29 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    ninja-build \
+    python3  \
+    python3-pip \
+    pkgconf \
+    g++ \
+    libpcre2-dev \
+    libssl-dev \
+    zlib1g-dev \
+    libedit-dev \
+    uuid-dev \
+    git
+
+RUN pip3 install meson
+
+RUN git clone https://github.com/lhmouse/asteria.git
+RUN cd asteria && \
+    meson setup build_debug
+RUN cd asteria && \
+    meson compile -Cbuild_debug
+
+COPY hello_world .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
