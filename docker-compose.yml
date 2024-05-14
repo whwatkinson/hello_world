@@ -28,6 +28,12 @@ services:
       context: projects/algol68
       dockerfile: DockerfileAlgol68
 
+  apl:
+    container_name: hello_world_apl
+    build:
+      context: projects/apl
+      dockerfile: DockerfileApl
+
   aplette:
     container_name: hello_world_aplette
     build:
@@ -45,6 +51,12 @@ services:
     build:
       context: projects/assemblyx86
       dockerfile: DockerfileAssemblyx86
+
+  asteria:
+    container_name: hello_world_asteria
+    build:
+      context: projects/asteria
+      dockerfile: DockerfileAsteria
 
   awk:
     container_name: hello_world_awk
@@ -82,17 +94,23 @@ services:
       context: projects/beanshell
       dockerfile: DockerfileBeanshell
 
-  befunge:
-    container_name: hello_world_befunge
+  befunge98:
+    container_name: hello_world_befunge98
     build:
-      context: projects/befunge
-      dockerfile: DockerfileBefunge
+      context: projects/befunge98
+      dockerfile: DockerfileBefunge98
 
   c:
     container_name: hello_world_c
     build:
       context: projects/c
       dockerfile: DockerfileC
+
+  candy:
+    container_name: hello_world_candy
+    build:
+      context: projects/candy
+      dockerfile: DockerfileCandy
 
   carbon:
     container_name: hello_world_carbon
@@ -286,6 +304,12 @@ services:
       context: projects/genie
       dockerfile: DockerfileGenie
 
+  gluon:
+    container_name: hello_world_gluon
+    build:
+      context: projects/gluon
+      dockerfile: DockerfileGluon
+
   goaldi:
     container_name: hello_world_goaldi
     build:
@@ -315,6 +339,12 @@ services:
     build:
       context: projects/haxe
       dockerfile: DockerfileHaxe
+
+  hylang:
+    container_name: hello_world_hylang
+    build:
+      context: projects/hylang
+      dockerfile: DockerfileHylang
 
   i:
     container_name: hello_world_i
@@ -388,6 +418,12 @@ services:
       context: projects/lua
       dockerfile: DockerfileLua
 
+  make:
+    container_name: hello_world_make
+    build:
+      context: projects/make
+      dockerfile: DockerfileMake
+
   mercury:
     container_name: hello_world_mercury
     build:
@@ -405,6 +441,12 @@ services:
     build:
       context: projects/monkey
       dockerfile: DockerfileMonkey
+
+  neko:
+    container_name: hello_world_neko
+    build:
+      context: projects/neko
+      dockerfile: DockerfileNeko
 
   nial:
     container_name: hello_world_nial
@@ -675,6 +717,12 @@ services:
     build:
       context: projects/vhdl
       dockerfile: DockerfileVhdl
+
+  whiley:
+    container_name: hello_world_whiley
+    build:
+      context: projects/whiley
+      dockerfile: DockerfileWhiley
 
   whitespace:
     container_name: hello_world_whitespace

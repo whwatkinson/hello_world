@@ -1,0 +1,14 @@
+FROM rust:1-bullseye
+
+RUN apt-get update &&  \
+    apt-get install -y \
+    default-jre
+
+RUN cargo install whiley
+
+WORKDIR /project
+RUN wy init && rm src/main.whiley
+COPY main.whiley src/
+RUN wy build
+
+CMD ["wy", "run"]

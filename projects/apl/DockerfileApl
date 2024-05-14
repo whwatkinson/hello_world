@@ -1,0 +1,13 @@
+FROM node:20.5.0
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    git
+
+RUN git clone https://github.com/abrudz/ngn-apl.git
+
+WORKDIR ngn-apl/
+
+COPY hello_world.apl .
+
+CMD ["node", "apl.js", "hello_world.apl"]

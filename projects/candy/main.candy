@@ -1,0 +1,3 @@
+main := { environment ->
+  environment.stdout "Hello, World!"
+}
