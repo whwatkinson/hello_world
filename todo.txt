@@ -24,7 +24,6 @@ ell
 esher
 euclid
 evil
-Gluon
 hack
 harbour
 hop
