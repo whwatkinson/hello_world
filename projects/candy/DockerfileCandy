@@ -1,0 +1,16 @@
+FROM rust:1-bullseye
+
+RUN apt-get update &&  \
+    apt-get install -y \
+    git
+
+RUN git clone https://github.com/candy-lang/candy.git
+
+COPY main.candy candy/packages/Examples/main.candy
+
+RUN cd candy && cargo run --release -- run ./packages/Examples/main.candy > output.txt
+
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
