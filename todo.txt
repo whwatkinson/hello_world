@@ -56,6 +56,7 @@ oberon
 objectivecpp
 occam
 omega
+Orc
 opa
 oxygene
 parasail
@@ -73,6 +74,7 @@ seed7
 sml
 spark
 spice
+Tengo
 TeX
 turing
 Unlambda
