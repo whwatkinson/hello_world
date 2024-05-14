@@ -10,7 +10,7 @@ def make_readme() -> None:
 
     project_list = sorted(
         [
-            f"- {project.capitalize() if project not in my_names_map else my_names_map[project]}\n"
+            f"- [{project.capitalize() if project not in my_names_map else my_names_map[project]}](./projects/{project})\n"
             for project in listdir(f"{get_project_root()}/projects/")
             if project not in skips
         ]
