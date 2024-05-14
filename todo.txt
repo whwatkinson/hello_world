@@ -3,6 +3,7 @@ alef
 aleph
 applescript
 assemblyscript
+Asteria
 b
 bird
 blitzmax
