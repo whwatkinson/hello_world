@@ -8,6 +8,8 @@ bird
 blitzmax
 boo
 bosque
+Charcoal
+Charly
 claire
 clu
 cobra
@@ -22,6 +24,7 @@ ell
 esher
 euclid
 evil
+Gluon
 hack
 harbour
 hop
@@ -51,6 +54,8 @@ omega
 opa
 oxygene
 parasail
+Pike
+Pizza
 postgres
 postscript
 q
@@ -66,6 +71,7 @@ spice
 TeX
 turing
 Unlambda
+Verve
 visual basic
 y
 
