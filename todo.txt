@@ -82,8 +82,6 @@ Verve
 visual basic
 y
 
-html
-
 # Dockerhub
 ArkScript
 CMD
