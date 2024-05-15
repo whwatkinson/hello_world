@@ -83,8 +83,6 @@ visual basic
 y
 
 html
-xml
-yaml
 
 # Dockerhub
 ArkScript
