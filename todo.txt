@@ -84,7 +84,6 @@ y
 
 html
 xml
-grep
 yaml
 
 # Dockerhub
