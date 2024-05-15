@@ -116,3 +116,4 @@ https://github.com/leachim6/hello-world?tab=readme-ov-file
 https://aplwiki.com/wiki/List_of_open-source_array_languages
 https://hub.docker.com/search?q=programming+language
 https://hub.docker.com/u/esolang
+https://highlightjs.org/demo
