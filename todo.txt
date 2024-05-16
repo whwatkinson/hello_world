@@ -2,6 +2,7 @@ actionscript
 alef
 aleph
 applescript
+arkts
 assemblyscript
 b
 bird
@@ -16,6 +17,7 @@ cobra
 cog
 cyclone
 cypher
+curry
 delphi
 dreambird
 e
@@ -24,6 +26,7 @@ ell
 esher
 euclid
 evil
+fantom
 Glass
 Hamler
 Harbour
@@ -31,10 +34,12 @@ Hare
 hack
 harbour
 hop
+ID
 icon
 Ioke
 jade
 jelly
+js++
 io
 Latino
 lasso
@@ -66,6 +71,7 @@ postgres
 postscript
 q
 QB64
+Qore
 reason
 Refal
 sather
