@@ -1,11 +1,14 @@
 from io import StringIO
 from os import listdir
 
-
 from update_scripts import skips, get_project_root
 
 
-def make_docker_compose():
+def make_docker_compose() -> None:
+    """
+    Create the docker-compose.yml file dynamically from the projects in the projects directory
+    :return: None
+    """
     docker_compose_buffer = StringIO()
     head = (
         '# As noted in the Docker best practices "each container should have only one concern"\n'
