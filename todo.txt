@@ -71,7 +71,6 @@ postgres
 postscript
 q
 QB64
-Qore
 reason
 Refal
 sather
