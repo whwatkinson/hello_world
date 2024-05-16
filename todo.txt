@@ -48,7 +48,6 @@ limbo
 logo
 matlab
 mesa
-MicroPython
 modula
 modula3
 mojo
@@ -90,6 +89,7 @@ ArkScript
 CMD
 jolie
 lolcode
+MicroPython
 piet
 wren
 
