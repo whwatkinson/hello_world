@@ -41,7 +41,6 @@ jade
 jelly
 js++
 io
-Latino
 lasso
 less
 lfe
@@ -72,7 +71,6 @@ postscript
 q
 QB64
 reason
-Refal
 sather
 self
 seed7
@@ -111,6 +109,7 @@ SmallBASIC
 eiffel
 elm
 PureBasic
+Refal
 XBLite
 XULJet
 ViRC
