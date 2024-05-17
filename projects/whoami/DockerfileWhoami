@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+
+RUN useradd -ms /bin/bash hello_world
+
+USER hello_world
+
+CMD ["whoami"]
