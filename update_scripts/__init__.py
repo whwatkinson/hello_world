@@ -9,6 +9,7 @@ linux_commands = {
     "awk": "awk",
     "cat": "cat",
     "echo": "echo",
+    "fmt": "fmt",
     "head": "head",
     "printenv": "printenv",
     "sed": "sed",
