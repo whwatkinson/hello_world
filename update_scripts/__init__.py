@@ -6,25 +6,22 @@ def get_project_root() -> Path:
 
 
 linux_commands = {
-    "awk": "AWK",
-    "sed": "SED",
+    "awk": "awk",
+    "cat": "cat",
+    "echo": "echo",
     "head": "head",
+    "printenv": "printenv",
+    "sed": "sed",
+    "tac": "tac",
     "tail": "tail",
     "whoami": "whoami",
-    "printenv": "printenv",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
     "xxd": "XXD",
-
 }
 
 
-my_names_map = {
+programming_languages = {
     "abc": "ABC",
     "apl": "APL",
-    "awk": "AWK",
     "bcpl": "BCPL",
     "coffeescript": "CoffeeScript",
     "cpp": "C++",
@@ -39,10 +36,10 @@ my_names_map = {
     "purescript": "PureScript",
     "python2": "Python 2",
     "python3": "Python 3",
-    "sed": "SED",
     "typescript": "TypeScript",
     "vhdl": "VHDL",
-    "xxd": "XXD"
 }
+
+my_names_map = {**linux_commands, **programming_languages}
 
 skips = {"new"}
