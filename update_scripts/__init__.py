@@ -7,6 +7,7 @@ def get_project_root() -> Path:
 
 linux_commands = {
     "awk": "awk",
+    "basename": "basename",
     "cat": "cat",
     "echo": "echo",
     "fmt": "fmt",
