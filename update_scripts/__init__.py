@@ -26,6 +26,7 @@ my_names_map = {
     "sed": "SED",
     "typescript": "TypeScript",
     "vhdl": "VHDL",
+    "xxd": "XXD"
 }
 
 skips = {"new"}
