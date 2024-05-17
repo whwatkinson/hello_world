@@ -13,6 +13,7 @@ linux_commands = {
     "fmt": "fmt",
     "head": "head",
     "printenv": "printenv",
+    "pwd": "pwd",
     "sed": "sed",
     "tac": "tac",
     "tail": "tail",
