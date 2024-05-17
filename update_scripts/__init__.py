@@ -5,6 +5,22 @@ def get_project_root() -> Path:
     return Path(__file__).parent.parent
 
 
+linux_commands = {
+    "awk": "AWK",
+    "sed": "SED",
+    "head": "head",
+    "tail": "tail",
+    "whoami": "whoami",
+    "printenv": "printenv",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "xxd": "XXD",
+
+}
+
+
 my_names_map = {
     "abc": "ABC",
     "apl": "APL",
