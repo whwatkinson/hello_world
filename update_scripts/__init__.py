@@ -12,6 +12,7 @@ linux_commands = {
     "echo": "echo",
     "fmt": "fmt",
     "head": "head",
+    "ls": "ls",
     "printenv": "printenv",
     "pwd": "pwd",
     "sed": "sed",
