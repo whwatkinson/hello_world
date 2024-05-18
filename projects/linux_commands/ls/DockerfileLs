@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+
+
+WORKDIR /project
+RUN touch "Hello, World!"
+
+CMD ["ls"]

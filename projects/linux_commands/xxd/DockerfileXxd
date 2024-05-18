@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+
+RUN apt-get update &&  \
+    apt-get install -y \
+    xxd
+
+COPY run.sh .
+RUN  chmod +x run.sh
+
+CMD ["./run.sh"]

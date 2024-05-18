@@ -1,4 +1,4 @@
-# Hello World in 124 languages
+# Hello World in 127 languages and 15 Linux Commands
 
 ## Welcome
 
@@ -6,9 +6,9 @@
 
 ![image info](./hello_world.png)
 
+## Programming Languages
 - [ABC](./projects/abc)
 - [APL](./projects/apl)
-- [AWK](./projects/awk)
 - [Ada](./projects/ada)
 - [Agda](./projects/agda)
 - [Algol68](./projects/algol68)
@@ -60,6 +60,7 @@
 - [Goaldi](./projects/goaldi)
 - [Golang](./projects/golang)
 - [Groovy](./projects/groovy)
+- [HTML](./projects/html)
 - [Haskell](./projects/haskell)
 - [Haxe](./projects/haxe)
 - [Hylang](./projects/hylang)
@@ -72,6 +73,7 @@
 - [Julia](./projects/julia)
 - [Kotlin](./projects/kotlin)
 - [Ksh](./projects/ksh)
+- [Latino](./projects/latino)
 - [Lisp](./projects/lisp)
 - [LiveScript](./projects/livescript)
 - [Lua](./projects/lua)
@@ -94,6 +96,7 @@
 - [Pypy](./projects/pypy)
 - [Python 2](./projects/python2)
 - [Python 3](./projects/python3)
+- [Qore](./projects/qore)
 - [R](./projects/r)
 - [Racket](./projects/racket)
 - [Rad](./projects/rad)
@@ -103,7 +106,6 @@
 - [Ring](./projects/ring)
 - [Ruby](./projects/ruby)
 - [Rust](./projects/rust)
-- [SED](./projects/sed)
 - [Scala](./projects/scala)
 - [Scheme](./projects/scheme)
 - [Seed](./projects/seed)
@@ -128,8 +130,26 @@
 - [Whiley](./projects/whiley)
 - [Whitespace](./projects/whitespace)
 - [Wyvern](./projects/wyvern)
+- [XML](./projects/xml)
+- [YAML](./projects/yaml)
 - [Zig](./projects/zig)
 - [Zsh](./projects/zsh)
+## Linux Commands
+- [awk](./projects/linux_commands/awk)
+- [basename](./projects/linux_commands/basename)
+- [cat](./projects/linux_commands/cat)
+- [echo](./projects/linux_commands/echo)
+- [fmt](./projects/linux_commands/fmt)
+- [grep](./projects/linux_commands/grep)
+- [head](./projects/linux_commands/head)
+- [ls](./projects/linux_commands/ls)
+- [printenv](./projects/linux_commands/printenv)
+- [pwd](./projects/linux_commands/pwd)
+- [sed](./projects/linux_commands/sed)
+- [tac](./projects/linux_commands/tac)
+- [tail](./projects/linux_commands/tail)
+- [whoami](./projects/linux_commands/whoami)
+- [xxd](./projects/linux_commands/xxd)
 
 ### Requirements
 - **docker**

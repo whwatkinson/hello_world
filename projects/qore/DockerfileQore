@@ -1,0 +1,41 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    git \
+    software-properties-common \
+    cmake \
+    g++ \
+    default-jre \
+    bison \
+    flex \
+    libssl-dev \
+    zlib1g-dev \
+    libmpc-dev \
+    libbz2-dev \
+    pkg-config \
+    libpcre2-dev \
+    wget
+
+RUN add-apt-repository -y ppa:ondrej/php
+RUN apt-get -y install  \
+    libpcre3  \
+    libpcre3-dev  \
+    r-base-dev
+
+RUN wget https://github.com/qorelanguage/qore/archive/refs/tags/release-1.19.2.tar.gz
+RUN tar -xvf release-1.19.2.tar.gz && rm release-1.19.2.tar.gz
+RUN mv qore-release-1.19.2 qore
+RUN cd qore && mkdir build
+WORKDIR /qore/build
+RUN cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+RUN make
+
+ENV PATH=/qore/build:$PATH
+
+WORKDIR /project
+COPY hello_world.q .
+
+CMD ["qore", "hello_world.q"]

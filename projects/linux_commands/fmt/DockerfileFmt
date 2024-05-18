@@ -1,0 +1,5 @@
+FROM ubuntu:22.04
+
+COPY hello_world.txt .
+
+CMD ["fmt", "-u", "hello_world.txt"]

@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+WORKDIR project/
+COPY hello_world.txt .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

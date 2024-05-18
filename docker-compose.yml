@@ -70,6 +70,12 @@ services:
       context: projects/ballerina
       dockerfile: DockerfileBallerina
 
+  basename:
+    container_name: hello_world_basename
+    build:
+      context: projects/basename
+      dockerfile: DockerfileBasename
+
   bash:
     container_name: hello_world_bash
     build:
@@ -117,6 +123,12 @@ services:
     build:
       context: projects/carbon
       dockerfile: DockerfileCarbon
+
+  cat:
+    container_name: hello_world_cat
+    build:
+      context: projects/cat
+      dockerfile: DockerfileCat
 
   ceylon:
     container_name: hello_world_ceylon
@@ -220,6 +232,12 @@ services:
       context: projects/dylan
       dockerfile: DockerfileDylan
 
+  echo:
+    container_name: hello_world_echo
+    build:
+      context: projects/echo
+      dockerfile: DockerfileEcho
+
   elixir:
     container_name: hello_world_elixir
     build:
@@ -267,6 +285,12 @@ services:
     build:
       context: projects/flix
       dockerfile: DockerfileFlix
+
+  fmt:
+    container_name: hello_world_fmt
+    build:
+      context: projects/fmt
+      dockerfile: DockerfileFmt
 
   forth:
     container_name: hello_world_forth
@@ -322,6 +346,12 @@ services:
       context: projects/golang
       dockerfile: DockerfileGolang
 
+  grep:
+    container_name: hello_world_grep
+    build:
+      context: projects/grep
+      dockerfile: DockerfileGrep
+
   groovy:
     container_name: hello_world_groovy
     build:
@@ -339,6 +369,18 @@ services:
     build:
       context: projects/haxe
       dockerfile: DockerfileHaxe
+
+  head:
+    container_name: hello_world_head
+    build:
+      context: projects/head
+      dockerfile: DockerfileHead
+
+  html:
+    container_name: hello_world_html
+    build:
+      context: projects/html
+      dockerfile: DockerfileHtml
 
   hylang:
     container_name: hello_world_hylang
@@ -400,6 +442,12 @@ services:
       context: projects/ksh
       dockerfile: DockerfileKsh
 
+  latino:
+    container_name: hello_world_latino
+    build:
+      context: projects/latino
+      dockerfile: DockerfileLatino
+
   lisp:
     container_name: hello_world_lisp
     build:
@@ -411,6 +459,12 @@ services:
     build:
       context: projects/livescript
       dockerfile: DockerfileLivescript
+
+  ls:
+    container_name: hello_world_ls
+    build:
+      context: projects/ls
+      dockerfile: DockerfileLs
 
   lua:
     container_name: hello_world_lua
@@ -502,6 +556,12 @@ services:
       context: projects/powershell
       dockerfile: DockerfilePowershell
 
+  printenv:
+    container_name: hello_world_printenv
+    build:
+      context: projects/printenv
+      dockerfile: DockerfilePrintenv
+
   prolog:
     container_name: hello_world_prolog
     build:
@@ -513,6 +573,12 @@ services:
     build:
       context: projects/purescript
       dockerfile: DockerfilePurescript
+
+  pwd:
+    container_name: hello_world_pwd
+    build:
+      context: projects/pwd
+      dockerfile: DockerfilePwd
 
   pypy:
     container_name: hello_world_pypy
@@ -531,6 +597,12 @@ services:
     build:
       context: projects/python3
       dockerfile: DockerfilePython3
+
+  qore:
+    container_name: hello_world_qore
+    build:
+      context: projects/qore
+      dockerfile: DockerfileQore
 
   r:
     container_name: hello_world_r
@@ -646,6 +718,18 @@ services:
       context: projects/swift
       dockerfile: DockerfileSwift
 
+  tac:
+    container_name: hello_world_tac
+    build:
+      context: projects/tac
+      dockerfile: DockerfileTac
+
+  tail:
+    container_name: hello_world_tail
+    build:
+      context: projects/tail
+      dockerfile: DockerfileTail
+
   tcl:
     container_name: hello_world_tcl
     build:
@@ -730,11 +814,35 @@ services:
       context: projects/whitespace
       dockerfile: DockerfileWhitespace
 
+  whoami:
+    container_name: hello_world_whoami
+    build:
+      context: projects/whoami
+      dockerfile: DockerfileWhoami
+
   wyvern:
     container_name: hello_world_wyvern
     build:
       context: projects/wyvern
       dockerfile: DockerfileWyvern
+
+  xml:
+    container_name: hello_world_xml
+    build:
+      context: projects/xml
+      dockerfile: DockerfileXml
+
+  xxd:
+    container_name: hello_world_xxd
+    build:
+      context: projects/xxd
+      dockerfile: DockerfileXxd
+
+  yaml:
+    container_name: hello_world_yaml
+    build:
+      context: projects/yaml
+      dockerfile: DockerfileYaml
 
   zig:
     container_name: hello_world_zig
@@ -747,4 +855,3 @@ services:
     build:
       context: projects/zsh
       dockerfile: DockerfileZsh
-

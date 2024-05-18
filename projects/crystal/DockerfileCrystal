@@ -1,4 +1,4 @@
-FROM crystallang/crystal:1.7
+FROM crystallang/crystal:1.12
 
 COPY hello_world.cr .
 

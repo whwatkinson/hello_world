@@ -2,6 +2,7 @@ actionscript
 alef
 aleph
 applescript
+arkts
 assemblyscript
 b
 bird
@@ -16,6 +17,7 @@ cobra
 cog
 cyclone
 cypher
+curry
 delphi
 dreambird
 e
@@ -24,6 +26,7 @@ ell
 esher
 euclid
 evil
+fantom
 Glass
 Hamler
 Harbour
@@ -31,12 +34,13 @@ Hare
 hack
 harbour
 hop
+ID
 icon
 Ioke
 jade
 jelly
+js++
 io
-Latino
 lasso
 less
 lfe
@@ -44,7 +48,6 @@ limbo
 logo
 matlab
 mesa
-MicroPython
 modula
 modula3
 mojo
@@ -67,7 +70,6 @@ postscript
 q
 QB64
 reason
-Refal
 sather
 self
 seed7
@@ -87,6 +89,7 @@ ArkScript
 CMD
 jolie
 lolcode
+MicroPython
 piet
 wren
 
@@ -106,6 +109,7 @@ SmallBASIC
 eiffel
 elm
 PureBasic
+Refal
 XBLite
 XULJet
 ViRC
@@ -116,3 +120,5 @@ https://github.com/leachim6/hello-world?tab=readme-ov-file
 https://aplwiki.com/wiki/List_of_open-source_array_languages
 https://hub.docker.com/search?q=programming+language
 https://hub.docker.com/u/esolang
+https://highlightjs.org/demo
+https://en.wikipedia.org/wiki/List_of_markup_languages
