@@ -58,7 +58,7 @@ def make_readme() -> None:
 
     requirements = (
         "\n"
-        "### Requirements\n"
+        "## Requirements\n"
         "- **docker**\n"
         "- **docker-compose**\n"
         "- **git**\n"
@@ -68,7 +68,7 @@ def make_readme() -> None:
 
     build_me = (
         "\n"
-        "###  To be greeted:\n"
+        "## To be greeted:\n"
         "```\n"
         "git clone https://github.com/whwatkinson/hello_world.git\n"
         "git lfs checkout\n"
