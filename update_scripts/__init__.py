@@ -11,6 +11,7 @@ linux_commands = {
     "cat": "cat",
     "echo": "echo",
     "fmt": "fmt",
+    "grep": "grep",
     "head": "head",
     "ls": "ls",
     "printenv": "printenv",
@@ -19,7 +20,7 @@ linux_commands = {
     "tac": "tac",
     "tail": "tail",
     "whoami": "whoami",
-    "xxd": "XXD",
+    "xxd": "xxd",
 }
 
 
@@ -32,6 +33,7 @@ programming_languages = {
     "csharp": "C#",
     "dogescript": "DogeScript",
     "fsharp": "F#",
+    "html": "HTML",
     "javascript": "JavaScript",
     "javascript_is_weird": "JavaScript is weird",
     "jq": "JQ",
@@ -42,8 +44,10 @@ programming_languages = {
     "python3": "Python 3",
     "typescript": "TypeScript",
     "vhdl": "VHDL",
+    "xml": "XML",
+    "yaml": "YAML",
 }
 
 my_names_map = {**linux_commands, **programming_languages}
 
-skips = {"new"}
+skips = {"new", "linux_commands"}

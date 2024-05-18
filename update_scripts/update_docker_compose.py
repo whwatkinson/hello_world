@@ -30,6 +30,7 @@ def make_docker_compose() -> None:
                 f"      dockerfile: Dockerfile{project.capitalize()}\n"
             )
             for project in listdir(f"{get_project_root()}/projects/")
+            + listdir(f"{get_project_root()}/projects/linux_commands")
             if project not in skips
         ]
     )
