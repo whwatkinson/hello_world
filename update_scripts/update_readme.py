@@ -53,7 +53,6 @@ def make_readme() -> None:
     readme_buffer.write(languages_projects_joined)
 
     readme_buffer.write("## Linux Commands\n")
-
     linux_commands_projects_joined = "".join(linux_commands_list)
     readme_buffer.write(linux_commands_projects_joined)
 
