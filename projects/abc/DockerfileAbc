@@ -4,7 +4,7 @@ FROM esolang/abc:latest
 RUN mv /root/script /root/scriptOld
 COPY script /root
 
-WORKDIR /project
+WORKDIR /usr/project
 COPY main.abc .
 COPY run.sh .
 RUN chmod +x run.sh

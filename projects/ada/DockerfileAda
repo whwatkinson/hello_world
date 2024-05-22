@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y gnat
 
+WORKDIR /usr/project
 COPY hello.adb .
 
 RUN gnatmake hello.adb
