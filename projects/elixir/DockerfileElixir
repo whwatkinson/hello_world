@@ -1,8 +1,9 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install elixir -y
+    apt-get install -y elixir
 
+WORKDIR /usr/project
 COPY hello_world.ex .
 
 CMD ["elixir", "hello_world.ex"]

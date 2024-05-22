@@ -1,5 +1,6 @@
 FROM erlang:25.2.0.0
 
+WORKDIR /usr/project
 COPY hello_world.erl .
 
 RUN erlc hello_world.erl

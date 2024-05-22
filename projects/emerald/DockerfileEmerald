@@ -2,6 +2,7 @@ FROM portoleks/in5570v20:latest
 
 USER root
 
+WORKDIR /usr/project
 COPY hello_world.m .
 
 RUN ec hello_world.m

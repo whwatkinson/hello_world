@@ -1,10 +1,12 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install -y dotnet-sdk-6.0 && \
-    apt-get install -y aspnetcore-runtime-6.0 && \
-    apt-get install -y dotnet-runtime-6.0
+    apt-get install -y \
+    dotnet-sdk-6.0 \
+    aspnetcore-runtime-6.0 \
+    dotnet-runtime-6.0
 
+WORKDIR /usr/project
 RUN dotnet new console -o MyApp
 
 COPY hello_world.cs MyApp/

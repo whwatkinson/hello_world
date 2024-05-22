@@ -1,15 +1,17 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y bzip2 gcc
+    apt-get install -y \
+    bzip2 \
+    gcc
 
 COPY opendylan-2022.1-x86_64-linux.tar.bz2 .
 
-RUN tar -xf opendylan-2022.1-x86_64-linux.tar.bz2
-RUN rm -r opendylan-2022.1-x86_64-linux.tar.bz2
+RUN tar -xf opendylan-2022.1-x86_64-linux.tar.bz2 && rm -r opendylan-2022.1-x86_64-linux.tar.bz2
+RUN mv opendylan-2022.1 /usr/bin
+ENV PATH=/usr/bin/opendylan-2022.1/bin:$PATH
 
-ENV PATH=/opendylan-2022.1/bin:$PATH
-
+WORKDIR /usr/project
 RUN make-dylan-app hello-world
 
 RUN rm hello-world/hello-world.dylan
@@ -18,3 +20,4 @@ COPY hello-world.dylan hello-world/hello-world.dylan
 RUN cd hello-world && dylan-compiler -build hello-world.lid
 
 CMD ["hello-world/_build/bin/hello-world"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]

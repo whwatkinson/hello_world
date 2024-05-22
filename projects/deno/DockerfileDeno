@@ -1,12 +1,15 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y &&  \
-    apt-get install -y curl unzip
+    apt-get install -y \
+    curl \
+    unzip
 
 RUN curl -fsSL https://deno.land/install.sh | sh
 ENV DENO_INSTALL="/root/.deno"
 ENV PATH="$DENO_INSTALL/bin:$PATH"
 
+WORKDIR /usr/project
 COPY hello_world.ts .
 
 CMD ["deno", "run", "hello_world.ts"]

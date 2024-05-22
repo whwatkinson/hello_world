@@ -1,7 +1,13 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y clang git libc++-dev lld python3 zlib1g-dev
+    apt-get install -y \
+    clang \
+    git \
+    libc++-dev \
+    lld \
+    python3 \
+    zlib1g-dev
 
 RUN apt install apt-transport-https curl gnupg -y && \
     curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg && \

@@ -1,5 +1,8 @@
 FROM marcelmoosbrugger/dafny3.3
 
+WORKDIR /usr/project
 COPY hello_world.dfy .
+COPY run.sh .
+RUN chmod +x run.sh
 
-CMD ["dafny", "/compile:3", "hello_world.dfy"]
+CMD ["./run.sh"]
