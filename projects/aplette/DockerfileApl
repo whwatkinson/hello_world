@@ -12,8 +12,8 @@ RUN apt-get update -y && \
 RUN git clone https://github.com/gregfjohnson/aplette.git
 RUN cd aplette && ./configure && make
 
-RUN mv aplette /usr/bin
-ENV PATH=/usr/bin/aplette/source:$PATH
+RUN mv aplette /usr/lib
+ENV PATH=/usr/lib/aplette/source:$PATH
 
 WORKDIR /usr/project
 COPY hello_world.apl .
