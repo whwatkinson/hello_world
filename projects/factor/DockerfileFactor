@@ -1,10 +1,16 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y wget
 
-COPY factor-linux-x86-64-0.98.tar.gz .
-RUN tar -zvxf factor-linux-x86-64-0.98.tar.gz
+RUN wget https://downloads.factorcode.org/releases/0.98/factor-linux-x86-64-0.98.tar.gz && \
+    tar -zvxf factor-linux-x86-64-0.98.tar.gz && \
+    rm factor-linux-x86-64-0.98.tar.gz
 
+RUN mv /factor /usr/bin/factorlang
+ENV PATH=/usr/bin/factorlang:$PATH
+
+WORKDIR /usr/project
 COPY hello_world.factor .
 
-CMD ["./factor/factor", "hello_world.factor"]
+CMD ["factor", "hello_world.factor"]
