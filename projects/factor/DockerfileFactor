@@ -7,8 +7,8 @@ RUN wget https://downloads.factorcode.org/releases/0.98/factor-linux-x86-64-0.98
     tar -zvxf factor-linux-x86-64-0.98.tar.gz && \
     rm factor-linux-x86-64-0.98.tar.gz
 
-RUN mv /factor /usr/bin/factorlang
-ENV PATH=/usr/bin/factorlang:$PATH
+RUN mv /factor /usr/lib/factor
+ENV PATH=/usr/lib/factor:$PATH
 
 WORKDIR /usr/project
 COPY hello_world.factor .

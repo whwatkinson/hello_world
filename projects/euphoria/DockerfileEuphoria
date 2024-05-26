@@ -7,8 +7,8 @@ RUN wget https://github.com/OpenEuphoria/euphoria/releases/download/4.1.0/euphor
     tar -xvz -f euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
     rm euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz
 
-RUN mv euphoria-4.1.0-Linux-x64 /usr/bin/euphoria
-ENV PATH=/usr/bin/euphoria/bin:$PATH
+RUN mv euphoria-4.1.0-Linux-x64 /usr/lib/euphoria
+ENV PATH=/usr/lib/euphoria/bin:$PATH
 
 WORKDIR /usr/project
 COPY hello_world.ex .
