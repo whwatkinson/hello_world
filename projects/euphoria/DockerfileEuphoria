@@ -1,16 +1,16 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get -y install curl
+    apt-get install -y wget
 
-COPY euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz .
-# TODO curl this
-#RUN curl -X GET https://github.com/OpenEuphoria/euphoria/releases/download/4.1.0/euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz -o euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz
+RUN wget https://github.com/OpenEuphoria/euphoria/releases/download/4.1.0/euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
+    tar -xvz -f euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
+    rm euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz
 
-RUN tar -xvz -f euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz
-RUN rm euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz
-ENV PATH=/euphoria-4.1.0-Linux-x64/bin:$PATH
+RUN mv euphoria-4.1.0-Linux-x64 /usr/bin/euphoria
+ENV PATH=/usr/bin/euphoria/bin:$PATH
 
+WORKDIR /usr/project
 COPY hello_world.ex .
 
 CMD ["eui", "hello_world.ex"]
