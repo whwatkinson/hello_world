@@ -3,7 +3,9 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y gforth
 
+WORKDIR /usr/project
 COPY hello_world.fth .
 COPY run.sh .
+RUN chmod +x run.sh
 
 CMD ["./run.sh"]

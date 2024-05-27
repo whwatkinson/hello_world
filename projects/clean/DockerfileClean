@@ -15,6 +15,7 @@ ENV PATH=root/.nitrile/bin:$PATH
 COPY app.icl .
 COPY nitrile.yml .
 COPY run.sh .
+RUN chmod +x run.sh
 
 RUN nitrile update
 RUN nitrile fetch

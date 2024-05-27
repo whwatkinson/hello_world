@@ -1,10 +1,8 @@
 FROM golang:1.17-bullseye
 
-RUN apt-get update -y
 
 COPY Goaldi-Linux-v11.tgz .
-RUN tar zxvf Goaldi-Linux-v11.tgz
-RUN rm Goaldi-Linux-v11.tgz
+RUN tar zxvf Goaldi-Linux-v11.tgz && rm Goaldi-Linux-v11.tgz
 
 ENV PATH=/go/Goaldi-Linux-v11:$PATH
 

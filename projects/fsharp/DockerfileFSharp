@@ -1,16 +1,17 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install curl -y
+    apt-get install -y curl
 
 RUN curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --version latest
 
 ENV PATH=root/.dotnet:$PATH
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
+#WORKDIR /usr/project
 COPY hello_world.fsx .
 COPY run.sh .
+RUN chmod +x run.sh
 
 RUN dotnet fsi hello_world.fsx -q &
-
 CMD ["./run.sh"]

@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 WORKDIR /usr/project
 COPY main.cpp .
-RUN g++ main.cpp
 
+RUN g++ main.cpp
 CMD ["./a.out"]
