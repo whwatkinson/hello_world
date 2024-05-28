@@ -1,7 +1,7 @@
 FROM zenika/kotlin:1.4.20
 
+WORKDIR /usr/project
 COPY hello_world.kt .
 
 RUN kotlinc hello_world.kt -include-runtime -d hello_world.jar
-
 CMD ["/bin/java", "-jar", "hello_world.jar"]

@@ -1,7 +1,6 @@
 FROM hylang:0.28-bullseye
 
-WORKDIR project/
-
+WORKDIR /usr/project
 COPY hello_world.hy .
 
 CMD ["hy", "hello_world.hy"]

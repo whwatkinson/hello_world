@@ -1,7 +1,7 @@
 FROM haskell:8
 
+WORKDIR /usr/project
 COPY hello_world.hs .
 
 RUN ghc hello_world.hs
-
 CMD ["./hello_world"]
