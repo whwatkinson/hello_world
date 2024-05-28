@@ -4,5 +4,4 @@ WORKDIR /usr/project
 COPY hello_world.erl .
 
 RUN erlc hello_world.erl
-
 CMD ["erl", "-noshell", "-s", "hello_world", "start", "-s", "init", "stop"]

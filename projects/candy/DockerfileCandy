@@ -12,5 +12,4 @@ RUN cd candy && cargo run --release -- run ./packages/Examples/main.candy > outp
 
 COPY run.sh .
 RUN chmod +x run.sh
-
 CMD ["./run.sh"]

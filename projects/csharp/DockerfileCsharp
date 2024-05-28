@@ -14,5 +14,4 @@ COPY hello_world.cs MyApp/
 RUN rm MyApp/Program.cs
 
 RUN dotnet build MyApp/
-
 CMD ["./MyApp/bin/Debug/net6.0/MyApp"]

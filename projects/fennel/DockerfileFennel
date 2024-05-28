@@ -1,11 +1,9 @@
 FROM ubuntu:22.04
 
+WORKDIR /usr/project
 COPY fennel-1.3.0-x86_64 .
-
 RUN chmod +x fennel-1.3.0-x86_64 && \
     mv fennel-1.3.0-x86_64 /usr/local/bin/fennel-1.3.0-x86_64
-
-WORKDIR /usr/project
 COPY hello_world.fnl .
 
 CMD ["fennel-1.3.0-x86_64", "hello_world.fnl"]

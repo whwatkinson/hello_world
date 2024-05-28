@@ -7,5 +7,4 @@ WORKDIR /usr/project
 COPY hello.adb .
 
 RUN gnatmake hello.adb
-
 CMD ["./hello"]

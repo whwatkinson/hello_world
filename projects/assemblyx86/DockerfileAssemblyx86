@@ -6,7 +6,6 @@ RUN apt-get update -y && \
 COPY hello_world.s .
 
 RUN gcc -o hello_world -static -nostdlib hello_world.s
-
 CMD ["./hello_world"]
 
 

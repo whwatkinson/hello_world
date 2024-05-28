@@ -7,5 +7,4 @@ WORKDIR /usr/project
 COPY hello_world.agda .
 
 RUN agda --compile hello_world.agda
-
 CMD ["./hello_world"]

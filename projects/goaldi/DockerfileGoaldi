@@ -1,11 +1,14 @@
 FROM golang:1.17-bullseye
 
+RUN apt-get install -y wget
 
-COPY Goaldi-Linux-v11.tgz .
-RUN tar zxvf Goaldi-Linux-v11.tgz && rm Goaldi-Linux-v11.tgz
+RUN wget https://github.com/proebsting/goaldi/releases/download/v11-stable/Goaldi-Linux-v11.tgz && \
+    tar zxvf Goaldi-Linux-v11.tgz && \
+    rm Goaldi-Linux-v11.tgz
 
 ENV PATH=/go/Goaldi-Linux-v11:$PATH
 
+WORKDIR /usr/project
 COPY hello_world.gd .
 
-CMD ["goaldi", "hello_world"]
+CMD ["goaldi", "hello_world.gd"]

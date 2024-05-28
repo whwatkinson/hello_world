@@ -15,10 +15,8 @@ ENV PATH=/usr/lib/opendylan-2022.1/bin:$PATH
 
 WORKDIR /usr/project
 RUN make-dylan-app hello-world
-
 RUN rm hello-world/hello-world.dylan
 COPY hello-world.dylan hello-world/hello-world.dylan
-
 RUN cd hello-world && dylan-compiler -build hello-world.lid
 
 CMD ["hello-world/_build/bin/hello-world"]

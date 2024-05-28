@@ -5,7 +5,6 @@ RUN apt-get update -y && \
 
 WORKDIR /usr/project
 RUN wget https://github.com/flix/flix/releases/download/v0.46.0/flix.jar
-
 COPY Main.flix .
 COPY run.sh .
 RUN chmod +x run.sh && ./run.sh

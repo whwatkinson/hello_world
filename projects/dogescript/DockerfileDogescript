@@ -7,5 +7,4 @@ WORKDIR /usr/project
 COPY hello_world.djs .
 
 RUN dogescript hello_world.djs > hello_world.js
-
 CMD ["node", "hello_world.js"]

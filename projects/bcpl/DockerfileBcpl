@@ -19,5 +19,4 @@ ENV PATH=/BCPL-compiler/src:$PATH
 WORKDIR /BCPL-compiler/src
 
 RUN bcplc ../../hello_world.bcl
-
 CMD ["./hello_world.bcl"]

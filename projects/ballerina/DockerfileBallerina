@@ -12,6 +12,6 @@ ENV PATH=usr/lib/ballerina/bin:$PATH
 WORKDIR greeter/
 COPY hello_world.bal .
 RUN touch Ballerina.toml
-RUN bal build
 
+RUN bal build
 CMD ["bal", "run", "target/bin/greeter.jar"]

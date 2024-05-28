@@ -15,6 +15,6 @@ ENV PATH=/usr/lib/dmd2/linux/bin64:$PATH
 
 WORKDIR /usr/project
 COPY main.d .
-RUN dmd main.d
 
+RUN dmd main.d
 CMD ["./main"]

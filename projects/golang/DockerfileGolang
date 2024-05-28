@@ -1,7 +1,7 @@
 FROM golang:1.17-bullseye
 
+WORKDIR /usr/project
 COPY main.go .
 
 RUN go build main.go
-
 CMD ["./main"]
