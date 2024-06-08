@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 
-WORKDIR /project
+WORKDIR /usr/project
 RUN touch "Hello, World!"
 
 CMD ["ls"]

@@ -8,11 +8,11 @@ RUN apt-get update -y && \
     libreadline-dev \
     libpthread-stubs0-dev
 
+WORKDIR /usr/lib
 RUN git clone https://github.com/lenguaje-latino/latino-core
-WORKDIR latino-core/
-RUN cmake . && make install
+RUN cd latino-core && cmake . && make install
 
-WORKDIR proyecto/
+WORKDIR /usr/proyecto/
 COPY hola_mundo.lat .
 
 CMD ["latino", "hola_mundo.lat"]
