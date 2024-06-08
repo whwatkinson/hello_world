@@ -1,7 +1,7 @@
 from io import StringIO
 from os import listdir
 
-from update_scripts import skips, get_project_root
+from scripts import skips, get_project_root
 
 
 def make_docker_compose() -> None:
