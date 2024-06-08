@@ -1,7 +1,7 @@
 FROM sebgod/mercury
 
+WORKDIR /usr/project
 COPY hello_world.m .
 
 RUN mmc hello_world.m
-
 ENTRYPOINT ["./hello_world"]

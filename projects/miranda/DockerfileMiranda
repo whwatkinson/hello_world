@@ -1,14 +1,16 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget
 
-COPY mira-2038-i686-Linux.tgz .
-RUN tar vxf mira-2038-i686-Linux.tgz
-RUN rm mira-2038-i686-Linux.tgz
+RUN wget https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/linux/mira-2038-i686-Linux.tgz && \
+    tar vxf mira-2038-i686-Linux.tgz && \
+    rm mira-2038-i686-Linux.tgz
 
+WORKDIR /usr/project
 COPY Miranda.m .
 COPY hello_world.sh .
 
 RUN mira -make Miranda.m
-
 CMD ["./hello_world.sh"]
