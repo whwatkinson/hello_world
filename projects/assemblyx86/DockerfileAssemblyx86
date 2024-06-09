@@ -1,12 +1,13 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt install -y libc6-dev-i386
+    apt install -y \
+    libc6-dev-i386
 
+WORKDIR /usr/project
 COPY hello_world.s .
 
 RUN gcc -o hello_world -static -nostdlib hello_world.s
-
 CMD ["./hello_world"]
 
 

@@ -42,6 +42,7 @@ programming_languages = {
     "purescript": "PureScript",
     "python2": "Python 2",
     "python3": "Python 3",
+    "tclsh": "TclSh",
     "typescript": "TypeScript",
     "vhdl": "VHDL",
     "xml": "XML",

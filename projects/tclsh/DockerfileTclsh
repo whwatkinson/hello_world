@@ -1,9 +1,12 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install tcl -y
+    apt-get install -y \
+    tcl
 
+WORKDIR /usr/project
 COPY hello_world.tcl .
 COPY run.sh .
+RUN chmod +x run.sh
 
 CMD ["./run.sh"]

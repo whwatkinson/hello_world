@@ -16,10 +16,9 @@ RUN apt-get update -y && \
 
 RUN pip3 install meson
 
-RUN git clone https://github.com/lhmouse/asteria.git
-RUN cd asteria && \
-    meson setup build_debug
-RUN cd asteria && \
+RUN git clone https://github.com/lhmouse/asteria.git && \
+    cd asteria && \
+    meson setup build_debug && \
     meson compile -Cbuild_debug
 
 COPY hello_world .

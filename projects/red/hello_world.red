@@ -2,4 +2,4 @@
      Title: "Simple hello world script"
  ]
 
- print "Hello, World!"
+echo "print \"Hello, World\!\"" | red --cli

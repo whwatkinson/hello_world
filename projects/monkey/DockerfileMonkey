@@ -1,9 +1,10 @@
 FROM golang:1.17-bullseye
 
-RUN git clone https://github.com/skx/monkey
-WORKDIR monkey/
-RUN go install
+RUN git clone https://github.com/skx/monkey && \
+    cd monkey && \
+    go install
 
+WORKDIR /usr/project
 COPY hello_world.mon .
 
 CMD ["monkey", "hello_world.mon"]

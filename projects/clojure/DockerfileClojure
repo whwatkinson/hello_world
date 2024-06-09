@@ -1,5 +1,6 @@
 FROM clojure:temurin-19-tools-deps-focal
 
+WORKDIR /usr/project
 COPY hello_world.clj .
 
 CMD ["clojure", "-M", "hello_world.clj"]

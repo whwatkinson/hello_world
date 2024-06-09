@@ -1,8 +1,9 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install zsh -y
+    apt-get install -y zsh
 
+WORKDIR /usr/project
 COPY hello_world.sh .
 
 CMD ["zsh", "hello_world.sh"]

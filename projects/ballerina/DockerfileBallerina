@@ -1,17 +1,18 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y curl
+    apt-get install -y \
+    curl
 
-RUN curl -X GET https://dist.ballerina.io/downloads/2201.4.1/ballerina-2201.4.1-swan-lake-linux-x64.deb -o ballerina-2201.4.1-swan-lake-linux-x64.deb
-RUN dpkg -i ballerina-2201.4.1-swan-lake-linux-x64.deb
-RUN rm ballerina-2201.4.1-swan-lake-linux-x64.deb
+RUN curl -X GET https://dist.ballerina.io/downloads/2201.4.1/ballerina-2201.4.1-swan-lake-linux-x64.deb -o ballerina-2201.4.1-swan-lake-linux-x64.deb && \
+    dpkg -i ballerina-2201.4.1-swan-lake-linux-x64.deb && \
+    rm ballerina-2201.4.1-swan-lake-linux-x64.deb
 
 ENV PATH=usr/lib/ballerina/bin:$PATH
 
 WORKDIR greeter/
 COPY hello_world.bal .
 RUN touch Ballerina.toml
-RUN bal build
 
+RUN bal build
 CMD ["bal", "run", "target/bin/greeter.jar"]

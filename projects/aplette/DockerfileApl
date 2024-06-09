@@ -1,16 +1,23 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y libreadline8 libreadline-dev bison make git gcc
+    apt-get install -y \
+    libreadline8 \
+    libreadline-dev \
+    bison \
+    make \
+    git \
+    gcc
 
-RUN git clone https://github.com/gregfjohnson/aplette.git
-RUN cd aplette && ./configure && make
+RUN git clone https://github.com/gregfjohnson/aplette.git && \
+    cd aplette && \
+    ./configure && \
+    make && \
+    mv aplette /usr/lib
+ENV PATH=/usr/lib/aplette/source:$PATH
 
-ENV PATH=/aplette/source:$PATH
-
-WORKDIR /project
+WORKDIR /usr/project
 COPY hello_world.apl .
-
 COPY run.sh .
 RUN chmod +x run.sh
 

@@ -1,16 +1,19 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y xz-utils make
+    apt-get install -y \
+    xz-utils \
+    make \
+    wget
 
-COPY zig-linux-x86_64-0.10.1.tar.xz .
+RUN wget https://ziglang.org/download/0.10.1/zig-linux-x86_64-0.10.1.tar.xz && \
+    tar -xJf zig-linux-x86_64-0.10.1.tar.xz && \
+    rm zig-linux-x86_64-0.10.1.tar.xz && \
+    mv /zig-linux-x86_64-0.10.1/ /usr/lib/
+ENV PATH=/usr/lib/zig-linux-x86_64-0.10.1:$PATH
 
-RUN tar -xJf zig-linux-x86_64-0.10.1.tar.xz
-
-ENV PATH=/zig-linux-x86_64-0.10.1:$PATH
-
+WORKDIR /usr/project
 COPY hello_world.zig .
 
 RUN zig build-exe hello_world.zig
-
 CMD ["./hello_world"]

@@ -115,7 +115,7 @@
 - [Snobol](./projects/snobol)
 - [Solidity](./projects/solidity)
 - [Swift](./projects/swift)
-- [Tcl](./projects/tcl)
+- [TclSh](./projects/tclsh)
 - [Tea](./projects/tea)
 - [Terraform](./projects/terraform)
 - [TypeScript](./projects/typescript)
@@ -151,13 +151,13 @@
 - [whoami](./projects/linux_commands/whoami)
 - [xxd](./projects/linux_commands/xxd)
 
-### Requirements
+## Requirements
 - **docker**
 - **docker-compose**
 - **git**
 - **git lfs**
 
-###  To be greeted:
+## To be greeted:
 ```
 git clone https://github.com/whwatkinson/hello_world.git
 git lfs checkout

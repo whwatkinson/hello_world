@@ -1,9 +1,10 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y python3
+    apt-get install -y \
+    python3
 
-WORKDIR /project
+WORKDIR /usr/projectt
 COPY hello_world.xml .
 COPY hello_world.py .
 

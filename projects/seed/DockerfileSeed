@@ -1,11 +1,11 @@
 FROM esolang/seed
 
-COPY hello_world.seed .
-ENV BUILDKIT_PROGRESS=plain
-CMD ["seed", "hello_world.seed"]
-
 RUN mv script scriptOld
 COPY script .
+
+WORKDIR /usr/project
+COPY hello_world.seed .
 COPY run.sh .
+RUN chmod +x run.sh
 
 CMD ["./run.sh"]

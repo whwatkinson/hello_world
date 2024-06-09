@@ -1,11 +1,9 @@
 FROM portoleks/in5570v20:latest
 
-USER root
-
+WORKDIR /usr/project
 COPY hello_world.m .
 
 RUN ec hello_world.m
-
 CMD ["emx", "hello_world.x"]
 
 #  https://www.uio.no/studier/emner/matnat/ifi/IN5570/v20/exercise-sessions/00-getting-started-with-emerald/2020-01-16-getting-started-with-emerald.pdf

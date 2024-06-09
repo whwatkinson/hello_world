@@ -1,9 +1,10 @@
 FROM rust:1-bullseye
 
-RUN cargo install uiua
-RUN apt install -y libx11-dev
+RUN cargo install uiua && \
+    apt install -y \
+    libx11-dev
 
-WORKDIR /project
+WORKDIR /usr/project
 COPY main.ua .
 
 CMD ["uiua", "main.ua"]

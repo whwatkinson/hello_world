@@ -1,10 +1,11 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install csh -y
+    apt-get -y install \
+    csh
 
+WORKDIR /usr/project
 COPY hello_world.csh .
-
 RUN chmod +x hello_world.csh
 
 CMD ["csh", "hello_world.csh"]

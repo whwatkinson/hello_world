@@ -1,9 +1,7 @@
 FROM rust:1-bullseye
 
-WORKDIR /project
-
+WORKDIR /usr/project
 RUN cargo install gluon_repl
-
 COPY hello_world.glu .
 
 CMD ["gluon", "hello_world.glu"]

@@ -6,8 +6,7 @@ RUN apt-get update -y && \
 
 RUN git clone https://github.com/abrudz/ngn-apl.git
 
-WORKDIR ngn-apl/
-
+WORKDIR /usr/project/
 COPY hello_world.apl .
 
-CMD ["node", "apl.js", "hello_world.apl"]
+CMD ["node", "/ngn-apl/apl.js", "hello_world.apl"]

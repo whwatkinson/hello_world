@@ -6,9 +6,9 @@ RUN apt-get update &&  \
 
 RUN cargo install whiley
 
-WORKDIR /project
+WORKDIR /usr/project
 RUN wy init && rm src/main.whiley
 COPY main.whiley src/
-RUN wy build
 
+RUN wy build
 CMD ["wy", "run"]

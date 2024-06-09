@@ -1,9 +1,11 @@
 FROM esolang/ring
 
-COPY hello_world.ring .
-
 RUN mv script scriptOld
 COPY script .
+
+WORKDIR /usr/project
 COPY run.sh .
+RUN chmod +x run.sh
+COPY hello_world.ring .
 
 CMD ["./run.sh"]

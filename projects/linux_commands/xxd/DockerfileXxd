@@ -1,9 +1,10 @@
 FROM ubuntu:22.04
 
-RUN apt-get update &&  \
+RUN apt-get update -y && \
     apt-get install -y \
     xxd
 
+WORKDIR /usr/project
 COPY run.sh .
 RUN  chmod +x run.sh
 

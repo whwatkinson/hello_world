@@ -1,7 +1,7 @@
 FROM nacyot/objectivec-gcc:apt
 
+WORKDIR /usr/project
 COPY hello_world.m source/
 
 RUN gcc -o hello_world source/hello_world.m
-
 CMD ["./hello_world"]

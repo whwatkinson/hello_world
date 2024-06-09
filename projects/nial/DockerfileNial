@@ -1,8 +1,18 @@
 FROM ubuntu:22.04
 
-COPY nial64 .
-RUN chmod +x nial64
+RUN apt-get update && \
+    apt-get install -y \
+    wget \
+    unzip
 
+RUN wget https://github.com/niallang/Nial_Development/releases/download/Originals/Linux64.zip && \
+    unzip Linux64.zip && \
+    rm Linux64.zip && \
+    chmod +x Linux/nial64 && \
+    mv /Linux/nial64 /usr/bin/
+
+WORKDIR /usr/project
 COPY hello_world.ndf .
 
-CMD ["./nial64", "-defs", "hello_world.ndf"]
+CMD ["nial64", "-defs", "hello_world.ndf"]
+

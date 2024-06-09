@@ -1,9 +1,12 @@
 FROM openjdk:9
 
-RUN curl -X GET https://wyvernlang.github.io/files/WyvernDemo20180325.zip -o WyvernDemo20180325.zip
-RUN unzip WyvernDemo20180325.zip
-RUN rm WyvernDemo20180325.zip
+RUN curl -X GET https://wyvernlang.github.io/files/WyvernDemo20180325.zip -o WyvernDemo20180325.zip && \
+    unzip WyvernDemo20180325.zip && \
+    rm WyvernDemo20180325.zip && \
+    mv /WyvernDemo20180325/ /usr/lib/
+ENV PATH=/usr/lib/WyvernDemo20180325/bin:$PATH
 
+WORKDIR /usr/project
 COPY hello_world.wyv .
 
-CMD ["WyvernDemo20180325/bin/wyvern", "hello_world.wyv"]
+CMD ["wyvern", "hello_world.wyv"]

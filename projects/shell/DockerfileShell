@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 
+WORKDIR /usr/project
 COPY hello_world.sh .
 
 CMD ["sh", "hello_world.sh"]

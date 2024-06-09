@@ -1,5 +1,6 @@
 FROM rakudo-star:2022.07
 
+WORKDIR /usr/project
 COPY hello_world.raku .
 
 CMD ["raku", "hello_world.raku"]

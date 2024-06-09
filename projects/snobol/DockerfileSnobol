@@ -1,13 +1,21 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y m4 make gcc
+    apt-get install -y \
+    m4 \
+    make \
+    gcc \
+    wget
 
-COPY snobol4-2.3.1.tar.gz .
+RUN wget https://ftp.regressive.org/snobol4/snobol4-2.3.1.tar.gz && \
+    tar -zxvf snobol4-2.3.1.tar.gz && \
+    rm snobol4-2.3.1.tar.gz && \
+    cd snobol4-2.3.1 && \
+    make install && \
+    mv /snobol4-2.3.1/ /usr/lib/
+ENV PATH=/usr/lib/snobol4-2.3.1:$PATH
 
-RUN tar -zxvf snobol4-2.3.1.tar.gz && cd snobol4-2.3.1
-RUN cd snobol4-2.3.1 && make install
-
+WORKDIR /usr/project
 COPY hello_world.sno .
 
-CMD ["snobol4-2.3.1/snobol4", "hello_world.sno"]
+CMD ["snobol4", "hello_world.sno"]

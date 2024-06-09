@@ -1,11 +1,13 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y python3 python3-pip
+    apt-get install -y \
+    python3  \
+    python3-pip
 
 RUN pip3 install beautifulsoup4
 
-WORKDIR /project
+WORKDIR /usr/project
 COPY hello_world.html .
 COPY hello_world.py .
 

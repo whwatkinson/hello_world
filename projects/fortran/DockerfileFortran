@@ -1,10 +1,11 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install gfortran -y
+    apt-get install -y \
+    gfortran
 
+WORKDIR /usr/project
 COPY HelloWorld.f90 .
 
 RUN gfortran HelloWorld.f90 -o helloworld
-
 CMD ["./helloworld"]

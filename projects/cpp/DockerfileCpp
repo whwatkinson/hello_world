@@ -1,10 +1,11 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y g++
+    apt-get install -y \
+    g++
 
+WORKDIR /usr/project
 COPY main.cpp .
 
 RUN g++ main.cpp
-
 CMD ["./a.out"]

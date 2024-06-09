@@ -1,7 +1,7 @@
 from io import StringIO
 from os import listdir
 
-from update_scripts import my_names_map, skips, get_project_root
+from scripts import my_names_map, skips, get_project_root
 
 
 def format_project_name(project: str) -> str:
@@ -58,7 +58,7 @@ def make_readme() -> None:
 
     requirements = (
         "\n"
-        "### Requirements\n"
+        "## Requirements\n"
         "- **docker**\n"
         "- **docker-compose**\n"
         "- **git**\n"
@@ -68,7 +68,7 @@ def make_readme() -> None:
 
     build_me = (
         "\n"
-        "###  To be greeted:\n"
+        "## To be greeted:\n"
         "```\n"
         "git clone https://github.com/whwatkinson/hello_world.git\n"
         "git lfs checkout\n"

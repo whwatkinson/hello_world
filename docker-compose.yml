@@ -730,11 +730,11 @@ services:
       context: projects/tail
       dockerfile: DockerfileTail
 
-  tcl:
-    container_name: hello_world_tcl
+  tclsh:
+    container_name: hello_world_tclsh
     build:
-      context: projects/tcl
-      dockerfile: DockerfileTcl
+      context: projects/tclsh
+      dockerfile: DockerfileTclsh
 
   tea:
     container_name: hello_world_tea

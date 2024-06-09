@@ -1,9 +1,12 @@
 FROM esolang/abc:latest
 
-COPY main.abc .
+# Overwrite the script file
+RUN mv /root/script /root/scriptOld
+COPY script /root
 
-RUN mv script scriptOld
-COPY script .
+WORKDIR /usr/project
+COPY main.abc .
 COPY run.sh .
+RUN chmod +x run.sh
 
 CMD ["./run.sh"]

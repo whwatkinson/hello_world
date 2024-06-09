@@ -3,7 +3,4 @@ FROM ponylang/ponyc:0.58.0
 COPY hello_world.pony .
 
 RUN ponyc
-
 CMD ["./main"]
-
-# TODO from src https://github.com/ponylang/ponyc/blob/main/BUILD.md

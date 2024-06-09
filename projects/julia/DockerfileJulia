@@ -1,5 +1,6 @@
 FROM julia:1.8.0
 
+WORKDIR /usr/project
 COPY hello_world.jl .
 
 CMD ["julia", "hello_world.jl"]

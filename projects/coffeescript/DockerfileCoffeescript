@@ -4,6 +4,7 @@ RUN npm install -g npm@latest && \
     npm update -g npm && \
     npm install coffeescript -g
 
+WORKDIR /usr/project
 COPY hello_world.coffee .
 
 CMD ["coffee", "hello_world.coffee"]
