@@ -115,7 +115,7 @@
 - [Snobol](./projects/snobol)
 - [Solidity](./projects/solidity)
 - [Swift](./projects/swift)
-- [Tcl](./projects/tcl)
+- [Tcl](./projects/tclsh)
 - [Tea](./projects/tea)
 - [Terraform](./projects/terraform)
 - [TypeScript](./projects/typescript)

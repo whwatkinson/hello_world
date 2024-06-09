@@ -1,8 +1,8 @@
 FROM mariobarbareschi/vhdl_ci:sfblc
 
+WORKDIR /usr/project
 COPY hello_world.vhdl .
 
-RUN ghdl -a hello_world.vhdl
-RUN ghdl -e hello_world
-
+RUN ghdl -a hello_world.vhdl && \
+    ghdl -e hello_world
 CMD ["ghdl", "-r", "hello_world"]

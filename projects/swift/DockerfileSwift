@@ -1,5 +1,6 @@
 FROM swift:5.7.2
 
+WORKDIR /usr/project
 COPY main.swift .
 
 CMD ["swift", "main.swift"]

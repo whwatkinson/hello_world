@@ -1,5 +1,6 @@
 FROM esolang/typhon
 
+WORKDIR /usr/project
 COPY run.sh .
 RUN chmod +x run.sh
 

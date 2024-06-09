@@ -733,7 +733,7 @@ services:
   tcl:
     container_name: hello_world_tcl
     build:
-      context: projects/tcl
+      context: projects/tclsh
       dockerfile: DockerfileTcl
 
   tea:

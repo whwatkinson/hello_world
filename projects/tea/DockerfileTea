@@ -1,8 +1,10 @@
 FROM openjdk:8
 
 RUN apt-get update -y && \
-    apt-get install -y maven unzip
-
+    apt-get install -y \
+    maven \
+    unzip
+# TODO wget this
 COPY tea-master.zip .
 RUN unzip tea-master.zip
 RUN rm tea-master.zip
