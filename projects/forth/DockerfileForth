@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y gforth
+    apt-get install -y \
+    gforth
 
 WORKDIR /usr/project
 COPY hello_world.fth .

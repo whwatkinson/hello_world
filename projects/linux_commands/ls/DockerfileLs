@@ -1,6 +1,5 @@
 FROM ubuntu:22.04
 
-
 WORKDIR /usr/project
 RUN touch "Hello, World!"
 

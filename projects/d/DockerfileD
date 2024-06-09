@@ -8,9 +8,10 @@ RUN apt-get update && \
     build-essential \
     wget
 
-RUN wget https://downloads.dlang.org/releases/2023/dmd.2.102.2.linux.tar.xz
-RUN tar -xJf dmd.2.102.2.linux.tar.xz && rm dmd.2.102.2.linux.tar.xz
-RUN mv dmd2/ /usr/lib/
+RUN wget https://downloads.dlang.org/releases/2023/dmd.2.102.2.linux.tar.xz && \
+    tar -xJf dmd.2.102.2.linux.tar.xz && \
+    rm dmd.2.102.2.linux.tar.xz && \
+    mv dmd2/ /usr/lib/
 ENV PATH=/usr/lib/dmd2/linux/bin64:$PATH
 
 WORKDIR /usr/project

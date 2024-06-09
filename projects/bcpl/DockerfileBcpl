@@ -12,8 +12,8 @@ COPY hello_world.bcl .
 
 RUN chmod +x BCPL-compiler/makeall
 
-RUN cd BCPL-compiler && ./makeall
-RUN cd BCPL-compiler && ./makeall install
+RUN cd BCPL-compiler && ./makeall && \
+    ./makeall install
 ENV PATH=/BCPL-compiler/src:$PATH
 
 WORKDIR /BCPL-compiler/src

@@ -10,8 +10,8 @@ RUN curl -R -O https://www.lua.org/ftp/lua-5.4.6.tar.gz && \
     tar -vxf lua-5.4.6.tar.gz && \
     rm lua-5.4.6.tar.gz && \
     cd lua-5.4.6 && \
-    make all test
-RUN mv /lua-5.4.6/ /usr/lib/
+    make all test && \
+    mv /lua-5.4.6/ /usr/lib/
 ENV PATH=/usr/lib/lua-5.4.6/src:$PATH
 
 WORKDIR /usr/project

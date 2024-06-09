@@ -1,10 +1,11 @@
 FROM ubuntu:22.04
 
 RUN apt-get update &&  \
-    apt-get install -y gnucobol4
+    apt-get install -y \
+    gnucobol4
 
 WORKDIR /usr/project
 COPY hello_world.cbl .
-RUN cobc -x hello_world.cbl
 
+RUN cobc -x hello_world.cbl
 CMD ["./hello_world"]

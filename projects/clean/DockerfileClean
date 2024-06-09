@@ -17,8 +17,7 @@ COPY nitrile.yml .
 COPY run.sh .
 RUN chmod +x run.sh
 
-RUN nitrile update
-RUN nitrile fetch
-RUN nitrile build
-
+RUN nitrile update && \
+    nitrile fetch && \
+    nitrile build
 CMD ["./run.sh"]

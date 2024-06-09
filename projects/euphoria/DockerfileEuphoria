@@ -1,13 +1,13 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y wget
+    apt-get install -y \
+    wget
 
 RUN wget https://github.com/OpenEuphoria/euphoria/releases/download/4.1.0/euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
     tar -xvz -f euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
     rm euphoria-4.1.0-Linux-x64-57179171dbed.tar.gz && \
     mv euphoria-4.1.0-Linux-x64 /usr/lib/euphoria
-
 ENV PATH=/usr/lib/euphoria/bin:$PATH
 
 WORKDIR /usr/project

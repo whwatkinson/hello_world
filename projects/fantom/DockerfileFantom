@@ -8,9 +8,9 @@ RUN apt-get update -y && \
 RUN wget https://github.com/fantom-lang/fantom/releases/download/v1.0.80/fantom-1.0.80.zip && \
     unzip fantom-1.0.80.zip && \
     rm fantom-1.0.80.zip && \
-    chmod +x fantom-1.0.80/bin/fan
+    chmod +x fantom-1.0.80/bin/fan && \
+    mv fantom-1.0.80 /usr/lib/fantom-1.0.80
 
-RUN mv fantom-1.0.80 /usr/lib/fantom-1.0.80
 ENV PATH=/usr/lib/fantom-1.0.80/bin:$PATH
 
 WORKDIR /usr/project

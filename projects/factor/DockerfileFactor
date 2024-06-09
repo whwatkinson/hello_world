@@ -1,13 +1,13 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y wget
+    apt-get install -y \
+    wget
 
 RUN wget https://downloads.factorcode.org/releases/0.98/factor-linux-x86-64-0.98.tar.gz && \
     tar -zvxf factor-linux-x86-64-0.98.tar.gz && \
     rm factor-linux-x86-64-0.98.tar.gz && \
     mv /factor /usr/lib/factor \
-
 ENV PATH=/usr/lib/factor:$PATH
 
 WORKDIR /usr/project

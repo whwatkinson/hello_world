@@ -22,7 +22,6 @@ RUN git clone https://bitbucket.org/zacharyjtaylor/rad.git && \
     cd rad && \
     make && \
     mv /rad/ /usr/lib/
-#ENV PATH=/rad:$PATH
 ENV PATH=/usr/lib/rad:$PATH
 
 WORKDIR /usr/project

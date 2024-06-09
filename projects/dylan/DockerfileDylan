@@ -3,14 +3,13 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y \
     bzip2 \
-    gcc
+    gcc \
+    wget
 
-COPY opendylan-2022.1-x86_64-linux.tar.bz2 .
-
-RUN tar -xf opendylan-2022.1-x86_64-linux.tar.bz2 && \
+RUN wget https://opendylan.org/downloads/opendylan/2022.1/opendylan-2022.1-x86_64-linux.tar.bz2 && \
+    tar -xf opendylan-2022.1-x86_64-linux.tar.bz2 && \
     rm -r opendylan-2022.1-x86_64-linux.tar.bz2 && \
     mv opendylan-2022.1 /usr/lib
-
 ENV PATH=/usr/lib/opendylan-2022.1/bin:$PATH
 
 WORKDIR /usr/project

@@ -13,5 +13,4 @@ COPY setup.py .
 COPY main.py .
 
 RUN python3 setup.py build_ext --inplace
-
 CMD ["python3", "main.py"]

@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y scala
+    apt-get install -y \
+    scala
 
 WORKDIR /usr/project
 COPY HelloWorld.scala .

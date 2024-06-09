@@ -1,14 +1,13 @@
 FROM ceylon/ceylon:latest-redhat
 
-RUN mkdir source
-RUN mkdir source/hello
+RUN mkdir source && \
+    mkdir source/hello
 
 COPY module.ceylon source/hello
 COPY package.ceylon source/hello
 COPY run.ceylon source/hello
 
 RUN ceylon compile hello
-
 CMD ["ceylon", "run", "hello"]
 
 #https://github.com/eclipse/ceylon/tree/master/dist

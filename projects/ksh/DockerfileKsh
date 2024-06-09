@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get install -y ksh
+    apt-get install -y \
+    ksh
 
 WORKDIR /usr/project
 COPY hello_world.ksh .

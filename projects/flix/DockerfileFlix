@@ -1,7 +1,8 @@
 FROM openjdk:21-bullseye
 
 RUN apt-get update -y && \
-    apt-get install -y wget
+    apt-get install -y \
+    wget
 
 WORKDIR /usr/project
 RUN wget https://github.com/flix/flix/releases/download/v0.46.0/flix.jar

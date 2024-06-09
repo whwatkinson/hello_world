@@ -1,7 +1,8 @@
 FROM openjdk:21-bullseye
 
 RUN apt-get update && \
-    apt-get install -y wget
+    apt-get install -y \
+    wget
 
 WORKDIR /usr/project
 RUN wget https://github.com/umple/umple/releases/download/v1.33.0/umple-1.33.0.6934.a386b0a58.jar && \
