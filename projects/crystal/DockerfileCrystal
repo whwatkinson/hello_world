@@ -3,4 +3,4 @@ FROM crystallang/crystal:1.12
 WORKDIR /usr/project
 COPY hello_world.cr .
 
-CMD ["bin/crystal", "hello_world.cr"]
+CMD ["crystal", "hello_world.cr"]
