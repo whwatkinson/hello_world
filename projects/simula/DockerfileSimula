@@ -1,7 +1,7 @@
 FROM javiergelatti/simula
 
+WORKDIR /usr/project
 COPY hello_world.sim .
 
 RUN cim hello_world.sim
-
 CMD ["./hello_world"]

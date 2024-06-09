@@ -3,10 +3,8 @@
 
 FROM kskarthik/redlang:0.6.4
 
-ENV PATH="/usr/local/bin":${PATH}
-
+WORKDIR /usr/project
 COPY hello_world.red .
 
-RUN /usr/local/bin/red -c hello_world.red
-
-ENTRYPOINT ["./hello_world"]
+RUN red -c hello_world.red
+CMD ["./hello_world"]

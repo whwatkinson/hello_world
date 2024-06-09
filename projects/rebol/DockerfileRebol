@@ -1,12 +1,15 @@
 FROM ubuntu:22.04
 
-RUN apt-get update -y
+RUN apt-get update -y && \
+    apt-get install -y wget
 
-COPY rebol-core-278-4-10.tar.gz .
-RUN tar vxf rebol-core-278-4-10.tar.gz
+RUN wget http://rebol.com/downloads/v278/rebol-core-278-4-10.tar.gz && \
+    tar vxf rebol-core-278-4-10.tar.gz && \
+    rm rebol-core-278-4-10.tar.gz && \
+    mv /rebol-core/ /usr/lib/rebol
+ENV PATH=/usr/lib/rebol:$PATH
 
+WORKDIR /usr/project
 COPY hello_world.r .
-
-ENV PATH=/rebol-core:$PATH
 
 CMD ["rebol", "-q", "hello_world.r"]

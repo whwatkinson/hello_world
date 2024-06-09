@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y ruby-full
 
+WORKDIR /usr/project
 COPY hello_world.rb .
 
 CMD ["ruby", "hello_world.rb"]
