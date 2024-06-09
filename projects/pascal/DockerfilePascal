@@ -3,8 +3,8 @@ FROM ubuntu:22.04
 RUN apt-get update -y && \
     apt-get install -y fpc
 
+WORKDIR /usr/project
 COPY hello_world.p .
 
 RUN fpc hello_world.p
-
 CMD ["./hello_world"]

@@ -4,16 +4,10 @@ RUN npm install -g npm@latest && \
     npm install purescript spago -g && \
     npm install -g --save-exact esbuild
 
-RUN mkdir my-project/
-
-WORKDIR my-project/
-
-RUN spago init
-
+WORKDIR /usr/project
+RUN spago init && \
+    spago build && \
+    spago bundle-app
 COPY hello_world.purs .
-
-RUN spago build
-RUN spago bundle-app
-
 
 CMD ["node", "index.js"]

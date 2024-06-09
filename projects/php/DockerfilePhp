@@ -1,5 +1,6 @@
 FROM php:8.2.1
 
+WORKDIR /usr/project
 COPY hello_world.php .
 
 CMD ["php", "hello_world.php"]
