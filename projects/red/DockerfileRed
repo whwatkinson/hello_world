@@ -1,5 +1,4 @@
 # https://github.com/red/red
-#FROM ubuntu:22.04
 
 FROM kskarthik/redlang:0.6.4
 
