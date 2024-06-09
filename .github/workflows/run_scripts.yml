@@ -18,9 +18,14 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+
       - name: Update Readme
         run: python scripts/update_readme.py
+
       - name: Update Docker Compose
+        run: python scripts/update_docker_compose.py
+
+      - name: List Docker Images used in projects
         run: python scripts/update_docker_compose.py
 
       - id: last-commit-message
