@@ -1,3 +1,6 @@
+# Not a project but here as a stub for a new projectd
+# cp -r projects/new projects/$NAME
+
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
