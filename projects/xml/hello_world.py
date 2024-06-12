@@ -2,7 +2,7 @@ from xml.etree.ElementTree import parse
 
 
 def hello_world():
-    tree = parse('hello_world.xml')
+    tree = parse("hello_world.xml")
     root = tree.getroot()
     print(root.text)
 
