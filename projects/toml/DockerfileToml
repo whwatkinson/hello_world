@@ -1,0 +1,7 @@
+FROM python:3.12-bullseye
+
+WORKDIR /usr/project
+COPY hello_world.toml .
+COPY hello_world.py .
+
+CMD ["python3", "hello_world.py"]

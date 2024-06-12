@@ -96,6 +96,7 @@ GAS?
 Gherkin?
 HXML
 IDL
+JSON
 JSX
 LaTex
 Mathematica
