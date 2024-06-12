@@ -84,6 +84,35 @@ Verve
 visual basic
 y
 
+# BitBucket's Snippets
+Brainfuck
+ClojureScript
+Cmake
+CQL
+ECL
+Esper
+FCL?
+GAS?
+Gherkin?
+HXML
+IDL
+JSX
+LaTex
+Mathematica
+Modelica
+MUMPS
+Oz
+Pig
+Pug
+Slim
+SparQL
+Stylus
+Toml
+TTCN
+Turtle
+XQuery
+Z80?
+
 # Dockerhub
 ArkScript
 CMD

@@ -1,0 +1,13 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    octave
+
+WORKDIR /usr/project
+COPY hello_world.m .
+COPY run.sh .
+RUN chmod +x run.sh
+
+RUN ./run.sh
+CMD ["cat", "output.txt"]
