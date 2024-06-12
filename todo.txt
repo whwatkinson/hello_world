@@ -108,7 +108,6 @@ Pug
 Slim
 SparQL
 Stylus
-Toml
 TTCN
 Turtle
 XQuery
