@@ -8,7 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get install software-properties-common -y
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update -y && \
-    apt-get install -y python3.12
+    apt-get install -y \
+    python3.12
 
 WORKDIR /usr/project
 COPY hello_world.toml .
