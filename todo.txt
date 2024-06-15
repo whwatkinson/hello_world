@@ -14,7 +14,7 @@ Charly
 claire
 clu
 cobra
-cog
+
 cyclone
 cypher
 curry
@@ -144,6 +144,7 @@ Scilab
 SmallBASIC
 
 # skip
+cog
 eiffel
 elm
 PureBasic
@@ -160,3 +161,4 @@ https://hub.docker.com/search?q=programming+language
 https://hub.docker.com/u/esolang
 https://highlightjs.org/demo
 https://en.wikipedia.org/wiki/List_of_markup_languages
+https://verve-lang.org/getting-started
