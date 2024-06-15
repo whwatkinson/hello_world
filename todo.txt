@@ -84,6 +84,17 @@ Verve
 visual basic
 y
 
+# Jira
+ABAP
+Arduino
+Autoit
+ColdFusion
+CUDA?
+FoxPro
+GraphQL?
+ObjectiveJ
+XQuery
+
 # BitBucket's Snippets
 Brainfuck
 ClojureScript

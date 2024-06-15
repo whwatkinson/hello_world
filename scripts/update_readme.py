@@ -56,6 +56,9 @@ def make_readme() -> None:
     linux_commands_projects_joined = "".join(linux_commands_list)
     readme_buffer.write(linux_commands_projects_joined)
 
+    # TODO markup langs
+    # API's?
+
     requirements = (
         "\n"
         "## Requirements\n"
