@@ -96,7 +96,6 @@ ObjectiveJ
 XQuery
 
 # BitBucket's Snippets
-Brainfuck
 ClojureScript
 Cmake
 CQL
