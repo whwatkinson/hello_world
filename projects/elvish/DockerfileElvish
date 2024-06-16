@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    curl
+
+RUN curl -o elvish-v0.20.1.tar.gz https://dl.elv.sh/linux-amd64/elvish-v0.20.1.tar.gz && \
+    tar -xzvf elvish-v0.20.1.tar.gz && \
+    rm elvish-v0.20.1.tar.gz && \
+    mv elvish-v0.20.1 /usr/local/bin/elvish
+
+WORKDIR /usr/project
+COPY hello_world.sh .
+
+ENTRYPOINT ["elvish", "hello_world.sh"]
