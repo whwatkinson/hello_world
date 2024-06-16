@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 
+WORKDIR /usr/lib
 ENV PATH=/usr/lib/$LANG:$PATH
 
 WORKDIR /usr/project
