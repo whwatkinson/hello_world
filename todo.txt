@@ -22,7 +22,6 @@ dreambird
 e
 ec
 ell
-Elvish https://elv.sh/
 esher
 euclid
 evil
