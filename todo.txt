@@ -27,10 +27,8 @@ euclid
 evil
 fantom
 Glass
-Hamler
 Hare
 hack
-harbour
 hop
 ID
 icon
