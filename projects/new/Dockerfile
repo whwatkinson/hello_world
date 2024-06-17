@@ -1,4 +1,4 @@
-# Not a project but here as a stub for a new projectd
+# Not a project but here as a stub for a new project
 # cp -r projects/new projects/$NAME
 
 FROM ubuntu:22.04
