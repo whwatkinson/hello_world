@@ -9,7 +9,7 @@ WORKDIR /usr/lib
 RUN wget https://ioke.org/dist/ioke-P-ikj-0.4.0.tar.gz --no-check-certificate && \
     tar -xvf ioke-P-ikj-0.4.0.tar.gz && \
     rm ioke-P-ikj-0.4.0.tar.gz && \
-    ln -s /usr/lib/ioke/bin/ioke /usr/bin/
+    ln -s /usr/lib/ioke/bin/ioke /usr/bin/ioke
 
 WORKDIR /usr/project
 COPY hello_world.ik .

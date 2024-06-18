@@ -3,15 +3,16 @@ FROM openjdk:8
 RUN apt-get update -y && \
     apt-get install -y \
     maven \
-    unzip
-# TODO wget this
-COPY tea-master.zip .
-RUN unzip tea-master.zip
-RUN rm tea-master.zip
+    git
 
-RUN cd tea-master/modules && mvn -DskipTests=false
-ENV PATH=$PATH:/tea-master/bin
+WORKDIR /usr/lib
+RUN git clone https://github.com/jorgefranconunes/tea.git && \
+    cd tea/modules && \
+    mvn -DskipTests=false
 
+ENV PATH=$PATH:/usr/lib/tea/bin
+
+WORKDIR /usr/project
 COPY hello_world.tea .
 
 CMD ["tsh", "hello_world.tea"]
