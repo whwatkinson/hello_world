@@ -74,7 +74,6 @@ def make_readme() -> None:
         "## To be greeted:\n"
         "```\n"
         "git clone https://github.com/whwatkinson/hello_world.git\n"
-        "git lfs checkout\n"
         "docker-compose up --build\n"
         "```\n"
     )
