@@ -15,6 +15,7 @@ RUN wget http://www.arclanguage.org/arc3.2.tar && \
     rm arc3.2.tar
 
 WORKDIR arc3.2
+COPY hello_world.arc .
 COPY run.sh .
 RUN chmod +x run.sh
 
