@@ -9,7 +9,6 @@ bird
 blitzmax
 boo
 bosque
-Charly
 claire
 clu
 cobra
@@ -52,7 +51,6 @@ oberon
 objectivecpp
 occam
 omega
-Orc
 opa
 oxygene
 parasail
@@ -128,9 +126,12 @@ Aldor
 AmbientTalk
 Amiga E
 AviSynth
+Charly
+CharlyVM
 El-76
 Fortress
 Godot
+Orc
 PCASTL
 Scilab
 SmallBASIC
