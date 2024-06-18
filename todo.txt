@@ -31,7 +31,6 @@ hack
 hop
 ID
 icon
-Ioke
 jade
 jelly
 js++
