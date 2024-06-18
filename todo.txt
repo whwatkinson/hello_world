@@ -9,7 +9,6 @@ bird
 blitzmax
 boo
 bosque
-Charcoal
 Charly
 claire
 clu
