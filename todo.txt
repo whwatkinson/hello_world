@@ -27,7 +27,6 @@ euclid
 evil
 fantom
 Glass
-Hare
 hack
 hop
 ID

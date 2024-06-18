@@ -1,0 +1,35 @@
+FROM ubuntu:22.04
+
+#ENV DEBIAN_FRONTEND=noninteractive
+#ENV TZ=UTC
+
+RUN apt-get update -y && apt-get install -y \
+    gcc \
+    git \
+    wget \
+    make \
+    xz-utils \
+    scdoc
+
+WORKDIR /usr/lib
+RUN wget https://c9x.me/compile/release/qbe-1.2.tar.xz && \
+    tar -xf qbe-1.2.tar.xz && \
+    rm qbe-1.2.tar.xz && \
+    cd qbe-1.2 && \
+    make && \
+    make install
+
+RUN git clone https://git.sr.ht/~sircmpwn/harec && \
+    cd harec && \
+    cp configs/linux.mk config.mk && \
+    make install
+
+RUN wget https://alexey.nyc3.cdn.digitaloceanspaces.com/hare-dist/U22/hare_0.24.0-1_amd64.deb && \
+    dpkg -i hare_0.24.0-1_amd64.deb && \
+    rm hare_0.24.0-1_amd64.deb
+
+WORKDIR /usr/project
+COPY main.ha .
+
+RUN hare build -o hello_world
+CMD ["./hello_world"]
