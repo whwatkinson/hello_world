@@ -1,20 +1,16 @@
-actionscript
-alef
-aleph
-applescript
-arkts
-assemblyscript
+aleph https://github.com/lcsirmaz/aleph
+assemblyscript https://github.com/AssemblyScript/assemblyscript
 b
 bird
 blitzmax
 boo
 bosque
 claire
-clu
-cobra
-cyclone
+clu https://pmg.csail.mit.edu/CLU.html
+cobra https://github.com/cobra-language/cobra
+cyclone https://cyclone.thelanguage.org/wiki/Download/
 cypher
-curry
+curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 delphi
 dreambird
 e
@@ -23,14 +19,13 @@ ell
 esher
 euclid
 evil
-fantom
+fantom https://fantom.org/
 Glass
 hack
 hop
 ID
 icon
 jade
-jelly
 js++
 io
 lasso
@@ -43,6 +38,7 @@ mesa
 modula
 modula3
 mojo
+Mozart  https://github.com/mozart/mozart2
 mysql
 nemerle
 newspeak
@@ -54,7 +50,6 @@ omega
 opa
 oxygene
 parasail
-Pizza
 postgres
 postscript
 q
@@ -66,11 +61,11 @@ seed7
 sml
 spark
 spice
-Tengo
+Tengo  https://github.com/d5/tengo
 TeX
 turing
 Unlambda
-Verve
+Verve https://verve-lang.org/getting-started
 visual basic
 y
 
@@ -133,10 +128,15 @@ Fortress
 Godot
 Orc
 PCASTL
+Pizza
 Scilab
 SmallBASIC
 
 # skip
+actionscript
+alef
+applescript
+arkts
 cog
 eiffel
 elm

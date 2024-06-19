@@ -1,0 +1,19 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    git \
+    python3 \
+    python3-pip
+
+WORKDIR /usr/lib
+RUN git clone https://github.com/DennisMitchell/jellylanguage.git && \
+    cd jellylanguage && \
+    pip3 install --upgrade --user .
+
+WORKDIR /usr/project
+COPY hello_world.j .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
