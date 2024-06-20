@@ -1,16 +1,13 @@
 aleph https://github.com/lcsirmaz/aleph
-assemblyscript https://github.com/AssemblyScript/assemblyscript
 b
-bird
 blitzmax
 boo
 bosque
 claire
 clu https://pmg.csail.mit.edu/CLU.html
 cobra https://github.com/cobra-language/cobra
-cyclone https://cyclone.thelanguage.org/wiki/Download/
+clio https://github.com/clio-lang/clio
 cypher
-curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 delphi
 dreambird
 e
@@ -19,13 +16,14 @@ ell
 esher
 euclid
 evil
+egison https://www.egison.org/
 fantom https://fantom.org/
 Glass
+Go+ https://goplus.org/
 hack
 hop
 ID
 icon
-jade
 js++
 io
 lasso
@@ -40,6 +38,7 @@ modula3
 mojo
 Mozart  https://github.com/mozart/mozart2
 mysql
+nelua https://nelua.io/
 nemerle
 newspeak
 nu
@@ -52,6 +51,8 @@ oxygene
 parasail
 postgres
 postscript
+pocketlang https://github.com/ThakeeNathees/pocketlang
+Passerine https://github.com/vrtbl/passerine
 q
 QB64
 reason
@@ -65,7 +66,8 @@ Tengo  https://github.com/d5/tengo
 TeX
 turing
 Unlambda
-Verve https://verve-lang.org/getting-started
+umka https://github.com/vtereshkov/umka-lang
+
 visual basic
 y
 
@@ -118,11 +120,15 @@ wren
 
 # another go
 Aldor
+assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
 AviSynth
+bird https://github.com/eliassjogreen/Bird
 Charly
 CharlyVM
+curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
+cyclone https://cyclone.thelanguage.org/wiki/Download/
 El-76
 Fortress
 Godot
@@ -131,6 +137,8 @@ PCASTL
 Pizza
 Scilab
 SmallBASIC
+Vale https://vale.dev/
+Verve https://verve-lang.org/getting-started
 
 # skip
 actionscript
@@ -140,6 +148,7 @@ arkts
 cog
 eiffel
 elm
+jade
 PureBasic
 Refal
 XBLite

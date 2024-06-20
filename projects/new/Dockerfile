@@ -3,9 +3,9 @@
 
 FROM ubuntu:22.04
 
-RUN apt-get update -y
-
 ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y
 
 WORKDIR /usr/lib
 ENV PATH=/usr/lib/$LANG:$PATH
