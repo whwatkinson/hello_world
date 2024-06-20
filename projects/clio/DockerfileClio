@@ -1,0 +1,13 @@
+FROM node:20.5.0
+
+RUN npm i -g clio
+
+WORKDIR /usr/project
+COPY index.clio .
+RUN clio new hello_world && cp index.clio hello_world/
+WORKDIR /usr/project/hello_world
+RUN clio run > output.txt
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

@@ -6,7 +6,6 @@ bosque
 claire
 clu https://pmg.csail.mit.edu/CLU.html
 cobra https://github.com/cobra-language/cobra
-clio https://github.com/clio-lang/clio
 cypher
 delphi
 dreambird
