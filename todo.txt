@@ -15,7 +15,6 @@ ell
 esher
 euclid
 evil
-fantom https://fantom.org/
 Glass
 Go+ https://goplus.org/
 hack
