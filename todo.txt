@@ -1,5 +1,5 @@
 aleph https://github.com/lcsirmaz/aleph
-b
+b https://github.com/AlexCeleste/ybc
 blitzmax
 boo
 bosque
@@ -15,7 +15,6 @@ ell
 esher
 euclid
 evil
-egison https://www.egison.org/
 fantom https://fantom.org/
 Glass
 Go+ https://goplus.org/
@@ -37,7 +36,6 @@ modula3
 mojo
 Mozart  https://github.com/mozart/mozart2
 mysql
-nelua https://nelua.io/
 nemerle
 newspeak
 nu
@@ -131,6 +129,7 @@ cyclone https://cyclone.thelanguage.org/wiki/Download/
 El-76
 Fortress
 Godot
+nelua https://nelua.io/
 Orc
 PCASTL
 Pizza
