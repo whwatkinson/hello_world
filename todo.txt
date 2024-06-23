@@ -16,7 +16,6 @@ esher
 euclid
 evil
 Glass
-Go+ https://goplus.org/
 hack
 hop
 ID
