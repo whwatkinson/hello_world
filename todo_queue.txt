@@ -55,7 +55,6 @@ seed7
 sml
 spark
 spice
-Tengo  https://github.com/d5/tengo
 TeX
 turing
 Unlambda
