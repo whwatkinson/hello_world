@@ -47,7 +47,6 @@ parasail
 postgres
 postscript
 pocketlang https://github.com/ThakeeNathees/pocketlang
-Passerine https://github.com/vrtbl/passerine
 q
 QB64
 reason
