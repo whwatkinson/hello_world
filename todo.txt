@@ -60,8 +60,6 @@ TeX
 turing
 Unlambda
 umka https://github.com/vtereshkov/umka-lang
-Wren https://wren.io/
-
 visual basic
 y
 
