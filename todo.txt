@@ -59,7 +59,6 @@ Tengo  https://github.com/d5/tengo
 TeX
 turing
 Unlambda
-umka https://github.com/vtereshkov/umka-lang
 visual basic
 y
 

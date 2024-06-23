@@ -1,0 +1,22 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    gcc \
+    make \
+    wget
+
+WORKDIR /usr/lib
+RUN wget https://github.com/vtereshkov/umka-lang/archive/refs/tags/v1.4.tar.gz && \
+    tar -xvf v1.4.tar.gz && \
+    rm v1.4.tar.gz && \
+    cd umka-lang-1.4 && \
+    make && \
+    ln /usr/lib/umka-lang-1.4/build/umka /usr/bin
+
+WORKDIR /usr/project
+COPY hello_world.um .
+
+ENTRYPOINT ["umka", "hello_world.um"]
