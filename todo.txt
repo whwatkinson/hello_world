@@ -46,7 +46,6 @@ oxygene
 parasail
 postgres
 postscript
-pocketlang https://github.com/ThakeeNathees/pocketlang
 q
 QB64
 reason
@@ -61,6 +60,7 @@ TeX
 turing
 Unlambda
 umka https://github.com/vtereshkov/umka-lang
+Wren https://wren.io/
 
 visual basic
 y
