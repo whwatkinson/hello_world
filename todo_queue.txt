@@ -11,8 +11,7 @@ ell
 esher
 euclid
 evil
-fish https://fishshell.com/docs/current/language.html
-GlArduinoass
+Glass
 hack
 hop
 ID
