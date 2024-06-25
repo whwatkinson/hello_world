@@ -15,4 +15,4 @@ RUN chmod +x install.sh && \
 
 COPY hello_world.nu .
 
-ENTRYPOINT ["nu", "hello_world.nu"]
+CMD ["nu", "hello_world.nu"]
