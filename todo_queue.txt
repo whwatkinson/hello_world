@@ -1,27 +1,19 @@
 aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
-blitzmax https://blitzmax.org/docs/en/setup/linux/
-boo
-claire https://github.com/ycaseau/CLAIRE4
+boo https://github.com/boo-lang/boo
 cypher
-delphi
 e
 ec
-ell
-esher
-euclid
+esher https://github.com/keesiong/escher
 evil
-Glass
 hack
 hop
 ID
 icon
 js++
 io
-lasso
 less
 lfe
-limbo https://www.vitanuova.com/inferno/limbo.html
 logo
 matlab
 mesa
@@ -30,23 +22,18 @@ modula3
 mysql
 nemerle https://github.com/rsdn/nemerle
 newspeak https://newspeaklanguage.org/
-oberon
 objectivecpp
-omega
 opa
 oxygene
 parasail
 postgres
 postscript
 q
-QB64
-reason
-sather
+sather https://en.wikipedia.org/wiki/Sather
 self
 seed7
 sml
 spark
-spice
 TeX
 turing
 Unlambda
@@ -92,6 +79,7 @@ Z80?
 # Dockerhub
 ArkScript
 CMD
+Glass
 jolie
 lolcode
 MicroPython
@@ -106,7 +94,9 @@ Amiga E
 AviSynth
 bird https://github.com/eliassjogreen/Bird
 bosque https://github.com/microsoft/BosqueLanguage
+blitzmax https://blitzmax.org/docs/en/setup/linux/
 clu https://pmg.csail.mit.edu/CLU.html
+claire https://github.com/ycaseau/CLAIRE4
 Charly
 CharlyVM
 curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
@@ -122,7 +112,10 @@ nelua https://nelua.io/
 Orc
 PCASTL
 Pizza
+QB64 https://qb64.com/
+reason https://reasonml.github.io/
 Scilab
+spice https://github.com/spicelang/spice
 SmallBASIC
 Vale https://vale.dev/
 Verve https://verve-lang.org/getting-started
@@ -136,9 +129,17 @@ applescript
 arkts
 cog
 dreamberd https://github.com/TodePond/DreamBerd
+delphi
+euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
+ell http://eel.olofson.net/
+FreeOberon https://github.com/kekcleader/FreeOberon
 jade
-PureBasic
+lasso
+limbo https://www.vitanuova.com/inferno/limbo.html
+omega
+oberon
 occam
+PureBasic
 Refal
 XBLite
 XULJet
