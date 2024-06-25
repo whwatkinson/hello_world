@@ -1,10 +1,11 @@
 aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
-blitzmax
+blitzmax https://blitzmax.org/docs/en/setup/linux/
 boo
-claire
+claire https://github.com/ycaseau/CLAIRE4
 cypher
 delphi
+HOMEBREW?
 e
 ec
 ell
@@ -21,19 +22,17 @@ io
 lasso
 less
 lfe
-limbo
+limbo https://www.vitanuova.com/inferno/limbo.html
 logo
 matlab
 mesa
 modula
 modula3
 mysql
-nemerle
-newspeak
-nu
+nemerle https://github.com/rsdn/nemerle
+newspeak https://newspeaklanguage.org/
 oberon
 objectivecpp
-occam
 omega
 opa
 oxygene
@@ -140,6 +139,7 @@ cog
 dreamberd https://github.com/TodePond/DreamBerd
 jade
 PureBasic
+occam
 Refal
 XBLite
 XULJet
