@@ -1,0 +1,23 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    gawk \
+    make \
+    gcc
+
+WORKDIR /usr/lib
+RUN wget https://mirror.lyrahosting.com/gnu/hello/hello-2.12.tar.gz && \
+    tar -xvf hello-2.12.tar.gz && \
+    rm hello-2.12.tar.gz && \
+    cd hello-2.12 && \
+    ./configure && \
+    make && \
+    make install
+
+WORKDIR /usr/project
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

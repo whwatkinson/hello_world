@@ -33,6 +33,7 @@ programming_languages = {
     "csharp": "C#",
     "dogescript": "DogeScript",
     "fsharp": "F#",
+    "gnuhello": "GNU Hello",
     "goplus": "Go+",
     "html": "HTML",
     "javascript": "JavaScript",

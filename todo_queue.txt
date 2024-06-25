@@ -5,7 +5,6 @@ boo
 claire https://github.com/ycaseau/CLAIRE4
 cypher
 delphi
-HOMEBREW?
 e
 ec
 ell
