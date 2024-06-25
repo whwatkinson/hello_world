@@ -2,41 +2,32 @@ aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
 boo https://github.com/boo-lang/boo
 cypher
-e
-ec
+e http://erights.org/
+ec https://ec-lang.org/
 esher https://github.com/keesiong/escher
-evil
-hack
-hop
-ID
-icon
-js++
-io
-less
-lfe
-logo
+hack https://github.com/facebook/hhvm/tree/master/hphp/hack
+icon https://www2.cs.arizona.edu/icon/
+js++ https://www.onux.com/jspp/
+io https://github.com/IoLanguage/io
+lfe https://lfe.io/
 matlab
-mesa
 modula
 modula3
 mysql
 nemerle https://github.com/rsdn/nemerle
 newspeak https://newspeaklanguage.org/
-objectivecpp
-opa
-oxygene
-parasail
+opa http://opalang.org/
+oxygene https://www.remobjects.com/elements/oxygene/
+parasail http://parasail-lang.org/
 postgres
-postscript
-q
+q https://code.kx.com/home/
 sather https://en.wikipedia.org/wiki/Sather
-self
-seed7
+self https://selflanguage.org/
+seed7 https://seed7.sourceforge.net/
 sml
-spark
-TeX
+TeX https://tug.org/
 turing
-Unlambda
+Unlambda http://www.madore.org/~david/programs/unlambda/
 visual basic
 y
 
@@ -79,6 +70,7 @@ Z80?
 # Dockerhub
 ArkScript
 CMD
+evil
 Glass
 jolie
 lolcode
@@ -133,13 +125,20 @@ delphi
 euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
 ell http://eel.olofson.net/
 FreeOberon https://github.com/kekcleader/FreeOberon
+hop
 jade
 lasso
+less
+logo
 limbo https://www.vitanuova.com/inferno/limbo.html
+objectivecpp
 omega
 oberon
 occam
+mesa
+postscript
 PureBasic
+spark
 Refal
 XBLite
 XULJet
