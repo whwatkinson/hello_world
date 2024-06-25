@@ -1,0 +1,17 @@
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    curl \
+    apt-transport-https
+
+RUN curl -s https://get.modular.com | sh -
+
+WORKDIR /usr/project
+COPY install.sh .
+RUN chmod +x install.sh
+RUN ./install.sh
+ENV PATH="/root/.modular/pkg/packages.modular.com_mojo/bin/:${PATH}"
+COPY "hello_world.🔥" .
+
+CMD ["mojo", "hello_world.🔥"]

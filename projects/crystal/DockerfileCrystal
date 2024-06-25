@@ -1,4 +1,10 @@
-FROM crystallang/crystal:1.12
+FROM ubuntu:22.04
+
+RUN apt-get update -y && \
+    apt install -y \
+    curl
+
+RUN curl -fsSL https://crystal-lang.org/install.sh | bash -s -- --version=1.10
 
 WORKDIR /usr/project
 COPY hello_world.cr .

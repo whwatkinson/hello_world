@@ -106,6 +106,12 @@ services:
       context: projects/befunge98
       dockerfile: DockerfileBefunge98
 
+  brainfuck:
+    container_name: hello_world_brainfuck
+    build:
+      context: projects/brainfuck
+      dockerfile: DockerfileBrainfuck
+
   c:
     container_name: hello_world_c
     build:
@@ -142,11 +148,23 @@ services:
       context: projects/chapel
       dockerfile: DockerfileChapel
 
+  charcoal:
+    container_name: hello_world_charcoal
+    build:
+      context: projects/charcoal
+      dockerfile: DockerfileCharcoal
+
   clean:
     container_name: hello_world_clean
     build:
       context: projects/clean
       dockerfile: DockerfileClean
+
+  clio:
+    container_name: hello_world_clio
+    build:
+      context: projects/clio
+      dockerfile: DockerfileClio
 
   clojure:
     container_name: hello_world_clojure
@@ -238,11 +256,23 @@ services:
       context: projects/echo
       dockerfile: DockerfileEcho
 
+  egison:
+    container_name: hello_world_egison
+    build:
+      context: projects/egison
+      dockerfile: DockerfileEgison
+
   elixir:
     container_name: hello_world_elixir
     build:
       context: projects/elixir
       dockerfile: DockerfileElixir
+
+  elvish:
+    container_name: hello_world_elvish
+    build:
+      context: projects/elvish
+      dockerfile: DockerfileElvish
 
   emerald:
     container_name: hello_world_emerald
@@ -279,6 +309,12 @@ services:
     build:
       context: projects/fennel
       dockerfile: DockerfileFennel
+
+  fish:
+    container_name: hello_world_fish
+    build:
+      context: projects/fish
+      dockerfile: DockerfileFish
 
   flix:
     container_name: hello_world_flix
@@ -334,6 +370,12 @@ services:
       context: projects/gluon
       dockerfile: DockerfileGluon
 
+  gnuhello:
+    container_name: hello_world_gnuhello
+    build:
+      context: projects/gnuhello
+      dockerfile: DockerfileGnuhello
+
   goaldi:
     container_name: hello_world_goaldi
     build:
@@ -346,6 +388,12 @@ services:
       context: projects/golang
       dockerfile: DockerfileGolang
 
+  goplus:
+    container_name: hello_world_goplus
+    build:
+      context: projects/goplus
+      dockerfile: DockerfileGoplus
+
   grep:
     container_name: hello_world_grep
     build:
@@ -357,6 +405,24 @@ services:
     build:
       context: projects/groovy
       dockerfile: DockerfileGroovy
+
+  hamler:
+    container_name: hello_world_hamler
+    build:
+      context: projects/hamler
+      dockerfile: DockerfileHamler
+
+  harbour:
+    container_name: hello_world_harbour
+    build:
+      context: projects/harbour
+      dockerfile: DockerfileHarbour
+
+  hare:
+    container_name: hello_world_hare
+    build:
+      context: projects/hare
+      dockerfile: DockerfileHare
 
   haskell:
     container_name: hello_world_haskell
@@ -400,6 +466,12 @@ services:
       context: projects/idris2
       dockerfile: DockerfileIdris2
 
+  ioke:
+    container_name: hello_world_ioke
+    build:
+      context: projects/ioke
+      dockerfile: DockerfileIoke
+
   java:
     container_name: hello_world_java
     build:
@@ -418,11 +490,23 @@ services:
       context: projects/javascript_is_weird
       dockerfile: DockerfileJavascript_is_weird
 
+  jelly:
+    container_name: hello_world_jelly
+    build:
+      context: projects/jelly
+      dockerfile: DockerfileJelly
+
   jq:
     container_name: hello_world_jq
     build:
       context: projects/jq
       dockerfile: DockerfileJq
+
+  json:
+    container_name: hello_world_json
+    build:
+      context: projects/json
+      dockerfile: DockerfileJson
 
   julia:
     container_name: hello_world_julia
@@ -490,6 +574,12 @@ services:
       context: projects/miranda
       dockerfile: DockerfileMiranda
 
+  mojo:
+    container_name: hello_world_mojo
+    build:
+      context: projects/mojo
+      dockerfile: DockerfileMojo
+
   monkey:
     container_name: hello_world_monkey
     build:
@@ -514,6 +604,12 @@ services:
       context: projects/nim
       dockerfile: DockerfileNim
 
+  nushell:
+    container_name: hello_world_nushell
+    build:
+      context: projects/nushell
+      dockerfile: DockerfileNushell
+
   objectivec:
     container_name: hello_world_objectivec
     build:
@@ -526,11 +622,23 @@ services:
       context: projects/ocaml
       dockerfile: DockerfileOcaml
 
+  octave:
+    container_name: hello_world_octave
+    build:
+      context: projects/octave
+      dockerfile: DockerfileOctave
+
   pascal:
     container_name: hello_world_pascal
     build:
       context: projects/pascal
       dockerfile: DockerfilePascal
+
+  passerine:
+    container_name: hello_world_passerine
+    build:
+      context: projects/passerine
+      dockerfile: DockerfilePasserine
 
   perl:
     container_name: hello_world_perl
@@ -543,6 +651,18 @@ services:
     build:
       context: projects/php
       dockerfile: DockerfilePhp
+
+  pike:
+    container_name: hello_world_pike
+    build:
+      context: projects/pike
+      dockerfile: DockerfilePike
+
+  pocketlang:
+    container_name: hello_world_pocketlang
+    build:
+      context: projects/pocketlang
+      dockerfile: DockerfilePocketlang
 
   pony:
     container_name: hello_world_pony
@@ -742,11 +862,23 @@ services:
       context: projects/tea
       dockerfile: DockerfileTea
 
+  tengo:
+    container_name: hello_world_tengo
+    build:
+      context: projects/tengo
+      dockerfile: DockerfileTengo
+
   terraform:
     container_name: hello_world_terraform
     build:
       context: projects/terraform
       dockerfile: DockerfileTerraform
+
+  toml:
+    container_name: hello_world_toml
+    build:
+      context: projects/toml
+      dockerfile: DockerfileToml
 
   typescript:
     container_name: hello_world_typescript
@@ -765,6 +897,12 @@ services:
     build:
       context: projects/uiua
       dockerfile: DockerfileUiua
+
+  umka:
+    container_name: hello_world_umka
+    build:
+      context: projects/umka
+      dockerfile: DockerfileUmka
 
   umple:
     container_name: hello_world_umple
@@ -819,6 +957,12 @@ services:
     build:
       context: projects/whoami
       dockerfile: DockerfileWhoami
+
+  wren:
+    container_name: hello_world_wren
+    build:
+      context: projects/wren
+      dockerfile: DockerfileWren
 
   wyvern:
     container_name: hello_world_wyvern

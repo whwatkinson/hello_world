@@ -1,0 +1,19 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    golang-go
+
+WORKDIR /usr/lib
+
+RUN wget https://github.com/goplus/gop/releases/download/v1.2.6/gop1.2.6.linux-amd64.deb && \
+    dpkg -i gop1.2.6.linux-amd64.deb && \
+    rm gop1.2.6.linux-amd64.deb
+
+WORKDIR /usr/project
+COPY hello_world.gop .
+
+CMD ["gop", "run", "hello_world.gop"]

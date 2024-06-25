@@ -1,0 +1,16 @@
+FROM golang:1.17-bullseye
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget
+
+WORKDIR /usr/lib
+RUN wget https://github.com/d5/tengo/releases/download/v2.17.0/tengo_2.17.0_linux_amd64.tar.gz && \
+    tar -xvf tengo_2.17.0_linux_amd64.tar.gz && \
+    rm tengo_2.17.0_linux_amd64.tar.gz && \
+    mv tengo /usr/bin/
+
+WORKDIR /usr/project
+COPY hello_world.tengo .
+
+ENTRYPOINT ["tengo", "hello_world.tengo"]

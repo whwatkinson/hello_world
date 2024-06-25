@@ -1,0 +1,20 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && apt-get install -y \
+    wget \
+    make \
+    gcc
+
+WORKDIR /usr/lib
+RUN wget https://github.com/wren-lang/wren/archive/refs/tags/0.4.0.tar.gz && \
+    tar -xvf 0.4.0.tar.gz && \
+    cd wren-0.4.0/projects/make && \
+    make && \
+    ln -s /usr/lib/wren-0.4.0/bin/wren_test /usr/bin/wren
+
+WORKDIR /usr/project
+COPY hello_world.wren .
+
+ENTRYPOINT ["wren", "hello_world.wren"]

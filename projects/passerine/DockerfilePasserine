@@ -1,0 +1,13 @@
+FROM rust:1-bullseye
+
+WORKDIR /usr/lib
+COPY install.sh .
+RUN chmod +x install.sh && ./install.sh
+ENV PATH=/root/.aspen/bin:$PATH
+
+WORKDIR /usr/project
+RUN aspen new hello-world && rm /usr/project/hello-world/src/main.pn
+COPY main.pn /usr/project/hello-world/src/
+WORKDIR /usr/project/hello-world
+
+CMD ["aspen", "run"]

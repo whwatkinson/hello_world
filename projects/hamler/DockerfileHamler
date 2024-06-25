@@ -1,0 +1,20 @@
+FROM erlang:25.2.0.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    make
+
+RUN wget https://github.com/hamler-lang/hamler/releases/download/0.5/hamler_0.5_amd64.deb && \
+    dpkg -i hamler_0.5_amd64.deb && \
+    rm hamler_0.5_amd64.deb
+
+WORKDIR /usr/project
+RUN hamler init
+RUN rm src/Main.hm
+COPY Main.hm src/Main.hm
+
+RUN make
+CMD ["make", "run"]

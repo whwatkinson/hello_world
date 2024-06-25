@@ -1,0 +1,156 @@
+aleph https://github.com/lcsirmaz/aleph
+b https://github.com/AlexCeleste/ybc
+boo https://github.com/boo-lang/boo
+cypher
+e
+ec
+esher https://github.com/keesiong/escher
+evil
+hack
+hop
+ID
+icon
+js++
+io
+less
+lfe
+logo
+matlab
+mesa
+modula
+modula3
+mysql
+nemerle https://github.com/rsdn/nemerle
+newspeak https://newspeaklanguage.org/
+objectivecpp
+opa
+oxygene
+parasail
+postgres
+postscript
+q
+sather https://en.wikipedia.org/wiki/Sather
+self
+seed7
+sml
+spark
+TeX
+turing
+Unlambda
+visual basic
+y
+
+# Jira
+Autoit
+ColdFusion
+CUDA?
+FoxPro
+GraphQL?
+ObjectiveJ
+XQuery
+
+# BitBucket's Snippets
+ClojureScript
+Cmake
+CQL
+ECL
+Esper
+FCL?
+GAS?
+Gherkin?
+HXML
+IDL
+JSX
+LaTex
+Mathematica
+Modelica
+MUMPS
+Oz
+Pig
+Pug
+Slim
+SparQL
+Stylus
+TTCN
+Turtle
+XQuery
+Z80?
+
+# Dockerhub
+ArkScript
+CMD
+Glass
+jolie
+lolcode
+MicroPython
+piet
+wren
+
+# another go
+Aldor
+assemblyscript https://github.com/AssemblyScript/assemblyscript
+AmbientTalk
+Amiga E
+AviSynth
+bird https://github.com/eliassjogreen/Bird
+bosque https://github.com/microsoft/BosqueLanguage
+blitzmax https://blitzmax.org/docs/en/setup/linux/
+clu https://pmg.csail.mit.edu/CLU.html
+claire https://github.com/ycaseau/CLAIRE4
+Charly
+CharlyVM
+curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
+cobra https://github.com/cobra-language/cobra
+cyclone https://cyclone.thelanguage.org/wiki/Download/
+eiffel
+elm
+El-76
+Fortress
+Godot
+Mozart  https://github.com/mozart/mozart2
+nelua https://nelua.io/
+Orc
+PCASTL
+Pizza
+QB64 https://qb64.com/
+reason https://reasonml.github.io/
+Scilab
+spice https://github.com/spicelang/spice
+SmallBASIC
+Vale https://vale.dev/
+Verve https://verve-lang.org/getting-started
+
+# skip
+ABAP
+Arduino
+actionscript
+alef
+applescript
+arkts
+cog
+dreamberd https://github.com/TodePond/DreamBerd
+delphi
+euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
+ell http://eel.olofson.net/
+FreeOberon https://github.com/kekcleader/FreeOberon
+jade
+lasso
+limbo https://www.vitanuova.com/inferno/limbo.html
+omega
+oberon
+occam
+PureBasic
+Refal
+XBLite
+XULJet
+ViRC
+
+# sources
+https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
+https://github.com/leachim6/hello-world?tab=readme-ov-file
+https://aplwiki.com/wiki/List_of_open-source_array_languages
+https://hub.docker.com/search?q=programming+language
+https://hub.docker.com/u/esolang
+https://highlightjs.org/demo
+https://en.wikipedia.org/wiki/List_of_markup_languages
+https://verve-lang.org/getting-started

@@ -56,6 +56,9 @@ def make_readme() -> None:
     linux_commands_projects_joined = "".join(linux_commands_list)
     readme_buffer.write(linux_commands_projects_joined)
 
+    # TODO markup langs
+    # API's?
+
     requirements = (
         "\n"
         "## Requirements\n"
@@ -71,7 +74,6 @@ def make_readme() -> None:
         "## To be greeted:\n"
         "```\n"
         "git clone https://github.com/whwatkinson/hello_world.git\n"
-        "git lfs checkout\n"
         "docker-compose up --build\n"
         "```\n"
     )

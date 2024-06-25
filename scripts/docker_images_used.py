@@ -42,12 +42,11 @@ def display_docker_images() -> None:
             else:
                 raise Exception(f"No match found for {project}")
 
-
     if checked != len(projects):
         raise Exception("Not all projects checked")
 
     docker_images_sorted = dict(
-        sorted(docker_images.items(), key=lambda item: item[1], reverse=True)
+        sorted(docker_images.items(), key=lambda item: (item[1], item[0]), reverse=True)
     )
 
     print("\nIdeally each project should use the ubuntu:20.04 base image...\n")

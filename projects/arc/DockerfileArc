@@ -1,19 +1,21 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y && \
-    apt-get upgrade -y && \
     apt-get install -y \
-    software-properties-common
+    software-properties-common \
+    wget
 
 RUN add-apt-repository ppa:plt/racket -y && \
-    apt-get install racket -y
+    apt-get install -y \
+    racket
 
-COPY arc3.2.tar .
-RUN tar -xvf arc3.2.tar && \
+WORKDIR /usr/lib
+RUN wget http://www.arclanguage.org/arc3.2.tar && \
+    tar -xvf arc3.2.tar && \
     rm arc3.2.tar
 
 WORKDIR arc3.2
-
+COPY hello_world.arc .
 COPY run.sh .
 RUN chmod +x run.sh
 
