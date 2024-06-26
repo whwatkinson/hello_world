@@ -1,23 +1,11 @@
 aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
-cypher
 e http://erights.org/
-ec https://ec-lang.org/
 esher https://github.com/keesiong/escher
-icon https://www2.cs.arizona.edu/icon/
-js++ https://www.onux.com/jspp/
 modula
 modula3
-mysql
-nemerle https://github.com/rsdn/nemerle
-newspeak https://newspeaklanguage.org/
-opa http://opalang.org/
-oxygene https://www.remobjects.com/elements/oxygene/
 parasail http://parasail-lang.org/
-postgres
-q https://code.kx.com/home/
 sather https://en.wikipedia.org/wiki/Sather
-self https://selflanguage.org/
 seed7 https://seed7.sourceforge.net/
 sml
 TeX https://tug.org/
@@ -25,6 +13,12 @@ turing
 Unlambda http://www.madore.org/~david/programs/unlambda/
 visual basic
 y
+
+# DB's
+Cypher
+MySql
+postgres
+
 
 # Jira
 Autoit
@@ -90,19 +84,25 @@ CharlyVM
 curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 cobra https://github.com/cobra-language/cobra
 cyclone https://cyclone.thelanguage.org/wiki/Download/
+ec https://ec-lang.org/
 eiffel
 elm
 El-76
 Fortress
 Godot
-Mozart  https://github.com/mozart/mozart2
+icon https://www2.cs.arizona.edu/icon/
+nemerle https://github.com/rsdn/nemerle
+newspeak https://github.com/newspeaklanguage/newspeak
 nelua https://nelua.io/
+Mozart  https://github.com/mozart/mozart2
+opa http://opalang.org/
 Orc
 PCASTL
 Pizza
 QB64 https://qb64.com/
 reason https://reasonml.github.io/
 Scilab
+self https://selflanguage.org/
 spice https://github.com/spicelang/spice
 SmallBASIC
 Vale https://vale.dev/
@@ -123,6 +123,7 @@ ell http://eel.olofson.net/
 FreeOberon https://github.com/kekcleader/FreeOberon
 hop
 jade
+js++ https://www.onux.com/jspp/
 lasso
 less
 logo
@@ -132,9 +133,11 @@ objectivecpp
 omega
 oberon
 occam
+oxygene https://www.remobjects.com/elements/oxygene/
 mesa
 postscript
 PureBasic
+q https://code.kx.com/home/
 spark
 Refal
 XBLite
