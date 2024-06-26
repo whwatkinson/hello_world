@@ -1,16 +1,13 @@
 aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
-boo https://github.com/boo-lang/boo
 cypher
 e http://erights.org/
 ec https://ec-lang.org/
 esher https://github.com/keesiong/escher
-hack https://github.com/facebook/hhvm/tree/master/hphp/hack
 icon https://www2.cs.arizona.edu/icon/
 js++ https://www.onux.com/jspp/
 io https://github.com/IoLanguage/io
 lfe https://lfe.io/
-matlab
 modula
 modula3
 mysql
@@ -84,6 +81,7 @@ assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
 AviSynth
+boo https://github.com/boo-lang/boo
 bird https://github.com/eliassjogreen/Bird
 bosque https://github.com/microsoft/BosqueLanguage
 blitzmax https://blitzmax.org/docs/en/setup/linux/
@@ -131,6 +129,7 @@ lasso
 less
 logo
 limbo https://www.vitanuova.com/inferno/limbo.html
+matlab
 objectivecpp
 omega
 oberon
