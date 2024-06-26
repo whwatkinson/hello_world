@@ -1,11 +1,9 @@
 aleph https://github.com/lcsirmaz/aleph
 b https://github.com/AlexCeleste/ybc
 e http://erights.org/
-esher https://github.com/keesiong/escher
 modula
 modula3
 parasail http://parasail-lang.org/
-sather https://en.wikipedia.org/wiki/Sather
 seed7 https://seed7.sourceforge.net/
 sml
 TeX https://tug.org/
@@ -101,6 +99,7 @@ PCASTL
 Pizza
 QB64 https://qb64.com/
 reason https://reasonml.github.io/
+sather https://www.gnu.org/software/sather/
 Scilab
 self https://selflanguage.org/
 spice https://github.com/spicelang/spice

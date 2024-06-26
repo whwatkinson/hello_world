@@ -1,0 +1,27 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    git \
+    gcc \
+    g++ \
+    noweb \
+    make \
+    flex \
+    yacc
+
+WORKDIR /usr/lib
+RUN git clone https://github.com/keesiong/escher.git && \
+    cd escher && \
+    make escher
+
+WORKDIR /usr/lib/escher
+COPY hello_world.esh .
+
+COPY run.sh .
+RUN chmod +x run.sh
+
+RUN cat hello_world.esh | ./escher -i > output.txt
+CMD ["./run.sh"]
