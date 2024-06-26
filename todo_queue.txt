@@ -1,16 +1,9 @@
-aleph https://github.com/lcsirmaz/aleph
-b https://github.com/AlexCeleste/ybc
-e http://erights.org/
-modula
-modula3
-parasail http://parasail-lang.org/
-seed7 https://seed7.sourceforge.net/
-sml
+# First Try
+modula3 https://github.com/modula3/cm3
+sml https://smlfamily.github.io/
 TeX https://tug.org/
-turing
-Unlambda http://www.madore.org/~david/programs/unlambda/
-visual basic
-y
+
+
 
 # DB's
 Cypher
@@ -18,14 +11,15 @@ MySql
 postgres
 
 
+
 # Jira
 Autoit
-ColdFusion
 CUDA?
-FoxPro
 GraphQL?
 ObjectiveJ
 XQuery
+
+
 
 # BitBucket's Snippets
 ClojureScript
@@ -54,6 +48,8 @@ Turtle
 XQuery
 Z80?
 
+
+
 # Dockerhub
 ArkScript
 CMD
@@ -65,12 +61,15 @@ MicroPython
 piet
 wren
 
+
+
 # another go
 Aldor
 assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
 AviSynth
+b https://github.com/AlexCeleste/ybc
 boo https://github.com/boo-lang/boo
 bird https://github.com/eliassjogreen/Bird
 bosque https://github.com/microsoft/BosqueLanguage
@@ -82,6 +81,7 @@ CharlyVM
 curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 cobra https://github.com/cobra-language/cobra
 cyclone https://cyclone.thelanguage.org/wiki/Download/
+e http://erights.org/
 ec https://ec-lang.org/
 eiffel
 elm
@@ -101,25 +101,31 @@ QB64 https://qb64.com/
 reason https://reasonml.github.io/
 sather https://www.gnu.org/software/sather/
 Scilab
+seed7 https://seed7.sourceforge.net/ https://github.com/ThomasMertes/seed7
 self https://selflanguage.org/
 spice https://github.com/spicelang/spice
 SmallBASIC
 Vale https://vale.dev/
 Verve https://verve-lang.org/getting-started
 
+
+
 # skip
 ABAP
+aleph https://github.com/lcsirmaz/aleph
 Arduino
 actionscript
 alef
 applescript
 arkts
 cog
+ColdFusion
 dreamberd https://github.com/TodePond/DreamBerd
 delphi
 euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
 ell http://eel.olofson.net/
 FreeOberon https://github.com/kekcleader/FreeOberon
+FoxPro
 hop
 jade
 js++ https://www.onux.com/jspp/
@@ -134,14 +140,21 @@ oberon
 occam
 oxygene https://www.remobjects.com/elements/oxygene/
 mesa
+parasail http://parasail-lang.org/
 postscript
 PureBasic
 q https://code.kx.com/home/
 spark
+turing
 Refal
+Unlambda http://www.madore.org/~david/programs/unlambda/
 XBLite
 XULJet
+Visual Basic for Applications (VBA)
 ViRC
+Y
+
+
 
 # sources
 https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
