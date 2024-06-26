@@ -6,7 +6,6 @@ ec https://ec-lang.org/
 esher https://github.com/keesiong/escher
 icon https://www2.cs.arizona.edu/icon/
 js++ https://www.onux.com/jspp/
-io https://github.com/IoLanguage/io
 lfe https://lfe.io/
 modula
 modula3
