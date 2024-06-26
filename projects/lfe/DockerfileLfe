@@ -1,0 +1,16 @@
+FROM erlang:25.2.0.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /usr/lib
+RUN wget https://github.com/lfe/lfe/archive/refs/tags/v2.1.4.tar.gz && \
+    tar -xvf v2.1.4.tar.gz && \
+    rm v2.1.4.tar.gz && \
+    mv lfe-2.1.4 lfe && \
+    cd lfe && \
+    make install
+
+WORKDIR /usr/project
+COPY hello_world.lfe .
+
+ENTRYPOINT ["lfe", "hello_world.lfe"]
