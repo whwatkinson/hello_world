@@ -81,7 +81,6 @@ QB64 https://qb64.com/
 reason https://reasonml.github.io/
 sather https://www.gnu.org/software/sather/
 Scilab
-seed7 https://seed7.sourceforge.net/ https://github.com/ThomasMertes/seed7
 self https://selflanguage.org/
 SmallBASIC
 Vale https://vale.dev/
