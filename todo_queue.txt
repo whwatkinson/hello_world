@@ -1,52 +1,33 @@
 # First Try
-modula3 https://github.com/modula3/cm3
-sml https://smlfamily.github.io/
-TeX https://tug.org/
-
-
-
-# DB's
-Cypher
-MySql
-postgres
-
-
-
-# Jira
-Autoit
-CUDA?
-GraphQL?
-ObjectiveJ
-XQuery
-
-
-
-# BitBucket's Snippets
-ClojureScript
-Cmake
-CQL
-ECL
-Esper
-FCL?
-GAS?
+ClojureScript https://clojurescript.org/guides/quick-start
+cmake https://lappweb.in2p3.fr/~paubert/ASTERICS_HPC/2-2-100.html
+function-centered-language
 Gherkin?
 HXML
-IDL
+IDL https://gnudatalanguage.github.io/
 JSX
 LaTex
-Mathematica
-Modelica
-MUMPS
-Oz
-Pig
-Pug
-Slim
-SparQL
+modula3 https://github.com/modula3/cm3
+Modelica https://modelica.org/
+Pug https://pugjs.org/api/getting-started.html
+ObjectiveJ https://www.cappuccino.dev/learn/objective-j.html
+sml https://smlfamily.github.io/
 Stylus
-TTCN
-Turtle
+TeX https://tug.org/
+TTCN3
 XQuery
-Z80?
+
+
+
+# DB's / API's
+CQL
+Cypher
+Esper
+MySql
+postgres
+GraphQL?
+SparQL
+
 
 
 
@@ -63,7 +44,7 @@ wren
 
 
 
-# another go
+# Another go
 Aldor
 assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
@@ -110,22 +91,27 @@ Verve https://verve-lang.org/getting-started
 
 
 
-# skip
+# Skip
 ABAP
 aleph https://github.com/lcsirmaz/aleph
 Arduino
 actionscript
+Autoit
 alef
 applescript
 arkts
 cog
 ColdFusion
+CUDA?
 dreamberd https://github.com/TodePond/DreamBerd
 delphi
 euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
 ell http://eel.olofson.net/
+ECL
+FCL?
 FreeOberon https://github.com/kekcleader/FreeOberon
 FoxPro
+GAS?
 hop
 jade
 js++ https://www.onux.com/jspp/
@@ -134,6 +120,8 @@ less
 logo
 limbo https://www.vitanuova.com/inferno/limbo.html
 matlab
+Mathematica
+MUMPS
 objectivecpp
 omega
 oberon
@@ -143,8 +131,10 @@ mesa
 parasail http://parasail-lang.org/
 postscript
 PureBasic
+Pig
 q https://code.kx.com/home/
 spark
+Slim
 turing
 Refal
 Unlambda http://www.madore.org/~david/programs/unlambda/
@@ -153,6 +143,7 @@ XULJet
 Visual Basic for Applications (VBA)
 ViRC
 Y
+Z80?
 
 
 
