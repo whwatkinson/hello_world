@@ -10,7 +10,6 @@ LaTex
 modula3 https://github.com/modula3/cm3
 Modelica https://modelica.org/
 Pug https://pugjs.org/api/getting-started.html
-ObjectiveJ https://www.cappuccino.dev/learn/objective-j.html
 sml https://smlfamily.github.io/
 Stylus
 TeX https://tug.org/
@@ -84,7 +83,6 @@ sather https://www.gnu.org/software/sather/
 Scilab
 seed7 https://seed7.sourceforge.net/ https://github.com/ThomasMertes/seed7
 self https://selflanguage.org/
-spice https://github.com/spicelang/spice
 SmallBASIC
 Vale https://vale.dev/
 Verve https://verve-lang.org/getting-started
@@ -132,6 +130,7 @@ parasail http://parasail-lang.org/
 postscript
 PureBasic
 Pig
+ObjectiveJ https://www.cappuccino.dev/learn/objective-j.html
 q https://code.kx.com/home/
 spark
 Slim
