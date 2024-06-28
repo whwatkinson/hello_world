@@ -1,5 +1,7 @@
 # First Try
 ClojureScript https://clojurescript.org/guides/quick-start
+CSON https://github.com/leachim6/hello-world/blob/main/c/CSON.cson
+csound https://github.com/csound/csound
 cmake https://lappweb.in2p3.fr/~paubert/ASTERICS_HPC/2-2-100.html
 function-centered-language
 Gherkin?
@@ -12,7 +14,6 @@ Modelica https://modelica.org/
 Pug https://pugjs.org/api/getting-started.html
 sml https://smlfamily.github.io/
 Stylus
-TeX https://tug.org/
 TTCN3
 XQuery
 
