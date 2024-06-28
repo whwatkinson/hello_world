@@ -313,7 +313,7 @@ services:
   fish:
     container_name: hello_world_fish
     build:
-      context: projects/fish
+      context: projects/fishell
       dockerfile: DockerfileFish
 
   flix:

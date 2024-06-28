@@ -55,7 +55,7 @@
 - [Factor](./projects/factor)
 - [Fantom](./projects/fantom)
 - [Fennel](./projects/fennel)
-- [Fish](./projects/fish)
+- [Fish](./projects/fishell)
 - [Flix](./projects/flix)
 - [Forth](./projects/forth)
 - [Fortran](./projects/fortran)
