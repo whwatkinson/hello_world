@@ -1,8 +1,4 @@
-FROM esolang/abc:latest
-
-# Overwrite the script file
-RUN mv /root/script /root/scriptOld
-COPY script /root
+FROM esolang/abc:2.4.0
 
 WORKDIR /usr/project
 COPY main.abc .

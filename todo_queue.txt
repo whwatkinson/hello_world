@@ -32,7 +32,6 @@ SparQL
 
 # Dockerhub
 ArkScript
-CMD
 evil
 Glass
 jolie
@@ -48,7 +47,6 @@ Aldor
 assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
-
 b https://github.com/AlexCeleste/ybc
 boo https://github.com/boo-lang/boo
 bird https://github.com/eliassjogreen/Bird
@@ -143,6 +141,13 @@ Visual Basic for Applications (VBA)
 ViRC
 Y
 Z80?
+
+
+
+
+# Esolang
+CMD
+typhon
 
 
 

@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "" | seed hello_world.seed > output.txt
-
-cat output.txt
+echo "" | seed hello_world.seed
+echo ""

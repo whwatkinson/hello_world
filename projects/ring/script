@@ -1,7 +1,0 @@
-#!/bin/sh
-
-infile=$(realpath "$1")
-ln -sf "$infile" /tmp/code.ring
-cat - | ~/ring /tmp/code.ring
-rm /tmp/code.ring
-echo ""

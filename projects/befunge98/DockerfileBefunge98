@@ -1,4 +1,4 @@
-FROM esolang/befunge98:latest
+FROM esolang/befunge98:2.4.0
 
 WORKDIR /usr/project
 COPY hello_world.be .

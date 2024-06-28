@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "" | ring hello_world.ring > output.txt
-
-cat output.txt
+echo "" | ring hello_world.ring
+echo ""

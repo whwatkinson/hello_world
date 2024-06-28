@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo "" | abc main.abc > output.txt
-
-cat output.txt
+echo "" | abc main.abc
+echo ""
