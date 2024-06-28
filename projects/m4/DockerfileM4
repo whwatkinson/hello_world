@@ -1,0 +1,10 @@
+FROM esolang/m4:2.4.0
+
+# https://www.gnu.org/software/m4/m4.html
+
+WORKDIR /usr/project
+COPY hello_world.m4 .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
