@@ -48,7 +48,7 @@ Aldor
 assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
-AviSynth
+
 b https://github.com/AlexCeleste/ybc
 boo https://github.com/boo-lang/boo
 bird https://github.com/eliassjogreen/Bird
@@ -56,7 +56,7 @@ bosque https://github.com/microsoft/BosqueLanguage
 blitzmax https://blitzmax.org/docs/en/setup/linux/
 clu https://pmg.csail.mit.edu/CLU.html
 claire https://github.com/ycaseau/CLAIRE4
-Charly
+Charly https://github.com/charly-lang/charly
 CharlyVM
 curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 cobra https://github.com/cobra-language/cobra
@@ -94,6 +94,7 @@ aleph https://github.com/lcsirmaz/aleph
 Arduino
 actionscript
 Autoit
+AviSynth+ https://github.com/AviSynth/AviSynthPlus
 alef
 applescript
 arkts

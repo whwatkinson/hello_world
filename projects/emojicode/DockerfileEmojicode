@@ -1,0 +1,9 @@
+FROM esolang/emojicode:2.4.0
+# TODO https://github.com/emojicode/emojicode
+
+WORKDIR /usr/project
+COPY hello_world.emojic .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
