@@ -1,4 +1,4 @@
-FROM esolang/jellyfish
+FROM esolang/jellyfish:2.4.0
 
 # https://github.com/iatorm/jellyfish
 
