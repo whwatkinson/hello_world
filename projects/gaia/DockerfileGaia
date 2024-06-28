@@ -1,0 +1,10 @@
+FROM esolang/gaia:2.4.0
+
+# TODO https://github.com/Glan9/Gaia
+
+WORKDIR /usr/project
+COPY hello_world.gaia .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
