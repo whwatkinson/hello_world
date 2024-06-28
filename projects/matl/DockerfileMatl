@@ -2,8 +2,6 @@ FROM esolang/matl:2.4.0
 
 WORKDIR /usr/project
 COPY hello_world.matl .
-COPY run.sh .
-RUN chmod +x run.sh
 
 RUN echo "" | matl hello_world.matl > output.txt
 ENTRYPOINT ["cat", "output.txt"]

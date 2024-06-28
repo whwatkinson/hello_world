@@ -1,0 +1,9 @@
+FROM esolang/calc:2.4.0
+
+WORKDIR /usr/project
+COPY hello_world.csv .
+COPY run.sh .
+RUN chmod +x run.sh
+
+RUN echo "" | calc hello_world.csv > output.txt
+CMD ["./run.sh"]
