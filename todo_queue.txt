@@ -155,6 +155,8 @@ ExchangeIF
 ffb
 irc
 emojifunge
+tetris
+wysiscript
 
 
 # sources
