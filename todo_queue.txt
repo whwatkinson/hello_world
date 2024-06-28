@@ -154,7 +154,7 @@ pure folders
 ExchangeIF
 ffb
 irc
-
+emojifunge
 
 
 # sources
