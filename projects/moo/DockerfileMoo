@@ -1,0 +1,10 @@
+FROM esolang/moo:2.4.0
+
+#TODO https://github.com/moratorium08/moo
+
+WORKDIR /usr/project
+COPY hello_world.moo .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
