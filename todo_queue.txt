@@ -1,4 +1,5 @@
 # First Try
+Coq https://coq.inria.fr/documentation
 ClojureScript https://clojurescript.org/guides/quick-start
 CSON https://github.com/leachim6/hello-world/blob/main/c/CSON.cson
 csound https://github.com/csound/csound
@@ -149,6 +150,7 @@ Z80?
 # Esolang
 CMD
 typhon
+pure folders
 
 
 
