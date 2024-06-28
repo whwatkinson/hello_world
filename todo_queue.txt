@@ -152,6 +152,8 @@ CMD
 typhon
 pure folders
 ExchangeIF
+ffb
+irc
 
 
 
