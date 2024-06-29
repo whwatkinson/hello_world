@@ -1,9 +1,13 @@
-FROM openjdk:8
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y \
     unzip  \
-    wget
+    wget \
+    openjdk-8-jdk
 
 WORKDIR /usr/lib
 RUN wget https://github.com/fantom-lang/fantom/releases/download/v1.0.80/fantom-1.0.80.zip && \

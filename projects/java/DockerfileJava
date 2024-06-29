@@ -1,4 +1,11 @@
-FROM openjdk:8
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    openjdk-8-jdk
 
 WORKDIR /usr/project
 COPY Main.java .

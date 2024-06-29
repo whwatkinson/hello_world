@@ -26,7 +26,7 @@ jobs:
         run: python scripts/update_docker_compose.py
 
       - name: List Docker Images used in projects
-        run: python scripts/update_docker_compose.py
+        run: python scripts/report_docker_images_used.py
 
       - id: last-commit-message
         run: echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
