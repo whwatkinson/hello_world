@@ -1,0 +1,9 @@
+FROM esolang/sqlite3:2.4.0
+
+# TODO this in python
+WORKDIR /usr/project
+COPY hello_world.sql .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

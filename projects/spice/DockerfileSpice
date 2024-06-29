@@ -1,0 +1,20 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    clang
+
+WORKDIR /usr/lib
+RUN wget https://github.com/spicelang/spice/releases/download/0.20.2/spice_linux_amd64.tar.gz && \
+    tar -xvf spice_linux_amd64.tar.gz && \
+    rm spice_linux_amd64.tar.gz && \
+    chmod +x spice
+ENV PATH=/usr/lib/:$PATH
+
+WORKDIR /usr/project
+COPY hello_world.spice .
+
+ENTRYPOINT ["spice", "run", "hello_world.spice"]

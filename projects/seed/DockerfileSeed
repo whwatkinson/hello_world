@@ -1,7 +1,4 @@
-FROM esolang/seed
-
-RUN mv script scriptOld
-COPY script .
+FROM esolang/seed:2.4.0
 
 WORKDIR /usr/project
 COPY hello_world.seed .

@@ -1,0 +1,34 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    make \
+    gcc \
+    sudo
+
+RUN useradd -ms /bin/bash hello_world && \
+    echo "hello_world:password" | chpasswd && \
+    adduser hello_world sudo && \
+    usermod -aG sudo hello_world
+
+WORKDIR /usr/lib
+RUN wget https://github.com/ThomasMertes/seed7/archive/refs/tags/Seed7_release_2024-04-29.tar.gz && \
+    tar -xvf Seed7_release_2024-04-29.tar.gz && \
+    rm Seed7_release_2024-04-29.tar.gz && \
+    mv seed7-Seed7_release_2024-04-29 seed7
+
+USER hello_world
+WORKDIR /usr/lib/seed7/src
+RUN echo "password" | sudo -S make depend && \
+    echo "password" | sudo -S make && \
+    echo "password" | sudo -S make s7c
+ENV PATH=/usr/lib/seed7/bin:$PATH
+
+WORKDIR /usr/project
+COPY hello_world.s7 .
+
+RUN s7c hello_world.s7
+ENTRYPOINT ["./hello_world.s7_exe"]

@@ -1,0 +1,8 @@
+FROM hhvm/hhvm:2023.02.16
+
+# TODO https://docs.hhvm.com/hhvm/installation/linux
+
+WORKDIR /usr/project
+COPY hello_world.hack .
+
+ENTRYPOINT ["hhvm", "hello_world.hack"]

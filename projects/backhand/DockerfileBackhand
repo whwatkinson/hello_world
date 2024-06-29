@@ -1,0 +1,10 @@
+FROM esolang/backhand:2.4.0
+
+# TODO https://github.com/GrayJoKing/Backhand
+
+WORKDIR /usr/project
+COPY hello_world.backhand .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

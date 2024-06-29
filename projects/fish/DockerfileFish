@@ -1,10 +1,8 @@
-FROM ubuntu:22.04
-
-RUN apt-get update -y && \
-    apt-get install -y \
-    fish
+FROM esolang/fish:2.4.0
 
 WORKDIR /usr/project
-COPY hello_world.fish .
+COPY hello_world.fish2d .
+COPY run.sh .
+RUN chmod +x run.sh
 
-ENTRYPOINT ["fish", "hello_world.fish"]
+CMD ["./run.sh"]

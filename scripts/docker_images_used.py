@@ -6,6 +6,9 @@ from scripts import skips, get_project_root
 IMAGE_PATTERN = compile(r"FROM\s(?P<image_name>[\w:\d\.\/\-]+)")
 
 
+# https://pypi.org/project/docker/
+
+
 def display_docker_images() -> None:
     """
     Display the docker images counts used in the projects

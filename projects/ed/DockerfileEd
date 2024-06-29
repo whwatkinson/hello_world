@@ -1,0 +1,11 @@
+FROM esolang/ed:2.4.0
+
+# TODO https://www.gnu.org/software/ed/
+
+WORKDIR /usr/project
+COPY hello_world.ed .
+COPY run.sh .
+RUN chmod +x run.sh
+
+RUN echo "" | ed hello_world.ed > output.txt
+CMD ["./run.sh"]

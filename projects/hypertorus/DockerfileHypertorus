@@ -1,0 +1,10 @@
+FROM esolang/hypertorus:2.4.0
+
+# TODO https://github.com/satos---jp/HyperTorus
+
+WORKDIR /usr/project
+COPY hello_world.hyp .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

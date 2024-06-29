@@ -1,0 +1,10 @@
+FROM esolang/picfunge:2.4.0
+
+# TODO https://github.com/Liesegang/picfunge
+
+WORKDIR /usr/project
+COPY hello_world.png .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

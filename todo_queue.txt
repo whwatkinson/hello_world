@@ -1,84 +1,39 @@
-aleph https://github.com/lcsirmaz/aleph
-b https://github.com/AlexCeleste/ybc
-boo https://github.com/boo-lang/boo
-cypher
-e
-ec
-esher https://github.com/keesiong/escher
-evil
-hack
-hop
-ID
-icon
-js++
-io
-less
-lfe
-logo
-matlab
-mesa
-modula
-modula3
-mysql
-nemerle https://github.com/rsdn/nemerle
-newspeak https://newspeaklanguage.org/
-objectivecpp
-opa
-oxygene
-parasail
-postgres
-postscript
-q
-sather https://en.wikipedia.org/wiki/Sather
-self
-seed7
-sml
-spark
-TeX
-turing
-Unlambda
-visual basic
-y
-
-# Jira
-Autoit
-ColdFusion
-CUDA?
-FoxPro
-GraphQL?
-ObjectiveJ
-XQuery
-
-# BitBucket's Snippets
-ClojureScript
-Cmake
-CQL
-ECL
-Esper
-FCL?
-GAS?
+# First Try
+Coq https://coq.inria.fr/documentation
+ClojureScript https://clojurescript.org/guides/quick-start
+CSON https://github.com/leachim6/hello-world/blob/main/c/CSON.cson
+csound https://github.com/csound/csound
+cmake https://lappweb.in2p3.fr/~paubert/ASTERICS_HPC/2-2-100.html
+function-centered-language
 Gherkin?
 HXML
-IDL
+IDL https://gnudatalanguage.github.io/
 JSX
 LaTex
-Mathematica
-Modelica
-MUMPS
-Oz
-Pig
-Pug
-Slim
-SparQL
+modula3 https://github.com/modula3/cm3
+Modelica https://modelica.org/
+Pug https://pugjs.org/api/getting-started.html
+sml https://smlfamily.github.io/
 Stylus
-TTCN
-Turtle
+TTCN3
 XQuery
-Z80?
+
+
+
+# DB's / API's
+CQL
+Cypher
+Esper
+MySql
+postgres
+GraphQL?
+SparQL
+
+
+
 
 # Dockerhub
 ArkScript
-CMD
 Glass
 jolie
 lolcode
@@ -86,64 +41,123 @@ MicroPython
 piet
 wren
 
-# another go
+
+
+# Another go
 Aldor
 assemblyscript https://github.com/AssemblyScript/assemblyscript
 AmbientTalk
 Amiga E
-AviSynth
+b https://github.com/AlexCeleste/ybc
+boo https://github.com/boo-lang/boo
 bird https://github.com/eliassjogreen/Bird
 bosque https://github.com/microsoft/BosqueLanguage
 blitzmax https://blitzmax.org/docs/en/setup/linux/
 clu https://pmg.csail.mit.edu/CLU.html
 claire https://github.com/ycaseau/CLAIRE4
-Charly
+Charly https://github.com/charly-lang/charly
 CharlyVM
 curry https://curry.pages.ps.informatik.uni-kiel.de/curry-lang.org/
 cobra https://github.com/cobra-language/cobra
 cyclone https://cyclone.thelanguage.org/wiki/Download/
+e http://erights.org/
+ec https://ec-lang.org/
 eiffel
 elm
 El-76
 Fortress
 Godot
-Mozart  https://github.com/mozart/mozart2
+icon https://www2.cs.arizona.edu/icon/
+nemerle https://github.com/rsdn/nemerle
+newspeak https://github.com/newspeaklanguage/newspeak
 nelua https://nelua.io/
+Mozart  https://github.com/mozart/mozart2
+opa http://opalang.org/
 Orc
 PCASTL
 Pizza
 QB64 https://qb64.com/
 reason https://reasonml.github.io/
+sather https://www.gnu.org/software/sather/
 Scilab
-spice https://github.com/spicelang/spice
+self https://selflanguage.org/
 SmallBASIC
 Vale https://vale.dev/
 Verve https://verve-lang.org/getting-started
 
-# skip
+
+# Esolang
+CMD
+evil
+typhon
+pure folders
+ExchangeIF
+HTMS
+ffb
+irc
+emojifunge
+tetris
+wysiscript
+nuts
+
+
+# Skip
 ABAP
+aleph https://github.com/lcsirmaz/aleph
 Arduino
 actionscript
+Autoit
+AviSynth+ https://github.com/AviSynth/AviSynthPlus
 alef
 applescript
 arkts
 cog
+ColdFusion
+CUDA?
 dreamberd https://github.com/TodePond/DreamBerd
 delphi
 euclid https://en.wikipedia.org/wiki/Euclid_(programming_language)
 ell http://eel.olofson.net/
+ECL
+FCL?
 FreeOberon https://github.com/kekcleader/FreeOberon
+FoxPro
+GAS?
+hop
 jade
+js++ https://www.onux.com/jspp/
 lasso
+less
+logo
 limbo https://www.vitanuova.com/inferno/limbo.html
+matlab
+Mathematica
+MUMPS
+objectivecpp
 omega
 oberon
 occam
+oxygene https://www.remobjects.com/elements/oxygene/
+mesa
+parasail http://parasail-lang.org/
+postscript
 PureBasic
+Pig
+ObjectiveJ https://www.cappuccino.dev/learn/objective-j.html
+q https://code.kx.com/home/
+spark
+Slim
+turing
 Refal
+Unlambda http://www.madore.org/~david/programs/unlambda/
 XBLite
 XULJet
+Visual Basic for Applications (VBA)
 ViRC
+Y
+Z80?
+
+
 
 # sources
 https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
@@ -154,3 +168,7 @@ https://hub.docker.com/u/esolang
 https://highlightjs.org/demo
 https://en.wikipedia.org/wiki/List_of_markup_languages
 https://verve-lang.org/getting-started
+
+
+# docker
+https://github.com/hakatashi/esolang-box/tree/master/boxes
