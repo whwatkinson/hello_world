@@ -38,7 +38,7 @@ def display_docker_images() -> None:
         ) as file:
             # Get image counts
             if docker_image := IMAGE_PATTERN.findall(file.read())[0]:
-                if 'esolang' in docker_image:
+                if "esolang" in docker_image:
                     eso_langs_count += 1
                 if docker_image in docker_images:
                     docker_images[docker_image] += 1
