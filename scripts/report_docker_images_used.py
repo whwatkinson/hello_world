@@ -4,6 +4,8 @@ from re import compile
 from scripts import skips, get_project_root
 
 IMAGE_PATTERN = compile(r"FROM\s(?P<image_name>[\w:\d\.\/\-]+)")
+GOAL_BASE_IMAGE = 'ubuntu:22.04'
+DISPLAY_ESO_LANGS = False
 
 # https://pypi.org/project/docker/
 
@@ -20,7 +22,7 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
     ]
 
     docker_images = dict()
-    checked = 0
+    projects_checked = 0
     eso_langs_count = 0
 
     for project in projects:
@@ -37,7 +39,7 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
         ) as file:
             # Get image counts
             docker_image = IMAGE_PATTERN.findall(file.read())[0]
-            checked += 1
+            projects_checked += 1
 
             if not docker_image:
                 raise Exception(f"Image not found in {project}")
@@ -52,7 +54,7 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
             else:
                 docker_images[docker_image] = 1
 
-    if checked != len(projects):
+    if projects_checked != len(projects):
         raise Exception("Not all projects checked")
 
     # Sort by count then image name
@@ -60,14 +62,16 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
         sorted(docker_images.items(), key=lambda item: (item[1], item[0]), reverse=True)
     )
 
-    display_results(docker_images_sorted, eso_langs_count)
+    display_results(docker_images_sorted, eso_langs_count, projects_checked, display_eso_langs)
 
 
-def display_results(docker_images_sorted: dict, eso_langs_count: int) -> None:
+def display_results(docker_images_sorted: dict, eso_langs_count: int, total_projects: int, display_eso_langs: bool) -> None:
 
-    print("\nIdeally each project should use the ubuntu:20.04 base image...\n")
+    print(f"\nIdeally for each project we should use the {GOAL_BASE_IMAGE} base image...\n")
     print(f"Number of different images: \t{len(docker_images_sorted.keys()) + eso_langs_count}")
-    print(f"Esolangs count: \t\t\t\t{eso_langs_count}\n")
+    if display_eso_langs:
+        print(f"Esolangs count: \t\t\t\t{eso_langs_count}")
+    print(f"Percent towards goal: \t\t\t{(docker_images_sorted[GOAL_BASE_IMAGE] / total_projects) * 100:.1f}%\n")
     print("Count\t\tDocker Image")
 
     # Inelegant way to display the results...
@@ -78,4 +82,4 @@ def display_results(docker_images_sorted: dict, eso_langs_count: int) -> None:
 
 
 if __name__ == "__main__":
-    display_docker_images(display_eso_langs=False)
+    display_docker_images(display_eso_langs=True)
