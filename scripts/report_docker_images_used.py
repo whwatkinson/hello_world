@@ -5,11 +5,10 @@ from scripts import skips, get_project_root
 
 IMAGE_PATTERN = compile(r"FROM\s(?P<image_name>[\w:\d\.\/\-]+)")
 
-
 # https://pypi.org/project/docker/
 
 
-def display_docker_images() -> None:
+def display_docker_images(display_eso_langs: bool = True) -> None:
     """
     Display the docker images counts used in the projects
     :return: None
@@ -38,13 +37,18 @@ def display_docker_images() -> None:
         ) as file:
             # Get image counts
             if docker_image := IMAGE_PATTERN.findall(file.read())[0]:
+                checked += 1
+
                 if "esolang" in docker_image:
                     eso_langs_count += 1
+                    if not display_eso_langs:
+                        continue
+
                 if docker_image in docker_images:
                     docker_images[docker_image] += 1
                 else:
                     docker_images[docker_image] = 1
-                checked += 1
+
             else:
                 raise Exception(f"No match found for {project}")
 
@@ -70,4 +74,4 @@ def display_results(docker_images_sorted: dict, eso_langs_count: int) -> None:
 
 
 if __name__ == "__main__":
-    display_docker_images()
+    display_docker_images(display_eso_langs=False)
