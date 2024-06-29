@@ -4,7 +4,7 @@ from re import compile
 from scripts import skips, get_project_root
 
 IMAGE_PATTERN = compile(r"FROM\s(?P<image_name>[\w:\d\.\/\-]+)")
-GOAL_BASE_IMAGE = 'ubuntu:22.04'
+GOAL_BASE_IMAGE = "ubuntu:22.04"
 DISPLAY_ESO_LANGS = False
 
 # https://pypi.org/project/docker/
@@ -62,16 +62,29 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
         sorted(docker_images.items(), key=lambda item: (item[1], item[0]), reverse=True)
     )
 
-    display_results(docker_images_sorted, eso_langs_count, projects_checked, display_eso_langs)
+    display_results(
+        docker_images_sorted, eso_langs_count, projects_checked, display_eso_langs
+    )
 
 
-def display_results(docker_images_sorted: dict, eso_langs_count: int, total_projects: int, display_eso_langs: bool) -> None:
+def display_results(
+    docker_images_sorted: dict,
+    eso_langs_count: int,
+    total_projects: int,
+    display_eso_langs: bool,
+) -> None:
 
-    print(f"\nIdeally for each project we should use the {GOAL_BASE_IMAGE} base image...\n")
-    print(f"Number of different images: \t{len(docker_images_sorted.keys()) + eso_langs_count}")
+    print(
+        f"\nIdeally for each project we should use the {GOAL_BASE_IMAGE} base image...\n"
+    )
+    print(
+        f"Number of different images: \t{len(docker_images_sorted.keys()) + eso_langs_count}"
+    )
     if display_eso_langs:
         print(f"Esolangs count: \t\t\t\t{eso_langs_count}")
-    print(f"Percent towards goal: \t\t\t{(docker_images_sorted[GOAL_BASE_IMAGE] / total_projects) * 100:.1f}%\n")
+    print(
+        f"Percent towards goal: \t\t\t{(docker_images_sorted[GOAL_BASE_IMAGE] / total_projects) * 100:.1f}%\n"
+    )
     print("Count\t\tDocker Image")
 
     # Inelegant way to display the results...
