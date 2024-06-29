@@ -1,12 +1,17 @@
-FROM node:20.5.0
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y \
+    nodejs \
     git
 
+WORKDIR /usr/lib
 RUN git clone https://github.com/abrudz/ngn-apl.git
 
 WORKDIR /usr/project/
 COPY hello_world.apl .
 
-CMD ["node", "/ngn-apl/apl.js", "hello_world.apl"]
+CMD ["node", "/usr/lib/ngn-apl/apl.js", "hello_world.apl"]
