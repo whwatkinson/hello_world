@@ -6,7 +6,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y && \
     apt-get install -y \
     ghc \
-    cabal-install
+    cabal-install \
+    pkg-config \
+    zlib1g-dev  \
+    libncurses5-dev
 
 RUN cabal update && \
     cabal install Agda
