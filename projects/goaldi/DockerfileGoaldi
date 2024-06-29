@@ -1,12 +1,18 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
 
-RUN apt-get install -y \
-    wget
+ENV DEBIAN_FRONTEND=noninteractive
 
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    golang-go
+
+WORKDIR /usr/lib
 RUN wget https://github.com/proebsting/goaldi/releases/download/v11-stable/Goaldi-Linux-v11.tgz && \
     tar zxvf Goaldi-Linux-v11.tgz && \
     rm Goaldi-Linux-v11.tgz
-ENV PATH=/go/Goaldi-Linux-v11:$PATH
+ENV PATH=/usr/lib/Goaldi-Linux-v11:$PATH
 
 WORKDIR /usr/project
 COPY hello_world.gd .

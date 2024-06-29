@@ -1,8 +1,12 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y \
-    wget
+    wget \
+    golang-go
 
 WORKDIR /usr/lib
 RUN wget https://github.com/d5/tengo/releases/download/v2.17.0/tengo_2.17.0_linux_amd64.tar.gz && \

@@ -1,8 +1,19 @@
-FROM golang:1.17-bullseye
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
 
-RUN git clone https://github.com/skx/monkey && \
-    cd monkey && \
-    go install
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    golang-go
+
+WORKDIR /usr/lib
+RUN wget https://github.com/skx/monkey/releases/download/release-0.9.5/monkey-linux-amd64 && \
+    mv monkey-linux-amd64 monkey && \
+    chmod +x monkey && \
+    ln -s monkey /usr/bin/monkey
+ENV PATH=/usr/lib/:$PATH
 
 WORKDIR /usr/project
 COPY hello_world.mon .
