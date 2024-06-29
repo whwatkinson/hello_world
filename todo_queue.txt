@@ -70,7 +70,6 @@ Godot
 icon https://www2.cs.arizona.edu/icon/
 nemerle https://github.com/rsdn/nemerle
 newspeak https://github.com/newspeaklanguage/newspeak
-nelua https://nelua.io/
 Mozart  https://github.com/mozart/mozart2
 opa http://opalang.org/
 Orc
