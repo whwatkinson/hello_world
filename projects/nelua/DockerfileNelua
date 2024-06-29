@@ -1,0 +1,34 @@
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    build-essential \
+    git \
+    gcc \
+    gdb \
+    wget \
+    sudo
+
+RUN useradd -ms /bin/bash hello_world && \
+    echo "hello_world:password" | chpasswd && \
+    adduser hello_world sudo && \
+    usermod -aG sudo hello_world
+
+WORKDIR /usr/lib
+RUN wget https://github.com/edubart/nelua-lang/archive/refs/tags/latest.tar.gz && \
+    tar -xvf latest.tar.gz && \
+    rm latest.tar.gz && \
+    mv nelua-lang-latest nelua-lang
+
+USER hello_world
+RUN cd /usr/lib/nelua-lang && \
+    echo "password" | sudo -S make && \
+    echo "password" | sudo -S make install
+
+WORKDIR /usr/project
+COPY hello_world.nelua .
+
+CMD ["nelua", "hello_world.nelua"]
