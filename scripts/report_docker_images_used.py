@@ -66,7 +66,7 @@ def display_docker_images(display_eso_langs: bool = True) -> None:
 def display_results(docker_images_sorted: dict, eso_langs_count: int) -> None:
 
     print("\nIdeally each project should use the ubuntu:20.04 base image...\n")
-    print(f"Number of different images: \t{len(docker_images_sorted.keys())}")
+    print(f"Number of different images: \t{len(docker_images_sorted.keys()) + eso_langs_count}")
     print(f"Esolangs count: \t\t\t\t{eso_langs_count}\n")
     print("Count\tDocker Image")
     for image, count in docker_images_sorted.items():
