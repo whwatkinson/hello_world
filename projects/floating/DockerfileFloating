@@ -1,0 +1,12 @@
+FROM esolang/floating:2.4.0
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+# TODO https://github.com/KPCCoiL/floating-lang
+
+WORKDIR /usr/project
+COPY hello_world.flt .
+COPY run.sh .
+RUN chmod +x run.sh
+
+RUN echo "" | floating hello_world.flt > output.txt
+CMD ["./run.sh"]
