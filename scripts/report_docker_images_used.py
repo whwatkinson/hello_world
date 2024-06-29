@@ -22,6 +22,7 @@ def display_docker_images() -> None:
 
     docker_images = dict()
     checked = 0
+    eso_langs_count = 0
 
     for project in projects:
         # Get Dockerfile name dynamically
@@ -37,6 +38,8 @@ def display_docker_images() -> None:
         ) as file:
             # Get image counts
             if docker_image := IMAGE_PATTERN.findall(file.read())[0]:
+                if 'esolang' in docker_image:
+                    eso_langs_count += 1
                 if docker_image in docker_images:
                     docker_images[docker_image] += 1
                 else:
@@ -48,11 +51,19 @@ def display_docker_images() -> None:
     if checked != len(projects):
         raise Exception("Not all projects checked")
 
+    # Sort by count then image name
     docker_images_sorted = dict(
         sorted(docker_images.items(), key=lambda item: (item[1], item[0]), reverse=True)
     )
 
+    display_results(docker_images_sorted, eso_langs_count)
+
+
+def display_results(docker_images_sorted: dict, eso_langs_count: int) -> None:
+
     print("\nIdeally each project should use the ubuntu:20.04 base image...\n")
+    print(f"Number of different images: \t{len(docker_images_sorted.keys())}")
+    print(f"Esolangs count: \t\t\t\t{eso_langs_count}\n")
     print("Count\tDocker Image")
     for image, count in docker_images_sorted.items():
         print(f"{count} \t\t{image}")
