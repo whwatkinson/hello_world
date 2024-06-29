@@ -1,0 +1,9 @@
+FROM esolang/qlb:2.4.0
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+WORKDIR /usr/project
+COPY hello_world.qlb .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]

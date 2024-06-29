@@ -34,7 +34,6 @@ SparQL
 
 # Dockerhub
 ArkScript
-evil
 Glass
 jolie
 lolcode
@@ -86,6 +85,19 @@ SmallBASIC
 Vale https://vale.dev/
 Verve https://verve-lang.org/getting-started
 
+
+# Esolang
+CMD
+evil
+typhon
+pure folders
+ExchangeIF
+ffb
+irc
+emojifunge
+tetris
+wysiscript
+nuts
 
 
 # Skip
@@ -144,20 +156,6 @@ ViRC
 Y
 Z80?
 
-
-
-
-# Esolang
-CMD
-typhon
-pure folders
-ExchangeIF
-ffb
-irc
-emojifunge
-tetris
-wysiscript
-nuts
 
 
 # sources
