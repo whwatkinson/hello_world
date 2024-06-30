@@ -77,13 +77,15 @@ def display_results(
     print(
         f"\nIdeally for each project we should use the {GOAL_BASE_IMAGE} base image...\n"
     )
+    print(f"Total projects: \t\t\t\t{total_projects}")
     print(
         f"Number of different images: \t{len(docker_images_sorted.keys()) + eso_langs_count}"
     )
     if display_eso_langs:
+        # cheating lol
         print(f"Esolangs count: \t\t\t\t{eso_langs_count}")
     print(
-        f"Percent towards goal: \t\t\t{(docker_images_sorted[GOAL_BASE_IMAGE] / total_projects) * 100:.1f}%\n"
+        f"Percent towards my goal: \t\t{(docker_images_sorted[GOAL_BASE_IMAGE] / total_projects) * 100:.1f}%\n"
     )
     print("Count\t\tDocker Image")
 
@@ -95,4 +97,4 @@ def display_results(
 
 
 if __name__ == "__main__":
-    display_docker_images(display_eso_langs=False)
+    display_docker_images(display_eso_langs=True)
