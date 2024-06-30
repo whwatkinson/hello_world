@@ -1,8 +1,20 @@
-FROM mcr.microsoft.com/powershell:latest
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget  \
+    apt-transport-https  \
+    software-properties-common
+
+WORKDIR /usr/lib
+RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/powershell_7.4.3-1.deb_amd64.deb && \
+    dpkg -i powershell_7.4.3-1.deb_amd64.deb && \
+    rm powershell_7.4.3-1.deb_amd64.deb
 
 WORKDIR /usr/project
 COPY hello_world.ps1 .
 
 CMD ["pwsh", "hello_world.ps1"]
-
-# TODO https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.4

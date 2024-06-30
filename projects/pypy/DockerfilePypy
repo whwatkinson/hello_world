@@ -1,4 +1,8 @@
-FROM pypy:3.9-slim-bullseye
+FROM ubuntu:22.04
+
+RUN apt-get update && \
+    apt-get install -y \
+    pypy3
 
 WORKDIR /usr/project
 COPY hello_world.py .
