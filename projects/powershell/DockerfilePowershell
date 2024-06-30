@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y \
-    wget  \
-    apt-transport-https  \
+    wget \
+    apt-transport-https \
     software-properties-common
 
 WORKDIR /usr/lib

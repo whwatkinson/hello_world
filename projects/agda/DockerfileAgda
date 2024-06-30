@@ -8,7 +8,7 @@ RUN apt-get update -y && \
     ghc \
     cabal-install \
     pkg-config \
-    zlib1g-dev  \
+    zlib1g-dev \
     libncurses5-dev
 
 RUN cabal update && \

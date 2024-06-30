@@ -16,7 +16,7 @@ RUN apt-get update -y && \
     wget
 
 RUN wget https://sourceforge.net/projects/fbc/files/FreeBASIC-1.10.0/Binaries-Linux/FreeBASIC-1.10.0-ubuntu-22.04-x86_64.tar.xz/download && \
-    tar -xf download &&  \
+    tar -xf download && \
     rm download
 
 RUN cd FreeBASIC-1.10.0-ubuntu-22.04-x86_64 && \
