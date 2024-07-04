@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 # Conform output to match other projects
-# | sed "s/w/W/"
+echo "" | piet hello_world.png | sed "s/w/W/"
+echo ""

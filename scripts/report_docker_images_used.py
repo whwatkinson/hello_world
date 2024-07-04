@@ -97,4 +97,4 @@ def display_results(
 
 
 if __name__ == "__main__":
-    display_docker_images(display_eso_langs=True)
+    display_docker_images(display_eso_langs=False)
