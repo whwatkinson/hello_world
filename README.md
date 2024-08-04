@@ -233,7 +233,6 @@
 - **docker**
 - **docker-compose**
 - **git**
-- **git lfs**
 
 ## To be greeted:
 ```
