@@ -25,7 +25,6 @@ CQL
 Cypher
 Esper
 MySql
-postgres
 GraphQL
 SparQL
 
