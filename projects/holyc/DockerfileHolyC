@@ -1,0 +1,24 @@
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    wget \
+    make \
+    cmake \
+    g++
+
+RUN wget https://github.com/Jamesbarford/holyc-lang/archive/refs/tags/beta-v0.0.8.tar.gz && \
+    tar -xvf beta-v0.0.8.tar.gz && \
+    rm beta-v0.0.8.tar.gz && \
+    cd holyc-lang-beta-v0.0.8 && \
+    make && \
+    make install
+
+WORKDIR /usr/project
+COPY hello_world.HC .
+RUN hcc hello_world.HC
+
+CMD ["./a.out"]

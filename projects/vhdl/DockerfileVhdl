@@ -5,4 +5,5 @@ COPY hello_world.vhdl .
 
 RUN ghdl -a hello_world.vhdl && \
     ghdl -e hello_world
+
 CMD ["ghdl", "-r", "hello_world"]
