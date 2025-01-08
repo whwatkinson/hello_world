@@ -48,7 +48,7 @@ def make_readme() -> None:
     )
 
     welcome = (
-        f"# Hello World in {len(languages_project_list)} languages, {len(linux_commands_list)} Linux Commands and Databases\n\n"
+        f"# Hello World in {len(languages_project_list)} languages, {len(linux_commands_list)} Linux Commands and {len(databases_list)} Databases\n\n"
         "## Welcome\n\n"
         "[Inspired by this picture I saw on r/programmerhumor.]"
         "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n\n"
