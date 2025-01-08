@@ -1,4 +1,4 @@
-# Hello World in 205 languages and 15 Linux Commands
+# Hello World in 208 languages, 15 Linux Commands and 2 Databases
 
 ## Welcome
 
@@ -98,6 +98,7 @@
 - [Haskell](./projects/haskell)
 - [Haxe](./projects/haxe)
 - [Hbcht](./projects/hbcht)
+- [Holyc](./projects/holyc)
 - [Hylang](./projects/hylang)
 - [Hypertorus](./projects/hypertorus)
 - [I](./projects/i)
@@ -137,6 +138,7 @@
 - [Neko](./projects/neko)
 - [Nial](./projects/nial)
 - [Nim](./projects/nim)
+- [Nu](./projects/nu)
 - [Nushell](./projects/nushell)
 - [Objectivec](./projects/objectivec)
 - [Ocaml](./projects/ocaml)
@@ -180,6 +182,7 @@
 - [Solidity](./projects/solidity)
 - [Spice](./projects/spice)
 - [Sqlite3](./projects/sqlite3)
+- [Squirrel](./projects/squirrel)
 - [Stop](./projects/stop)
 - [Swift](./projects/swift)
 - [TclSh](./projects/tclsh)
@@ -212,6 +215,9 @@
 - [Zig](./projects/zig)
 - [Zsh](./projects/zsh)
 - [Zucchini](./projects/zucchini)
+## Databases
+- [Neo4j](./projects/databases/neo4j)
+- [Postgres](./projects/databases/postgres)
 ## Linux Commands
 - [awk](./projects/linux_commands/awk)
 - [basename](./projects/linux_commands/basename)
@@ -233,6 +239,7 @@
 - **docker**
 - **docker-compose**
 - **git**
+- **git lfs**
 
 ## To be greeted:
 ```

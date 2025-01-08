@@ -586,6 +586,12 @@ services:
       context: projects/head
       dockerfile: DockerfileHead
 
+  holyc:
+    container_name: hello_world_holyc
+    build:
+      context: projects/holyc
+      dockerfile: DockerfileHolyc
+
   html:
     container_name: hello_world_html
     build:
@@ -831,6 +837,12 @@ services:
     build:
       context: projects/nim
       dockerfile: DockerfileNim
+
+  nu:
+    container_name: hello_world_nu
+    build:
+      context: projects/nu
+      dockerfile: DockerfileNu
 
   nushell:
     container_name: hello_world_nushell
@@ -1107,6 +1119,12 @@ services:
     build:
       context: projects/sqlite3
       dockerfile: DockerfileSqlite3
+
+  squirrel:
+    container_name: hello_world_squirrel
+    build:
+      context: projects/squirrel
+      dockerfile: DockerfileSquirrel
 
   stop:
     container_name: hello_world_stop

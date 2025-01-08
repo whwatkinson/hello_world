@@ -31,6 +31,14 @@ def make_readme() -> None:
         ]
     )
 
+    databases_list = sorted(
+        [
+            f"- [{format_project_name(project)}](./projects/databases/{project})\n"
+            for project in listdir(f"{get_project_root()}/projects/databases/")
+            if project not in skips
+        ]
+    )
+
     linux_commands_list = sorted(
         [
             f"- [{format_project_name(project)}](./projects/linux_commands/{project})\n"
@@ -40,7 +48,7 @@ def make_readme() -> None:
     )
 
     welcome = (
-        f"# Hello World in {len(languages_project_list)} languages and {len(linux_commands_list)} Linux Commands\n\n"
+        f"# Hello World in {len(languages_project_list)} languages, {len(linux_commands_list)} Linux Commands and {len(databases_list)} Databases\n\n"
         "## Welcome\n\n"
         "[Inspired by this picture I saw on r/programmerhumor.]"
         "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n\n"
@@ -52,12 +60,15 @@ def make_readme() -> None:
     languages_projects_joined = "".join(languages_project_list)
     readme_buffer.write(languages_projects_joined)
 
+    readme_buffer.write("## Databases\n")
+    databases_projects_joined = "".join(databases_list)
+    readme_buffer.write(databases_projects_joined)
+
     readme_buffer.write("## Linux Commands\n")
     linux_commands_projects_joined = "".join(linux_commands_list)
     readme_buffer.write(linux_commands_projects_joined)
 
-    # TODO markup langs
-    # API's?
+    # TODO markup langs API's?
 
     requirements = (
         "\n"
