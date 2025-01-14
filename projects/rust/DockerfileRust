@@ -1,7 +1,17 @@
-FROM rust:1-bullseye
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    curl \
+    gcc
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH=/root/.cargo/bin:$PATH
 
 WORKDIR /usr/project
 COPY main.rs .
-
 RUN rustc main.rs
 CMD ["./main"]

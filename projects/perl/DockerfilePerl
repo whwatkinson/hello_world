@@ -1,4 +1,11 @@
-FROM perl:5.36.0
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    perl
 
 WORKDIR /usr/project
 COPY hello_world.pl .

@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install -y zsh
+    apt-get install -y \
+    zsh
 
 WORKDIR /usr/project
 COPY hello_world.sh .

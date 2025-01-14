@@ -1,4 +1,11 @@
-FROM php:8.2.1
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    php
 
 WORKDIR /usr/project
 COPY hello_world.php .

@@ -1,3 +1,4 @@
+# todo remove rust:1-bullseye
 FROM rust:1-bullseye
 
 WORKDIR /usr/project
