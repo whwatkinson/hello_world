@@ -1,4 +1,3 @@
-# https://codegolf.stackexchange.com/questions/10695/build-a-polyglot-for-hello-world
 FROM ubuntu:22.04
 
 LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"

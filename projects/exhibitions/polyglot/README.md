@@ -1,0 +1,1 @@
+# https://codegolf.stackexchange.com/questions/10695/build-a-polyglot-for-hello-world
