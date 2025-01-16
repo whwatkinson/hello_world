@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 echo -n "Bash: " && bash main.c
-gcc main.c -o main && echo -n "C: " && ./main
-g++ main.c -o main && echo -n "C++: " && ./main
-#echo -n "CoffeeScript: " && coffee main.c
-echo -n "Fish: " && fish main.c
+gcc main.c -o main.c.out && echo -n "C: " && ./main.c.out
+g++ main.c -o main.cpp.out && echo -n "C++: " && ./main.cpp.out
+echo -n "CoffeeScript: " && coffee main.c
+#echo -n "Fish: " && fish main.c
 echo -n "Julia: " && julia main.c
 echo -n "Perl: " && perl main.c && echo ""
 #echo -n "PHP: " && php main.c
