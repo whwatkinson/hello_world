@@ -50,7 +50,7 @@ def make_readme() -> None:
     welcome = (
         f"# Hello World in {len(languages_project_list)} languages, {len(linux_commands_list)} Linux Commands and {len(databases_list)} Databases\n\n"
         "## Welcome\n\n"
-        "[Inspired by this picture I saw on r/programmerhumor.]"
+        "[Inspired by this picture I saw on Reddit channel r/programmerhumor.]"
         "(https://www.reddit.com/r/ProgrammerHumor/comments/kl0v6m/me_in_an_interview_room/)\n\n"
         "![image info](./hello_world.png)\n\n"
         "## Programming Languages\n"
@@ -73,10 +73,9 @@ def make_readme() -> None:
     requirements = (
         "\n"
         "## Requirements\n"
+        "- **git**\n"
         "- **docker**\n"
         "- **docker-compose**\n"
-        "- **git**\n"
-        "- **git lfs**\n"
     )
     readme_buffer.write(requirements)
 
