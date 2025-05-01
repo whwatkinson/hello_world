@@ -1,0 +1,23 @@
+FROM ubuntu:22.04
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && \
+    apt-get install -y \
+    gcc \
+    curl
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+RUN cargo install hvm \
+    bend-lang
+
+WORKDIR /usr/project
+COPY hello_world.bend .
+COPY run.sh .
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
