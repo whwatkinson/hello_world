@@ -23,10 +23,6 @@ linux_commands = {
     "xxd": "xxd",
 }
 
-databases = {
-    "postgres": "PostgreSQL"
-}
-
 
 programming_languages = {
     "abc": "ABC",

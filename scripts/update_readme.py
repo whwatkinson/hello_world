@@ -71,11 +71,7 @@ def make_readme() -> None:
     # TODO markup langs API's?
 
     requirements = (
-        "\n"
-        "## Requirements\n"
-        "- **git**\n"
-        "- **docker**\n"
-        "- **docker-compose**\n"
+        "\n" "## Requirements\n" "- **git**\n" "- **docker**\n" "- **docker-compose**\n"
     )
     readme_buffer.write(requirements)
 
