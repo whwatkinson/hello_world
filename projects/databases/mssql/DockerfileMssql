@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/mssql/server:2022-latest
+LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+
+ENV ACCEPT_EULA=Y
+ENV MSSQL_SA_PASSWORD=YourStrong@Passw0rd
+
+USER root
+WORKDIR /usr/project
+
+COPY run.sh .
+RUN chmod +x run.sh && chown -R mssql:0 /usr/project
+
+# 1. Clear the default entrypoint to stop the "Status" logs
+ENTRYPOINT []
+
+USER mssql
+
+# 2. Run your script directly
+CMD ["./run.sh"]
