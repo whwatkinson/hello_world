@@ -3,6 +3,7 @@
 
 FROM ubuntu:22.04
 LABEL maintainer="Harry Watkinson <w.h.watkinson@gmail.com>"
+LABEL authors="Harry Watkinson <w.h.watkinson@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
