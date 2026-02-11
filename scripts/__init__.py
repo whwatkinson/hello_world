@@ -23,10 +23,6 @@ linux_commands = {
     "xxd": "xxd",
 }
 
-databases = {
-    "postgres": "PostgreSQL"
-}
-
 
 programming_languages = {
     "abc": "ABC",
@@ -57,4 +53,4 @@ programming_languages = {
 
 my_names_map = {**linux_commands, **programming_languages}
 
-skips = {"new", "linux_commands", "databases"}
+skips = ("new", "linux_commands", "databases")
